@@ -1,7 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-label="Ba lớp tương đương cho miền hợp lệ 30 đến 70">
-<rect width="720" height="220" rx="14" fill="white"/>
-<text x="25" y="37" fill="#183153" font-family="Arial" font-size="21" font-weight="700">Ba lớp tương đương cho miền 30–70</text>
-<rect x="25" y="66" width="210" height="105" rx="12" fill="#fee2e2" stroke="#c5453e"/>
-<rect x="255" y="66" width="210" height="105" rx="12" fill="#dcfce7" stroke="#16844a"/>
-<rect x="485" y="66" width="210" height="105" rx="12" fill="#fef3c7" stroke="#d97706"/>
-<g font-family="Arial" text-anchor="middle" fill="#183153"><text x="130" y="103" font-size="20">≤ 29</text><text x="360" y="103" font-size="20">30–70</text><text x="590" y="103" font-size="20">≥ 71</text><text x="130" y="139" font-size="17">Đại diện: 29</text><text x="360" y="139" font-size="17">Đại diện: 50</text><text x="590" y="139" font-size="17">Đại diện: 71</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-labelledby="title">
+<title id="title">Phân vùng tương đương: miền 30–70</title>
+<rect width="900" height="300" rx="14" fill="white"/>
+<text x="24" y="38" fill="#183153" font-size="23" font-weight="700">Phân vùng tương đương: miền 30–70</text>
+<g font-family="Arial,sans-serif"><rect x="24" y="62" width="284" height="78" fill="#fee2e2"/><text x="166" y="94" text-anchor="middle" fill="#b91c1c" font-size="19" font-weight="700">≤ 29</text><text x="166" y="122" text-anchor="middle" fill="#334155" font-size="15">vùng thấp</text><rect x="308" y="62" width="284" height="78" fill="#dcfce7"/><text x="450" y="94" text-anchor="middle" fill="#15803d" font-size="19" font-weight="700">30–70</text><text x="450" y="122" text-anchor="middle" fill="#334155" font-size="15">vùng hợp lệ</text><rect x="592" y="62" width="284" height="78" fill="#fee2e2"/><text x="734" y="94" text-anchor="middle" fill="#b91c1c" font-size="19" font-weight="700">≥ 71</text><text x="734" y="122" text-anchor="middle" fill="#334155" font-size="15">vùng cao</text>
+<path d="M24 62H876M24 140H876M24 259H876" stroke="#94a3b8" stroke-width="2"/>
+<path d="M308 62V259M592 62V259" stroke="#ef4444" stroke-width="2"/>
+<path d="M42 190H858" stroke="#475569" stroke-width="3"/>
+<path d="M858 190l-12 -6v12z" fill="#475569"/><circle cx="220" cy="190" r="25" fill="#b91c1c"/><text x="220" y="198" text-anchor="middle" fill="white" font-size="19" font-weight="700">29</text><text x="220" y="239" text-anchor="middle" fill="#334155" font-size="13">đại diện</text><circle cx="450" cy="190" r="25" fill="#15803d"/><text x="450" y="198" text-anchor="middle" fill="white" font-size="19" font-weight="700">50</text><text x="450" y="239" text-anchor="middle" fill="#334155" font-size="13">đại diện</text><circle cx="680" cy="190" r="25" fill="#b91c1c"/><text x="680" y="198" text-anchor="middle" fill="white" font-size="19" font-weight="700">71</text><text x="680" y="239" text-anchor="middle" fill="#334155" font-size="13">đại diện</text>
+<text x="24" y="285" fill="#1e3a5f" font-size="15">Một số đại diện trong mỗi vùng: 29, 50, 71.</text></g></svg>

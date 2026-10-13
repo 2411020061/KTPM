@@ -439,7 +439,19 @@
   "pdf-C4-9": [],
   "pdf-C4-10": [],
   "pdf-C4-11": [],
-  "pdf-C4-12": [],
+  "pdf-C4-12": [
+    {
+      "q": "Bài thi mới có 50 câu: dưới 30 là chưa đạt, từ 30 đến 44 là đạt, từ 45 là xuất sắc. Làm đúng 44 câu thuộc vùng nào?",
+      "a": "Đạt, chưa xuất sắc.",
+      "explain": "Dò theo vạch chia vùng: 44 vẫn nằm trong đoạn 30–44. Vùng xuất sắc bắt đầu ở 45, nên 44 chưa chuyển sang vùng đó.",
+      "image": "media/extra/ep-score-50.svg",
+      "imageAlt": "Ba vùng kết quả bài thi với số 44 nằm trong vùng đạt",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 9"
+    }
+  ],
   "pdf-C4-13": [
     {
       "q": "Một ô nhập số đơn hàng hợp lệ từ 120 đến 450. Bộ ba BVA quanh biên trên là gì?",
@@ -465,6 +477,8 @@
           ]
         ]
       },
+      "image": "media/extra/bva-120-450.svg",
+      "imageAlt": "Sơ đồ ba vùng số với các giá trị 449, 450, 451 quanh biên trên",
       "tag": "Bài áp dụng",
       "badge": "Đổi dữ kiện",
       "badgeClass": "quiz",
@@ -473,12 +487,15 @@
   ],
   "pdf-C4-14": [
     {
-      "q": "Khi một vùng tương đương chứa các cách xử lý khác nhau, cần làm gì?",
-      "a": "Chia lại vùng đó vì phân vùng hiện tại chưa đúng.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
+      "q": "Máy sưởi bật khi dưới 18°C và tắt từ 21°C. Ở đúng 19°C, chỉ biết nhiệt độ hiện tại đã đủ kết luận máy đang bật hay tắt chưa?",
+      "a": "Chưa; còn phụ thuộc trạng thái trước đó.",
+      "explain": "19°C ở giữa hai ngưỡng: chưa xuống dưới 18°C để bật, cũng chưa tới 21°C để tắt. Máy giữ trạng thái trước đó.",
+      "image": "media/extra/temperature-18-21.svg",
+      "imageAlt": "Ba vùng nhiệt độ dưới 18, từ 18 đến 20, và từ 21 độ với điểm 19 ở giữa",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 9"
     }
   ],
   "pdf-C4-15": [
@@ -785,8 +802,32 @@
       "source": "Kiến thức slide tr. 12"
     }
   ],
-  "main-13-0": [],
-  "main-13-1": [],
+  "main-13-0": [
+    {
+      "q": "Ba vùng được chia thành x ≤ 9, 10 ≤ x ≤ 20 và x ≥ 20. Giá trị nào chứng tỏ cách chia này bị chồng lấn?",
+      "a": "20.",
+      "explain": "Số 20 nằm đồng thời trong vùng 10–20 và vùng x ≥ 20. Các phân vùng tương đương phải không chồng lấn; sửa vùng thứ ba thành x ≥ 21.",
+      "image": "media/extra/ep-overlap-10-20.svg",
+      "imageAlt": "Ba vùng tương đương với số 20 nằm ở cả hai vùng",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 9"
+    }
+  ],
+  "main-13-1": [
+    {
+      "q": "Với miền hợp lệ 10–20, BVA ba giá trị bổ sung hai số nào so với BVA hai giá trị?",
+      "a": "11 và 19.",
+      "explain": "BVA hai giá trị chọn 9, 10, 20, 21 (sát ngoài và tại biên). BVA ba giá trị còn lấy sát trong mỗi biên, tức 11 và 19.",
+      "image": "media/extra/bva-10-20.svg",
+      "imageAlt": "Sơ đồ sáu số quanh biên 10 và 20, hai số 11 và 19 được tô xanh lam",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 11"
+    }
+  ],
   "main-13-2": [
     {
       "q": "Bảng quy tắc đăng ký có bốn điều kiện độc lập, mỗi điều kiện chỉ Đúng hoặc Sai. Cần tối đa bao nhiêu cột để liệt kê mọi tổ hợp?",

@@ -51,6 +51,10 @@
     .kp-qa .kp-num{display:inline-block;min-width:15px;color:#8791a2;font-weight:800}
     .kp-visual{margin:7px 0 4px;padding:5px;border:1px solid #dbe4f1;border-radius:7px;background:#fff}
     .kp-visual img{display:block;width:100%;height:auto;max-height:230px;object-fit:contain}
+    .kp-visual a{display:block}
+    .kp-visual figcaption{margin-top:4px;font-size:9px;color:#48678d;text-align:center}
+    .question-card:has(.kp-visual) .q-side{display:contents}
+    .question-card:has(.kp-visual) .knowledge-panel{grid-column:1/-1}
     .kp-table-wrap{max-width:100%;overflow-x:auto;margin:7px 0 4px}
     .kp-table{width:100%;border-collapse:collapse;background:#fff;font-size:10px;line-height:1.35}
     .kp-table th,.kp-table td{border:1px solid #d6dfed;padding:5px 6px;text-align:left;white-space:nowrap}
@@ -147,7 +151,7 @@
     const items = extra.map((x, i) => {
       const badge = x.badge ? `<span class="pdf-badge ${x.badgeClass || (x.tag === 'Cùng slide' ? 'yes' : 'quiz')}">${escapeHtml(x.badge)}</span> ` : '';
       const img = x.image && /^media\/[A-Za-z0-9/_-]+\.(svg|png|jpe?g)$/.test(x.image)
-        ? `<figure class="kp-visual"><img src="${escapeHtml(x.image)}" alt="${escapeHtml(x.imageAlt||'Hình minh họa cho bài áp dụng')}" loading="lazy"></figure>` : '';
+        ? `<figure class="kp-visual"><a href="${escapeHtml(x.image)}" target="_blank" rel="noopener" title="Mở hình lớn"><img src="${escapeHtml(x.image)}" alt="${escapeHtml(x.imageAlt||'Hình minh họa cho bài áp dụng')}" loading="lazy"></a><figcaption>Bấm hình để xem rõ các số</figcaption></figure>` : '';
       const table = x.table && Array.isArray(x.table.headers) && Array.isArray(x.table.rows)
         ? `<div class="kp-table-wrap"><table class="kp-table"><thead><tr>${x.table.headers.map(h=>`<th scope="col">${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${x.table.rows.map(row=>`<tr>${row.map(c=>`<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
       const explain = x.explain ? `<p class="kp-explain"><b>Cách ra đáp án:</b> ${escapeHtml(x.explain)}</p>` : '';
