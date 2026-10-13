@@ -131,20 +131,18 @@
     if(!extra.length){
       const why=(!k||!k.paras||!k.paras.length)
         ? 'Câu này không có slide tương ứng trong bài giảng C0–C6.'
-        : 'Slide này không còn kiến thức nào khác chưa được hỏi.';
+        : 'Chưa tìm được kiến thức khác phù hợp để hỏi từ slide này.';
       return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng</h4><p class="kp-none">${why}</p>${foot}</div>`;
     }
 
     const slideItems = extra.filter(x => x.tag === 'Cùng slide');
-    const ontapItems = extra.filter(x => x.tag === 'OnTap C131+');
     const items = extra.map((x, i) => {
       const badge = x.badge ? `<span class="pdf-badge ${x.badgeClass || (x.tag === 'Cùng slide' ? 'yes' : 'quiz')}">${escapeHtml(x.badge)}</span> ` : '';
       return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span><span class="kp-a">${escapeHtml(x.a)}</span></li>`;
     }).join('');
     const title = k && k.title ? escapeHtml(k.title) : 'Slide bài giảng';
     const subParts = [];
-    if (slideItems.length) subParts.push(`📌 ${slideItems.length} kiến thức trên cùng slide (chưa hỏi trong đề)`);
-    if (ontapItems.length) subParts.push(`🎯 ${ontapItems.length} câu hỏi cùng ngữ cảnh từ OnTap C131+`);
+    if (slideItems.length) subParts.push(`📌 ${slideItems.length} câu hỏi về phần khác trên cùng slide`);
     const subText = subParts.join(' • ') + ' (kèm đáp án):';
     return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng · ${title}</h4><p class="kp-sub">${subText}</p><ul class="kp-qa">${items}</ul>${foot}</div>`;
   }
