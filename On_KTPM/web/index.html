@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ôn tập Kiểm thử phần mềm K24 · 210 câu (80 PDF + 130 OnTap)</title>
+  <style>
+    :root{--ink:#172033;--muted:#687386;--line:#dce2eb;--blue:#3659d9;--blue-soft:#edf1ff;--paper:#fff;--canvas:#f2f4f8;--red:#cf473d;--green:#26845f}
+    *{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--canvas)}
+    .app{height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr);gap:12px;padding:12px}
+    .topbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 16px;box-shadow:0 2px 10px #2534550a}
+    .brand{min-width:230px}.brand h1{font-size:17px;line-height:1.2;margin:0;font-weight:750;letter-spacing:-.25px}.brand p{margin:4px 0 0;font-size:11px;color:var(--muted)}
+    .search-wrap{position:relative;flex:1 1 220px;min-width:180px;max-width:600px}.search-wrap span{position:absolute;left:13px;top:9px;color:#8791a2;font-size:17px}.search{width:100%;height:38px;border:1px solid var(--line);border-radius:10px;padding:0 14px 0 39px;background:#fafbfc;color:var(--ink);font-size:13px;outline:none}.search:focus{border-color:#8095ef;box-shadow:0 0 0 3px #3659d91a}
+    .filters{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.filter{height:32px;border:1px solid transparent;background:transparent;color:#5a6578;font-size:11px;padding:0 10px;border-radius:8px;cursor:pointer}.filter:hover{background:#f4f6fb}.filter.active{background:var(--blue-soft);border-color:#dfe5ff;color:#2948c5;font-weight:700}
+    .count{white-space:nowrap;font-size:11px;color:var(--muted);margin-left:auto}.count b{font-size:14px;color:var(--ink)}.count span{font-size:11px;color:var(--muted)}
+    .score{display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:11px;color:var(--muted);padding:4px 8px;border:1px solid #b9ddcb;background:#f3fbf7;border-radius:9px}
+    .score b{font-size:13px;color:#1c7653}.score span{font-weight:800;color:#236b4d}
+    .score .wrong{font-weight:800;color:#a93229;padding-left:7px;border-left:1px solid #cfe6da}
+    .score button{width:20px;height:20px;padding:0;border:1px solid #b9ddcb;border-radius:6px;background:#fff;color:#236b4d;font-size:11px;line-height:1;cursor:pointer}
+    .score button:hover{background:#e6f6ee}
+    .redo{height:32px;padding:0 12px;border:1px solid #f0c4c0;background:#fdf3f2;color:#a93229;border-radius:8px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap}
+    .redo:hover{background:#fbe6e4;border-color:#e9a29b}
+    .redo.on{background:#a93229;border-color:#a93229;color:#fff}
+    .redo:disabled{opacity:.45;cursor:default;background:#f5f6f8;border-color:#e1e4ea;color:#8a93a3}
+    .question-card.quiz-mode .answer-choice.show-correct{display:none}
+    .question-card.quiz-mode.answered .answer-choice.show-correct{display:flex}
+    .workspace{position:relative;min-height:0;display:grid;grid-template-columns:minmax(420px,46%) minmax(0,54%);gap:12px}
+    .workspace.collapsed{grid-template-columns:minmax(0,1fr)}
+    .workspace.collapsed .slide-panel{display:none}
+    .panel{min-height:0;background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 2px 10px #2534550a}.questions-panel{display:flex;flex-direction:column;overflow:visible}
+    .panel-toggle{position:absolute;right:-13px;top:50%;transform:translateY(-50%);z-index:6;width:26px;height:26px;padding:0;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:#fff;color:#465168;font-size:15px;line-height:1;cursor:pointer;box-shadow:0 2px 8px #2534551f}
+    .panel-toggle:hover{background:#f2f5ff;border-color:#aebcf7;color:#2948c5}.panel-head{height:52px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid var(--line)}.panel-title{font-size:13px;font-weight:750}.head-note{font-size:10px;color:var(--muted)}
+    .list{overflow:auto;min-height:0;padding:13px 12px 20px;scrollbar-width:thin;scrollbar-color:#c8cfdb transparent}.question-card{position:relative;border:1px solid #e5e9f0;border-radius:11px;margin:0 0 10px;padding:12px 12px 11px;transition:border-color .15s,box-shadow .15s;background:#fff}.question-card:hover{border-color:#aebcf7;box-shadow:0 3px 12px #2436610c}.question-card.selected{border-color:#7890ed;box-shadow:0 0 0 2px #3659d91b}.q-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:7px}.q-label{font-size:11px;font-weight:800;color:#3f4a60;white-space:nowrap}.slide-link{display:flex;flex-direction:column;align-items:stretch;gap:3px;flex:none;max-width:52%;border:1px solid #f0c4c0;background:#fff7f6;color:#a93229;border-radius:7px;padding:5px 8px;font-size:11px;font-weight:750;cursor:pointer;line-height:1.15;text-align:left}.ref-main{display:flex;align-items:center;justify-content:space-between;gap:6px}.slide-link.unavailable{border-color:#e1e4ea;background:#f5f6f8;color:#778091;cursor:default;pointer-events:none;opacity:.85}.slide-link:hover{background:#ffebe8;border-color:#e9a29b}.slide-link.reference{border-color:#e1d7b6;background:#fffaf0;color:#805e15}.slide-link.verified{border-color:#b9ddcb;background:#f3fbf7;color:#236b4d}.slide-link.verified .basis{color:#56816c}.slide-link.reference:hover{background:#fff2d5;border-color:#d5c28f}.slide-link.reference .basis{color:#92743c}.basis{display:block;font-size:9px;color:#9b625e;font-weight:500;margin-top:1px;text-align:left;white-space:normal;line-height:1.25;max-height:2.5em;overflow:hidden}    .q-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,42%);gap:12px;align-items:start}.q-side{min-width:0;display:flex;flex-direction:column;gap:8px}.q-body{min-width:0;font-size:12px;line-height:1.58;color:#293347;overflow-wrap:anywhere}.q-body table{border-collapse:collapse;width:100%;margin:8px 0;font-size:10px}.q-body td,.q-body th{border:1px solid #d7dce5;padding:4px 6px;vertical-align:top}.q-body img{display:block;max-width:100%;max-height:260px;height:auto;object-fit:contain;object-position:left center;margin:10px 0;border:1px solid #e2e6ed;border-radius:7px;background:#fff}.q-body p{margin:4px 0}.q-body strong{font-weight:750}.answer-choice{display:flex;align-items:flex-start;gap:7px;width:100%;margin:4px 0;padding:6px 9px;border:1px solid #e5e9f0;border-radius:8px;background:#fff;color:#293347;font:inherit;font-size:12px;line-height:1.5;text-align:left;cursor:pointer;transition:border-color .12s,background .12s}.answer-choice::before{content:"";flex:none;width:15px;height:15px;margin-top:1px;border:2px solid #b7c0cf;border-radius:50%;background:#fff}.answer-choice:hover{border-color:#aebcf7;background:#f7f9ff}.answer-choice.correct-choice{border-color:#26845f;background:#f0faf5}.answer-choice.correct-choice::before{border-color:#26845f;background:radial-gradient(circle,#26845f 0 4px,#fff 5px)}.answer-choice.wrong-choice{border-color:#cf473d;background:#fdf3f2}.answer-choice.wrong-choice::before{border-color:#cf473d;background:radial-gradient(circle,#cf473d 0 4px,#fff 5px)}.answer-choice.show-correct{border-color:#26845f;background:#f0faf5}.answer-choice.show-correct::before{border-color:#26845f;background:radial-gradient(circle,#26845f 0 4px,#fff 5px)}.answer-status{display:none;margin-top:8px;padding-top:7px;border-top:1px dashed #d9dee7;color:#343a46;font-size:10px;font-weight:700}.question-card.answered .answer-status{display:block}.answer-explanation{display:none;margin-top:7px;padding:7px 9px;background:#f6f7f9;border-radius:6px;color:#4e5869;font-size:10px;line-height:1.5}.question-card.answered .answer-explanation{display:block}.q-body u{ text-decoration-color:#4aaf81;text-decoration-thickness:2px;text-underline-offset:2px;color:#1c7653}.q-body .correct{background:#f0faf5;border-radius:3px;padding:1px 3px}.empty{padding:32px;text-align:center;color:var(--muted);font-size:13px}
+    .pdf-badge{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:6px;font-size:9px;font-weight:800;vertical-align:middle;white-space:nowrap}.pdf-badge.yes{background:#e6f6ee;color:#1c7653;border:1px solid #b9ddcb}.pdf-badge.near{background:#fff6e0;color:#8a6412;border:1px solid #e6d3a3}.pdf-badge.no{background:#fdeceb;color:#a93229;border:1px solid #f0c4c0}.pdf-badge.quiz{background:#eef0ff;color:#2948c5;border:1px solid #c9d2fb}.question-card.pdf-card{border-left:3px solid #3659d9}.question-card.main-card{border-left:3px solid #26845f;background:#fdfefd}
+    .knowledge-panel{display:none;min-width:0;padding:9px 10px;border:1px solid #dfe6f5;border-left:3px solid #3659d9;border-radius:9px;background:#f7f9ff}
+    .question-card.answered .knowledge-panel{display:block}
+    .knowledge-panel h4{margin:0 0 7px;font-size:10.5px;font-weight:800;color:#2948c5;line-height:1.4}
+    .knowledge-panel ul{margin:0;padding-left:15px;max-height:420px;overflow:auto}
+    .knowledge-panel li{font-size:10px;line-height:1.5;color:#39435a;margin:3px 0}
+    .knowledge-panel .kp-foot{display:flex;flex-direction:column;align-items:stretch;gap:6px;margin-top:8px;padding-top:7px;border-top:1px dashed #d3dcf2}
+    .knowledge-panel .kp-hist{font-size:9px;font-weight:800;color:#8a6412;background:#fff6e0;border:1px solid #e6d3a3;border-radius:6px;padding:2px 6px;text-align:center}
+    .knowledge-panel .kp-none{font-size:10px;color:var(--muted);font-style:italic;margin:0}
+    .knowledge-panel .slide-link{max-width:100%;font-size:10px}
+    .knowledge-panel .kp-sub{margin:0 0 7px;font-size:9.5px;color:#5c6880;line-height:1.4}
+    .kp-qa{list-style:none;margin:0;padding:0;max-height:430px;overflow:auto}
+    .kp-qa li{padding:6px 0;border-top:1px dashed #dde4f2}
+    .kp-qa li:first-child{border-top:0;padding-top:0}
+    .kp-qa .kp-q{display:block;font-size:10px;font-weight:700;color:#2b3550;line-height:1.45}
+    .kp-qa .kp-a{display:block;margin-top:3px;font-size:10px;color:#1c7653;line-height:1.45}
+    .kp-qa .kp-a::before{content:"✓ ";font-weight:800}
+    .kp-qa .kp-num{display:inline-block;min-width:15px;color:#8791a2;font-weight:800}
+    .question-note{min-width:0;min-height:100px;padding:9px;border:1px solid #e5e8ee;border-radius:8px;background:#fafbfc;cursor:text;display:flex;flex-direction:column}.note-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.note-label{font-size:10px;font-weight:750;color:#667184}.note-saved{font-size:9px;color:#7d8796}.note-input{display:block;flex:1;width:100%;min-height:70px;max-height:180px;resize:vertical;border:0;border-radius:5px;padding:8px;background:#fff;color:#293347;font:11px/1.5 inherit;outline:none}.note-input:focus{box-shadow:0 0 0 2px #3659d91a}.note-input::placeholder{color:#9aa3b1}
+    .slide-panel{display:flex;flex-direction:column}.slide-head{height:54px;display:flex;align-items:center;gap:12px;padding:0 14px;border-bottom:1px solid var(--line);flex:none}.slide-info{min-width:0;flex:1}.slide-info h2{font-size:13px;margin:0;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.slide-info p{font-size:10px;margin:3px 0 0;color:var(--muted)}.page-control{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted)}.page-control input{width:55px;height:29px;border:1px solid var(--line);border-radius:7px;padding:0 7px;font-size:12px;text-align:center;color:var(--ink)}.page-control button,.open-file{height:29px;border:1px solid var(--line);background:#fff;border-radius:7px;padding:0 9px;color:#465168;font-size:10px;cursor:pointer}.page-control button:hover,.open-file:hover{background:#f5f7fb}.pdf-wrap{position:relative;flex:1;min-height:0;background:#697386;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:14px}.slide-stage{position:relative;display:inline-block;max-width:100%;height:max-content;line-height:0}.slide-image{display:none;max-width:100%;height:auto;background:#fff;box-shadow:0 3px 18px #15223a45}.pdf-wrap.loaded .slide-image{display:block}.proof-overlay{position:absolute;inset:0;width:100%;height:100%;overflow:visible;opacity:0;pointer-events:none;transition:opacity .18s}.pdf-wrap.loaded .proof-overlay.has-proof{opacity:1}.proof-box{fill:#ff51451c;stroke:#ef4037;stroke-width:3;stroke-dasharray:8 5;vector-effect:non-scaling-stroke}.welcome{position:absolute;inset:0;display:grid;place-items:center;color:#fff;text-align:center;padding:24px;pointer-events:none}.welcome div{max-width:430px;background:#192337c9;border:1px solid #ffffff32;border-radius:15px;padding:22px 26px;backdrop-filter:blur(5px)}.welcome b{font-size:15px}.welcome p{font-size:12px;line-height:1.6;color:#e2e7ef;margin:8px 0 0}.pdf-wrap.loaded .welcome{display:none}.statusbar{height:27px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;background:#fafbfc;border-top:1px solid var(--line);font-size:9px;color:var(--muted);flex:none}.legend{display:flex;gap:12px}.legend span{display:flex;align-items:center;gap:5px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}.dot.tentative{background:var(--red)}
+    @media(max-width:900px){.app{padding:8px;gap:8px;grid-template-rows:auto minmax(0,1fr)}.topbar{flex-wrap:wrap;gap:8px;padding:10px}.brand{min-width:190px}.filters{order:3;width:100%;overflow:auto}.workspace{grid-template-columns:minmax(300px,43%) minmax(0,57%);gap:8px}.count{margin-left:0}.panel-toggle{right:-11px}}
+    @media(max-width:1100px){.q-content{grid-template-columns:minmax(0,1fr) minmax(190px,36%);gap:8px}.question-note{min-height:90px}}
+    @media(max-width:700px){html,body{height:auto;min-height:100%;overflow:auto}.app{height:auto;min-height:100dvh;grid-template-rows:auto auto}.workspace{grid-template-columns:1fr}.panel{min-height:55vh}.q-content{grid-template-columns:1fr}.question-note{min-height:105px}.note-input{min-height:70px}.knowledge-panel ul{max-height:none}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><h1>Ôn tập Kiểm thử phần mềm · K24</h1><p><b>210 câu: 80 câu đề PDF → 130 câu OnTap</b> · trả lời xong hiện kiến thức slide</p></div>
+      <label class="search-wrap"><span>⌕</span><input id="search" class="search" type="search" placeholder="Tìm câu hỏi, từ khóa…" autocomplete="off" aria-label="Tìm câu hỏi"></label>
+      <nav class="filters" aria-label="Lọc theo nhóm câu hỏi"><button class="filter active" data-chapter="all">Tất cả (210)</button><button class="filter" data-chapter="1">C1</button><button class="filter" data-chapter="2">C2</button><button class="filter" data-chapter="3">C3</button><button class="filter" data-chapter="4">C4</button><button class="filter" data-chapter="5">C5</button><button class="filter" data-chapter="6">C6</button><button class="filter" data-chapter="main">OnTap (130)</button><button class="filter" data-chapter="pdf">Đề PDF (80)</button><button class="filter" data-chapter="quiz">QUIZ C1–C6 (90)</button></nav>
+      <div class="count"><b id="visibleCount">0</b> <span id="countUnit">câu</span></div>
+      <div class="score" id="scoreBox"><b id="scoreText">0/0</b><span id="scorePct">0%</span><span class="wrong" id="scoreWrong">Sai 0</span><button id="scoreReset" type="button" title="Xoá điểm, làm lại từ đầu">↺</button></div>
+      <button class="redo" id="redoWrong" type="button" title="Chỉ hiện lại những câu đã làm sai">↻ Làm lại câu sai (<span id="wrongCount">0</span>)</button>
+    </header>
+    <section class="workspace" id="workspace">
+      <button class="panel-toggle" id="panelToggle" type="button" aria-expanded="true" aria-controls="slidePanel" title="Ẩn slide, mở rộng danh sách câu hỏi">›</button>
+      <section class="panel questions-panel" aria-label="Ngân hàng câu hỏi">
+        <div class="panel-head"><span class="panel-title">Câu hỏi</span><span class="head-note">Ghi chú nằm cạnh câu · bấm câu để gạch đen đáp án đúng</span></div>
+        <div id="list" class="list"><div class="empty">Đang nạp 210 câu hỏi…</div></div>
+      </section>
+      <section class="panel slide-panel" id="slidePanel" aria-label="Slide bài giảng">
+        <div class="slide-head">
+          <div class="slide-info"><h2 id="slideTitle">Slide bài giảng</h2><p id="slideSubtitle">Chọn nhãn chương/trang ở bên trái để bắt đầu</p></div>
+          <label class="page-control">Trang <input id="pageInput" type="number" min="1" value="1" aria-label="Số trang"><button id="goPage">Đi tới</button></label>
+          <button class="open-file" id="openFile" title="Mở PDF ở thẻ mới">↗ PDF</button>
+        </div>
+        <div id="pdfWrap" class="pdf-wrap">
+          <div class="slide-stage"><img id="slideImage" class="slide-image" alt="Trang slide trong bài giảng"><svg id="proofOverlay" class="proof-overlay" aria-hidden="true"></svg></div>
+          <div class="welcome"><div><b>Slide sẽ hiện ở đây</b><p>Chọn câu hỏi bên trái. Nút ở mỗi câu mở trang nội dung tương ứng trong bài giảng. Một số câu có thể không nằm trong các slide C1–C6.</p></div></div>
+        </div>
+        <div class="statusbar"><span id="pdfName">Chưa chọn slide</span><div class="legend"><span><i class="dot" style="background:var(--red)"></i>Khung đỏ nét đứt: nội dung đối chiếu</span><span><i class="dot" style="background:#9aa3b2"></i>Không có slide phù hợp</span></div></div>
+      </section>
+    </section>
+  </main>
+  <script>
+  const FILES={
+    "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf":"Chương 1 · Tổng quan về kiểm thử phần mềm",
+    "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf":"Chương 2 · Kiểm thử trong vòng đời phát triển phần mềm",
+    "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf":"Chương 3 · Quản lý và tài liệu kiểm thử phần mềm",
+    "BaiGiang_C4A_Kiem thu tinh.pdf":"Chương 4 · Kiểm thử tĩnh",
+    "BaiGiang_C4B_Ky thuat kiem thu dong.pdf":"Chương 4 · Kỹ thuật kiểm thử động",
+    "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf":"Chương 5 · Kiểm thử tự động",
+    "BaiGiang_C6_Selenium.pdf":"Chương 6 · Selenium"
+  };
+  let allQuestions=[],pdfQuestions=[],activeChapter='all',activeQuestion=null;
+  let order=[],quizMap={},knowledge={},extraQuestions={};
+  let quizScore={right:0,wrong:0},answeredIds=new Set(),wrongIds=new Set(),redoOnly=false;
+  const $=s=>document.querySelector(s);
+  const list=$('#list'),slideImage=$('#slideImage'),wrap=$('#pdfWrap'),proofOverlay=$('#proofOverlay');
+  const NOTES_KEY='quizQuestionNotesV1';
+  let questionNotes={};
+  try{questionNotes=JSON.parse(localStorage.getItem(NOTES_KEY)||'{}')||{}}catch{questionNotes={}}
+  let activeTarget=null;
+  const chapterName=n=>n>=1&&n<=6?`C${n}`:(n==='C4A'||n==='C4B'?n:`C${n}`);
+  function dataset(){
+    const byId={};pdfQuestions.concat(allQuestions).forEach(q=>{byId[q.id]=q});
+    const seen=new Set(),out=[];
+    (order.length?order:pdfQuestions.map(q=>q.id).concat(allQuestions.filter(q=>q.kind==='main').map(q=>q.id)))
+      .forEach(id=>{if(byId[id]&&!seen.has(id)){seen.add(id);out.push(byId[id])}});
+    return out;
+  }
+  function findQ(id){return pdfQuestions.concat(allQuestions).find(x=>x.id===id)}
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+  function quizBadge(q){
+    const m=quizMap[q.id];
+    if(!m)return '';
+    const ch=m.chapter==='C4A'?'C4A':m.chapter==='C4B'?'C4B':m.chapter;
+    return `<span class="pdf-badge quiz" title="Câu này là câu QUIZ trong bài giảng ${ch} (câu ${m.number}) · độ khớp ${Math.round(m.score*100)}%">QUIZ ${ch}.${m.number}</span>`;
+  }
+  function knowledgePanel(q){
+    const k=knowledge[q.id];
+    const extra=extraQuestions[q.id]||[];
+    const hist=quizMap[q.id]?`<span class="kp-hist">Đã ra trong QUIZ ${quizMap[q.id].chapter}</span>`:'';
+    const slideBtn=q.page?`<button type="button" class="slide-link verified" data-file="${escapeHtml(q.file||'')}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}"><span class="ref-main">Xem slide ${chapterName(q.chapter)} · tr. ${q.page} ↗</span></button>`:'';
+    const foot=`<div class="kp-foot">${slideBtn}${hist}</div>`;
+
+    if(!extra.length){
+      const why=(!k||!k.paras||!k.paras.length)
+        ? 'Câu này không có slide tương ứng trong bài giảng C0–C6.'
+        : 'Slide này không còn kiến thức nào khác chưa được hỏi.';
+      return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng</h4><p class="kp-none">${why}</p>${foot}</div>`;
+    }
+
+    const slideItems = extra.filter(x => x.tag === 'Cùng slide');
+    const ontapItems = extra.filter(x => x.tag === 'OnTap C131+');
+    const items = extra.map((x, i) => {
+      const badge = x.badge ? `<span class="pdf-badge ${x.badgeClass || (x.tag === 'Cùng slide' ? 'yes' : 'quiz')}">${escapeHtml(x.badge)}</span> ` : '';
+      return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span><span class="kp-a">${escapeHtml(x.a)}</span></li>`;
+    }).join('');
+    const title = k && k.title ? escapeHtml(k.title) : 'Slide bài giảng';
+    const subParts = [];
+    if (slideItems.length) subParts.push(`📌 ${slideItems.length} kiến thức trên cùng slide (chưa hỏi trong đề)`);
+    if (ontapItems.length) subParts.push(`🎯 ${ontapItems.length} câu hỏi cùng ngữ cảnh từ OnTap C131+`);
+    const subText = subParts.join(' • ') + ' (kèm đáp án):';
+    return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng · ${title}</h4><p class="kp-sub">${subText}</p><ul class="kp-qa">${items}</ul>${foot}</div>`;
+  }
+  const PDF_BADGE={C:['yes','Có trong ngân hàng'],G:['near','Gần giống'],K:['no','Không có']};
+  function pdfBadge(q){
+    if(q.kind!=='pdf')return '';
+    const b=PDF_BADGE[q.verdict]||PDF_BADGE.K;
+    const title=q.webNumber?`Trùng/gần với Câu ${q.webNumber} trong ngân hàng`:'Không tìm thấy câu tương ứng trong ngân hàng';
+    return `<span class="pdf-badge ${b[0]}" title="${escapeHtml(title)}">${b[1]}</span>`;
+  }
+  function renderQuestion(q){
+    const body=q.raw.split(/\n/).map(line=>{
+      const m=line.match(/^\s*([A-E])\.\s*(.*)$/);
+      if(m)return `<button type="button" class="answer-choice" data-option="${m[1]}"><b>${m[1]}.</b> ${escapeHtml(m[2])}</button>`;
+      return `<p>${escapeHtml(line)||'&nbsp;'}</p>`;
+    }).join('');
+    const images=(q.images||[]).map((src,i)=>`<img src="${escapeHtml(src)}" alt="Hình minh họa câu ${q.number} (${i+1})" loading="lazy">`).join('');
+    const supplement=(q.supplementHtml||'').replace(/<p class="answer-choice[^"]*" data-option="([A-D])">([\s\S]*?)<\/p>/gi,(_,opt,inner)=>`<button type="button" class="answer-choice" data-option="${opt}">${inner}</button>`);
+    const explanation=q.explanation?`<div class="answer-explanation">${escapeHtml(q.explanation).replace(/\n/g,'<br>')}</div>`:'';
+    const note=questionNotes[q.id]||'';
+    const ch=chapterName(q.chapter), file=escapeHtml(q.file||'');
+    const label=q.page?`${ch} · tr. ${q.page}`:'Không có slide';
+    const pageClass=q.matchType==='Khớp chủ đề câu hỏi'?'reference':'verified';
+    const basisText=q.matchType==='Khớp chủ đề câu hỏi'?`Gợi ý từ khóa · ${q.basis}`:`Đối chiếu nội dung · ${q.basis}`;
+    const pageControl=q.page?`<button class="slide-link ${pageClass}" data-file="${file}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}" title="${escapeHtml(basisText)}"><span class="ref-main">${label}</span><small class="basis">Khoanh vùng minh chứng · ${escapeHtml(basisText)}</small></button>`:`<span class="slide-link unavailable" aria-disabled="true" title="${escapeHtml(q.basis||'Không có slide')}"><span class="ref-main">Không có slide</span><small class="basis">${escapeHtml(q.basis||'Không thuộc slide bài giảng C1–C6')}</small></span>`;
+    const supplemental=images+supplement;
+    const cardClass=q.kind==='pdf'?'question-card pdf-card':(q.kind==='main'?'question-card main-card':'question-card');
+    const labelText=q.kind==='pdf'?`PDF · Câu ${q.number}`:(q.kind==='standalone'?'Câu minh họa':`${q.section==='Ngân hàng tổng hợp'?'Tổng hợp · ':''}Câu ${q.number}`);
+    return `<article class="${cardClass} quiz-mode" aria-label="Bấm chọn một đáp án để kiểm tra câu ${q.number}" data-id="${escapeHtml(q.id)}" data-search="${escapeHtml(q.raw.toLocaleLowerCase('vi'))}">
+      <div class="q-top"><span class="q-label">${escapeHtml(labelText)}${pdfBadge(q)}${quizBadge(q)}</span>${pageControl}</div>
+      <div class="q-content"><div class="q-body">${body}${supplemental}</div>
+      <div class="q-side"><section class="question-note" aria-label="Ghi chú câu ${q.number}"><div class="note-head"><label class="note-label" for="note-${escapeHtml(q.id)}">Ghi chú của bạn</label><span class="note-saved" aria-live="polite">${note?'Đã lưu':'Tự lưu'}</span></div><textarea id="note-${escapeHtml(q.id)}" class="note-input" data-note-id="${escapeHtml(q.id)}" placeholder="Ghi lại nội dung cần nhớ…">${escapeHtml(note)}</textarea></section>${knowledgePanel(q)}</div></div>
+      <div class="answer-status"></div>${explanation}</article>`
+  }
+  function selectAnswer(card,option){
+    if(!card)return;
+    const q=findQ(card.dataset.id);
+    if(!q)return;
+    if(!q.answer){
+      card.classList.add('answered');
+      const status=card.querySelector('.answer-status');
+      if(status)status.textContent='Câu này chưa có đáp án trong ngân hàng — chỉ đối chiếu nội dung.';
+      return;
+    }
+    const first=!answeredIds.has(q.id);
+    card.querySelectorAll('.answer-choice').forEach(o=>{
+      o.classList.remove('correct-choice','wrong-choice','show-correct');
+      if(o.dataset.option===q.answer)o.classList.add('show-correct');
+    });
+    const picked=card.querySelector(`.answer-choice[data-option="${CSS.escape(option)}"]`);
+    if(!picked)return;
+    const correct=option===q.answer;
+    picked.classList.remove('show-correct');
+    picked.classList.add(correct?'correct-choice':'wrong-choice');
+    card.classList.add('answered');
+    // lần đầu tính điểm; khi "làm lại câu sai" chỉ cập nhật danh sách sai để câu đúng được gỡ ra
+    if(first){
+      answeredIds.add(q.id);
+      if(correct){quizScore.right++;wrongIds.delete(q.id);}
+      else{quizScore.wrong++;wrongIds.add(q.id);}
+      updateScore();
+    }else if(redoOnly){
+      if(correct){
+        wrongIds.delete(q.id);
+        updateScore();
+        card.remove();
+        $('#visibleCount').textContent=document.querySelectorAll('.question-card').length;
+        if(!wrongIds.size){redoOnly=false;$('#redoWrong').classList.remove('on');applyFilters();}
+        return;
+      }
+      wrongIds.add(q.id);
+      updateScore();
+    }
+    const status=card.querySelector('.answer-status');
+    if(status)status.textContent=correct?`✓ Chính xác — Đáp án đúng: ${q.answer}`:`✗ Chưa đúng — Đáp án đúng: ${q.answer}`;
+  }
+  function updateScore(){
+    const total=dataset().length;
+    const pct=total?Math.round(quizScore.right*100/total):0;
+    $('#scoreText').textContent=`${quizScore.right}/${total}`;
+    $('#scorePct').textContent=`${pct}%`;
+    $('#scoreWrong').textContent=`Sai ${wrongIds.size}`;
+    $('#wrongCount').textContent=wrongIds.size;
+    $('#redoWrong').disabled=wrongIds.size===0;
+  }
+  function applyFilters(){
+    const term=$('#search').value.trim().toLocaleLowerCase('vi');
+    const source=dataset();
+    let qs=source.filter(q=>{
+      if(activeChapter==='pdf'){if(q.kind!=='pdf')return false}
+      else if(activeChapter==='quiz'){if(!quizMap[q.id])return false}
+      else if(activeChapter==='main'){if(q.kind!=='main')return false}
+      else if(activeChapter!=='all'){if(q.kind!=='main'&&q.kind!=='supplemental')return false;if(String(q.chapter)!==activeChapter)return false}
+      return !term||q.raw.toLocaleLowerCase('vi').includes(term);
+    });
+    if(redoOnly)qs=qs.filter(q=>wrongIds.has(q.id));
+    $('#visibleCount').textContent=qs.length;
+    $('#countUnit').textContent=redoOnly?'câu sai':'câu';
+    list.innerHTML=qs.map(renderQuestion).join('')||'<div class="empty">Không tìm thấy câu phù hợp.</div>';
+    updateScore();
+  }
+  function openSlide(file,page,title,qid){
+    const path=encodeURIComponent(file.replace(/\.pdf$/,''));
+    const q=findQ(qid);
+    activeTarget=q&&Number(q.page)===Number(page)?q.target:null;
+    slideImage.src=`slides/${path}/${String(page).padStart(3,'0')}.jpg`;
+    requestAnimationFrame(drawProof);
+    wrap.classList.add('loaded');
+    $('#slideTitle').textContent=title;
+    $('#slideSubtitle').textContent=`Trang ${page} · ${qid==='standalone'?'Câu minh họa':`Câu ${qid}`}`;
+    $('#pageInput').value=page;
+    $('#pdfName').textContent=file;
+    activeQuestion=qid;
+    document.querySelectorAll('.question-card').forEach(c=>c.classList.toggle('selected',c.dataset.id===qid));
+  }
+  function drawProof(){
+    const t=activeTarget,w=slideImage.naturalWidth,h=slideImage.naturalHeight;
+    if(!t||!w||!h){proofOverlay.classList.remove('has-proof');proofOverlay.innerHTML='';return;}
+    const x=t.x*w,y=t.y*h,bw=t.w*w,bh=t.h*h;
+    proofOverlay.setAttribute('viewBox',`0 0 ${w} ${h}`);
+    proofOverlay.innerHTML=`<rect class="proof-box" x="${x}" y="${y}" width="${bw}" height="${bh}" rx="4"/>`;
+    proofOverlay.classList.add('has-proof');
+  }
+  slideImage.addEventListener('load',drawProof);
+  async function start(){
+    try{
+      const r=await fetch('questions.json'); if(!r.ok)throw new Error('index'); allQuestions=await r.json();
+      try{const p=await fetch('pdf-questions.json'); if(p.ok)pdfQuestions=await p.json();}catch{}
+      try{const o=await fetch('order.json'); if(o.ok)order=await o.json();}catch{}
+      try{const qm=await fetch('quiz-map.json'); if(qm.ok)quizMap=await qm.json();}catch{}
+      try{const kb=await fetch('knowledge.json'); if(kb.ok)knowledge=await kb.json();}catch{}
+      try{const ex=await fetch('extra-questions.json'); if(ex.ok)extraQuestions=await ex.json();}catch{}
+      updateScore();
+      applyFilters();
+    }catch(e){list.innerHTML='<div class="empty">Không đọc được danh sách câu. Mở trang qua tệp web/index.html trong thư mục web.</div>'}
+  }
+  $('#search').addEventListener('input',applyFilters);
+  $('#redoWrong').addEventListener('click',()=>{
+    if(!wrongIds.size)return;
+    redoOnly=!redoOnly;
+    $('#redoWrong').classList.toggle('on',redoOnly);
+    applyFilters();
+  });
+  $('#scoreReset').addEventListener('click',()=>{
+    quizScore={right:0,wrong:0};answeredIds.clear();wrongIds.clear();
+    redoOnly=false;$('#redoWrong').classList.remove('on');
+    updateScore();applyFilters();
+  });
+  const workspace=$('#workspace'),panelToggle=$('#panelToggle');
+  panelToggle.addEventListener('click',()=>{
+    const collapsed=workspace.classList.toggle('collapsed');
+    panelToggle.textContent=collapsed?'‹':'›';
+    panelToggle.setAttribute('aria-expanded',String(!collapsed));
+    panelToggle.title=collapsed?'Hiện lại slide':'Ẩn slide, mở rộng danh sách câu hỏi';
+  });
+  document.querySelectorAll('.filter[data-chapter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter[data-chapter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeChapter=b.dataset.chapter;applyFilters()}));
+  list.addEventListener('click',e=>{if(e.target.closest('.question-note'))return;const b=e.target.closest('.slide-link');if(b){if(b.dataset.file)openSlide(b.dataset.file,Number(b.dataset.page),b.dataset.title,b.dataset.question);return;}const opt=e.target.closest('.answer-choice');if(opt)selectAnswer(e.target.closest('.question-card'),opt.dataset.option);});
+  list.addEventListener('input',e=>{const field=e.target.closest('.note-input');if(!field)return;questionNotes[field.dataset.noteId]=field.value;const label=field.closest('.question-note').querySelector('.note-saved');label.textContent='Đang lưu…';try{localStorage.setItem(NOTES_KEY,JSON.stringify(questionNotes));label.textContent='Đã lưu'}catch{label.textContent='Chưa lưu được'}});
+  $('#goPage').addEventListener('click',()=>{if(!activeQuestion)return;const n=Math.max(1,Number($('#pageInput').value)||1);const q=findQ(activeQuestion);if(!q||!q.file)return;activeTarget=Number(q.page)===n?q.target:null;const path=encodeURIComponent(q.file.replace(/\.pdf$/,''));slideImage.src=`slides/${path}/${String(n).padStart(3,'0')}.jpg`;$('#pageInput').value=n;$('#slideSubtitle').textContent=`Trang ${n}`;requestAnimationFrame(drawProof);});
+  $('#pageInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('#goPage').click()});
+  $('#openFile').addEventListener('click',()=>{const q=findQ(activeQuestion);if(q&&q.file)window.open(`${encodeURI(q.file)}#page=${$('#pageInput').value}&view=FitH`,'_blank','noopener')});
+  start();
+  </script>
+</body>
+</html>
+

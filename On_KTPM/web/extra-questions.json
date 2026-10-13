@@ -1,0 +1,3821 @@
+{
+  "pdf-C1-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.1 MỤC TIÊU Mục tiêu của kiểm thử (Test'?",
+      "a": "1. Ngăn ngừa khiếm khuyết",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Tìm khiếm khuyết & thất bại' trên slide bài giảng là gì?",
+      "a": "Phát hiện defect / failure càng sớm càng tốt để giảm rủi ro.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nguyên nhân nào sau đây có thể là nguyên nhân gốc rễ của lỗi trong một sản phẩm phần mềm? (I) Dự án có quy trình quản lý cấu hình chưa hoàn chỉnh. (II) Tiến độ thời gian phát triển một thành phần nhất định đã bị rút ngắn. (III) thông số kỹ thuật không rõ ràng (IV) Việc sử dụng tiêu chuẩn mã không được theo dõi (V) Những người thử nghiệm không được chứng nhận",
+      "a": "(I) đến (IV) đều đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 388",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 388"
+    }
+  ],
+  "pdf-C1-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Phát hiện thất bại (failure)' trên slide bài giảng là gì?",
+      "a": "do khiếm khuyết gây ra",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ai làm gì? Kiểm thử thường do tester thực hiện; gỡ lỗi do lập trình viên (developer) thực hiện. Trong Agile/DevOps, ranh giới này mờ đi' trên slide bài giảng là gì?",
+      "a": "tester có thể tham gia gỡ lỗi, developer viết và chạy unit test.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Việc lựa chọn phương pháp kiểm thử cần xem xét bối cảnh: i. Rủi ro thất bại của dự án, các mối nguy hiểm đối với sản phẩm và rủi ro sản phẩm gây hại cho con người. ii. Kỹ năng và kinh nghiệm của những người tham gia vào kỹ thuật, công cụ và phương pháp được đề xuất. iii. Mục tiêu của hoạt động kiểm thử và nhiệm vụ của nhóm kiểm thử. iv. Quy mô của nhóm kiểm thử.",
+      "a": "i, ii, iii đúng và iv sai.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 272",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 272"
+    }
+  ],
+  "pdf-C1-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect '?",
+      "a": "trong quá trình phát triển:",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Không phải mọi khiếm khuyết đều gây thất bại' trên slide bài giảng là gì?",
+      "a": "có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Một đánh giá chính thức về sản phẩm công việc được thực hiện bởi một hoặc nhiều người đánh giá độc lập có trình độ chuyên môn để phát hiện các khiếm khuyết.",
+      "a": "Kiểm tra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 141",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 141"
+    }
+  ],
+  "pdf-C1-4": [
+    {
+      "q": "Nội dung cốt lõi của 'Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error' trên slide bài giảng là gì?",
+      "a": "ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'DEFECT / BUG (Khiếm khuyết)' trên slide bài giảng là gì?",
+      "a": "Lỗi tồn tại trong sản phẩm:",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Trong sự kiện này, toàn bộ hệ thống được kiểm tra để xác minh rằng tất cả các yêu cầu về thông tin chức năng, cấu trúc và chất lượng đã được đáp ứng. Một tổ hợp các bài kiểm tra đã được xác định trước được thiết kế sao cho khi được thực hiện thành công sẽ thuyết phục ban quản lý rằng hệ thống đáp ứng các thông số kỹ thuật.",
+      "a": "User Acceptance Testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 146",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 146"
+    }
+  ],
+  "pdf-C1-5": [
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử chỉ chứng minh sự hiện diện của lỗi' trên slide bài giảng là gì?",
+      "a": "Testing shows the presence, not the absence of defects.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.5 PRINCIPLES Bảy nguyên tắc kiểm thử'?",
+      "a": "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong chương trình học cơ bản, bạn sẽ tìm thấy các nguyên tắc cơ bản chính của việc kiểm tra. Câu nào sau đây mô tả một trong những nguyên tắc cơ bản đó?",
+      "a": "Đối với một hệ thống phần mềm, trong điều kiện bình thường, không thể kiểm tra tất cả các tổ hợp đầu vào và đầu ra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 374",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 374"
+    }
+  ],
+  "pdf-C1-6": [
+    {
+      "q": "Nội dung cốt lõi của 'Nghịch lý thuốc trừ sâu' trên slide bài giảng là gì?",
+      "a": "Pesticide paradox.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Không thể kiểm thử vét cạn' trên slide bài giảng là gì?",
+      "a": "Exhaustive testing is impossible.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nhiệm vụ nào sau đây là nhiệm vụ của Trưởng nhóm/Người lãnh đạo kiểm thử? i. Phối hợp với nhà cung cấp công cụ kiểm thử để xác định những cách tốt nhất để tận dụng công cụ kiểm thử trong dự án. ii. Viết báo cáo tóm tắt kết quả kiểm thử dựa trên thông tin thu thập được trong quá trình kiểm thử. iii. Quyết định những gì cần được tự động hóa, ở mức độ nào và bằng cách nào. iv. Xây dựng đặc tả kiểm thử",
+      "a": "i, ii, iii đúng và iv sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 276",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 276"
+    }
+  ],
+  "pdf-C1-7": [
+    {
+      "q": "Nội dung cốt lõi của 'BƯỚC 1' trên slide bài giảng là gì?",
+      "a": "Lập kế hoạch — kiểm thử (Test Planning)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.7 QUY TRÌNH Quy trình kiểm thử – 4 bướ'?",
+      "a": "Xác định mục tiêu, phạm vi, nguồn lực, thời gian, công cụ, rủi ro và tiêu chí kết thúc (exit criteria).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Ghép nối các mục sau: 1. Ước lượng thử nghiệm 2. Kiểm tra điều khiển 3. Giám sát thử nghiệm a. Các biện pháp theo dõi quá trình b. Nỗ lực cần thiết để thực hiện các hoạt động c. Phân bổ lại nguồn lực",
+      "a": "1-b, 2-c, 3-a",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 308",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 308"
+    }
+  ],
+  "pdf-C1-8": [
+    {
+      "q": "Nội dung cốt lõi của 'Quy trình này có tính lặp (iterative)' trên slide bài giảng là gì?",
+      "a": "khi lỗi được sửa hoặc yêu cầu thay đổi, ta quay lại bước thiết kế / thực thi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'BƯỚC 2' trên slide bài giảng là gì?",
+      "a": "Phân tích & thiết kế kiểm thử (Analysis & Design) — Đọc hiểu yêu cầu, xác định điều kiện",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Hoạt động nào sau đây là một phần của Hoạt động Kết thúc Bài kiểm tra? i. Kiểm tra xem những hạng mục công việc đã được lên kế hoạch nào đã được hoàn thành ii. Phân tích báo cáo lỗi. iii. Hoàn thiện và lưu trữ phần mềm kiểm thử. iv. Phân tích bài học.",
+      "a": "i, iii, iv đúng và ii sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 296",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 296"
+    }
+  ],
+  "pdf-C1-9": [
+    {
+      "q": "Nội dung cốt lõi của 'Tư duy khẳng định' trên slide bài giảng là gì?",
+      "a": "\"chức năng của tôi chạy được\"",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Thiên kiến xác nhận (confirmation bias)' trên slide bài giảng là gì?",
+      "a": "khó tự thấy lỗi của chính mình",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Ghép nối các mục sau. 1. Nhận dạng cấu hình 2. Kiểm soát cấu hình 3. Báo cáo tình trạng 4. Kiểm tra cấu hình a. Duy trì các CI trong thư viện b. Kiểm tra nội dung thư viện c. Các vấn đề về ghi và theo dõi chức năng. d. Yêu cầu phải biết tất cả các CI và phiên bản của chúng trong hệ thống.",
+      "a": "1-d, 2-a, 3-c, 4-b.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 311",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 311"
+    }
+  ],
+  "pdf-C1-10": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.4 SỰ CẦN THIẾT Vì sao phải kiểm thử ph'?",
+      "a": "Con người viết phần mềm ⇒ con người mắc sai sót. Hệ thống càng lớn, xác suất lỗi càng cao.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Tăng độ tin cậy' trên slide bài giảng là gì?",
+      "a": "Sản phẩm ổn định hơn, ít sự cố khi vận hành thực tế.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Thực hiện kiểm thử đầy đủ để đánh giá mọi đường dẫn và điều kiện có thể xảy ra trong hệ thống ứng dụng. Phương pháp kiểm thử duy nhất đảm bảo hoạt động đúng đắn của hệ thống ứng dụng được gọi là _____________",
+      "a": "Basic Path Testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 139",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 139"
+    }
+  ],
+  "pdf-C1-11": [
+    {
+      "q": "Nội dung cốt lõi của 'FAILURE (Thất bại)' trên slide bài giảng là gì?",
+      "a": "Hành vi sai khi chạy thực tế mà người dùng quan sát được.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Khi những gì người dùng cuối nhìn thấy là sự sai lệch so với hành vi cụ thể hoặc dự kiến, điều này được gọi là:",
+      "a": "A failure",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 228",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 228"
+    },
+    {
+      "q": "Công cụ hỗ trợ truy vết, ghi nhận sự cố hoặc lên lịch kiểm tra được gọi là:",
+      "a": "Công cụ quản lý cấu hình",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 225",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 225"
+    }
+  ],
+  "pdf-C1-12": [
+    {
+      "q": "Một hệ thống đáng tin cậy sẽ là hệ thống:",
+      "a": "Ít có khả năng gây ra sự cố.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 214",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 214"
+    },
+    {
+      "q": "Số thứ tự trong hệ thống kiểm soát kho có thể nằm trong khoảng từ 10000 đến 99999 (bao gồm cả 10000 và 99999). Những đầu vào nào sau đây có thể là kết quả của việc thiết kế các bài kiểm tra chỉ dành cho các lớp tương đương hợp lệ và các ranh giới hợp lệ:",
+      "a": "10000, 50000, 99999",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 227",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 227"
+    },
+    {
+      "q": "Hệ thống ghi nhật ký sự cố",
+      "a": "Là nguồn thông tin dự án có giá trị trong quá trình thử nghiệm nếu nó chứa tất cả các sự cố.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 334",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 334"
+    }
+  ],
+  "pdf-C1-13": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.3 COST OF DEFECTS Chi phí sửa lỗi tăng'?",
+      "a": "Chi phí tương đối để sửa một khiếm khuyết theo giai đoạn phát hiện (mô hình Boehm)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left)' trên slide bài giảng là gì?",
+      "a": "phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Hãy xem xét các phát biểu sau đây về thiết kế bài kiểm tra giai đoạn đầu: i. Thiết kế thử nghiệm sớm có thể ngăn ngừa sự nhân lên lỗi ii. Các lỗi được phát hiện trong giai đoạn thiết kế thử nghiệm ban đầu sẽ tốn kém hơn để khắc phục. iii. Thiết kế thử nghiệm sớm có thể giúp phát hiện lỗi. iv. Việc thiết kế thử nghiệm sớm có thể dẫn đến những thay đổi về yêu cầu. v. Việc thiết kế thử nghiệm ban đầu đòi hỏi nhiều nỗ lực hơn",
+      "a": "i, iii & iv đúng. ii & v sai.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 256",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 256"
+    }
+  ],
+  "pdf-C1-14": [
+    {
+      "q": "Nội dung cốt lõi của 'Thiết kế' trên slide bài giảng là gì?",
+      "a": "×10 — Lập trình",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nguyên nhân nào sau đây có thể dẫn đến thất bại? 1) Kiểm tra lỗi 2) Lỗi phần mềm 3) Lỗi thiết kế 4) Lỗi môi trường 5) Lỗi tài liệu",
+      "a": "Tất cả đều là những lý do chính đáng dẫn đến thất bại.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 196",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 196"
+    },
+    {
+      "q": "Câu nào sau đây là sai?",
+      "a": "Các sự cố có thể được phân tích để hỗ trợ cải tiến quy trình thử nghiệm.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 317",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 317"
+    }
+  ],
+  "pdf-C1-15": [
+    {
+      "q": "Nội dung cốt lõi của 'Phần mềm làm đúng những gì được yêu cầu' trên slide bài giảng là gì?",
+      "a": "đầy đủ, chính xác, phù hợp.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Độ tin cậy (Reliability)' trên slide bài giảng là gì?",
+      "a": "Hoạt động ổn định, chịu lỗi, phục hồi được sau sự cố.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Việc đánh giá khả năng kiểm thử của các yêu cầu và hệ thống là một phần của giai đoạn nào:",
+      "a": "Phân tích và thiết kế thử nghiệm",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 289",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 289"
+    }
+  ],
+  "pdf-C1-16": [
+    {
+      "q": "Cho đoạn mã sau, điều nào sau đây là đúng: IF A > B THEN C = A – B ELSE C = A + B ENDIF Read D IF C = D Then Print \"Error\" ENDIF",
+      "a": "2 bài kiểm tra độ bao phủ câu lệnh, 2 bài kiểm tra độ bao phủ nhánh",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 236",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 236"
+    },
+    {
+      "q": "Phát biểu nào sau đây là đúng?",
+      "a": "Những sai sót trong yêu cầu là những sai sót tốn kém nhất để khắc phục.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 348",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 348"
+    },
+    {
+      "q": "Mục nào sau đây không cần phải được ghi trong báo cáo sự cố?",
+      "a": "Vị trí và hướng dẫn cách khắc phục lỗi",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 396",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 396"
+    }
+  ],
+  "pdf-C1-17": [
+    {
+      "q": "Cần bao nhiêu trường hợp kiểm thử để bao phủ tất cả các chuỗi câu lệnh (đường dẫn) có thể có cho đoạn chương trình sau? Giả sử hai điều kiện này độc lập với nhau: if (Condition 1) then statement 1 else statement 2 fi if (Condition 2) then statement 3 fi",
+      "a": "2 Trường hợp thử nghiệm",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 189",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 189"
+    },
+    {
+      "q": "Một lý do chính khiến các nhà phát triển gặp khó khăn trong việc kiểm thử sản phẩm của chính họ là:",
+      "a": "Thiếu tính khách quan",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 182",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 182"
+    },
+    {
+      "q": "Khi báo cáo lỗi cho nhà phát triển, người kiểm thử nên:",
+      "a": "Tất cả các đáp án trên",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 351",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 351"
+    }
+  ],
+  "pdf-C1-18": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.1 KHÁI NIỆM Kiểm thử phần mềm là gì?'?",
+      "a": "Kiểm thử phần mềm (Software Testing) là quá trình đánh giá (evaluation) và xác minh (verification) rằng một phần mềm đáp ứng các yêu cầu đã được đặc tả và hoạt động đúng như mong đợi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'GÓC NHÌN MỞ RỘNG THEO ISTQB' trên slide bài giảng là gì?",
+      "a": "Không chỉ là \"chạy thử\"",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Yếu tố nào sau đây ít quan trọng nhất trong quản lý kiểm thử?",
+      "a": "Gỡ lỗi.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 323",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 323"
+    }
+  ],
+  "pdf-C1-19": [
+    {
+      "q": "Nội dung cốt lõi của 'Mục tiêu kiểm thử thay đổi theo ngữ cảnh' trên slide bài giảng là gì?",
+      "a": "kiểm thử thành phần chú trọng tìm lỗi sớm; kiểm thử chấp nhận chú trọng xây dựng niềm tin.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Xác minh yêu cầu' trên slide bài giảng là gì?",
+      "a": "Kiểm tra tất cả các yêu cầu đã được cài đặt đầy đủ (verification).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Đặc điểm nào sau đây KHÔNG phải là đặc điểm của Kiểm thử Chấp nhận Người dùng?",
+      "a": "Sử dụng các công cụ thực thi kiểm thử tự động.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 325",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 325"
+    }
+  ],
+  "pdf-C1-20": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.2 TEST CASE Cấu trúc một trường hợp ki'?",
+      "a": "Test Case ID Mã định danh duy nhất, đặt theo quy ước TC_LOGIN_001 Chức năng / Module Chức năng được kiểm thử Đăng nhập",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Kết quả mong đợi (Expected result) Kết quả đúng theo đặc tả' trên slide bài giảng là gì?",
+      "a": "phải xác định trước khi chạy Đăng nhập thành công, chuyển tới Dashboard, hiển thị tên người dùng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Biểu thức nào phù hợp nhất với các đặc điểm hoặc quy trình đánh giá sau đây: 1. Dẫn đầu bởi tác giả 2. Không có giấy tờ chứng minh 3. Không có sự tham gia của ban quản lý 4. Được điều hành bởi người điều phối hoặc người lãnh đạo được đào tạo bài bản. 5. Sử dụng tiêu chí nhập/xuất s) Kiểm tra t) Đánh giá ngang hàng u) Đánh giá không chính thức v) Hướng dẫn chi tiết",
+      "a": "s = 4 và 5, t = 3, u = 2, v = 1",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 229",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 229"
+    }
+  ],
+  "pdf-C2-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Phân tích yêu cầu Rà soát (review) tài liệu yêu cầu' trên slide bài giảng là gì?",
+      "a": "phát hiện mơ hồ, mâu thuẫn, thiếu sót, yêu cầu không kiểm thử được. Test plan sơ bộ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.1 SDLC Hoạt động kiểm thử trong từng g'?",
+      "a": "Thiết kế Xem xét tài liệu thiết kế, kiến trúc, mô hình dữ liệu; thiết kế test case mức hệ thống. Test design",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Hãy ghép mỗi giai đoạn của vòng đời phát triển phần mềm với vòng đời kiểm thử: i. Thiết kế cấp cao a. Kiểm thử đơn vị ii. Mã b ​​Kiểm thử chấp nhận iii. Thiết kế cấp thấp c. Kiểm thử hệ thống iv. Yêu cầu nghiệp vụ d. Kiểm thử tích hợp",
+      "a": "i-c, ii-a, iii-d, iv-b",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 295",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 295"
+    }
+  ],
+  "pdf-C2-2": [
+    {
+      "q": "Nội dung cốt lõi của '• Waterfall' trên slide bài giảng là gì?",
+      "a": "V-Model – Iterative",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của '• Agile' trên slide bài giảng là gì?",
+      "a": "Spiral – DevOps",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Kiểm thử tích hợp có những đặc điểm sau: I. Việc này có thể được thực hiện từng bước một. II. Việc này luôn được thực hiện sau khi kiểm tra hệ thống. III. Nó bao gồm các bài kiểm tra chức năng IV. Nó bao gồm các bài kiểm tra không liên quan đến chức năng",
+      "a": "I, III và IV đều đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 371",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 371"
+    }
+  ],
+  "pdf-C2-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.2.2 VERIFICATION & VALIDATION Mô hình '?",
+      "a": "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Phân tích yêu cầu' trên slide bài giảng là gì?",
+      "a": "Đặc tả hệ thống Thiết kế kiến trúc",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Phương pháp kiểm thử nào được sử dụng để xác minh rằng hệ thống có thể hoạt động bình thường khi các giới hạn nội bộ của chương trình hoặc hệ thống bị vượt quá?",
+      "a": "Stress Testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 159",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 159"
+    }
+  ],
+  "pdf-C2-4": [
+    {
+      "q": "Nội dung cốt lõi của 'Thiết kế chi tiết' trên slide bài giảng là gì?",
+      "a": "kiểm chứng kiểm chứng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'kiểm chứng' trên slide bài giảng là gì?",
+      "a": "kiểm chứng — LẬP TRÌNH (Coding)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "_______ bao gồm cả tính năng kiểm thử hộp đen và kiểm thử hộp trắng.",
+      "a": "Kiểm thử hộp xám",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 168",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 168"
+    }
+  ],
+  "pdf-C2-5": [
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử chấp nhận' trên slide bài giảng là gì?",
+      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Một trong các trường trên biểu mẫu chứa hộp văn bản, chấp nhận chữ cái viết thường hoặc viết hoa. Hãy xác định giá trị lớp tương đương không hợp lệ.",
+      "a": "Lớp",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 261",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 261"
+    },
+    {
+      "q": "Kiểm thử tích hợp trong đó không có kiểm thử gia tăng nào được thực hiện trước khi tất cả các thành phần của hệ thống được kết hợp để tạo thành hệ thống hoàn chỉnh.",
+      "a": "Big bang testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 404",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 404"
+    }
+  ],
+  "pdf-C2-6": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.4 TEST LEVELS Bốn cấp độ kiểm thử theo'?",
+      "a": "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện' trên slide bài giảng là gì?",
+      "a": "không đơn thuần là thứ tự thời gian.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Phát biểu nào sau đây về kiểm thử linh kiện là không đúng?",
+      "a": "Kiểm thử thành phần không bao gồm kiểm thử hồi quy.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 204",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 204"
+    }
+  ],
+  "pdf-C2-7": [
+    {
+      "q": "Kiểm tra lại một chương trình đã được kiểm thử trước đó, sau khi sửa đổi, để phát hiện bất kỳ lỗi nào được đưa vào hoặc phát hiện ra do những thay đổi trong phần mềm đang được kiểm thử hoặc trong một thành phần phần mềm liên quan hoặc không liên quan khác:",
+      "a": "Regression Testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 285",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 285"
+    },
+    {
+      "q": "Một hệ thống quản lý lỗi phải theo dõi trạng thái của mọi lỗi đã được ghi nhận và thực thi các quy tắc về việc thay đổi các trạng thái này. Nếu nhiệm vụ của bạn là kiểm tra việc theo dõi trạng thái, phương pháp nào sẽ là tốt nhất?",
+      "a": "Kiểm tra chuyển đổi trạng thái",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 369",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 369"
+    },
+    {
+      "q": "Thử nghiệm Beta được thực hiện tại địa điểm của tổ chức phát triển, trong khi thử nghiệm Alpha được thực hiện bởi mọi người tại địa điểm của họ.",
+      "a": "Sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 149",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 149"
+    }
+  ],
+  "pdf-C2-8": [
+    {
+      "q": "Một kỹ sư kiểm thử đang kiểm tra một đầu phát video (VCR) và ghi lại báo cáo sau: Tiêu đề: Chức năng tua nhanh dừng lại sau 2 phút. Điều này xảy ra mỗi lần. Kết quả mong đợi: Tua nhanh tiếp tục đến hết băng. Mức độ nghiêm trọng: Cao Mức độ ưu tiên: Khẩn cấp Kỹ sư đã bỏ sót thông tin quan trọng nào?",
+      "a": "Nhận dạng (phần mềm và phần cứng) của đầu ghi video (VCR)",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 392",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 392"
+    },
+    {
+      "q": "Trình tự hoạt động thông thường trong việc kiểm thử phần mềm là gì?",
+      "a": "Unit, integration, system, validation",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 147",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 147"
+    },
+    {
+      "q": "Tóm tắt các hoạt động kiểm thử liên quan đến một hoặc nhiều đặc tả thiết kế kiểm thử.",
+      "a": "Test Incident Report",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 155",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 155"
+    }
+  ],
+  "pdf-C2-9": [
+    {
+      "q": "Quá trình xác thực bao gồm những điều nào sau đây? i. Giúp kiểm tra chất lượng của sản phẩm đã xây dựng ii. Giúp kiểm tra xem chúng ta đã xây dựng đúng sản phẩm hay chưa. iii. Giúp phát triển sản phẩm iv. Giám sát sự lãng phí và lỗi thời của các công cụ.",
+      "a": "ii đúng, còn i, iii, iv sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 264",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 264"
+    },
+    {
+      "q": "Việc quyết định mức độ xét nghiệm nào là đủ cần phải tính đến các yếu tố sau: i. Mức độ rủi ro, bao gồm rủi ro kỹ thuật và rủi ro kinh doanh đối với sản phẩm và dự án ii. Các ràng buộc của dự án như thời gian và ngân sách iii. Quy mô nhóm thử nghiệm iv. Quy mô của nhóm phát triển",
+      "a": "i, ii đúng và iii, iv sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 292",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 292"
+    },
+    {
+      "q": "Lập kế hoạch kiểm thử có những nhiệm vụ chính nào sau đây? i. Xác định phạm vi và rủi ro, và xác định mục tiêu của việc kiểm thử. ii. Xác định phương pháp kiểm thử (kỹ thuật, các hạng mục kiểm thử, độ bao phủ, xác định và phối hợp các nhóm tham gia kiểm thử, phần mềm kiểm thử). iii. Xem xét lại cơ sở kiểm thử (như yêu cầu, kiến ​​trúc, thiết kế, giao diện) iv. Xác định tiêu chí kết thúc.",
+      "a": "i, ii, iv đúng và iii sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 291",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 291"
+    }
+  ],
+  "pdf-C2-10": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.1 GOOD TESTING Đặc điểm của kiểm thử \"'?",
+      "a": "Không có giai đoạn phát triển nào mà không đi kèm hoạt động kiểm chứng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mô hình SDLC ảnh hưởng đến' trên slide bài giảng là gì?",
+      "a": "thời điểm, phạm vi, mức độ tự động hoá và mức độ chính thức của hoạt động kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Chi phí bảo trì chiếm bao nhiêu phần trăm tổng chi phí vòng đời của một phần mềm?",
+      "a": "70%",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 131",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 131"
+    }
+  ],
+  "pdf-C2-11": [
+    {
+      "q": "Trong một hệ thống đặt vé máy bay, số lượng chỗ ngồi còn trống trên mỗi loại máy bay là một đầu vào. Một máy bay có thể có bất kỳ số lượng chỗ ngồi còn trống nào, tối đa bằng sức chứa của máy bay. Sử dụng phân tích giá trị biên (Boundary Value analysis), một danh sách các giá trị chỗ ngồi còn trống đã được tạo ra. Danh sách nào sau đây là đúng?",
+      "a": "0, 1, dung lượng, dung lượng cộng 1",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 377",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 377"
+    },
+    {
+      "q": "Một loạt các câu hỏi thăm dò về tính đầy đủ và các thuộc tính của một hệ thống ứng dụng được gọi là gì?",
+      "a": "Danh sách kiểm tra",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 152",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 152"
+    },
+    {
+      "q": "Lỗi xảy ra khi nhiều người dùng truy cập vào hệ thống. Phát biểu nào sau đây là đúng?",
+      "a": "Điều này cho thấy một yêu cầu phi chức năng quan trọng chưa được xác định và kiểm tra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 319",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 319"
+    }
+  ],
+  "pdf-C2-12": [
+    {
+      "q": "Đặc điểm của kỹ thuật kiểm thử hộp trắng: i. Chúng tôi sử dụng kiến ​​thức rõ ràng về cơ chế hoạt động bên trong của sản phẩm đang được thử nghiệm để lựa chọn dữ liệu thử nghiệm. ii. Sử dụng kiến ​​thức chuyên sâu về mã lập trình để kiểm tra kết quả đầu ra và giả định rằng người kiểm thử biết được đường dẫn logic trong một đơn vị hoặc chương trình. iii. Kiểm tra hiệu năng của ứng dụng iv. Cũng kiểm tra chức năng.",
+      "a": "i, ii đúng, còn iii và iv sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 270",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 270"
+    },
+    {
+      "q": "Danh sách nào sau đây chỉ chứa các bài kiểm tra không liên quan đến chức năng?",
+      "a": "Kiểm thử tải, kiểm thử chịu tải, kiểm thử thành phần và kiểm thử tính khả chuyển.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 382",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 382"
+    },
+    {
+      "q": "Trong kiểm thử hệ thống...",
+      "a": "Cả yêu cầu chức năng và phi chức năng đều phải được kiểm tra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 370",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 370"
+    }
+  ],
+  "pdf-C2-13": [
+    {
+      "q": "Kỹ thuật thiết kế trường hợp kiểm thử cho một thành phần mà trong đó các trường hợp kiểm thử được thiết kế để thực thi các câu lệnh được gọi là gì?",
+      "a": "Statement testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 405",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 405"
+    },
+    {
+      "q": "Việc kiểm thử tích hợp hệ thống nên được thực hiện sau khi",
+      "a": "Unit testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 145",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 145"
+    },
+    {
+      "q": "Một chương trình xác thực một trường số như sau: Các giá trị nhỏ hơn 10 bị loại bỏ, các giá trị nằm giữa 10 và 21 được chấp nhận, các giá trị lớn hơn hoặc bằng 22 bị loại bỏ. Giá trị đầu vào nào sau đây bao phủ tất cả các phân vùng tương đương?",
+      "a": "3,10,22",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 358",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 358"
+    }
+  ],
+  "pdf-C2-14": [
+    {
+      "q": "Điều nào sau đây thường được coi là lỗi giao diện của các thành phần?",
+      "a": "Đối với hai thành phần trao đổi dữ liệu, một thành phần sử dụng đơn vị đo lường hệ mét, thành phần còn lại sử dụng đơn vị đo lường hệ Anh.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 380",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 380"
+    },
+    {
+      "q": "Các trường hợp kiểm thử chấp nhận dựa trên cơ sở nào?",
+      "a": "Yêu cầu",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 192",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 192"
+    },
+    {
+      "q": "Điều nào sau đây KHÔNG phải là một phần của kiểm thử hệ thống:",
+      "a": "Top-down integration testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 232",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 232"
+    }
+  ],
+  "pdf-C2-15": [
+    {
+      "q": "Nội dung cốt lõi của 'Tích hợp thành phần (Component integration)' trên slide bài giảng là gì?",
+      "a": "– Kiểm tra tương tác giữa các module bên trong một hệ thống — – Thường tự động hoá, chạy trong CI",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Tích hợp hệ thống (System integration)' trên slide bài giảng là gì?",
+      "a": "– Kiểm tra tương tác giữa các hệ thống hoặc với dịch vụ ngoài — – Ví dụ: hệ thống bán hàng ⇄ cổng thanh toán VNPay",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Kiểm thử tích hợp quy mô lớn bao gồm:",
+      "a": "Kiểm tra hệ thống khi kết hợp với các hệ thống khác.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 312",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 312"
+    }
+  ],
+  "pdf-C2-16": [
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết:",
+      "a": "User Acceptance Test Cases",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 287",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 287"
+    },
+    {
+      "q": "Trong một hệ thống được thiết kế để tính toán thuế phải nộp: Một nhân viên có 4000 đô la tiền lương được miễn thuế. 1500 đô la tiếp theo bị đánh thuế ở mức 10%. 28000 đô la tiếp theo bị đánh thuế ở mức 22%. Bất kỳ khoản tiền nào vượt quá mức đó đều bị đánh thuế ở mức 40%. Làm tròn đến $ gần nhất, trường hợp nào sau đây là trường hợp kiểm thử Phân tích Giá trị Biên hợp lệ?",
+      "a": "$33501",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 332",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 332"
+    },
+    {
+      "q": "________ là một phiên bản thử nghiệm ban đầu, dự định phân phối hạn chế cho một vài khách hàng quan trọng và phục vụ mục đích trình diễn tiếp thị.",
+      "a": "Bản phát hành Beta",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 164",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 164"
+    }
+  ],
+  "pdf-C2-17": [
+    {
+      "q": "Nội dung cốt lõi của 'Dịch chuyển hoạt động kiểm thử về phía sớm của vòng đời' trên slide bài giảng là gì?",
+      "a": "review yêu cầu, phân tích tĩnh, unit test, kiểm thử API trước khi có UI.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ' trên slide bài giảng là gì?",
+      "a": "*When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Mục tiêu của người kiểm thử phần mềm là tìm ra lỗi, tìm ra chúng càng sớm càng tốt và đảm bảo chúng được sửa chữa.",
+      "a": "Đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 148",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 148"
+    }
+  ],
+  "pdf-C2-18": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.2 TỔNG HỢP So sánh cách tổ chức kiểm t'?",
+      "a": "Waterfall Sau khi lập trình xong Tài liệu đầy đủ, dễ quản lý Yêu cầu rõ, ít thay đổi",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    },
+    {
+      "q": "Cái nào trong số này có thể được kiểm tra thành công bằng phương pháp kiểm thử vòng lặp?",
+      "a": "Tất cả các đáp án trên",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 212",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 212"
+    },
+    {
+      "q": "Mô hình V là:",
+      "a": "Một mô hình phát triển phần mềm minh họa cách các hoạt động kiểm thử tích hợp với các giai đoạn phát triển phần mềm.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 395",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 395"
+    }
+  ],
+  "pdf-C2-19": [
+    {
+      "q": "Nội dung cốt lõi của 'Viết test trước, sau đó viết mã vừa đủ để test pass, rồi tái cấu trúc (refactor). Chu trình Red' trên slide bài giảng là gì?",
+      "a": "Green – Refactor.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'ATDD' trên slide bài giảng là gì?",
+      "a": "Acceptance TDD",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Người chủ trì việc xem xét tài liệu, lập kế hoạch xem xét, điều hành cuộc họp và theo dõi sau cuộc họp.",
+      "a": "Người điều phối",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 138",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 138"
+    }
+  ],
+  "pdf-C2-20": [
+    {
+      "q": "Nội dung cốt lõi của 'Ngay khi cơ sở kiểm thử (yêu cầu, thiết kế) sẵn sàng' trên slide bài giảng là gì?",
+      "a": "nguyên tắc shift-left.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Tester tham gia review ngay từ bản nháp đầu tiên Phát hiện khiếm khuyết ở nơi rẻ nhất để sửa' trên slide bài giảng là gì?",
+      "a": "trong tài liệu.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    }
+  ],
+  "pdf-C3-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.9 DELIVERABLES Sản phẩm bàn giao kiểm '?",
+      "a": "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Các thuộc tính chính của công cụ và tự động hóa là gì?",
+      "a": "Tất cả các đáp án trên",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 150",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 150"
+    },
+    {
+      "q": "Một công cụ thực thi kiểm thử thương mại điển hình có thể thực hiện tất cả những điều sau đây, NGOẠI TRỪ:",
+      "a": "Tạo ra các kết quả mong đợi",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 255",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 255"
+    }
+  ],
+  "pdf-C3-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.2 LỢI ÍCH Sáu nhóm lợi ích của kiểm th'?",
+      "a": "Thực hiện hàng loạt test case trong thời gian rất ngắn. Đặc biệt hiệu quả với kiểm thử hồi quy khi hệ thống cập nhật nhiều lần.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing)' trên slide bài giảng là gì?",
+      "a": "điều mà kiểm thử thủ công rất khó thực hiện đầy đủ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Các khuyết tật được phát hiện bởi các công cụ phân tích tĩnh bao gồm: i. Các biến không bao giờ được sử dụng. ii. Các lỗ hổng bảo mật. iii. Vi phạm tiêu chuẩn lập trình iv. Các hàm và thủ tục không được gọi",
+      "a": "i, ii, iii, iv là đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 267",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 267"
+    }
+  ],
+  "pdf-C3-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.5 KHÔNG NÊN KHÔNG nên áp dụng kiểm thử'?",
+      "a": "Công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Yêu cầu chưa ổn định' trên slide bài giảng là gì?",
+      "a": "Kịch bản phải cập nhật liên tục theo thay đổi ⇒ chi phí bảo trì cao và khó kiểm soát.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong một hệ thống được thiết kế để tính toán số thuế phải nộp: Một nhân viên có 4000 bảng tiền lương không phải đóng thuế. 1500 bảng tiếp theo bị đánh thuế 10%. 28000 bảng tiếp theo bị đánh thuế 22%. Bất kỳ khoản tiền nào vượt quá mức đó đều bị đánh thuế 40%. Nhóm số nào trong các nhóm này sẽ thuộc cùng một lớp tương đương?",
+      "a": "5800 bảng Anh; 28000 bảng Anh; 32000 bảng Anh",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 280",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 280"
+    }
+  ],
+  "pdf-C3-4": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.7 Công cụ kiểm thử tự động THỜI LƯỢNG:'?",
+      "a": "• Công cụ kiểm thử Mobile",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Công cụ lưu trữ các câu yêu cầu, kiểm tra tính nhất quán và cho phép ưu tiên các yêu cầu, đồng thời cho phép truy vết các bài kiểm thử riêng lẻ đến các yêu cầu, chức năng và tính năng.",
+      "a": "Công cụ quản lý yêu cầu",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 170",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 170"
+    },
+    {
+      "q": "Tiêu chí thoát có thể bao gồm: i. Các biện pháp đánh giá tính toàn diện, chẳng hạn như độ bao phủ mã, chức năng hoặc rủi ro. ii. Ước tính mật độ lỗi hoặc các biện pháp đánh giá độ tin cậy. iii. Rủi ro còn lại như các lỗi chưa được khắc phục hoặc thiếu phạm vi kiểm thử ở một số khu vực nhất định. iv. Xác minh môi trường kiểm thử.",
+      "a": "i, ii, iii là đúng và iv là sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 260",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 260"
+    }
+  ],
+  "pdf-C3-5": [
+    {
+      "q": "Công cụ sửa đổi mã chương trình hoặc thao tác môi trường hoạt động theo bất kỳ cách nào đều được coi là không xâm phạm.",
+      "a": "Sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 166",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 166"
+    },
+    {
+      "q": "Công cụ nào sau đây sẽ được sử dụng trong việc tự động hóa kiểm thử hồi quy?",
+      "a": "Ghi hình/Phát lại",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 177",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 177"
+    },
+    {
+      "q": "Chi phí đánh giá sẽ không bao gồm.",
+      "a": "Hỗ trợ công cụ.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 301",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 301"
+    }
+  ],
+  "pdf-C3-6": [
+    {
+      "q": "Bạn sẽ sử dụng công cụ nào sau đây để phát hiện rò rỉ bộ nhớ?",
+      "a": "Dynamic analysis",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 347",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 347"
+    },
+    {
+      "q": "Tập hợp các chỉ số nào có thể được sử dụng để giám sát quá trình thực thi kiểm thử?",
+      "a": "Số lượng trường hợp kiểm thử đã chạy/chưa chạy; trường hợp kiểm thử đã vượt qua/thất bại",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 383",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 383"
+    },
+    {
+      "q": "Những thông tin nào không cần phải có trong báo cáo sự cố thử nghiệm:",
+      "a": "Cách khắc phục lỗi",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 238",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 238"
+    }
+  ],
+  "pdf-C3-7": [
+    {
+      "q": "Nội dung cốt lõi của 'Khắc phục' trên slide bài giảng là gì?",
+      "a": "dùng explicit wait thay cho `Thread.Sleep`; tránh phụ thuộc thời gian cố định.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.8 BEST PRACTICES Rủi ro thường gặp và '?",
+      "a": "Tự động hoá test chỉ chạy 1 lần, hoặc test UI cho logic nghiệp vụ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Các yếu tố thành công của một bài đánh giá bao gồm: i. Mỗi bài đánh giá không có mục tiêu được xác định trước. ii. Những thiếu sót được phát hiện đều được hoan nghênh và được phản ánh một cách khách quan. iii. Ban quản lý ủng hộ một quy trình đánh giá tốt. iv. Có sự nhấn mạnh vào việc học hỏi và cải tiến quy trình.",
+      "a": "ii, iii, iv đúng, còn i sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 265",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 265"
+    }
+  ],
+  "pdf-C3-8": [
+    {
+      "q": "Phát biểu nào sau đây là đúng về các công cụ phân tích tĩnh?",
+      "a": "Trình biên dịch có thể hỗ trợ một số chức năng phân tích tĩnh.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 381",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 381"
+    },
+    {
+      "q": "Các khuyết tật điển hình được phát hiện bằng phân tích tĩnh bao gồm:",
+      "a": "Các lỗ hổng bảo mật",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 162",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 162"
+    },
+    {
+      "q": "Phát biểu nào sau đây là đúng về các công cụ phân tích tĩnh",
+      "a": "Chúng giúp bạn tìm ra các khiếm khuyết thay vì lỗi.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 379",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 379"
+    }
+  ],
+  "pdf-C3-9": [
+    {
+      "q": "Loại công cụ nào nên được sử dụng cho kiểm thử hồi quy?",
+      "a": "Ghi âm/Phát lại",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 144",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 144"
+    },
+    {
+      "q": "Trình điều khiển là công cụ được sử dụng để điều khiển và vận hành phần mềm đang được kiểm thử.",
+      "a": "Đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 161",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 161"
+    },
+    {
+      "q": "Phương án nào sau đây có mức độ độc lập cao nhất trong đó các trường hợp thử nghiệm là:",
+      "a": "Được thiết kế bởi một người từ một tổ chức khác.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 290",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 290"
+    }
+  ],
+  "pdf-C3-10": [
+    {
+      "q": "Công cụ nào sẽ được sử dụng để kiểm tra rò rỉ bộ nhớ cờ và con trỏ chưa được gán?",
+      "a": "Dynamic analysis tool",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 304",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 304"
+    },
+    {
+      "q": "Khi mua một công cụ kiểm thử mới, công cụ đó nên được sử dụng đầu tiên bởi:",
+      "a": "Một nhóm nhỏ được giao nhiệm vụ xác định phương pháp sử dụng công cụ hiệu quả nhất.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 198",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 198"
+    },
+    {
+      "q": "Nếu bạn muốn tìm một công cụ kiểm thử (mới), hãy bắt đầu từ đâu?",
+      "a": "Phân tích nhu cầu và yêu cầu của bạn",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 258",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 258"
+    }
+  ],
+  "pdf-C3-11": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.7.3 API Công cụ kiểm thử API'?",
+      "a": "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Hỗ trợ' trên slide bài giảng là gì?",
+      "a": "collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    }
+  ],
+  "pdf-C3-12": [
+    {
+      "q": "Nội dung cốt lõi của 'Phù hợp' trên slide bài giảng là gì?",
+      "a": "kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng' trên slide bài giảng là gì?",
+      "a": "nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Hoạt động nào sau đây phân biệt một buổi kiểm tra thực tế với một buổi đánh giá chính thức?",
+      "a": "Đối với buổi đánh giá tổng quan, việc chuẩn bị cá nhân của người đánh giá là tùy chọn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 372",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 372"
+    }
+  ],
+  "pdf-C3-13": [
+    {
+      "q": "Nội dung cốt lõi của 'Công cụ kiểm thử hiệu năng' trên slide bài giảng là gì?",
+      "a": "đánh giá khả năng chịu tải của hệ thống",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Hỗ trợ nhiều giao thức' trên slide bài giảng là gì?",
+      "a": "HTTP, FTP, JDBC và các giao thức khác",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Một phần mềm đã được cung cấp _______ những bài kiểm tra nào trong phần sau đây bạn sẽ thực hiện? 1) Kiểm tra các khu vực quan trọng nhất đối với quy trình kinh doanh 2) Kiểm tra các khu vực có khả năng xảy ra lỗi cao nhất. 3) Kiểm tra các chức năng đơn giản nhất",
+      "a": "1 và 2 đúng, 3 sai.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 314",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 314"
+    }
+  ],
+  "pdf-C3-14": [],
+  "pdf-C3-15": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.7.4 MOBILE Công cụ kiểm thử ứng dụng d'?",
+      "a": "▸ Công cụ kiểm thử tự động phổ biến nhất cho ứng dụng di động",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Thường dùng trong giảng dạy và các dự án cần triển khai kiểm thử nhanh' trên slide bài giảng là gì?",
+      "a": "KATALON STUDIO",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Kỹ thuật kiểm thử yêu cầu thiết kế các trường hợp kiểm thử để chứng minh rằng mỗi chức năng của chương trình hoạt động được gọi là gì?",
+      "a": "Grey-box testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 153",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 153"
+    }
+  ],
+  "pdf-C3-16": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.4 INTEGRATION Kiểm thử tích hợp: hai l'?",
+      "a": "Càng ghép nhiều thành phần cùng lúc, càng khó xác định nguyên nhân lỗi ⇒ nên tích hợp từng bước nhỏ (incremental).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Big Bang' trên slide bài giảng là gì?",
+      "a": "ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Chức năng Bảo hiểm Báo cáo sẽ không kiểm tra các điều sau đây.",
+      "a": "Những câu bị thiếu",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 183",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 183"
+    }
+  ],
+  "pdf-C3-17": [
+    {
+      "q": "Nội dung cốt lõi của 'Tự động hoá thao tác trên trình duyệt' trên slide bài giảng là gì?",
+      "a": "nhập dữ liệu, nhấn nút, kiểm tra kết quả.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.7.2 WEB Công cụ kiểm thử giao diện Web'?",
+      "a": "Hỗ trợ C#, Java, Python, Ruby, JavaScript.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Một số lỗi nghiêm trọng đã được khắc phục trong phần mềm. Tất cả các lỗi đều nằm trong một mô-đun, liên quan đến báo cáo. Người quản lý kiểm thử quyết định chỉ thực hiện kiểm thử hồi quy trên mô-đun báo cáo.",
+      "a": "Việc kiểm thử hồi quy cũng nên được thực hiện trên các mô-đun khác vì việc sửa lỗi ở một mô-đun có thể ảnh hưởng đến các mô-đun khác.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 364",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 364"
+    }
+  ],
+  "pdf-C3-18": [
+    {
+      "q": "Cách tốt nhất để tìm mã không thể truy cập được là sử dụng:",
+      "a": "Đánh giá mã nguồn",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 237",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 237"
+    },
+    {
+      "q": "Những người không tham gia vào các cuộc đánh giá kỹ thuật",
+      "a": "Quản lý",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 320",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 320"
+    },
+    {
+      "q": "Quy tắc nào không nên tuân theo khi đánh giá?",
+      "a": "Tất cả các thành viên của nhóm đánh giá đều chịu trách nhiệm về kết quả đánh giá.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 157",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 157"
+    }
+  ],
+  "pdf-C3-19": [
+    {
+      "q": "Nên thực hiện kiểm thử hồi quy: v) Mỗi ​​tuần w) Sau khi phần mềm đã thay đổi x) Càng thường xuyên càng tốt y) Khi môi trường đã thay đổi z) Khi người quản lý dự án nói",
+      "a": "w và y đúng, v, x và z sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 224",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 224"
+    },
+    {
+      "q": "Cần thực hiện kiểm thử hồi quy: i. Mỗi tuần ii. Sau khi phần mềm đã thay đổi iii. Càng thường xuyên càng tốt iv. Khi môi trường đã thay đổi v. Khi người quản lý dự án nói",
+      "a": "ii & iv đúng, i, iii & v sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 288",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 288"
+    },
+    {
+      "q": "Điều nào sau đây không phải là một phần của kiểm thử hiệu năng:",
+      "a": "Kiểm tra khả năng phục hồi",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 234",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 234"
+    }
+  ],
+  "pdf-C3-20": [
+    {
+      "q": "Ma trận chức năng/kiểm thử là một loại",
+      "a": "Báo cáo tình trạng dự án",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 217",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 217"
+    },
+    {
+      "q": "Loại kiểm thử nào sau đây KHÔNG phải là loại kiểm thử phi chức năng?",
+      "a": "Chuyển đổi trạng thái",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 356",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 356"
+    },
+    {
+      "q": "Phát biểu nào sau đây chứa mục tiêu hợp lệ cho một tập hợp kiểm thử chức năng?",
+      "a": "Mục tiêu là tìm ra càng nhiều lỗi càng tốt để có thể xác định và khắc phục nguyên nhân gây ra lỗi.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 365",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 365"
+    }
+  ],
+  "pdf-C4-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế '?",
+      "a": "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Cơ sở' trên slide bài giảng là gì?",
+      "a": "yêu cầu, đặc tả, user story.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    }
+  ],
+  "pdf-C4-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.1.3 PHÂN BIỆT Phân biệt các khái niệm '?",
+      "a": "Kỹ thuật kiểm thử (Test technique) Thiết kế trường hợp kiểm thử bằng cách nào? Phân vùng tương đương, giá trị biên, bảng quyết định",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Phương thức thực hiện Có cần vận hành đối tượng kiểm thử không? Kiểm thử động (có chạy)' trên slide bài giảng là gì?",
+      "a": "kiểm thử tĩnh (không chạy)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    }
+  ],
+  "pdf-C4-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Ba nhóm bổ sung cho nhau' trên slide bài giảng là gì?",
+      "a": "hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của '② Dựa trên cấu trúc (Hộp trắng' trên slide bài giảng là gì?",
+      "a": "White-box)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Một chương trình xác thực một trường số như sau: Các giá trị nhỏ hơn 10 bị loại bỏ, các giá trị nằm giữa 10 và 21 được chấp nhận, các giá trị lớn hơn hoặc bằng 22 bị loại bỏ. Phương án nào sau đây bao phủ nhiều giá trị biên nhất?",
+      "a": "9,10,21,22",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 345",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 345"
+    }
+  ],
+  "pdf-C4-4": [
+    {
+      "q": "Nội dung cốt lõi của 'Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD' trên slide bài giảng là gì?",
+      "a": "giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Trong một hệ thống được thiết kế để tính toán thuế phải nộp: Một nhân viên có 4000 đô la tiền lương được miễn thuế. 1500 đô la tiếp theo bị đánh thuế ở mức 10%. 28000 đô la tiếp theo bị đánh thuế ở mức 22%. Bất kỳ khoản tiền nào vượt quá mức đó đều bị đánh thuế ở mức 40%. Trong số các nhóm số này, nhóm nào sẽ thuộc cùng một lớp tương đương?",
+      "a": "5800 đô la; 28000 đô la; 32000 đô la",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 300",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 300"
+    },
+    {
+      "q": "Việc kiểm thử tích hợp linh kiện có thể được thực hiện",
+      "a": "After component testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 408",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 408"
+    }
+  ],
+  "pdf-C4-5": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.4 COVERAGE Hai tiêu chí bao phủ cơ b'?",
+      "a": "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'BAO PHỦ NHÁNH' trên slide bài giảng là gì?",
+      "a": "Branch Coverage",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Kỹ thuật kiểm thử hộp trắng đo lường số lượng hoặc tỷ lệ phần trăm các hướng quyết định được thực thi bởi trường hợp kiểm thử được thiết kế được gọi là gì?",
+      "a": "Decision/Condition coverage",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 154",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 154"
+    }
+  ],
+  "pdf-C4-6": [],
+  "pdf-C4-7": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 DECISION TABLE Bảng quyết định rút'?",
+      "a": "C1. Tài khoản đang hoạt động T F T T T",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    },
+    {
+      "q": "Phát biểu nào sau đây là đúng về kỹ thuật kiểm thử hộp trắng và hộp đen?",
+      "a": "Phân vùng tương đương, Chuyển đổi trạng thái, Kiểm thử trường hợp sử dụng là các kỹ thuật kiểm thử hộp đen.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 268",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 268"
+    },
+    {
+      "q": "Kỹ thuật nào sau đây là kỹ thuật hộp đen?",
+      "a": "Phân vùng tương đương, kiểm thử chuyển trạng thái, kiểm thử bảng quyết định",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 363",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 363"
+    }
+  ],
+  "pdf-C4-8": [
+    {
+      "q": "Nội dung cốt lõi của 'Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong' trên slide bài giảng là gì?",
+      "a": "câu lệnh, nhánh, luồng điều khiển.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của '③ Dựa trên kinh nghiệm (Experience-based)' trên slide bài giảng là gì?",
+      "a": "Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Kỹ thuật thiết kế nào sau đây là kỹ thuật thiết kế hộp đen?",
+      "a": "Equivalence partitioning",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 350",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 350"
+    }
+  ],
+  "pdf-C4-9": [
+    {
+      "q": "Phương pháp nào sau đây KHÔNG phải là kỹ thuật hộp đen:",
+      "a": "LCSAJ",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 251",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 251"
+    },
+    {
+      "q": "Kỹ thuật nào sau đây KHÔNG phải là kỹ thuật hộp đen?",
+      "a": "LCSAJ (Linear Code Sequence and Jump)",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 269",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 269"
+    },
+    {
+      "q": "Phân vùng tương đương là:",
+      "a": "Kỹ thuật kiểm thử hộp đen phù hợp với mọi cấp độ kiểm thử.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 208",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 208"
+    }
+  ],
+  "pdf-C4-10": [
+    {
+      "q": "Phân tích giá trị biên chỉ có thể được sử dụng trong quá trình kiểm thử hộp trắng.",
+      "a": "Sai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 172",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 172"
+    },
+    {
+      "q": "Điều nào sau đây không đúng - Máy kiểm thử hộp đen",
+      "a": "Phải hiểu được mã nguồn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 359",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 359"
+    },
+    {
+      "q": "Cho đoạn mã sau, điều nào sau đây đúng về số lượng tối thiểu các trường hợp kiểm thử cần thiết để đạt được độ phủ toàn diện của câu lệnh và nhánh: Read P Read Q IF P+Q > 100 THEN Print \"Large\" ENDIF If P > 50 THEN Print \"P Large\" ENDIF",
+      "a": "1 bài kiểm tra độ bao phủ câu lệnh, 2 bài kiểm tra độ bao phủ nhánh",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 257",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 257"
+    }
+  ],
+  "pdf-C4-11": [
+    {
+      "q": "Tại sao phân tích giá trị biên lại cung cấp các trường hợp thử nghiệm tốt?",
+      "a": "Vì lỗi thường xuyên xảy ra trong quá trình lập trình các trường hợp khác nhau gần \"các cạnh\" của phạm vi giá trị.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 367",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 367"
+    },
+    {
+      "q": "Tập hợp các lớp tương đương nào sau đây là hợp lệ cho bài toán sau: Một trường số nguyên phải chứa các giá trị từ 1 đến 15 (bao gồm cả 15)",
+      "a": "Ít hơn 1, từ 1 đến 15, hơn 15",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 378",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 378"
+    },
+    {
+      "q": "Kiểm thử tương đương chia miền dữ liệu đầu vào thành các lớp dữ liệu, từ đó có thể tạo ra các trường hợp kiểm thử để giảm tổng số trường hợp kiểm thử cần phải phát triển.",
+      "a": "Đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 133",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 133"
+    }
+  ],
+  "pdf-C4-12": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 HỘP ĐEN a) Phân vùng tương đương ('?",
+      "a": "▸ Chia miền dữ liệu thành các vùng (partition) mà các phần tử trong cùng vùng được dự kiến xử lý giống nhau",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ba tính chất bắt buộc' trên slide bài giảng là gì?",
+      "a": "các vùng không rỗng, không chồng lấn, và hợp lại bao phủ toàn bộ miền",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nếu một thí sinh được làm bài kiểm tra gồm 40 câu hỏi, cần đạt 25 điểm để đậu (61%) và cần đạt 80% để đạt loại giỏi, thì hạng tương đương là bao nhiêu?",
+      "a": "32,37,40",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 298",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 298"
+    }
+  ],
+  "pdf-C4-13": [
+    {
+      "q": "Nội dung cốt lõi của 'Khiếm khuyết thường xuất hiện tại ranh giới do: dùng sai toán tử so sánh (`>` thay vì `>=`), đặt sai giới hạn, bỏ sót một giá trị (lỗi lệch một đơn vị' trên slide bài giảng là gì?",
+      "a": "off-by-one)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'BVA hai giá trị (2-value)' trên slide bài giảng là gì?",
+      "a": "với mỗi biên, lấy chính giá trị biên và giá trị lân cận gần nhất thuộc vùng kề",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Phân vùng tương đương bao gồm nhiều hoạt động khác nhau:",
+      "a": "Đảm bảo rằng các trường hợp kiểm thử kiểm tra từng lớp tương đương đầu vào và đầu ra ít nhất một lần.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 416",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 416"
+    }
+  ],
+  "pdf-C4-14": [
+    {
+      "q": "Nội dung cốt lõi của 'Phân biệt vùng hợp lệ (valid) và vùng không hợp lệ (invalid)' trên slide bài giảng là gì?",
+      "a": "LƯU Ý QUAN TRỌNG",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Một giá trị đại diện không chứng minh mọi giá trị trong vùng đều đúng' trên slide bài giảng là gì?",
+      "a": "đây chỉ là cách giảm số test case có hệ thống",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 9",
+      "badgeClass": "yes",
+      "source": "Slide tr. 9"
+    },
+    {
+      "q": "Kiểm định giá trị biên",
+      "a": "Kiểm tra các điều kiện biên trên, dưới và trên các cạnh của các lớp tương đương đầu vào và đầu ra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 187",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 187"
+    }
+  ],
+  "pdf-C4-15": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng t'?",
+      "a": "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Trạng thái (State)' trên slide bài giảng là gì?",
+      "a": "tình trạng hiện tại của đối tượng được mô hình hoá",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    }
+  ],
+  "pdf-C4-16": [
+    {
+      "q": "Nội dung cốt lõi của 'Sự kiện (Event)' trên slide bài giảng là gì?",
+      "a": "tác động làm hệ thống chuyển trạng thái",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Điều kiện bảo vệ (Guard)' trên slide bài giảng là gì?",
+      "a": "điều kiện phải thoả để chuyển tiếp xảy ra",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Phương án nào sau đây không phải là chiến lược tích hợp?",
+      "a": "Thiết kế dựa trên",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 346",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 346"
+    }
+  ],
+  "pdf-C4-17": [
+    {
+      "q": "Nội dung cốt lõi của 'Hành động (Action)' trên slide bài giảng là gì?",
+      "a": "việc hệ thống thực hiện khi chuyển tiếp",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp' trên slide bài giảng là gì?",
+      "a": "BA MỨC BAO PHỦ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    }
+  ],
+  "pdf-C4-18": [],
+  "pdf-C4-19": [
+    {
+      "q": "Nội dung cốt lõi của 'Khi yêu cầu có nhiều điều kiện kết hợp với nhau tạo ra các hành động khác nhau (quy tắc nghiệp vụ phức tạp)' trên slide bài giảng là gì?",
+      "a": "CẤU TRÚC BẢNG",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 HỘP ĐEN c) Kiểm thử bảng quyết địn'?",
+      "a": "▸ Mỗi cột là một quy tắc (rule); các hàng phía trên mô tả điều kiện, các hàng phía dưới mô tả hành động",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    }
+  ],
+  "pdf-C4-20": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 STATE TABLE Bảng chuyển trạng thái'?",
+      "a": "Trạng thái hiện tại Sự kiện Điều kiện Hành động Trạng thái tiếp theo Hợp lệ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-0-0": [
+    {
+      "q": "Cấu trúc của một báo cáo sự cố được đề cập trong Tiêu chuẩn về Tài liệu Kiểm thử Phần mềm IEEE 829 và được gọi là:",
+      "a": "Báo cáo về sự bất thường",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 284",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 284"
+    },
+    {
+      "q": "Thất bại là _________",
+      "a": "Chương trình hoạt động không chính xác do lỗi trong chương trình.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 174",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 174"
+    },
+    {
+      "q": "Thất bại là gì?",
+      "a": "Sự sai lệch giữa kết quả dự kiến ​​và kết quả thực tế",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 321",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 321"
+    }
+  ],
+  "main-0-1": [
+    {
+      "q": "\"Kiểm tra bao nhiêu là đủ?\"",
+      "a": "Câu trả lời phụ thuộc vào rủi ro của ngành, hợp đồng và các yêu cầu đặc biệt của bạn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 176",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 176"
+    },
+    {
+      "q": "Các thông tin đầu vào để xây dựng kế hoạch kiểm thử được lấy từ...",
+      "a": "Kế hoạch dự án",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 201",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 201"
+    },
+    {
+      "q": "Kiểm tra bao nhiêu lần là đủ?",
+      "a": "Câu trả lời phụ thuộc vào rủi ro của ngành, hợp đồng và các yêu cầu đặc biệt của bạn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 210",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 210"
+    }
+  ],
+  "main-0-2": [
+    {
+      "q": "Nội dung cốt lõi của '// YÊU CẦU (Requirement)' trên slide bài giảng là gì?",
+      "a": "// \"Giảm 10% cho đơn hàng có giá trị LỚN HƠN 1.000.000 đồng\" // MÃ NGUỒN THỰC TẾ (Actual code): if (total > 500000) {",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.3 VÍ DỤ Ví dụ minh họa: chuỗi Error → '?",
+      "a": "discount = total * 0.1; }",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Đối với các hệ thống lớn:",
+      "a": "Việc thử nghiệm nên dựa trên cơ sở rủi ro.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 281",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 281"
+    }
+  ],
+  "main-0-3": [
+    {
+      "q": "Loại thử nghiệm nào được thực hiện để bổ sung cho quá trình thử nghiệm nghiêm ngặt?",
+      "a": "Error Guessing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 327",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 327"
+    },
+    {
+      "q": "Để phần mềm đáng tin cậy, nó phải:",
+      "a": "Ít có khả năng gây ra sự cố.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 331",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 331"
+    }
+  ],
+  "main-1-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử phụ thuộc ngữ cảnh' trên slide bài giảng là gì?",
+      "a": "Testing is context dependent.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử sớm tiết kiệm chi phí' trên slide bài giảng là gì?",
+      "a": "Early testing saves time and money (shift-left).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    }
+  ],
+  "main-1-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Ngộ nhận \"không lỗi\"' trên slide bài giảng là gì?",
+      "a": "Absence-of-errors fallacy.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Lỗi thường tập trung theo cụm' trên slide bài giảng là gì?",
+      "a": "Defects cluster together.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Các hoạt động kiểm thử phần mềm nên bắt đầu",
+      "a": "Càng sớm càng tốt trong chu kỳ phát triển",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 338",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 338"
+    }
+  ],
+  "main-1-2": [
+    {
+      "q": "Tại sao phương pháp tích hợp gia tăng được ưa chuộng hơn phương pháp tích hợp \"đột phá\"?",
+      "a": "Vì tích hợp gia tăng có khả năng sàng lọc và cô lập lỗi sớm tốt hơn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 394",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 394"
+    }
+  ],
+  "main-1-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Giáo trình tóm gọn thành 5 tiêu chí: đúng chức năng' trên slide bài giảng là gì?",
+      "a": "ổn định – dễ sử dụng – an toàn – dễ bảo trì. ISO 25010 là bản chi tiết hoá quốc tế của các tiêu chí này.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Hiệu năng (Performance efficiency)' trên slide bài giảng là gì?",
+      "a": "Thời gian phản hồi, thông lượng, mức sử dụng tài nguyên.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    }
+  ],
+  "main-2-0": [
+    {
+      "q": "Nội dung cốt lõi của 'GỠ LỖI (Debugging)' trên slide bài giảng là gì?",
+      "a": "Tìm nguyên nhân, phân tích và sửa khiếm khuyết",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'KIỂM THỬ XÁC NHẬN (Confirmation Testing)' trên slide bài giảng là gì?",
+      "a": "Chạy lại để xác nhận lỗi đã được sửa đúng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Mục nào sau đây KHÔNG phải là một phần của quản lý cấu hình:",
+      "a": "Kiểm toán sự phù hợp với tiêu chuẩn ISO9001",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 223",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 223"
+    }
+  ],
+  "main-2-1": [],
+  "main-2-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.3.1 SO SÁNH So sánh kiểm thử tĩnh và k'?",
+      "a": "Tiêu chí Kiểm thử tĩnh (Static Testing) Kiểm thử động (Dynamic Testing)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Giá trị chính Phòng ngừa' trên slide bài giảng là gì?",
+      "a": "cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Phương pháp nào sau đây không phải là kỹ thuật kiểm thử tĩnh?",
+      "a": "Sai lầm khi đoán",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 203",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 203"
+    }
+  ],
+  "main-2-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.8 VAI TRÒ Vai trò các bên liên quan tr'?",
+      "a": "Tester (Người kiểm thử) Phân tích yêu cầu, thiết kế & thực thi test case, ghi nhận và báo cáo lỗi, kiểm thử lại sau khi sửa.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Whole-team approach (Agile)' trên slide bài giảng là gì?",
+      "a": "chất lượng là trách nhiệm của cả nhóm, không phải riêng tester.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-3-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Mục tiêu' trên slide bài giảng là gì?",
+      "a": "xây dựng và hoàn thiện sản phẩm",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.8 TÂM LÝ Tâm lý kiểm thử (Tester Psych'?",
+      "a": "▸ Tập trung vào giải pháp kỹ thuật",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    }
+  ],
+  "main-3-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.8 INDEPENDENCE Các mức độ độc lập kiểm'?",
+      "a": "mình. Rẻ, nhanh nhưng thiên kiến cao nhất.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 25",
+      "badgeClass": "yes",
+      "source": "Slide tr. 25"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'BƯỚC 3' trên slide bài giảng là gì?",
+      "a": "Mức 2 – Nhóm kiểm thử — riêng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 25",
+      "badgeClass": "yes",
+      "source": "Slide tr. 25"
+    },
+    {
+      "q": "Xác minh và thẩm định độc lập là",
+      "a": "Được thực hiện bởi một thực thể nằm ngoài phạm vi ảnh hưởng của dự án.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 194",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 194"
+    }
+  ],
+  "main-3-2": [
+    {
+      "q": "Phương pháp tiếp cận dựa trên rủi ro trong thử nghiệm cung cấp các cơ hội chủ động để giảm mức độ rủi ro của sản phẩm, bắt đầu từ giai đoạn đầu của dự án.",
+      "a": "Đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 400",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 400"
+    },
+    {
+      "q": "Mục nào sau đây KHÔNG phải là một phần của kế hoạch kiểm thử cấp cao?",
+      "a": "Phân tích thông số kỹ thuật.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 297",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 297"
+    },
+    {
+      "q": "Danh sách sau đây chứa các rủi ro đã được xác định đối với một sản phẩm phần mềm sắp được phát triển. Rủi ro nào trong số này là một ví dụ về rủi ro sản phẩm?",
+      "a": "Đe dọa đến tính mạng bệnh nhân",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 389",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 389"
+    }
+  ],
+  "main-3-3": [
+    {
+      "q": "Quá trình bắt đầu từ các mô-đun đầu cuối được gọi là:",
+      "a": "Tích hợp từ dưới lên",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 218",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 218"
+    },
+    {
+      "q": "Nên dừng thử nghiệm khi:",
+      "a": "Điều này phụ thuộc vào mức độ rủi ro của hệ thống đang được thử nghiệm.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 221",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 221"
+    },
+    {
+      "q": "Sai lầm khi đoán là:",
+      "a": "Phương pháp phù hợp nhất để xây dựng các bài kiểm tra hệ thống.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 329",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 329"
+    }
+  ],
+  "main-4-0": [
+    {
+      "q": "Tại sao việc kiểm tra là cần thiết?",
+      "a": "Vì việc kiểm thử đo lường chất lượng của hệ thống phần mềm và giúp nâng cao chất lượng.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 373",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 373"
+    },
+    {
+      "q": "Xác minh là:",
+      "a": "Kiểm tra xem chúng ta có đang xây dựng hệ thống đúng cách hay không",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 219",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 219"
+    },
+    {
+      "q": "Mục đích chính của chiến lược tích hợp cho việc kiểm thử tích hợp trong doanh nghiệp nhỏ là gì?",
+      "a": "Để xác định các mô-đun nào cần kết hợp, khi nào và kết hợp bao nhiêu mô-đun cùng một lúc",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 222",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 222"
+    }
+  ],
+  "main-4-1": [
+    {
+      "q": "Lỗi càng được phát hiện muộn trong chu kỳ phát triển sản phẩm thì chi phí sửa chữa càng cao. Tại sao?",
+      "a": "Lỗi đã được tích hợp vào nhiều tài liệu, mã nguồn, bài kiểm tra, v.v. hơn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 335",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 335"
+    },
+    {
+      "q": "Thử nghiệm Beta là:",
+      "a": "Do khách hàng tự thực hiện tại địa điểm của họ",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 253",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 253"
+    },
+    {
+      "q": "Kiểm thử chấp nhận có nghĩa là gì?",
+      "a": "Kiểm thử để đảm bảo hệ thống đáp ứng nhu cầu của tổ chức và người dùng cuối.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 398",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 398"
+    }
+  ],
+  "main-4-2": [],
+  "main-4-3": [],
+  "main-5-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.4 ACCEPTANCE Các dạng kiểm thử chấp nh'?",
+      "a": "Người dùng cuối kiểm tra hệ thống có đáp ứng nhu cầu nghiệp vụ thực tế hay không.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'OAT – Operational Acceptance Testing' trên slide bài giảng là gì?",
+      "a": "Bộ phận vận hành kiểm tra: sao lưu/phục hồi, cài đặt, gỡ cài, giám sát, bảo mật.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    }
+  ],
+  "main-5-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Bottom-up' trên slide bài giảng là gì?",
+      "a": "từ module cấp thấp lên, dùng driver để gọi module",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Stub = module giả bị gọi; Driver = module giả gọi đến' trên slide bài giảng là gì?",
+      "a": "BA CHIẾN LƯỢC TÍCH HỢP",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    }
+  ],
+  "main-5-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Nguyên tắc: càng lên cao, test càng chậm' trên slide bài giảng là gì?",
+      "a": "đắt – khó bảo trì ⇒ đặt phần lớn công sức tự động hoá ở tầng đáy (unit). Kim tự tháp lộn ngược (nhiều test UI, ít unit test) là dấu hiệu xấu (ice-cream cone anti-pattern).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.5 CHIẾN LƯỢC PHÂN BỔ Kim tự tháp kiểm '?",
+      "a": "KIỂM THỬ UI / E2E Ít • Chậm • Đắt • Dễ vỡ (flaky)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    }
+  ],
+  "main-5-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Mục đích' trên slide bài giảng là gì?",
+      "a": "xác nhận khiếm khuyết đã được sửa đúng và triệt để",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Cách làm' trên slide bài giảng là gì?",
+      "a": "chạy lại chính test case đã phát hiện lỗi, với cùng dữ liệu và cùng môi trường",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Sự khác biệt giữa kiểm tra lại và kiểm tra hồi quy là gì?",
+      "a": "Kiểm thử lại là chạy lại một bài kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 220",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 220"
+    }
+  ],
+  "main-6-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Phạm vi: hẹp' trên slide bài giảng là gì?",
+      "a": "chỉ tập trung vào lỗi đã sửa",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Khi nào' trên slide bài giảng là gì?",
+      "a": "ngay sau khi developer báo đã fix",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Kiểm định hồi quy:",
+      "a": "Giúp đảm bảo các khu vực không thay đổi của phần mềm không bị ảnh hưởng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 216",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 216"
+    }
+  ],
+  "main-6-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.6 NON-FUNCTIONAL Các loại kiểm thử phi'?",
+      "a": "Load test, stress test, spike test, endurance test. Đo thời gian phản hồi, thông lượng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử tương thích (Compatibility)' trên slide bài giảng là gì?",
+      "a": "Nhiều trình duyệt, hệ điều hành, kích thước màn hình, phiên bản thiết bị.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Phương pháp kiểm thử nào sau đây là phương pháp kiểm thử phi chức năng?",
+      "a": "Cả B và C",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 193",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 193"
+    }
+  ],
+  "main-6-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.8 TRIGGERS Bốn nhóm nguyên nhân kích h'?",
+      "a": "Khắc phục defect phát hiện khi hệ thống đang vận hành. Có thể khẩn cấp (hot-fix).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 26",
+      "badgeClass": "yes",
+      "source": "Slide tr. 26"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ngoài ra còn có bảo trì do di trú dữ liệu (migration) và ngừng vận hành hệ thống cũ (retirement)' trên slide bài giảng là gì?",
+      "a": "cần kiểm thử di trú và kiểm thử lưu trữ dữ liệu.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 26",
+      "badgeClass": "yes",
+      "source": "Slide tr. 26"
+    },
+    {
+      "q": "Kiểm tra bảo trì là:",
+      "a": "Được kích hoạt bởi các thay đổi, di chuyển hoặc ngừng sử dụng phần mềm hiện có.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 393",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 393"
+    }
+  ],
+  "main-6-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.8 QUY TRÌNH Quy trình kiểm thử bảo trì'?",
+      "a": "Ghi nhận change request / bug report từ vận hành, khách hàng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Phân tích tác động khó khăn khi' trên slide bài giảng là gì?",
+      "a": "đặc tả lỗi thời hoặc thiếu, không có ma trận truy vết, người viết hệ thống đã nghỉ việc, tài liệu không được cập nhật.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    },
+    {
+      "q": "Phân tích tác động giúp đưa ra quyết định:",
+      "a": "Cần thực hiện bao nhiêu kiểm thử hồi quy?",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 277",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 277"
+    }
+  ],
+  "main-7-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Lợi ích' trên slide bài giảng là gì?",
+      "a": "phản hồi nhanh, phát hiện lỗi tức thì. Thách thức: phải đầu tư hạ tầng CI/CD và bộ kiểm thử tự động ổn định (ít test \"flaky\").",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.2.6 DEVOPS DevOps và Kiểm thử liên tục'?",
+      "a": "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Lợi ích của việc kiểm thử độc lập",
+      "a": "Người kiểm thử độc lập nhìn thấy các khuyết tật khác nhau và không thiên vị.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 273",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 273"
+    }
+  ],
+  "main-7-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.3 SHIFT-LEFT Shift-left và các cách ti'?",
+      "a": "Cả nhóm cùng viết tiêu chí chấp nhận dưới dạng test trước khi phát triển, dựa trên góc nhìn người dùng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mô tả hành vi mong đợi bằng ngôn ngữ tự nhiên Given' trên slide bài giảng là gì?",
+      "a": "When – Then, để BA, dev, tester cùng hiểu.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    }
+  ],
+  "main-7-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Bổ sung thường gặp' trên slide bài giảng là gì?",
+      "a": "độ ưu tiên (priority), người thực hiện, phiên bản, liên kết yêu cầu (requirement ID), Bug ID.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    }
+  ],
+  "main-7-3": [
+    {
+      "q": "Nhiệm vụ nào sau đây không phải là nhiệm vụ của người lãnh đạo nhóm kiểm tra?",
+      "a": "Xem xét và đóng góp vào kế hoạch kiểm thử",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 410",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 410"
+    },
+    {
+      "q": "Mục nào sau đây KHÔNG được bao gồm trong tài liệu Kế hoạch Kiểm thử của Tiêu chuẩn Tài liệu Kiểm thử:",
+      "a": "Kế hoạch chất lượng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 239",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 239"
+    },
+    {
+      "q": "Lý do chính để kiểm thử phần mềm trước khi phát hành là gì?",
+      "a": "Cung cấp thông tin để đưa ra quyết định dựa trên rủi ro về việc phát hành.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 341",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 341"
+    }
+  ],
+  "main-8-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.2 CHẤT LƯỢNG Tiêu chí một test case tố'?",
+      "a": "Người khác đọc và thực hiện lại cho ra cùng kết quả. Không dùng từ mơ hồ như \"kiểm tra xem có ổn không\".",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Truy vết được' trên slide bài giảng là gì?",
+      "a": "Liên kết tới yêu cầu / user story cụ thể để đo độ bao phủ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    }
+  ],
+  "main-8-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Ví dụ: AUT = *Website bán hàng* ⊃ Test Module *\"Thanh toán\"* ⊃ Test Suite *\"Thanh toán bằng thẻ\"* ⊃ Test Case *TC_PAY_004' trên slide bài giảng là gì?",
+      "a": "thẻ hết hạn*.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'TEST MODULE – Mô-đun kiểm thử' trên slide bài giảng là gì?",
+      "a": "Nhóm theo chức năng lớn / module của hệ thống. VD: \"Quản lý đơn hàng\" TEST SUITE – Bộ kiểm thử",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    }
+  ],
+  "main-8-2": [
+    {
+      "q": "Nội dung cốt lõi của 'In scope' trên slide bài giảng là gì?",
+      "a": "những gì SẼ kiểm thử:",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 8",
+      "badgeClass": "yes",
+      "source": "Slide tr. 8"
+    },
+    {
+      "q": "Nội dung cốt lõi của '– Chức năng / yêu cầu cần kiểm tra' trên slide bài giảng là gì?",
+      "a": "Các module, hệ thống liên quan – Môi trường: trình duyệt, OS, thiết bị",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 8",
+      "badgeClass": "yes",
+      "source": "Slide tr. 8"
+    },
+    {
+      "q": "Mục đích của tiêu chí hoàn thành kiểm thử trong kế hoạch kiểm thử là gì?",
+      "a": "Lên kế hoạch thời điểm ngừng kiểm tra",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 235",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 235"
+    }
+  ],
+  "main-8-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.5 STRATEGY VS PLAN Phân biệt Test Stra'?",
+      "a": "Tiêu chí Chiến lược kiểm thử (Test Strategy) Kế hoạch kiểm thử (Test Plan)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mục đích Định hướng chung' trên slide bài giảng là gì?",
+      "a": "\"kim chỉ nam\" Điều phối cụ thể hoạt động kiểm thử",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Phần mềm kiểm thử (các trường hợp kiểm thử, tập dữ liệu kiểm thử)",
+      "a": "Cần quản lý cấu hình giống như yêu cầu, thiết kế và mã nguồn.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 342",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 342"
+    }
+  ],
+  "main-9-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.7 TRACEABILITY Ma trận truy vết yêu cầ'?",
+      "a": "REQ-01 Đăng nhập bằng username và mật khẩu hợp lệ TC_LOGIN_001, 002 Pass –",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'RTM giúp trả lời' trên slide bài giảng là gì?",
+      "a": "yêu cầu nào chưa được kiểm thử? (REQ-05 ở ví dụ trên) và thay đổi yêu cầu này ảnh hưởng test case nào?",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Giai đoạn Khởi động của một cuộc đánh giá chính thức bao gồm những điều sau:",
+      "a": "Giải thích mục tiêu",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 262",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 262"
+    }
+  ],
+  "main-9-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Các trạng thái khác thường gặp' trên slide bài giảng là gì?",
+      "a": "Rejected (không phải lỗi), Duplicate (trùng), Deferred (hoãn sang bản sau), Cannot Reproduce (không tái hiện được).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'BƯỚC 4' trên slide bài giảng là gì?",
+      "a": "Retest — Tester chạy lại test case đã",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Cho các thông tin sau: Switch PC on Start \"outlook\" IF outlook appears THEN Send an email Close outlook",
+      "a": "1 bài kiểm tra độ bao phủ câu lệnh, 2 bài kiểm tra độ bao phủ nhánh",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 230",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 230"
+    }
+  ],
+  "main-9-2": [
+    {
+      "q": "Nội dung cốt lõi của 'BƯỚC 5' trên slide bài giảng là gì?",
+      "a": "Closed / Reopened — Đạt ⇒ Closed. Chưa đạt ⇒",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-9-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.8 SEVERITY VS PRIORITY Severity và Pri'?",
+      "a": "▸ Đánh giá tác động của lỗi lên hệ thống, do tester xác định",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Critical' trên slide bài giảng là gì?",
+      "a": "hệ thống sập, mất dữ liệu, không thể tiếp tục",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Đánh giá ngang hàng còn được gọi là:",
+      "a": "Đánh giá kỹ thuật",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 263",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 263"
+    }
+  ],
+  "main-10-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Major/High' trên slide bài giảng là gì?",
+      "a": "chức năng chính sai, không có cách khắc phục tạm",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Minor/Medium' trên slide bài giảng là gì?",
+      "a": "chức năng phụ sai, có cách khắc phục tạm",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    }
+  ],
+  "main-10-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.9 METRICS Các chỉ số kiểm thử thường d'?",
+      "a": "Cho biết còn bao nhiêu việc phải làm.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mật độ khiếm khuyết' trên slide bài giảng là gì?",
+      "a": "Defect Density = số lỗi / quy mô (KLOC hoặc số chức năng).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    }
+  ],
+  "main-10-2": [],
+  "main-10-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.6 ESTIMATION Ước lượng công sức kiểm t'?",
+      "a": "Công sức kiểm thử ≈ 25–40% công sức phát triển, tuỳ mức độ rủi ro và yêu cầu chất lượng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Luôn cộng thêm hệ số dự phòng (buffer) 15–25% cho' trên slide bài giảng là gì?",
+      "a": "retest, regression ngoài kế hoạch, môi trường hỏng, build trễ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Mục nào sau đây không được bao gồm trong Kế hoạch Kiểm thử?",
+      "a": "Kết quả dự kiến.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 306",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 306"
+    }
+  ],
+  "main-11-0": [
+    {
+      "q": "Điều gì làm cho việc kiểm tra khác với các loại đánh giá khác?",
+      "a": "Được dẫn dắt bởi một người lãnh đạo được đào tạo, sử dụng các tiêu chí đầu vào và đầu ra chính thức cùng với danh sách kiểm tra.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 366",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 366"
+    },
+    {
+      "q": "Trong một cuộc họp đánh giá, người điều hành là người",
+      "a": "Làm trung gian hòa giải giữa mọi người",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 191",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 191"
+    },
+    {
+      "q": "Các buổi đánh giá _________ thường chỉ có lập trình viên viết mã và một hoặc hai lập trình viên hoặc người kiểm thử khác tham gia.",
+      "a": "Đánh giá ngang hàng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 412",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 412"
+    }
+  ],
+  "main-11-1": [
+    {
+      "q": "Những yếu tố đầu vào nào sau đây của dự án ảnh hưởng đến việc kiểm thử? (I) Yêu cầu hợp đồng (II) Yêu cầu pháp lý (III) Tiêu chuẩn ngành (IV) Rủi ro ứng dụng (V) Quy mô dự án",
+      "a": "Tất cả các phương án đều đúng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 391",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 391"
+    },
+    {
+      "q": "Phát biểu nào sau đây đúng về phân tích tĩnh:",
+      "a": "Biên dịch mã không phải là một hình thức phân tích tĩnh.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 299",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 299"
+    },
+    {
+      "q": "Mục đích của tiêu chí kết thúc kiểm thử trong kế hoạch kiểm thử là gì?",
+      "a": "Xác định thời điểm dừng hoạt động thử nghiệm",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 386",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 386"
+    }
+  ],
+  "main-11-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Mức chính thức Thấp Thấp' trên slide bài giảng là gì?",
+      "a": "Trung bình Trung bình – Cao Cao nhất",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.3.5 HÌNH THỨC So sánh bốn hình thức xe'?",
+      "a": "Người dẫn dắt Không cố định Tác giả Người điều phối Người điều phối được đào tạo Chuẩn bị cá nhân Không bắt buộc Có thể có Thường có Bắt buộc",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Ai nên có kiến ​​thức chuyên môn về kỹ thuật và kinh doanh?",
+      "a": "Người đánh giá",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 406",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 406"
+    }
+  ],
+  "main-11-3": [
+    {
+      "q": "Nội dung cốt lõi của '(Kỹ thuật)' trên slide bài giảng là gì?",
+      "a": "Inspection (Nghiêm ngặt)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Phân tích tĩnh",
+      "a": "Cả A và B",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 417",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 417"
+    }
+  ],
+  "main-12-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.3.4 VAI TRÒ Năm vai trò cơ bản trong h'?",
+      "a": "Quản lý (Manager) Quyết định nội dung cần xem xét, phân bổ nguồn lực và thời gian.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    }
+  ],
+  "main-12-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Xác định mục tiêu, phạm vi,' trên slide bài giảng là gì?",
+      "a": "sản phẩm cần xem xét, tiêu chí, thành viên tham gia và",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'tài liệu, mục tiêu, phân' trên slide bài giảng là gì?",
+      "a": "công vai trò và tài liệu tham chiếu.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    }
+  ],
+  "main-12-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 BVA Giá trị kiểm thử tại biên của '?",
+      "a": "Biên Ngay dưới biên Tại biên Ngay trên biên Ý nghĩa phát hiện lỗi",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Biên trên = 25 24 (hợp lệ) 25 (hợp lệ) 26 (không hợp lệ) Phát hiện cài đặt sai điều kiện `< 25` thay cho `<= 25`' trên slide bài giảng là gì?",
+      "a": "lỗi off-by-one điển hình",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    }
+  ],
+  "main-12-3": [],
+  "main-13-0": [],
+  "main-13-1": [
+    {
+      "q": "Nội dung cốt lõi của 'BVA ba giá trị (3-value): lấy giá trị biên và hai giá trị lân cận hai phía' trên slide bài giảng là gì?",
+      "a": "chặt chẽ hơn nhưng tạo nhiều dữ liệu hơn",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Chỉ áp dụng cho các vùng có thứ tự (số, ngày tháng, độ dài chuỗi, thời gian)' trên slide bài giảng là gì?",
+      "a": "không áp dụng cho dữ liệu rời rạc như \"màu sắc: đỏ/xanh/vàng\"",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    }
+  ],
+  "main-13-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Ký hiệu: T = điều kiện đúng, F = điều kiện sai,' trên slide bài giảng là gì?",
+      "a": "= giá trị điều kiện không ảnh hưởng đến hành động của quy tắc",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ký hiệu' trên slide bài giảng là gì?",
+      "a": "*không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    }
+  ],
+  "main-13-3": [
+    {
+      "q": "Sử dụng ví dụ mã tương tự như câu 17, cần bao nhiêu bài kiểm tra để đạt được độ phủ nhánh/quyết định 100%?",
+      "a": "3",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 339",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 339"
+    },
+    {
+      "q": "Nếu đoạn mã giả dưới đây là một ngôn ngữ lập trình, cần bao nhiêu bài kiểm thử để đạt được độ phủ câu lệnh 100%? 1. If x=3 then 2. Display_messageX; 3. If y=2 then 4. Display_messageY; 5. Else 6. Display_messageZ; 7. Else 8. Display_messageZ;",
+      "a": "3",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 337",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 337"
+    },
+    {
+      "q": "Nếu một chương trình được kiểm thử và đạt được độ bao phủ điều kiện 100%, thì tiêu chí bao phủ nào sau đây được đảm bảo sẽ đạt được?",
+      "a": "Độ phủ điều kiện 100% và độ phủ câu lệnh 100%.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 387",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 387"
+    }
+  ],
+  "main-14-0": [
+    {
+      "q": "Số lượng trường hợp kiểm thử tối thiểu cần thiết để đạt được độ phủ nhánh 100% là bao nhiêu? If(x>y) x=x+1; else y=y+1; while(x>y) { y=x*y; x=x+1; }",
+      "a": "2",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 310",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 310"
+    },
+    {
+      "q": "Nếu một chương trình được kiểm thử và đạt được độ phủ nhánh 100%, thì tiêu chí độ phủ nào sau đây được đảm bảo sẽ đạt được?",
+      "a": "Độ phủ điều kiện 100% và độ phủ câu lệnh 100%.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 368",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 368"
+    },
+    {
+      "q": "Đoạn chương trình sau đây được cho: WHILE (condition A) Do B END WHILE Cần kiểm tra bao nhiêu đường dẫn trong đoạn mã này để đạt được độ phủ đường dẫn 100%?",
+      "a": "Hai",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 385",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 385"
+    }
+  ],
+  "main-14-1": [],
+  "main-14-2": [],
+  "main-14-3": [
+    {
+      "q": "Một trong những điều sau đây không phải là một phần của thử nghiệm hộp trắng theo tiêu chuẩn BS7925-II.",
+      "a": "Syntax testing.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 313",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 313"
+    },
+    {
+      "q": "Việc chỉ sử dụng phương pháp kiểm thử hộp trắng trong giai đoạn thử nghiệm sẽ:",
+      "a": "Có nguy cơ các yêu cầu không được đáp ứng.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 322",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 322"
+    },
+    {
+      "q": "Kiểm thử hộp trắng",
+      "a": "Tương tự như thử nghiệm trong hộp kính",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 414",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 414"
+    }
+  ],
+  "main-15-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Cách thực hiện Tester thao tác trực tiếp Máy chạy script đã lập trình sẵn Tốc độ Chậm Nhanh' trên slide bài giảng là gì?",
+      "a": "gấp hàng chục lần",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.3 SO SÁNH Bảng so sánh kiểm thử thủ cô'?",
+      "a": "Độ chính xác Dễ sai sót do yếu tố con người Chính xác cao, nhất quán qua nhiều lần chạy",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    }
+  ],
+  "main-15-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Dùng cho các điều kiện tiên quyết' trên slide bài giảng là gì?",
+      "a": "nếu bước này sai thì các bước sau không còn ý nghĩa",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Ví dụ' trên slide bài giảng là gì?",
+      "a": "nếu không đăng nhập thành công thì không cần chạy các bước kiểm tra giỏ hàng, thanh toán phía sau",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-15-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Kết luận' trên slide bài giảng là gì?",
+      "a": "tự động hoá chỉ có lợi khi bộ test được chạy lại nhiều lần. Với chức năng chỉ kiểm thử 1–2 lần, kiểm thử thủ công rẻ hơn và nhanh hơn.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.2 ROI Điểm hoà vốn của tự động hoá (Au'?",
+      "a": "Kiểm thử thủ công Kiểm thử tự động Điểm hoà vốn ≈ lần chạy thứ 6–7 L1 L3 L5 L7 L9 L11 L13",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    }
+  ],
+  "main-15-3": [],
+  "main-16-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Đăng nhập, đăng ký, tìm kiếm, thanh toán' trên slide bài giảng là gì?",
+      "a": "được kiểm tra trong nhiều lần phát triển ⇒ tiết kiệm lớn.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Load test, stress test' trên slide bài giảng là gì?",
+      "a": "bắt buộc phải tự động vì cần mô phỏng hàng nghìn người dùng đồng thời.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    },
+    {
+      "q": "Kiểm thử hồi quy luôn bao gồm",
+      "a": "Kiểm tra xem các thay đổi có gây ra tác dụng phụ bất lợi hay không.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 302",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 302"
+    }
+  ],
+  "main-16-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Nguyên tắc chung' trên slide bài giảng là gì?",
+      "a": "tự động hoá chỉ phát huy hiệu quả khi được áp dụng đúng hoàn cảnh. Quyết định phải dựa trên đặc điểm cụ thể của dự án, không áp dụng cứng nhắc.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Đặc biệt ở giai đoạn đầu phát triển' trên slide bài giảng là gì?",
+      "a": "thay đổi nhỏ về UI cũng làm script hỏng, phải sửa liên tục.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Việc kiểm thử _______ nên bao gồm các bài kiểm thử vận ​​hành của môi trường mới cũng như của phần mềm đã được thay đổi.",
+      "a": "Maintenance testing",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 399",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 399"
+    }
+  ],
+  "main-16-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Căn cứ' trên slide bài giảng là gì?",
+      "a": "loại ứng dụng, ngôn ngữ lập trình nhóm thành thạo, chi phí bản quyền, khả năng tích hợp CI/CD, cộng đồng hỗ trợ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Chọn sai công cụ ⇒ khó triển khai và làm giảm hiệu quả kiểm thử' trên slide bài giảng là gì?",
+      "a": "② THIẾT KẾ KỊCH BẢN KIỂM THỬ (TEST SCRIPT)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Loại kiểm thử nào sau đây là kiểm thử phi chức năng?",
+      "a": "Kiểm tra khả năng sử dụng.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 315",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 315"
+    }
+  ],
+  "main-16-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Rủi ro' trên slide bài giảng là gì?",
+      "a": "Tự động hoá sai chỗ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Khắc phục: tuân thủ kim tự tháp kiểm thử' trên slide bài giảng là gì?",
+      "a": "ưu tiên unit và API.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Bạn sẽ thực hiện loại kiểm thử nào đối với giải pháp ngân hàng trực tuyến?",
+      "a": "Non-functional testing.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 316",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 316"
+    }
+  ],
+  "main-17-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đón'?",
+      "a": "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
+    },
+    {
+      "q": "Cái nào trong các lựa chọn sau đây là khác biệt?",
+      "a": "Chức năng",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 362",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 362"
+    },
+    {
+      "q": "Kiểm thử chức năng chủ yếu là",
+      "a": "Kỹ thuật xác thực",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 401",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 401"
+    }
+  ],
+  "main-17-1": [],
+  "main-17-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Xác định rõ dữ liệu đầu vào' trên slide bài giảng là gì?",
+      "a": "các bước thực hiện – kết quả mong đợi",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Script nên rõ ràng, dễ hiểu và có khả năng tái sử dụng để thuận tiện cho việc bảo trì' trên slide bài giảng là gì?",
+      "a": "③ THỰC THI KIỂM THỬ TỰ ĐỘNG",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-17-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.4.3 HIỆU NĂNG So sánh thực thi tuần tự'?",
+      "a": "Kiểm thử tương thích một website trên ba trình duyệt Chrome, Firefox và Edge (mỗi trình duyệt 10 phút) THỰC THI TUẦN TỰ (không dùng Grid)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Chrome' trên slide bài giảng là gì?",
+      "a": "10 phút Firefox – 10 phút Edge – 10 phút Tổng = 30 phút THỰC THI SONG SONG (dùng Selenium Grid) Chrome – 10 phút",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-18-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình' trên slide bài giảng là gì?",
+      "a": "④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.6 CHI TIẾT Chi tiết từng bước trong qu'?",
+      "a": "▸ Phân biệt lỗi thật của sản phẩm với lỗi của script (false failure); ghi nhận và báo cáo cho nhóm phát triển",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-18-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '5.6 QUY TRÌNH Quy trình xây dựng kiểm th'?",
+      "a": "trình và năng lực của nhóm.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 16",
+      "badgeClass": "yes",
+      "source": "Slide tr. 16"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Trong thực tế còn có bước ⓪ Đánh giá tính khả thi (chọn test case nào đáng tự động hoá) và bước ⑤ Bảo trì script' trên slide bài giảng là gì?",
+      "a": "chiếm phần lớn công sức về lâu dài.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 16",
+      "badgeClass": "yes",
+      "source": "Slide tr. 16"
+    }
+  ],
+  "main-18-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử bảo mật (Security)' trên slide bài giảng là gì?",
+      "a": "Phân quyền, SQL injection, XSS, mã hoá dữ liệu, quản lý phiên đăng nhập.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Kiểm thử độ tin cậy (Reliability)' trên slide bài giảng là gì?",
+      "a": "Khả năng chịu lỗi, phục hồi sau sự cố (recovery), thời gian hoạt động liên tục.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-18-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.1.1 KHÁI NIỆM Selenium là gì?'?",
+      "a": "Selenium là một bộ công cụ kiểm thử tự động mã nguồn mở (open-source test automation tool) dành cho ứng dụng web, hỗ trợ hoạt động trên nhiều trình duyệt và nhiều nền tảng khác nhau như Windows, macOS, Linux.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Cho phép tester tự động thực hiện các thao tác' trên slide bài giảng là gì?",
+      "a": "click chuột, nhập dữ liệu, chuyển trang và kiểm tra kết quả hiển thị.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 5",
+      "badgeClass": "yes",
+      "source": "Slide tr. 5"
+    }
+  ],
+  "main-19-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.3 SELENIUM IDE Selenium IDE – khái niệ'?",
+      "a": "▸ Selenium IDE (Integrated Development Environment) là tiện ích mở rộng trên trình duyệt (Firefox, Chrome) cho phép ghi lại (record) và phát lại (playback) thao tác của người dùng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mọi thao tác' trên slide bài giảng là gì?",
+      "a": "nhấp chuột, nhập văn bản, chuyển trang – được ghi lại thành kịch bản kiểm thử",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    }
+  ],
+  "main-19-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.4.1 ĐẶC ĐIỂM Bốn đặc tính kỹ thuật cốt'?",
+      "a": "Thay vì xếp hàng chờ từng kịch bản chạy tuần tự, Grid kích hoạt đồng thời hàng loạt bài kiểm tra, giảm thời gian kiểm thử từ vài tiếng xuống vài phút.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    }
+  ],
+  "main-19-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.4.2 KIẾN TRÚC Kiến trúc Hub – Node của'?",
+      "a": "NODE là các máy trạm thực tế (máy vật lý hoặc máy ảo) đã đăng ký với Hub, chứa trình duyệt và driver tương ứng. Khi nhận lệnh từ Hub, Node trực tiếp khởi động trình duyệt và thực thi các bước kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 22",
+      "badgeClass": "yes",
+      "source": "Slide tr. 22"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'TEST SCRIPT (máy của tester)' trên slide bài giảng là gì?",
+      "a": "NODE 1 Windows + Chrome HUB (điểm điều phối duy nhất)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 22",
+      "badgeClass": "yes",
+      "source": "Slide tr. 22"
+    }
+  ],
+  "main-19-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.6.3 ③ Định vị phần tử (Locators) – dùn'?",
+      "a": "driver.FindElement(By.Id(\"elementId\")); // theo thuoc tinh id driver.FindElement(By.Name(\"elementName\")); // theo thuoc tinh name driver.FindElement(By.ClassName(\"className\")); // theo thuoc tinh class driver.FindElement(By.TagName(\"input\")); // theo the HTML driver.FindElement(By.LinkText(\"Dang nhap\")); // theo van ban lien ket driver.FindElement(By.CssSelector(\"#login .btn\")); // theo CSS selector driver.FindElement(By.XPath(\"//button[@id='btnLogin']\")); // theo XPath",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 32",
+      "badgeClass": "yes",
+      "source": "Slide tr. 32"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Thứ tự ưu tiên khuyến nghị' trên slide bài giảng là gì?",
+      "a": "`Id` → `Name` → `CssSelector` → `XPath`. Ưu tiên Id vì nhanh nhất và ổn định nhất; hạn chế XPath tuyệt đối (dạng `/html/body/div[3]/...`) vì rất dễ hỏng khi giao diện thay đổi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 32",
+      "badgeClass": "yes",
+      "source": "Slide tr. 32"
+    }
+  ],
+  "main-20-0": [],
+  "main-20-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả' trên slide bài giảng là gì?",
+      "a": "ASSERT – Khẳng định",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.3.4 ASSERT VS VERIFY Assert và Verify '?",
+      "a": "▸ Ghi nhận lỗi nhưng vẫn chạy tiếp",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-20-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.6.4 ④ Tương tác với phần tử (WebElemen'?",
+      "a": "IWebElement element = driver.FindElement(By.Id(\"elementId\"));",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 33",
+      "badgeClass": "yes",
+      "source": "Slide tr. 33"
+    }
+  ],
+  "main-20-3": [],
+  "main-21-0": [],
+  "main-21-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Element (Phần tử)' trên slide bài giảng là gì?",
+      "a": "Locator (Bộ định vị) Wait (Chờ đợi)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.5.3 KHÁI NIỆM Năm khái niệm cần biết t'?",
+      "a": "Là kết nối giữa WebDriver và trình duyệt. Mỗi session có một ID duy nhất dùng để xác định các lệnh và kết quả. Session được tạo khi khởi tạo đối tượng WebDriver, và kết thúc khi đóng trình duyệt hoặc gọi phương thức `Quit()`.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    }
+  ],
+  "main-21-2": [],
+  "main-21-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Ví dụ: kiểm tra logo, banner, menu và chân trang có hiển thị đủ hay không' trên slide bài giảng là gì?",
+      "a": "nếu logo sai vẫn nên kiểm tra tiếp các phần còn lại",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Giúp thu thập được nhiều lỗi trong một lần chạy' trên slide bài giảng là gì?",
+      "a": "VERIFY – Xác minh",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-22-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '6.6.7 VÍ DỤ Ví dụ hoàn chỉnh: kịch bản k'?",
+      "a": "IWebDriver driver = new ChromeDriver(); driver.Manage().Window.Maximize();",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 35",
+      "badgeClass": "yes",
+      "source": "Slide tr. 35"
+    },
+    {
+      "q": "Nội dung cốt lõi của '? \"TEST PASSED\"' trên slide bài giảng là gì?",
+      "a": "\"TEST FAILED\");",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 35",
+      "badgeClass": "yes",
+      "source": "Slide tr. 35"
+    }
+  ],
+  "main-22-1": [],
+  "main-22-2": [
+    {
+      "q": "Những mục kiểm thử nào nên được đưa vào quản lý cấu hình?",
+      "a": "Đối tượng thử nghiệm, vật liệu thử nghiệm và môi trường thử nghiệm",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 384",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 384"
+    },
+    {
+      "q": "Kế hoạch kiểm thử định nghĩa như sau:",
+      "a": "Mục tiêu và kết quả",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 407",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 407"
+    }
+  ],
+  "main-22-3": [],
+  "main-23-0": [
+    {
+      "q": "Nội dung cốt lõi của 'Cài đặt' trên slide bài giảng là gì?",
+      "a": "gỡ cài đặt, nâng cấp phiên bản, độ phức tạp mã nguồn.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-23-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Triển khai lên môi trường' trên slide bài giảng là gì?",
+      "a": "test, chạy bộ test API và tích hợp.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    }
+  ],
+  "main-23-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '1.6 APPROACHES Các cách tiếp cận trong k'?",
+      "a": "Ưu tiên kiểm thử phần có xác suất lỗi cao hoặc tác động lớn. Rủi ro = Xác suất × Mức thiệt hại.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Áp dụng bộ kỹ thuật chuẩn' trên slide bài giảng là gì?",
+      "a": "phân vùng tương đương, giá trị biên, checklist chất lượng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    }
+  ],
+  "main-23-3": [],
+  "main-24-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.3.2 ĐỐI TƯỢNG Đối tượng và khiếm khuyế'?",
+      "a": "Tài liệu yêu cầu Mơ hồ, mâu thuẫn giữa các mục, thiếu xử lý ngoại lệ, yêu cầu không thể kiểm thử được, thuật ngữ không nhất quán.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    }
+  ],
+  "main-24-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Walkthrough' trên slide bài giảng là gì?",
+      "a": "(Tuần tự) — Technical Review",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Phương pháp dự đoán lỗi là cách sử dụng tốt nhất.",
+      "a": "Sau khi các kỹ thuật chính thức hơn đã được áp dụng.",
+      "tag": "OnTap C131+",
+      "badge": "OnTap Câu 259",
+      "badgeClass": "quiz",
+      "source": "OnTap Câu 259"
+    }
+  ],
+  "main-24-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Rủi ro: Locator dễ vỡ' trên slide bài giảng là gì?",
+      "a": "Dùng XPath dài, phụ thuộc vị trí ⇒ đổi giao diện là hỏng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Rủi ro: Test không độc lập' trên slide bài giảng là gì?",
+      "a": "Test A phải chạy trước test B ⇒ không chạy song song được.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-24-3": [],
+  "main-25-0": [],
+  "main-25-1": [],
+  "main-25-2": [],
+  "main-25-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.7 CHANGE-RELATED Kiểm thử liên quan đế'?",
+      "a": "▸ Nếu vẫn fail ⇒ mở lại (reopen) defect",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Smoke test' trên slide bài giảng là gì?",
+      "a": "bộ test rất ngắn chạy ngay sau khi build để xác nhận hệ thống \"đủ sống\" để kiểm thử sâu. Sanity test: kiểm tra nhanh một vùng chức năng vừa được sửa.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 24",
+      "badgeClass": "yes",
+      "source": "Slide tr. 24"
+    }
+  ],
+  "main-26-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '2.2.4 AGILE Mô hình Agile – Scrum 11 Pro'?",
+      "a": "Cùng viết tiêu chí chấp nhận (acceptance criteria) trong buổi refinement, trước khi code.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Sprint Planning' trên slide bài giảng là gì?",
+      "a": "KIỂM THỬ DIỄN RA LIÊN TỤC TRONG SUỐT SPRINT – tester tham gia từ ngày đầu tiên Sprint 1–4 tuần Daily Scrum",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    }
+  ],
+  "main-26-1": [
+    {
+      "q": "Nội dung cốt lõi của 'Phân tích Test analysis' trên slide bài giảng là gì?",
+      "a": "4 Thiết kế Test design 5 Triển khai Test implementation",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Thực thi Test execution' trên slide bài giảng là gì?",
+      "a": "7 Kết thúc Test completion",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    }
+  ],
+  "main-26-2": [
+    {
+      "q": "Nội dung cốt lõi của 'Cảnh báo: không dùng metrics để đánh giá cá nhân (VD: \"tester nào báo nhiều bug hơn\")' trên slide bài giảng là gì?",
+      "a": "sẽ dẫn đến hành vi lệch lạc và phá hỏng tinh thần hợp tác.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Tỷ lệ đạt' trên slide bài giảng là gì?",
+      "a": "Pass Rate = TC Pass / TC đã chạy × 100%.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide tr. 19"
+    }
+  ],
+  "main-26-3": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '3.6 TEST PLAN Nội dung chính của một Tes'?",
+      "a": "1. Thông tin chung Test Plan ID, tên dự án, phiên bản, người lập, ngày lập, lịch sử thay đổi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    }
+  ],
+  "main-27-0": [],
+  "main-27-1": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.4.6 PHÂN TÍCH Kết quả phân tích đoạn m'?",
+      "a": "▸ Biến `isValid` được khai báo nhưng không sử dụng",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Điều kiện `AvailableSeats < 0` đáng ngờ' trên slide bài giảng là gì?",
+      "a": "lớp có 0 chỗ vẫn được chấp nhận",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    }
+  ],
+  "main-27-2": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 USE CASE e) Kiểm thử dựa trên trườ'?",
+      "a": "▸ Xây dựng test case từ luồng tương tác giữa tác nhân (actor) và hệ thống để đạt một mục tiêu nghiệp vụ",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'Mỗi use case gồm' trên slide bài giảng là gì?",
+      "a": "luồng chính (basic flow), luồng thay thế (alternative flow) và luồng ngoại lệ (exception flow)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    }
+  ],
+  "main-27-3": [],
+  "main-28-0": [],
+  "main-28-1": [],
+  "main-28-2": [],
+  "main-28-3": [],
+  "main-29-0": [],
+  "main-29-1": [],
+  "main-29-2": [],
+  "main-29-3": [
+    {
+      "q": "Nội dung cốt lõi của 'Đại diện: 0' trên slide bài giảng là gì?",
+      "a": "CÁC VÙNG BỔ SUNG CẦN XÉT (thường bị bỏ sót)",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.3 EP Ví dụ phân vùng tương đương – t'?",
+      "a": "▸ Bỏ trống ô nhập • Nhập chữ cái thay vì số • Nhập số thập phân (12,5 tín chỉ) • Nhập số âm • Nhập ký tự đặc biệt",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    }
+  ],
+  "main-30-0": [],
+  "main-30-1": [
+    {
+      "q": "Nội dung cốt lõi của '\"Bị từ chối\" không phải là một trạng thái lưu giữ mà là kết quả xử lý tức thời' trên slide bài giảng là gì?",
+      "a": "sau khi bị từ chối, đối tượng trở về trạng thái *Chưa đăng ký*. Xác định đúng ranh giới trạng thái là bước khó nhất của kỹ thuật này.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 16",
+      "badgeClass": "yes",
+      "source": "Slide tr. 16"
+    },
+    {
+      "q": "Nội dung cốt lõi của 'CHƯA ĐĂNG KÝ' trên slide bài giảng là gì?",
+      "a": "Gửi yêu cầu [đợt ĐK mở]",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 16",
+      "badgeClass": "yes",
+      "source": "Slide tr. 16"
+    }
+  ],
+  "main-30-2": [],
+  "main-30-3": [],
+  "main-31-0": [
+    {
+      "q": "Kiến thức cần ghi nhớ về '4.2.4 VÍ DỤ Ví dụ tính độ bao phủ – đoạn'?",
+      "a": "Sáu dòng S1–S6 là sáu câu lệnh cần bao phủ; hai quyết định D1 và D2 tạo ra bốn nhánh đúng/sai.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 22",
+      "badgeClass": "yes",
+      "source": "Slide tr. 22"
+    }
+  ],
+  "main-31-1": [],
+  "main-31-2": [],
+  "main-31-3": [],
+  "main-32-0": [],
+  "main-32-1": []
+}

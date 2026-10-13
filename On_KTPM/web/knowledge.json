@@ -1,0 +1,2702 @@
+{
+ "pdf-C1-1": {
+  "title": "1.1 MỤC TIÊU Mục tiêu của kiểm thử (Test Objectives – ISTQB)",
+  "paras": [
+   "1. Ngăn ngừa khiếm khuyết",
+   "Đánh giá sản phẩm công việc (yêu cầu, thiết kế) ngay từ sớm để phòng ngừa (prevent) lỗi phát sinh trong mã nguồn.",
+   "5. Tìm khiếm khuyết & thất bại — Phát hiện defect / failure càng sớm càng tốt để giảm rủi ro.",
+   "Mục tiêu kiểm thử thay đổi theo ngữ cảnh: kiểm thử thành phần chú trọng tìm lỗi sớm; kiểm thử chấp nhận chú trọng xây dựng niềm tin.",
+   "2. Xác minh yêu cầu — Kiểm tra tất cả các yêu cầu đã được cài đặt đầy đủ (verification).",
+   "6. Cung cấp thông tin — Cung cấp đủ thông tin cho các bên liên quan (stakeholders) ra quyết định phát hành.",
+   "3. Kiểm tra sự phù hợp — Xác nhận đối tượng kiểm thử hoạt động đúng kỳ vọng người dùng (validation).",
+   "7. Giảm rủi ro — Giảm mức rủi ro chất lượng (quality risk) còn tồn đọng của sản phẩm.",
+   "4. Xây dựng niềm tin — Tạo sự tự tin (confidence) về mức chất lượng của đối tượng kiểm thử.",
+   "8. Tuân thủ — Đáp ứng các yêu cầu hợp đồng, pháp lý, tiêu chuẩn ngành (banking, y tế, hàng không...)."
+  ]
+ },
+ "pdf-C1-2": {
+  "title": "1.2 PHÂN BIỆT Kiểm thử và Gỡ lỗi (Testing vs. Debugging) 7 KIỂM THỬ (Testing)",
+  "paras": [
+   "Phát hiện thất bại (failure) — do khiếm khuyết gây ra",
+   "Ai làm gì? Kiểm thử thường do tester thực hiện; gỡ lỗi do lập trình viên (developer) thực hiện. Trong Agile/DevOps, ranh giới này mờ đi: tester có thể tham gia gỡ lỗi, developer viết và chạy unit test.",
+   "GỠ LỖI (Debugging) — Tìm nguyên nhân, phân tích và sửa khiếm khuyết",
+   "KIỂM THỬ XÁC NHẬN (Confirmation Testing) — Chạy lại để xác nhận lỗi đã được sửa đúng"
+  ]
+ },
+ "pdf-C1-3": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-4": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-5": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "pdf-C1-6": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "pdf-C1-7": {
+  "title": "1.7 QUY TRÌNH Quy trình kiểm thử – 4 bước cơ bản",
+  "paras": [
+   "BƯỚC 1 — Lập kế hoạch — kiểm thử (Test Planning)",
+   "Xác định mục tiêu, phạm vi, nguồn lực, thời gian, công cụ, rủi ro và tiêu chí kết thúc (exit criteria).",
+   "Quy trình này có tính lặp (iterative): khi lỗi được sửa hoặc yêu cầu thay đổi, ta quay lại bước thiết kế / thực thi.",
+   "BƯỚC 2 — Phân tích & thiết kế kiểm thử (Analysis & Design) — Đọc hiểu yêu cầu, xác định điều kiện",
+   "kiểm thử, thiết kế test case và test data, chọn kỹ thuật phù hợp.",
+   "BƯỚC 3 — Triển khai & — thực thi (Implementation &",
+   "Execution) Chuẩn bị môi trường, thực thi test case, ghi nhận Pass/Fail, báo cáo lỗi, kiểm thử lại (retest) sau khi sửa.",
+   "BƯỚC 4 — Đánh giá & — kết thúc (Evaluation & Closure)",
+   "So sánh với tiêu chí kết thúc, tổng",
+   "hợp báo cáo kiểm thử, lưu trữ testware, rút kinh nghiệm (lessons learned)."
+  ]
+ },
+ "pdf-C1-8": {
+  "title": "1.7 QUY TRÌNH Quy trình kiểm thử – 4 bước cơ bản",
+  "paras": [
+   "BƯỚC 1 — Lập kế hoạch — kiểm thử (Test Planning)",
+   "Xác định mục tiêu, phạm vi, nguồn lực, thời gian, công cụ, rủi ro và tiêu chí kết thúc (exit criteria).",
+   "Quy trình này có tính lặp (iterative): khi lỗi được sửa hoặc yêu cầu thay đổi, ta quay lại bước thiết kế / thực thi.",
+   "BƯỚC 2 — Phân tích & thiết kế kiểm thử (Analysis & Design) — Đọc hiểu yêu cầu, xác định điều kiện",
+   "kiểm thử, thiết kế test case và test data, chọn kỹ thuật phù hợp.",
+   "BƯỚC 3 — Triển khai & — thực thi (Implementation &",
+   "Execution) Chuẩn bị môi trường, thực thi test case, ghi nhận Pass/Fail, báo cáo lỗi, kiểm thử lại (retest) sau khi sửa.",
+   "BƯỚC 4 — Đánh giá & — kết thúc (Evaluation & Closure)",
+   "So sánh với tiêu chí kết thúc, tổng",
+   "hợp báo cáo kiểm thử, lưu trữ testware, rút kinh nghiệm (lessons learned)."
+  ]
+ },
+ "pdf-C1-9": {
+  "title": "1.8 TÂM LÝ Tâm lý kiểm thử (Tester Psychology) 24 TƯ DUY LẬP TRÌNH VIÊN (Developer mindset)",
+  "paras": [
+   "▸ Mục tiêu: xây dựng và hoàn thiện sản phẩm",
+   "▸ Tư duy khẳng định: \"chức năng của tôi chạy được\"",
+   "▸ Thiên kiến xác nhận (confirmation bias): khó tự thấy lỗi của chính mình",
+   "▸ Tập trung vào giải pháp kỹ thuật",
+   "Giao tiếp là chìa khoá: báo lỗi về sản phẩm, không phê phán con người. Dùng dữ liệu khách quan, mô tả rõ các bước tái hiện, tránh ngôn từ quy kết.",
+   "TƯ DUY NGƯỜI KIỂM THỬ (Tester mindset)",
+   "▸ Mục tiêu: tìm ra lỗi tiềm ẩn trước khi người dùng gặp",
+   "▸ Tư duy phản biện (critical thinking), hoài nghi lành mạnh",
+   "▸ Chú ý chi tiết, quan tâm luồng ngoại lệ (negative path)",
+   "▸ Đặt câu hỏi \"Điều gì xảy ra nếu...?\""
+  ]
+ },
+ "pdf-C1-10": {
+  "title": "1.4 SỰ CẦN THIẾT Vì sao phải kiểm thử phần mềm? 13 Phần mềm luôn tiềm ẩn lỗi",
+  "paras": [
+   "Con người viết phần mềm ⇒ con người mắc sai sót. Hệ thống càng lớn, xác suất lỗi càng cao.",
+   "Tăng độ tin cậy — Sản phẩm ổn định hơn, ít sự cố khi vận hành thực tế.",
+   "Sự cố kinh điển: Ariane 5 (1996) nổ sau 37 giây do lỗi ép kiểu số – thiệt hại ~370 triệu USD; Therac-25 gây tử vong do lỗi phần mềm điều khiển liều xạ trị.",
+   "Hậu quả có thể nghiêm trọng",
+   "Thiệt hại tài chính, mất dữ liệu, tổn hại uy tín, thậm chí nguy hiểm tính mạng (y tế, hàng không).",
+   "Cải thiện trải nghiệm — Người dùng hài lòng ⇒ giữ chân khách hàng, tăng doanh thu.",
+   "Giảm chi phí sửa lỗi — Phát hiện sớm ⇒ chi phí khắc phục thấp hơn nhiều lần (xem mô hình chi phí ở trên).",
+   "Bảo vệ uy tín tổ chức — Một sự cố lớn có thể xoá bỏ nhiều năm xây dựng thương hiệu."
+  ]
+ },
+ "pdf-C1-11": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-12": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-13": {
+  "title": "1.3 COST OF DEFECTS Chi phí sửa lỗi tăng theo giai đoạn phát hiện",
+  "paras": [
+   "Chi phí tương đối để sửa một khiếm khuyết theo giai đoạn phát hiện (mô hình Boehm)",
+   "Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left): phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành.",
+   "×1 — Yêu cầu — ×5",
+   "Thiết kế — ×10 — Lập trình",
+   "×25 — Kiểm thử — ×100",
+   "Vận hành"
+  ]
+ },
+ "pdf-C1-14": {
+  "title": "1.3 COST OF DEFECTS Chi phí sửa lỗi tăng theo giai đoạn phát hiện",
+  "paras": [
+   "Chi phí tương đối để sửa một khiếm khuyết theo giai đoạn phát hiện (mô hình Boehm)",
+   "Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left): phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành.",
+   "×1 — Yêu cầu — ×5",
+   "Thiết kế — ×10 — Lập trình",
+   "×25 — Kiểm thử — ×100",
+   "Vận hành"
+  ]
+ },
+ "pdf-C1-15": {
+  "title": "1.3 CHẤT LƯỢNG Chất lượng phần mềm – 8 đặc tính theo ISO/IEC 25010 12 Tính phù hợp chức năng (Functional suitability)",
+  "paras": [
+   "Phần mềm làm đúng những gì được yêu cầu: đầy đủ, chính xác, phù hợp.",
+   "Độ tin cậy (Reliability) — Hoạt động ổn định, chịu lỗi, phục hồi được sau sự cố.",
+   "Giáo trình tóm gọn thành 5 tiêu chí: đúng chức năng – ổn định – dễ sử dụng – an toàn – dễ bảo trì. ISO 25010 là bản chi tiết hoá quốc tế của các tiêu chí này.",
+   "Hiệu năng (Performance efficiency) — Thời gian phản hồi, thông lượng, mức sử dụng tài nguyên.",
+   "Bảo mật (Security) — Bảo vệ dữ liệu: bí mật, toàn vẹn, xác thực, chống chối bỏ.",
+   "Tính tương thích (Compatibility) — Cùng tồn tại và trao đổi dữ liệu tốt với hệ thống khác.",
+   "Khả năng bảo trì (Maintainability) — Dễ đọc, dễ sửa, dễ kiểm thử, module hoá tốt.",
+   "Khả năng sử dụng (Usability) — Dễ học, dễ dùng, giao diện thân thiện, hỗ trợ người khuyết tật.",
+   "Tính khả chuyển (Portability) — Dễ cài đặt, thay thế, chạy trên nhiều môi trường."
+  ]
+ },
+ "pdf-C1-16": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-17": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "pdf-C1-18": {
+  "title": "1.1 KHÁI NIỆM Kiểm thử phần mềm là gì?",
+  "paras": [
+   "Kiểm thử phần mềm (Software Testing) là quá trình đánh giá (evaluation) và xác minh (verification) rằng một phần mềm đáp ứng các yêu cầu đã được đặc tả và hoạt động đúng như mong đợi.",
+   "GÓC NHÌN MỞ RỘNG THEO ISTQB — Không chỉ là \"chạy thử\"",
+   "Kiểm thử bao gồm cả các hoạt động trước và sau khi thực thi: lập kế hoạch, phân tích, thiết kế, báo cáo, kết thúc.",
+   "Ghi nhớ: Kiểm thử ≠ chỉ tìm lỗi. Kiểm thử còn nhằm xây dựng niềm tin vào chất lượng và cung cấp thông tin cho việc ra quyết định.",
+   "Gồm cả tĩnh và động — Kiểm thử tĩnh (static): rà soát tài liệu, mã nguồn – không chạy chương trình.",
+   "Kiểm thử động (dynamic): thực thi phần mềm với dữ liệu đầu vào.",
+   "Là hoạt động cả vòng đời — Kiểm thử diễn ra xuyên suốt SDLC, không phải một giai đoạn nằm cuối dự án."
+  ]
+ },
+ "pdf-C1-19": {
+  "title": "1.1 MỤC TIÊU Mục tiêu của kiểm thử (Test Objectives – ISTQB)",
+  "paras": [
+   "1. Ngăn ngừa khiếm khuyết",
+   "Đánh giá sản phẩm công việc (yêu cầu, thiết kế) ngay từ sớm để phòng ngừa (prevent) lỗi phát sinh trong mã nguồn.",
+   "5. Tìm khiếm khuyết & thất bại — Phát hiện defect / failure càng sớm càng tốt để giảm rủi ro.",
+   "Mục tiêu kiểm thử thay đổi theo ngữ cảnh: kiểm thử thành phần chú trọng tìm lỗi sớm; kiểm thử chấp nhận chú trọng xây dựng niềm tin.",
+   "2. Xác minh yêu cầu — Kiểm tra tất cả các yêu cầu đã được cài đặt đầy đủ (verification).",
+   "6. Cung cấp thông tin — Cung cấp đủ thông tin cho các bên liên quan (stakeholders) ra quyết định phát hành.",
+   "3. Kiểm tra sự phù hợp — Xác nhận đối tượng kiểm thử hoạt động đúng kỳ vọng người dùng (validation).",
+   "7. Giảm rủi ro — Giảm mức rủi ro chất lượng (quality risk) còn tồn đọng của sản phẩm.",
+   "4. Xây dựng niềm tin — Tạo sự tự tin (confidence) về mức chất lượng của đối tượng kiểm thử.",
+   "8. Tuân thủ — Đáp ứng các yêu cầu hợp đồng, pháp lý, tiêu chuẩn ngành (banking, y tế, hàng không...)."
+  ]
+ },
+ "pdf-C1-20": {
+  "title": "3.2 TEST CASE Cấu trúc một trường hợp kiểm thử (Test Case) chuẩn 6 Trường thông tin Mô tả Ví dụ",
+  "paras": [
+   "Test Case ID Mã định danh duy nhất, đặt theo quy ước TC_LOGIN_001 Chức năng / Module Chức năng được kiểm thử Đăng nhập",
+   "Mục tiêu kiểm thử Test case này nhằm xác minh điều gì Kiểm tra đăng nhập thành công với tài khoản hợp lệ",
+   "Điều kiện tiên quyết (Precondition) Trạng thái hệ thống trước khi thực hiện Đã có tài khoản hợp lệ, trạng thái Active",
+   "Các bước thực hiện Từng bước rõ ràng, đánh số, ai cũng làm lại được 1. Mở trang Login 2. Nhập Username 3. Nhập Password 4. Nhấn Login",
+   "Dữ liệu kiểm thử Dữ liệu đầu vào cụ thể admin / 123456",
+   "Kết quả mong đợi (Expected result) Kết quả đúng theo đặc tả – phải xác định trước khi chạy Đăng nhập thành công, chuyển tới Dashboard, hiển thị tên người dùng",
+   "Kết quả thực tế / Trạng thái Ghi nhận khi thực thi Pass / Fail / Blocked / Skipped",
+   "Bổ sung thường gặp: độ ưu tiên (priority), người thực hiện, phiên bản, liên kết yêu cầu (requirement ID), Bug ID."
+  ]
+ },
+ "pdf-C2-1": {
+  "title": "2.1 SDLC Hoạt động kiểm thử trong từng giai đoạn của SDLC 5 Giai đoạn SDLC Hoạt động kiểm thử tương ứng Sản phẩm",
+  "paras": [
+   "Phân tích yêu cầu Rà soát (review) tài liệu yêu cầu: phát hiện mơ hồ, mâu thuẫn, thiếu sót, yêu cầu không kiểm thử được. Test plan sơ bộ",
+   "Thiết kế Xem xét tài liệu thiết kế, kiến trúc, mô hình dữ liệu; thiết kế test case mức hệ thống. Test design",
+   "Lập trình Lập trình viên viết unit test; phân tích tĩnh mã nguồn; review mã (code review). Unit test, báo cáo static analysis",
+   "Kiểm thử Thực hiện kiểm thử tích hợp, hệ thống, chấp nhận; ghi nhận và theo dõi lỗi. Test log, defect report",
+   "Triển khai Kiểm thử môi trường triển khai, smoke test sau khi cài đặt, kiểm thử cấu hình. Biên bản nghiệm thu",
+   "Bảo trì Kiểm thử xác nhận (confirmation) và kiểm thử hồi quy (regression) sau mỗi thay đổi. Báo cáo hồi quy",
+   "Kết luận: kiểm thử không phải một giai đoạn nằm cuối, mà là hoạt động xuyên suốt toàn bộ vòng đời."
+  ]
+ },
+ "pdf-C2-2": {
+  "title": "2.2 Các mô hình vòng đời phát triển phần mềm THỜI LƯỢNG: ≈ 1 TIẾT",
+  "paras": [
+   "• Waterfall – V-Model – Iterative",
+   "• Agile – Spiral – DevOps"
+  ]
+ },
+ "pdf-C2-3": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-4": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-5": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-6": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-7": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-8": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-9": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "pdf-C2-10": {
+  "title": "2.1 GOOD TESTING Đặc điểm của kiểm thử \"tốt\" trong mọi mô hình SDLC (ISTQB) 6 Mỗi hoạt động phát triển có hoạt động kiểm thử tương ứng",
+  "paras": [
+   "Không có giai đoạn phát triển nào mà không đi kèm hoạt động kiểm chứng.",
+   "Mô hình SDLC ảnh hưởng đến: thời điểm, phạm vi, mức độ tự động hoá và mức độ chính thức của hoạt động kiểm thử.",
+   "Mỗi cấp độ kiểm thử có mục tiêu riêng",
+   "Mục tiêu đặc thù giúp tránh trùng lặp và bỏ sót giữa các cấp độ.",
+   "Phân tích & thiết kế test bắt đầu từ sớm",
+   "Ngay khi cơ sở kiểm thử (yêu cầu, thiết kế) sẵn sàng – nguyên tắc shift-left.",
+   "Tester tham gia review ngay từ bản nháp đầu tiên Phát hiện khiếm khuyết ở nơi rẻ nhất để sửa: trong tài liệu."
+  ]
+ },
+ "pdf-C2-11": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-12": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-13": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-14": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-15": {
+  "title": "2.4 INTEGRATION Kiểm thử tích hợp: hai loại và ba chiến lược",
+  "paras": [
+   "▸ Tích hợp thành phần (Component integration) — – Kiểm tra tương tác giữa các module bên trong một hệ thống — – Thường tự động hoá, chạy trong CI",
+   "▸ Tích hợp hệ thống (System integration) — – Kiểm tra tương tác giữa các hệ thống hoặc với dịch vụ ngoài — – Ví dụ: hệ thống bán hàng ⇄ cổng thanh toán VNPay",
+   "Càng ghép nhiều thành phần cùng lúc, càng khó xác định nguyên nhân lỗi ⇒ nên tích hợp từng bước nhỏ (incremental).",
+   "HAI LOẠI TÍCH HỢP",
+   "▸ Big Bang: ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+   "▸ Top-down: từ module cấp cao xuống, dùng stub thay module chưa có",
+   "▸ Bottom-up: từ module cấp thấp lên, dùng driver để gọi module",
+   "▸ Stub = module giả bị gọi; Driver = module giả gọi đến — BA CHIẾN LƯỢC TÍCH HỢP"
+  ]
+ },
+ "pdf-C2-16": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "pdf-C2-17": {
+  "title": "2.3 SHIFT-LEFT Shift-left và các cách tiếp cận hợp tác (Collaboration-based approaches) 15 Shift-left testing",
+  "paras": [
+   "Dịch chuyển hoạt động kiểm thử về phía sớm của vòng đời: review yêu cầu, phân tích tĩnh, unit test, kiểm thử API trước khi có UI.",
+   "Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ — *When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký.",
+   "TDD – Test-Driven Development",
+   "Viết test trước, sau đó viết mã vừa đủ để test pass, rồi tái cấu trúc (refactor). Chu trình Red – Green – Refactor.",
+   "ATDD – Acceptance TDD",
+   "Cả nhóm cùng viết tiêu chí chấp nhận dưới dạng test trước khi phát triển, dựa trên góc nhìn người dùng.",
+   "BDD – Behaviour-Driven Development",
+   "Mô tả hành vi mong đợi bằng ngôn ngữ tự nhiên Given – When – Then, để BA, dev, tester cùng hiểu."
+  ]
+ },
+ "pdf-C2-18": {
+  "title": "2.2 TỔNG HỢP So sánh cách tổ chức kiểm thử trong các mô hình SDLC 14 Mô hình Thời điểm kiểm thử Ưu điểm chính Phù hợp với",
+  "paras": [
+   "Waterfall Sau khi lập trình xong Tài liệu đầy đủ, dễ quản lý Yêu cầu rõ, ít thay đổi",
+   "V-Model Thiết kế test song song từng giai đoạn Phát hiện lỗi sớm, truy vết tốt Hệ thống an toàn cao (y tế, hàng không)",
+   "Iterative Kiểm thử ở mỗi vòng lặp Điều chỉnh linh hoạt Dự án vừa, yêu cầu tiến hoá",
+   "Agile / Scrum Liên tục trong mỗi sprint Phản hồi nhanh, gần khách hàng Yêu cầu thay đổi thường xuyên",
+   "Spiral Mỗi vòng, sau bước đánh giá rủi ro Kiểm soát rủi ro tốt nhất Dự án lớn, phức tạp, rủi ro cao",
+   "DevOps / CI-CD Tự động, liên tục sau mỗi commit Phát hành nhanh, chất lượng ổn định Sản phẩm SaaS, phát hành thường xuyên"
+  ]
+ },
+ "pdf-C2-19": {
+  "title": "2.3 SHIFT-LEFT Shift-left và các cách tiếp cận hợp tác (Collaboration-based approaches) 15 Shift-left testing",
+  "paras": [
+   "Dịch chuyển hoạt động kiểm thử về phía sớm của vòng đời: review yêu cầu, phân tích tĩnh, unit test, kiểm thử API trước khi có UI.",
+   "Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ — *When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký.",
+   "TDD – Test-Driven Development",
+   "Viết test trước, sau đó viết mã vừa đủ để test pass, rồi tái cấu trúc (refactor). Chu trình Red – Green – Refactor.",
+   "ATDD – Acceptance TDD",
+   "Cả nhóm cùng viết tiêu chí chấp nhận dưới dạng test trước khi phát triển, dựa trên góc nhìn người dùng.",
+   "BDD – Behaviour-Driven Development",
+   "Mô tả hành vi mong đợi bằng ngôn ngữ tự nhiên Given – When – Then, để BA, dev, tester cùng hiểu."
+  ]
+ },
+ "pdf-C2-20": {
+  "title": "2.1 GOOD TESTING Đặc điểm của kiểm thử \"tốt\" trong mọi mô hình SDLC (ISTQB) 6 Mỗi hoạt động phát triển có hoạt động kiểm thử tương ứng",
+  "paras": [
+   "Không có giai đoạn phát triển nào mà không đi kèm hoạt động kiểm chứng.",
+   "Mô hình SDLC ảnh hưởng đến: thời điểm, phạm vi, mức độ tự động hoá và mức độ chính thức của hoạt động kiểm thử.",
+   "Mỗi cấp độ kiểm thử có mục tiêu riêng",
+   "Mục tiêu đặc thù giúp tránh trùng lặp và bỏ sót giữa các cấp độ.",
+   "Phân tích & thiết kế test bắt đầu từ sớm",
+   "Ngay khi cơ sở kiểm thử (yêu cầu, thiết kế) sẵn sàng – nguyên tắc shift-left.",
+   "Tester tham gia review ngay từ bản nháp đầu tiên Phát hiện khiếm khuyết ở nơi rẻ nhất để sửa: trong tài liệu."
+  ]
+ },
+ "pdf-C3-1": {
+  "title": "3.9 DELIVERABLES Sản phẩm bàn giao kiểm thử (Test Deliverables)",
+  "paras": [
+   "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+   "Test Design / Test Case Điều kiện kiểm thử, test case chi tiết, ma trận truy vết Trước khi thực thi",
+   "Test Data Dữ liệu đầu vào, script tạo dữ liệu, dữ liệu ẩn danh hoá Trước khi thực thi",
+   "Test Log / Test Results Kết quả từng lần chạy, bằng chứng (ảnh, log) Trong khi thực thi",
+   "Defect Report Danh sách lỗi, trạng thái, mức nghiêm trọng, độ ưu tiên Liên tục",
+   "Test Summary Report Tổng hợp kết quả, đánh giá chất lượng, rủi ro tồn đọng, khuyến nghị Kết thúc mỗi đợt",
+   "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau.",
+   "Sản phẩm Nội dung Thời điểm bàn giao"
+  ]
+ },
+ "pdf-C3-2": {
+  "title": "5.2 LỢI ÍCH Sáu nhóm lợi ích của kiểm thử tự động 6 ① Tiết kiệm thời gian",
+  "paras": [
+   "Thực hiện hàng loạt test case trong thời gian rất ngắn. Đặc biệt hiệu quả với kiểm thử hồi quy khi hệ thống cập nhật nhiều lần.",
+   "④ Hỗ trợ CI/CD",
+   "Mỗi lần lập trình viên đẩy mã nguồn (build), hệ thống tự động chạy test ⇒ phát hiện lỗi sớm, giảm rủi ro khi triển khai.",
+   "② Độ chính xác cao",
+   "Script luôn thực hiện đúng như đã lập trình, không nhập sai dữ liệu, không bỏ sót bước, không đánh giá sai kết quả vì mệt mỏi.",
+   "⑤ Tăng độ bao phủ",
+   "Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing) – điều mà kiểm thử thủ công rất khó thực hiện đầy đủ.",
+   "③ Khả năng tái sử dụng",
+   "Một script viết một lần có thể dùng lại cho nhiều phiên bản của phần mềm, tiết kiệm công sức đáng kể qua thời gian.",
+   "⑥ Tiết kiệm chi phí dài hạn",
+   "Chi phí đầu tư ban đầu cao nhưng khi số test case tăng lên, chi phí trên mỗi lần chạy giảm mạnh ⇒ ROI dương sau một số vòng chạy nhất định."
+  ]
+ },
+ "pdf-C3-3": {
+  "title": "5.5 KHÔNG NÊN KHÔNG nên áp dụng kiểm thử tự động khi... 15 Chỉ kiểm tra 1–2 lần",
+  "paras": [
+   "Công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn.",
+   "Yêu cầu chưa ổn định — Kịch bản phải cập nhật liên tục theo thay đổi ⇒ chi phí bảo trì cao và khó kiểm soát.",
+   "Nguyên tắc chung: tự động hoá chỉ phát huy hiệu quả khi được áp dụng đúng hoàn cảnh. Quyết định phải dựa trên đặc điểm cụ thể của dự án, không áp dụng cứng nhắc.",
+   "Giao diện thay đổi liên tục",
+   "Đặc biệt ở giai đoạn đầu phát triển – thay đổi nhỏ về UI cũng làm script hỏng, phải sửa liên tục.",
+   "Kiểm thử trải nghiệm người dùng",
+   "Đánh giá giao diện, tính thân thiện, cảm nhận khi sử dụng – mang tính chủ quan, cần con người.",
+   "Dự án nhỏ, thời gian ngắn — Xây dựng hệ thống tự động hoá không mang lại nhiều giá trị, thậm chí làm chậm tiến độ.",
+   "Thiếu nguồn lực hoặc kỹ năng",
+   "Đội ngũ chưa có kinh nghiệm lập trình hoặc chưa làm chủ công cụ ⇒ gây khó khăn nhiều hơn lợi ích."
+  ]
+ },
+ "pdf-C3-4": {
+  "title": "5.7 Công cụ kiểm thử tự động THỜI LƯỢNG: ≈ 0,75 TIẾT",
+  "paras": [
+   "• Công cụ kiểm thử Web",
+   "• Công cụ kiểm thử API",
+   "• Công cụ kiểm thử Mobile"
+  ]
+ },
+ "pdf-C3-5": {
+  "title": "5.2 LỢI ÍCH Sáu nhóm lợi ích của kiểm thử tự động 6 ① Tiết kiệm thời gian",
+  "paras": [
+   "Thực hiện hàng loạt test case trong thời gian rất ngắn. Đặc biệt hiệu quả với kiểm thử hồi quy khi hệ thống cập nhật nhiều lần.",
+   "④ Hỗ trợ CI/CD",
+   "Mỗi lần lập trình viên đẩy mã nguồn (build), hệ thống tự động chạy test ⇒ phát hiện lỗi sớm, giảm rủi ro khi triển khai.",
+   "② Độ chính xác cao",
+   "Script luôn thực hiện đúng như đã lập trình, không nhập sai dữ liệu, không bỏ sót bước, không đánh giá sai kết quả vì mệt mỏi.",
+   "⑤ Tăng độ bao phủ",
+   "Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing) – điều mà kiểm thử thủ công rất khó thực hiện đầy đủ.",
+   "③ Khả năng tái sử dụng",
+   "Một script viết một lần có thể dùng lại cho nhiều phiên bản của phần mềm, tiết kiệm công sức đáng kể qua thời gian.",
+   "⑥ Tiết kiệm chi phí dài hạn",
+   "Chi phí đầu tư ban đầu cao nhưng khi số test case tăng lên, chi phí trên mỗi lần chạy giảm mạnh ⇒ ROI dương sau một số vòng chạy nhất định."
+  ]
+ },
+ "pdf-C3-6": {
+  "title": "3.8 Quản lý khiếm khuyết (Defect Management) THỜI LƯỢNG: ≈ 0,5 TIẾT",
+  "paras": [
+   "• Vòng đời khiếm khuyết",
+   "• Nội dung báo cáo lỗi",
+   "• Severity vs Priority"
+  ]
+ },
+ "pdf-C3-7": {
+  "title": "5.8 BEST PRACTICES Rủi ro thường gặp và thực hành tốt trong kiểm thử tự động 23 Rủi ro: Test \"flaky\" Test lúc pass lúc fail do chờ đợi không ổn định.",
+  "paras": [
+   "Khắc phục: dùng explicit wait thay cho `Thread.Sleep`; tránh phụ thuộc thời gian cố định.",
+   "Rủi ro: Tự động hoá sai chỗ",
+   "Tự động hoá test chỉ chạy 1 lần, hoặc test UI cho logic nghiệp vụ.",
+   "Khắc phục: tuân thủ kim tự tháp kiểm thử – ưu tiên unit và API.",
+   "Rủi ro: Locator dễ vỡ — Dùng XPath dài, phụ thuộc vị trí ⇒ đổi giao diện là hỏng.",
+   "Khắc phục: ưu tiên ID, thêm thuộc tính `data-testid` phối hợp với developer.",
+   "Rủi ro: Test không độc lập — Test A phải chạy trước test B ⇒ không chạy song song được.",
+   "Khắc phục: mỗi test tự chuẩn bị và dọn dẹp dữ liệu của mình.",
+   "Rủi ro: Chi phí bảo trì cao Script trùng lặp, khó sửa.",
+   "Khắc phục: áp dụng mẫu Page Object Model (POM), tách dữ liệu ra khỏi script.",
+   "Rủi ro: Không ai đọc báo cáo Bộ test đỏ liên tục, cả nhóm bỏ qua.",
+   "Khắc phục: tích hợp CI, chặn merge khi test fail, phân công người trực xử lý."
+  ]
+ },
+ "pdf-C3-8": {
+  "title": "5.7 Công cụ kiểm thử tự động THỜI LƯỢNG: ≈ 0,75 TIẾT",
+  "paras": [
+   "• Công cụ kiểm thử Web",
+   "• Công cụ kiểm thử API",
+   "• Công cụ kiểm thử Mobile"
+  ]
+ },
+ "pdf-C3-9": {
+  "title": "5.7 Công cụ kiểm thử tự động THỜI LƯỢNG: ≈ 0,75 TIẾT",
+  "paras": [
+   "• Công cụ kiểm thử Web",
+   "• Công cụ kiểm thử API",
+   "• Công cụ kiểm thử Mobile"
+  ]
+ },
+ "pdf-C3-10": {
+  "title": "5.2 LỢI ÍCH Sáu nhóm lợi ích của kiểm thử tự động 6 ① Tiết kiệm thời gian",
+  "paras": [
+   "Thực hiện hàng loạt test case trong thời gian rất ngắn. Đặc biệt hiệu quả với kiểm thử hồi quy khi hệ thống cập nhật nhiều lần.",
+   "④ Hỗ trợ CI/CD",
+   "Mỗi lần lập trình viên đẩy mã nguồn (build), hệ thống tự động chạy test ⇒ phát hiện lỗi sớm, giảm rủi ro khi triển khai.",
+   "② Độ chính xác cao",
+   "Script luôn thực hiện đúng như đã lập trình, không nhập sai dữ liệu, không bỏ sót bước, không đánh giá sai kết quả vì mệt mỏi.",
+   "⑤ Tăng độ bao phủ",
+   "Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing) – điều mà kiểm thử thủ công rất khó thực hiện đầy đủ.",
+   "③ Khả năng tái sử dụng",
+   "Một script viết một lần có thể dùng lại cho nhiều phiên bản của phần mềm, tiết kiệm công sức đáng kể qua thời gian.",
+   "⑥ Tiết kiệm chi phí dài hạn",
+   "Chi phí đầu tư ban đầu cao nhưng khi số test case tăng lên, chi phí trên mỗi lần chạy giảm mạnh ⇒ ROI dương sau một số vòng chạy nhất định."
+  ]
+ },
+ "pdf-C3-11": {
+  "title": "5.7.3 API Công cụ kiểm thử API",
+  "paras": [
+   "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+   "▸ Hoạt động như một giao diện đồ hoạ (GUI) giúp gửi yêu cầu HTTP (GET, POST, PUT, DELETE) tới server và nhận phản hồi mà không cần viết code",
+   "▸ Hỗ trợ: collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+   "▸ Phù hợp: kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+   "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+   "POSTMAN",
+   "▸ Công cụ kiểm thử hiệu năng – đánh giá khả năng chịu tải của hệ thống",
+   "▸ Mô phỏng nhiều người dùng truy cập đồng thời để kiểm tra tốc độ phản hồi, độ ổn định và khả năng xử lý",
+   "▸ Hỗ trợ nhiều giao thức: HTTP, FTP, JDBC và các giao thức khác",
+   "▸ Cung cấp biểu đồ và đồ thị để phân tích kết quả kiểm thử",
+   "▸ Phù hợp: load testing, stress testing cho hệ thống nhiều người dùng — JMETER"
+  ]
+ },
+ "pdf-C3-12": {
+  "title": "5.7.3 API Công cụ kiểm thử API",
+  "paras": [
+   "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+   "▸ Hoạt động như một giao diện đồ hoạ (GUI) giúp gửi yêu cầu HTTP (GET, POST, PUT, DELETE) tới server và nhận phản hồi mà không cần viết code",
+   "▸ Hỗ trợ: collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+   "▸ Phù hợp: kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+   "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+   "POSTMAN",
+   "▸ Công cụ kiểm thử hiệu năng – đánh giá khả năng chịu tải của hệ thống",
+   "▸ Mô phỏng nhiều người dùng truy cập đồng thời để kiểm tra tốc độ phản hồi, độ ổn định và khả năng xử lý",
+   "▸ Hỗ trợ nhiều giao thức: HTTP, FTP, JDBC và các giao thức khác",
+   "▸ Cung cấp biểu đồ và đồ thị để phân tích kết quả kiểm thử",
+   "▸ Phù hợp: load testing, stress testing cho hệ thống nhiều người dùng — JMETER"
+  ]
+ },
+ "pdf-C3-13": {
+  "title": "5.7.3 API Công cụ kiểm thử API",
+  "paras": [
+   "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+   "▸ Hoạt động như một giao diện đồ hoạ (GUI) giúp gửi yêu cầu HTTP (GET, POST, PUT, DELETE) tới server và nhận phản hồi mà không cần viết code",
+   "▸ Hỗ trợ: collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+   "▸ Phù hợp: kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+   "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+   "POSTMAN",
+   "▸ Công cụ kiểm thử hiệu năng – đánh giá khả năng chịu tải của hệ thống",
+   "▸ Mô phỏng nhiều người dùng truy cập đồng thời để kiểm tra tốc độ phản hồi, độ ổn định và khả năng xử lý",
+   "▸ Hỗ trợ nhiều giao thức: HTTP, FTP, JDBC và các giao thức khác",
+   "▸ Cung cấp biểu đồ và đồ thị để phân tích kết quả kiểm thử",
+   "▸ Phù hợp: load testing, stress testing cho hệ thống nhiều người dùng — JMETER"
+  ]
+ },
+ "pdf-C3-14": {
+  "title": "5.7.3 API Công cụ kiểm thử API",
+  "paras": [
+   "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+   "▸ Hoạt động như một giao diện đồ hoạ (GUI) giúp gửi yêu cầu HTTP (GET, POST, PUT, DELETE) tới server và nhận phản hồi mà không cần viết code",
+   "▸ Hỗ trợ: collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+   "▸ Phù hợp: kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+   "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+   "POSTMAN",
+   "▸ Công cụ kiểm thử hiệu năng – đánh giá khả năng chịu tải của hệ thống",
+   "▸ Mô phỏng nhiều người dùng truy cập đồng thời để kiểm tra tốc độ phản hồi, độ ổn định và khả năng xử lý",
+   "▸ Hỗ trợ nhiều giao thức: HTTP, FTP, JDBC và các giao thức khác",
+   "▸ Cung cấp biểu đồ và đồ thị để phân tích kết quả kiểm thử",
+   "▸ Phù hợp: load testing, stress testing cho hệ thống nhiều người dùng — JMETER"
+  ]
+ },
+ "pdf-C3-15": {
+  "title": "5.7.4 MOBILE Công cụ kiểm thử ứng dụng di động",
+  "paras": [
+   "▸ Công cụ kiểm thử tự động phổ biến nhất cho ứng dụng di động",
+   "▸ Hỗ trợ cả hai nền tảng Android và iOS",
+   "▸ Cho phép viết kịch bản bằng Java, C#, Python... mà không cần thay đổi mã nguồn của ứng dụng",
+   "▸ Kiểm thử được cả native app, hybrid app và mobile web",
+   "▸ Nhờ khả năng đa nền tảng, Appium được dùng rộng rãi trong các dự án mobile hiện đại — APPIUM",
+   "▸ Công cụ có giao diện trực quan, hỗ trợ kiểm thử Web, API và ứng dụng di động trong cùng một nền tảng",
+   "▸ Xây dựng trên nền Selenium và Appium nhưng được đơn giản hoá để dễ tiếp cận",
+   "▸ Cho phép xây dựng kịch bản bằng kéo–thả hoặc dùng từ khoá có sẵn ⇒ không yêu cầu nhiều kiến thức lập trình",
+   "▸ Hỗ trợ quản lý test case, thực thi và tạo báo cáo thuận tiện",
+   "▸ Thường dùng trong giảng dạy và các dự án cần triển khai kiểm thử nhanh — KATALON STUDIO"
+  ]
+ },
+ "pdf-C3-16": {
+  "title": "2.4 INTEGRATION Kiểm thử tích hợp: hai loại và ba chiến lược",
+  "paras": [
+   "▸ Tích hợp thành phần (Component integration) — – Kiểm tra tương tác giữa các module bên trong một hệ thống — – Thường tự động hoá, chạy trong CI",
+   "▸ Tích hợp hệ thống (System integration) — – Kiểm tra tương tác giữa các hệ thống hoặc với dịch vụ ngoài — – Ví dụ: hệ thống bán hàng ⇄ cổng thanh toán VNPay",
+   "Càng ghép nhiều thành phần cùng lúc, càng khó xác định nguyên nhân lỗi ⇒ nên tích hợp từng bước nhỏ (incremental).",
+   "HAI LOẠI TÍCH HỢP",
+   "▸ Big Bang: ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+   "▸ Top-down: từ module cấp cao xuống, dùng stub thay module chưa có",
+   "▸ Bottom-up: từ module cấp thấp lên, dùng driver để gọi module",
+   "▸ Stub = module giả bị gọi; Driver = module giả gọi đến — BA CHIẾN LƯỢC TÍCH HỢP"
+  ]
+ },
+ "pdf-C3-17": {
+  "title": "5.7.2 WEB Công cụ kiểm thử giao diện Web 19 Selenium Bộ công cụ mã nguồn mở miễn phí cho ứng dụng web.",
+  "paras": [
+   "Tự động hoá thao tác trên trình duyệt: nhập dữ liệu, nhấn nút, kiểm tra kết quả.",
+   "Hỗ trợ C#, Java, Python, Ruby, JavaScript.",
+   "Dùng nhiều cho kiểm thử chức năng web và kiểm thử hồi quy.",
+   "⇒ Học chi tiết ở Chương 6.",
+   "Cypress — Công cụ hiện đại dành cho ứng dụng web phía frontend dùng JavaScript Framework.",
+   "Tốc độ chạy nhanh, dễ cài đặt.",
+   "Có khả năng hiển thị trực tiếp quá trình kiểm thử (time-travel debugging), giúp dễ quan sát và phát hiện lỗi.",
+   "Hạn chế: chủ yếu hỗ trợ JavaScript/TypeScript.",
+   "Playwright",
+   "Framework mã nguồn mở do Microsoft phát triển, tự động hoá end-to-end (E2E) trên Chromium, Firefox và WebKit.",
+   "▸ Tự động chờ (auto-waiting) ⇒ giảm test \"flaky\"",
+   "▸ Chạy song song nhiều test case",
+   "▸ Quay video, chụp ảnh màn hình",
+   "▸ Đa ngôn ngữ: JS/TS, Python, Java, C#; hỗ trợ cả kiểm thử API."
+  ]
+ },
+ "pdf-C3-18": {
+  "title": "5.7.3 API Công cụ kiểm thử API",
+  "paras": [
+   "▸ Công cụ phổ biến nhất hiện nay để phát triển, kiểm thử, chia sẻ và tài liệu hoá API",
+   "▸ Hoạt động như một giao diện đồ hoạ (GUI) giúp gửi yêu cầu HTTP (GET, POST, PUT, DELETE) tới server và nhận phản hồi mà không cần viết code",
+   "▸ Hỗ trợ: collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+   "▸ Phù hợp: kiểm thử chức năng API, kiểm thử tích hợp hệ thống",
+   "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau.",
+   "POSTMAN",
+   "▸ Công cụ kiểm thử hiệu năng – đánh giá khả năng chịu tải của hệ thống",
+   "▸ Mô phỏng nhiều người dùng truy cập đồng thời để kiểm tra tốc độ phản hồi, độ ổn định và khả năng xử lý",
+   "▸ Hỗ trợ nhiều giao thức: HTTP, FTP, JDBC và các giao thức khác",
+   "▸ Cung cấp biểu đồ và đồ thị để phân tích kết quả kiểm thử",
+   "▸ Phù hợp: load testing, stress testing cho hệ thống nhiều người dùng — JMETER"
+  ]
+ },
+ "pdf-C3-19": {
+  "title": "5.7.4 MOBILE Công cụ kiểm thử ứng dụng di động",
+  "paras": [
+   "▸ Công cụ kiểm thử tự động phổ biến nhất cho ứng dụng di động",
+   "▸ Hỗ trợ cả hai nền tảng Android và iOS",
+   "▸ Cho phép viết kịch bản bằng Java, C#, Python... mà không cần thay đổi mã nguồn của ứng dụng",
+   "▸ Kiểm thử được cả native app, hybrid app và mobile web",
+   "▸ Nhờ khả năng đa nền tảng, Appium được dùng rộng rãi trong các dự án mobile hiện đại — APPIUM",
+   "▸ Công cụ có giao diện trực quan, hỗ trợ kiểm thử Web, API và ứng dụng di động trong cùng một nền tảng",
+   "▸ Xây dựng trên nền Selenium và Appium nhưng được đơn giản hoá để dễ tiếp cận",
+   "▸ Cho phép xây dựng kịch bản bằng kéo–thả hoặc dùng từ khoá có sẵn ⇒ không yêu cầu nhiều kiến thức lập trình",
+   "▸ Hỗ trợ quản lý test case, thực thi và tạo báo cáo thuận tiện",
+   "▸ Thường dùng trong giảng dạy và các dự án cần triển khai kiểm thử nhanh — KATALON STUDIO"
+  ]
+ },
+ "pdf-C3-20": {
+  "title": "5.7.4 MOBILE Công cụ kiểm thử ứng dụng di động",
+  "paras": [
+   "▸ Công cụ kiểm thử tự động phổ biến nhất cho ứng dụng di động",
+   "▸ Hỗ trợ cả hai nền tảng Android và iOS",
+   "▸ Cho phép viết kịch bản bằng Java, C#, Python... mà không cần thay đổi mã nguồn của ứng dụng",
+   "▸ Kiểm thử được cả native app, hybrid app và mobile web",
+   "▸ Nhờ khả năng đa nền tảng, Appium được dùng rộng rãi trong các dự án mobile hiện đại — APPIUM",
+   "▸ Công cụ có giao diện trực quan, hỗ trợ kiểm thử Web, API và ứng dụng di động trong cùng một nền tảng",
+   "▸ Xây dựng trên nền Selenium và Appium nhưng được đơn giản hoá để dễ tiếp cận",
+   "▸ Cho phép xây dựng kịch bản bằng kéo–thả hoặc dùng từ khoá có sẵn ⇒ không yêu cầu nhiều kiến thức lập trình",
+   "▸ Hỗ trợ quản lý test case, thực thi và tạo báo cáo thuận tiện",
+   "▸ Thường dùng trong giảng dạy và các dự án cần triển khai kiểm thử nhanh — KATALON STUDIO"
+  ]
+ },
+ "pdf-C4-1": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-2": {
+  "title": "4.1.3 PHÂN BIỆT Phân biệt các khái niệm dễ nhầm lẫn trong kiểm thử",
+  "paras": [
+   "Kỹ thuật kiểm thử (Test technique) Thiết kế trường hợp kiểm thử bằng cách nào? Phân vùng tương đương, giá trị biên, bảng quyết định",
+   "Loại kiểm thử (Test type) Đặc tính hoặc mục tiêu nào được đánh giá? Kiểm thử chức năng, hiệu năng, khả năng sử dụng",
+   "Cấp độ kiểm thử (Test level) Đối tượng được kiểm tra ở phạm vi nào? Đơn vị, tích hợp, hệ thống, chấp nhận",
+   "Phương thức thực hiện Có cần vận hành đối tượng kiểm thử không? Kiểm thử động (có chạy) – kiểm thử tĩnh (không chạy)",
+   "Công cụ kiểm thử (Test tool) Phần mềm nào hỗ trợ hoạt động kiểm thử? Jira, TestRail, Selenium, SonarQube, JMeter",
+   "Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD: giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống.",
+   "Khái niệm Câu hỏi chính Ví dụ"
+  ]
+ },
+ "pdf-C4-3": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-4": {
+  "title": "4.1.3 PHÂN BIỆT Phân biệt các khái niệm dễ nhầm lẫn trong kiểm thử",
+  "paras": [
+   "Kỹ thuật kiểm thử (Test technique) Thiết kế trường hợp kiểm thử bằng cách nào? Phân vùng tương đương, giá trị biên, bảng quyết định",
+   "Loại kiểm thử (Test type) Đặc tính hoặc mục tiêu nào được đánh giá? Kiểm thử chức năng, hiệu năng, khả năng sử dụng",
+   "Cấp độ kiểm thử (Test level) Đối tượng được kiểm tra ở phạm vi nào? Đơn vị, tích hợp, hệ thống, chấp nhận",
+   "Phương thức thực hiện Có cần vận hành đối tượng kiểm thử không? Kiểm thử động (có chạy) – kiểm thử tĩnh (không chạy)",
+   "Công cụ kiểm thử (Test tool) Phần mềm nào hỗ trợ hoạt động kiểm thử? Jira, TestRail, Selenium, SonarQube, JMeter",
+   "Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD: giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống.",
+   "Khái niệm Câu hỏi chính Ví dụ"
+  ]
+ },
+ "pdf-C4-5": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "pdf-C4-6": {
+  "title": "4.1.3 PHÂN BIỆT Phân biệt các khái niệm dễ nhầm lẫn trong kiểm thử",
+  "paras": [
+   "Kỹ thuật kiểm thử (Test technique) Thiết kế trường hợp kiểm thử bằng cách nào? Phân vùng tương đương, giá trị biên, bảng quyết định",
+   "Loại kiểm thử (Test type) Đặc tính hoặc mục tiêu nào được đánh giá? Kiểm thử chức năng, hiệu năng, khả năng sử dụng",
+   "Cấp độ kiểm thử (Test level) Đối tượng được kiểm tra ở phạm vi nào? Đơn vị, tích hợp, hệ thống, chấp nhận",
+   "Phương thức thực hiện Có cần vận hành đối tượng kiểm thử không? Kiểm thử động (có chạy) – kiểm thử tĩnh (không chạy)",
+   "Công cụ kiểm thử (Test tool) Phần mềm nào hỗ trợ hoạt động kiểm thử? Jira, TestRail, Selenium, SonarQube, JMeter",
+   "Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD: giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống.",
+   "Khái niệm Câu hỏi chính Ví dụ"
+  ]
+ },
+ "pdf-C4-7": {
+  "title": "4.2.3 DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học phần",
+  "paras": [
+   "C1. Tài khoản đang hoạt động T F T T T",
+   "C2. Đã đạt học phần tiên quyết T – F T T",
+   "C3. Lớp còn chỗ T – – F T",
+   "C4. Không vượt quá 25 tín chỉ T – – – F",
+   "A1. Cho phép đăng ký X",
+   "A2. Báo tài khoản không hoạt động X",
+   "A3. Báo chưa đạt học phần tiên quyết X",
+   "A4. Báo lớp đã đủ chỗ X",
+   "A5. Báo vượt giới hạn tín chỉ X",
+   "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5.",
+   "Điều kiện / Hành động R1 R2 R3 R4 R5"
+  ]
+ },
+ "pdf-C4-8": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-9": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-10": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-11": {
+  "title": "4.2.2 BA NHÓM Ba nhóm kỹ thuật thiết kế kiểm thử động 7 ① Dựa trên đặc tả (Hộp đen – Black-box)",
+  "paras": [
+   "Xây dựng test case từ hành vi mong đợi, không dựa vào cấu trúc bên trong.",
+   "Cơ sở: yêu cầu, đặc tả, user story.",
+   "Gồm: phân vùng tương đương, giá trị biên, bảng quyết định, chuyển trạng thái, use case.",
+   "Ba nhóm bổ sung cho nhau: hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*.",
+   "② Dựa trên cấu trúc (Hộp trắng – White-box)",
+   "Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong: câu lệnh, nhánh, luồng điều khiển.",
+   "Cơ sở: mã nguồn, kiến trúc.",
+   "Gồm: bao phủ câu lệnh, bao phủ nhánh.",
+   "③ Dựa trên kinh nghiệm (Experience-based) — Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử.",
+   "Dùng khi đặc tả thiếu hoặc cần phản hồi nhanh.",
+   "Gồm: đoán lỗi, kiểm thử thăm dò, danh sách kiểm tra."
+  ]
+ },
+ "pdf-C4-12": {
+  "title": "4.2.3 HỘP ĐEN a) Phân vùng tương đương (Equivalence Par titioning – EP) 9 NGUYÊN LÝ",
+  "paras": [
+   "▸ Chia miền dữ liệu thành các vùng (partition) mà các phần tử trong cùng vùng được dự kiến xử lý giống nhau",
+   "▸ Ba tính chất bắt buộc: các vùng không rỗng, không chồng lấn, và hợp lại bao phủ toàn bộ miền",
+   "▸ Chọn một giá trị đại diện cho mỗi vùng ⇒ giảm mạnh số lượng test case",
+   "▸ Phân biệt vùng hợp lệ (valid) và vùng không hợp lệ (invalid) — LƯU Ý QUAN TRỌNG",
+   "▸ Nếu trong cùng một vùng lại tồn tại các cách xử lý khác nhau ⇒ việc phân vùng chưa đúng, phải chia lại",
+   "▸ Một giá trị đại diện không chứng minh mọi giá trị trong vùng đều đúng – đây chỉ là cách giảm số test case có hệ thống"
+  ]
+ },
+ "pdf-C4-13": {
+  "title": "4.2.3 HỘP ĐEN b) Phân tích giá trị biên (Boundar y Value Analysis – BVA) 11 VÌ SAO CẦN BVA?",
+  "paras": [
+   "▸ Khiếm khuyết thường xuất hiện tại ranh giới do: dùng sai toán tử so sánh (`>` thay vì `>=`), đặt sai giới hạn, bỏ sót một giá trị (lỗi lệch một đơn vị – off-by-one)",
+   "HAI BIẾN THỂ",
+   "▸ BVA hai giá trị (2-value): với mỗi biên, lấy chính giá trị biên và giá trị lân cận gần nhất thuộc vùng kề",
+   "▸ BVA ba giá trị (3-value): lấy giá trị biên và hai giá trị lân cận hai phía – chặt chẽ hơn nhưng tạo nhiều dữ liệu hơn",
+   "ĐIỀU KIỆN ÁP DỤNG",
+   "▸ Chỉ áp dụng cho các vùng có thứ tự (số, ngày tháng, độ dài chuỗi, thời gian) – không áp dụng cho dữ liệu rời rạc như \"màu sắc: đỏ/xanh/vàng\""
+  ]
+ },
+ "pdf-C4-14": {
+  "title": "4.2.3 HỘP ĐEN a) Phân vùng tương đương (Equivalence Par titioning – EP) 9 NGUYÊN LÝ",
+  "paras": [
+   "▸ Chia miền dữ liệu thành các vùng (partition) mà các phần tử trong cùng vùng được dự kiến xử lý giống nhau",
+   "▸ Ba tính chất bắt buộc: các vùng không rỗng, không chồng lấn, và hợp lại bao phủ toàn bộ miền",
+   "▸ Chọn một giá trị đại diện cho mỗi vùng ⇒ giảm mạnh số lượng test case",
+   "▸ Phân biệt vùng hợp lệ (valid) và vùng không hợp lệ (invalid) — LƯU Ý QUAN TRỌNG",
+   "▸ Nếu trong cùng một vùng lại tồn tại các cách xử lý khác nhau ⇒ việc phân vùng chưa đúng, phải chia lại",
+   "▸ Một giá trị đại diện không chứng minh mọi giá trị trong vùng đều đúng – đây chỉ là cách giảm số test case có hệ thống"
+  ]
+ },
+ "pdf-C4-15": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "pdf-C4-16": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "pdf-C4-17": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "pdf-C4-18": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "pdf-C4-19": {
+  "title": "4.2.3 HỘP ĐEN c) Kiểm thử bảng quyết định (Decision Table Testing) 13 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi yêu cầu có nhiều điều kiện kết hợp với nhau tạo ra các hành động khác nhau (quy tắc nghiệp vụ phức tạp) — CẤU TRÚC BẢNG",
+   "▸ Mỗi cột là một quy tắc (rule); các hàng phía trên mô tả điều kiện, các hàng phía dưới mô tả hành động",
+   "▸ Ký hiệu: T = điều kiện đúng, F = điều kiện sai, – = giá trị điều kiện không ảnh hưởng đến hành động của quy tắc",
+   "▸ Ký hiệu – *không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
+   "TIÊU CHÍ BAO PHỦ",
+   "▸ Mỗi quy tắc khả thi cần ít nhất một trường hợp kiểm thử ⇒ bao phủ 100% bảng quyết định"
+  ]
+ },
+ "pdf-C4-20": {
+  "title": "4.2.3 STATE TABLE Bảng chuyển trạng thái – đăng ký học phần",
+  "paras": [
+   "Trạng thái hiện tại Sự kiện Điều kiện Hành động Trạng thái tiếp theo Hợp lệ",
+   "Chưa đăng ký Gửi yêu cầu Đợt đăng ký đang mở Tiếp nhận yêu cầu Chờ xác nhận Có",
+   "Chờ xác nhận Kiểm tra điều kiện Tất cả điều kiện đạt Lưu đăng ký, cập nhật sĩ số Đăng ký thành công Có",
+   "Chờ xác nhận Kiểm tra điều kiện Có điều kiện không đạt Thông báo nguyên nhân Chưa đăng ký Có",
+   "Đăng ký thành công Hủy đăng ký Còn trong thời hạn hủy Xóa đăng ký, cập nhật sĩ số Đã hủy Có",
+   "Đã hủy Đăng ký lại Đợt đăng ký còn mở Tiếp nhận yêu cầu mới Chờ xác nhận Có",
+   "Chưa đăng ký Xác nhận thành công Chưa có yêu cầu chờ xử lý Không thực hiện Chưa đăng ký Không",
+   "Với chuyển tiếp không hợp lệ (dòng cuối), cần kiểm tra hệ thống từ chối thao tác và giữ nguyên trạng thái đúng, không báo lỗi hệ thống (crash)."
+  ]
+ },
+ "main-0-0": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "main-0-1": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "main-0-2": {
+  "title": "1.3 VÍ DỤ Ví dụ minh họa: chuỗi Error → Defect → Failure 10 Hệ thống bán hàng – chức năng tính chiết khấu (discount).",
+  "paras": [
+   "// YÊU CẦU (Requirement): // \"Giảm 10% cho đơn hàng có giá trị LỚN HƠN 1.000.000 đồng\" // MÃ NGUỒN THỰC TẾ (Actual code): if (total > 500000) {",
+   "discount = total * 0.1; }",
+   "Error: lập trình viên hiểu sai ngưỡng (1.000.000 → 500.000) • Defect: điều kiện `total > 500000` sai trong code • Failure: đơn 600.000đ vẫn được giảm 10% → doanh nghiệp thất thu."
+  ]
+ },
+ "main-0-3": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "main-1-0": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "main-1-1": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "main-1-2": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "main-1-3": {
+  "title": "1.3 CHẤT LƯỢNG Chất lượng phần mềm – 8 đặc tính theo ISO/IEC 25010 12 Tính phù hợp chức năng (Functional suitability)",
+  "paras": [
+   "Phần mềm làm đúng những gì được yêu cầu: đầy đủ, chính xác, phù hợp.",
+   "Độ tin cậy (Reliability) — Hoạt động ổn định, chịu lỗi, phục hồi được sau sự cố.",
+   "Giáo trình tóm gọn thành 5 tiêu chí: đúng chức năng – ổn định – dễ sử dụng – an toàn – dễ bảo trì. ISO 25010 là bản chi tiết hoá quốc tế của các tiêu chí này.",
+   "Hiệu năng (Performance efficiency) — Thời gian phản hồi, thông lượng, mức sử dụng tài nguyên.",
+   "Bảo mật (Security) — Bảo vệ dữ liệu: bí mật, toàn vẹn, xác thực, chống chối bỏ.",
+   "Tính tương thích (Compatibility) — Cùng tồn tại và trao đổi dữ liệu tốt với hệ thống khác.",
+   "Khả năng bảo trì (Maintainability) — Dễ đọc, dễ sửa, dễ kiểm thử, module hoá tốt.",
+   "Khả năng sử dụng (Usability) — Dễ học, dễ dùng, giao diện thân thiện, hỗ trợ người khuyết tật.",
+   "Tính khả chuyển (Portability) — Dễ cài đặt, thay thế, chạy trên nhiều môi trường."
+  ]
+ },
+ "main-2-0": {
+  "title": "1.2 PHÂN BIỆT Kiểm thử và Gỡ lỗi (Testing vs. Debugging) 7 KIỂM THỬ (Testing)",
+  "paras": [
+   "Phát hiện thất bại (failure) — do khiếm khuyết gây ra",
+   "Ai làm gì? Kiểm thử thường do tester thực hiện; gỡ lỗi do lập trình viên (developer) thực hiện. Trong Agile/DevOps, ranh giới này mờ đi: tester có thể tham gia gỡ lỗi, developer viết và chạy unit test.",
+   "GỠ LỖI (Debugging) — Tìm nguyên nhân, phân tích và sửa khiếm khuyết",
+   "KIỂM THỬ XÁC NHẬN (Confirmation Testing) — Chạy lại để xác nhận lỗi đã được sửa đúng"
+  ]
+ },
+ "main-2-1": {
+  "title": "1.3 COST OF DEFECTS Chi phí sửa lỗi tăng theo giai đoạn phát hiện",
+  "paras": [
+   "Chi phí tương đối để sửa một khiếm khuyết theo giai đoạn phát hiện (mô hình Boehm)",
+   "Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left): phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành.",
+   "×1 — Yêu cầu — ×5",
+   "Thiết kế — ×10 — Lập trình",
+   "×25 — Kiểm thử — ×100",
+   "Vận hành"
+  ]
+ },
+ "main-2-2": {
+  "title": "4.3.1 SO SÁNH So sánh kiểm thử tĩnh và kiểm thử động",
+  "paras": [
+   "Tiêu chí Kiểm thử tĩnh (Static Testing) Kiểm thử động (Dynamic Testing)",
+   "Thực thi đối tượng Không chạy chương trình Có chạy chương trình",
+   "Đối tượng Yêu cầu, thiết kế, mô hình, kế hoạch, test case, tài liệu, mã nguồn Thành phần hoặc hệ thống có thể chạy được",
+   "Cách phát hiện Nhận diện trực tiếp bất thường và khiếm khuyết Quan sát thất bại rồi phân tích ngược tìm nguyên nhân",
+   "Thời điểm Có thể bắt đầu rất sớm, ngay khi có bản nháp tài liệu Chỉ khi đã có đối tượng thực thi được",
+   "Ví dụ phát hiện Mơ hồ, mâu thuẫn, thiếu ngoại lệ, mã không thể tiếp cận, biến chưa khởi tạo Sai kết quả tính toán, lỗi thời gian chạy, rò rỉ bộ nhớ, hiệu năng kém",
+   "Giá trị chính Phòng ngừa – cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
+   "Hai phương thức bổ sung cho nhau, không thay thế nhau. Kiểm thử tĩnh phát hiện được những khiếm khuyết mà kiểm thử động không bao giờ thấy (và ngược lại)."
+  ]
+ },
+ "main-2-3": {
+  "title": "1.8 VAI TRÒ Vai trò các bên liên quan trong hoạt động kiểm thử",
+  "paras": [
+   "Tester (Người kiểm thử) Phân tích yêu cầu, thiết kế & thực thi test case, ghi nhận và báo cáo lỗi, kiểm thử lại sau khi sửa.",
+   "Developer (Lập trình viên) Viết và chạy unit test, gỡ lỗi (debug), sửa defect, tham gia review mã nguồn.",
+   "Business Analyst (BA) Làm rõ yêu cầu nghiệp vụ, cung cấp cơ sở kiểm thử, xác nhận tiêu chí chấp nhận.",
+   "Product Owner / Khách hàng Xác định độ ưu tiên, thực hiện kiểm thử chấp nhận (UAT), quyết định phát hành.",
+   "Test Manager / QA Manager Lập chiến lược & kế hoạch kiểm thử, phân bổ nguồn lực, theo dõi tiến độ, báo cáo cho bên liên quan.",
+   "Whole-team approach (Agile): chất lượng là trách nhiệm của cả nhóm, không phải riêng tester.",
+   "Vai trò Nhiệm vụ chính liên quan đến kiểm thử"
+  ]
+ },
+ "main-3-0": {
+  "title": "1.8 TÂM LÝ Tâm lý kiểm thử (Tester Psychology) 24 TƯ DUY LẬP TRÌNH VIÊN (Developer mindset)",
+  "paras": [
+   "▸ Mục tiêu: xây dựng và hoàn thiện sản phẩm",
+   "▸ Tư duy khẳng định: \"chức năng của tôi chạy được\"",
+   "▸ Thiên kiến xác nhận (confirmation bias): khó tự thấy lỗi của chính mình",
+   "▸ Tập trung vào giải pháp kỹ thuật",
+   "Giao tiếp là chìa khoá: báo lỗi về sản phẩm, không phê phán con người. Dùng dữ liệu khách quan, mô tả rõ các bước tái hiện, tránh ngôn từ quy kết.",
+   "TƯ DUY NGƯỜI KIỂM THỬ (Tester mindset)",
+   "▸ Mục tiêu: tìm ra lỗi tiềm ẩn trước khi người dùng gặp",
+   "▸ Tư duy phản biện (critical thinking), hoài nghi lành mạnh",
+   "▸ Chú ý chi tiết, quan tâm luồng ngoại lệ (negative path)",
+   "▸ Đặt câu hỏi \"Điều gì xảy ra nếu...?\""
+  ]
+ },
+ "main-3-1": {
+  "title": "1.8 INDEPENDENCE Các mức độ độc lập kiểm thử (Levels of Test Independence)",
+  "paras": [
+   "BƯỚC 1 — Mức 0 – Tự kiểm thử — Tác giả tự kiểm thử sản phẩm của",
+   "mình. Rẻ, nhanh nhưng thiên kiến cao nhất.",
+   "Độc lập càng cao ⇒ khả năng phát hiện lỗi càng khách quan, nhưng nguy cơ mất kết nối với nhóm phát triển càng lớn. Thực tế thường kết hợp nhiều mức.",
+   "BƯỚC 2 — Mức 1 – Đồng nghiệp — Người khác trong cùng nhóm phát",
+   "triển kiểm thử. Hiểu ngữ cảnh tốt, thiên kiến giảm.",
+   "BƯỚC 3 — Mức 2 – Nhóm kiểm thử — riêng",
+   "Nhóm test độc lập trong tổ chức. Khách quan cao, cần phối hợp tốt.",
+   "BƯỚC 4 — Mức 3 – Bên ngoài tổ chức — Thuê ngoài / kiểm định độc lập. Khách quan cao nhất, chi phí lớn, ít",
+   "hiểu nghiệp vụ."
+  ]
+ },
+ "main-3-2": {
+  "title": "3.9 DELIVERABLES Sản phẩm bàn giao kiểm thử (Test Deliverables)",
+  "paras": [
+   "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+   "Test Design / Test Case Điều kiện kiểm thử, test case chi tiết, ma trận truy vết Trước khi thực thi",
+   "Test Data Dữ liệu đầu vào, script tạo dữ liệu, dữ liệu ẩn danh hoá Trước khi thực thi",
+   "Test Log / Test Results Kết quả từng lần chạy, bằng chứng (ảnh, log) Trong khi thực thi",
+   "Defect Report Danh sách lỗi, trạng thái, mức nghiêm trọng, độ ưu tiên Liên tục",
+   "Test Summary Report Tổng hợp kết quả, đánh giá chất lượng, rủi ro tồn đọng, khuyến nghị Kết thúc mỗi đợt",
+   "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau.",
+   "Sản phẩm Nội dung Thời điểm bàn giao"
+  ]
+ },
+ "main-3-3": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "main-4-0": {
+  "title": "2.2.2 VERIFICATION & VALIDATION Mô hình chữ V (V-Model)",
+  "paras": [
+   "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall.",
+   "Phân tích yêu cầu — Đặc tả hệ thống Thiết kế kiến trúc",
+   "Thiết kế chi tiết — kiểm chứng kiểm chứng",
+   "kiểm chứng — kiểm chứng — LẬP TRÌNH (Coding)",
+   "Kiểm thử chấp nhận — Kiểm thử hệ thống Kiểm thử tích hợp",
+   "Kiểm thử đơn vị"
+  ]
+ },
+ "main-4-1": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "main-4-2": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "main-4-3": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "main-5-0": {
+  "title": "2.4 ACCEPTANCE Các dạng kiểm thử chấp nhận (Acceptance Testing) 19 UAT – User Acceptance Testing",
+  "paras": [
+   "Người dùng cuối kiểm tra hệ thống có đáp ứng nhu cầu nghiệp vụ thực tế hay không.",
+   "Kết quả kiểm thử chấp nhận là căn cứ cho quyết định nghiệm thu và đưa hệ thống vào vận hành.",
+   "OAT – Operational Acceptance Testing — Bộ phận vận hành kiểm tra: sao lưu/phục hồi, cài đặt, gỡ cài, giám sát, bảo mật.",
+   "Contractual / Regulatory Acceptance — Kiểm tra tuân thủ điều khoản hợp đồng và quy định pháp luật, tiêu chuẩn ngành.",
+   "Alpha & Beta Testing — Alpha: người dùng thử tại nơi phát triển.",
+   "Beta: người dùng thật thử tại môi trường của họ."
+  ]
+ },
+ "main-5-1": {
+  "title": "2.4 INTEGRATION Kiểm thử tích hợp: hai loại và ba chiến lược",
+  "paras": [
+   "▸ Tích hợp thành phần (Component integration) — – Kiểm tra tương tác giữa các module bên trong một hệ thống — – Thường tự động hoá, chạy trong CI",
+   "▸ Tích hợp hệ thống (System integration) — – Kiểm tra tương tác giữa các hệ thống hoặc với dịch vụ ngoài — – Ví dụ: hệ thống bán hàng ⇄ cổng thanh toán VNPay",
+   "Càng ghép nhiều thành phần cùng lúc, càng khó xác định nguyên nhân lỗi ⇒ nên tích hợp từng bước nhỏ (incremental).",
+   "HAI LOẠI TÍCH HỢP",
+   "▸ Big Bang: ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+   "▸ Top-down: từ module cấp cao xuống, dùng stub thay module chưa có",
+   "▸ Bottom-up: từ module cấp thấp lên, dùng driver để gọi module",
+   "▸ Stub = module giả bị gọi; Driver = module giả gọi đến — BA CHIẾN LƯỢC TÍCH HỢP"
+  ]
+ },
+ "main-5-2": {
+  "title": "2.5 CHIẾN LƯỢC PHÂN BỔ Kim tự tháp kiểm thử (Test Pyramid)",
+  "paras": [
+   "Nguyên tắc: càng lên cao, test càng chậm – đắt – khó bảo trì ⇒ đặt phần lớn công sức tự động hoá ở tầng đáy (unit). Kim tự tháp lộn ngược (nhiều test UI, ít unit test) là dấu hiệu xấu (ice-cream cone anti-pattern).",
+   "KIỂM THỬ UI / E2E Ít • Chậm • Đắt • Dễ vỡ (flaky)",
+   "KIỂM THỬ TÍCH HỢP / API Vừa • Tốc độ trung bình • Ổn định hơn KIỂM THỬ ĐƠN VỊ (UNIT) Rất nhiều • Rất nhanh • Rẻ • Ổn định"
+  ]
+ },
+ "main-5-3": {
+  "title": "2.7 CHANGE-RELATED Kiểm thử liên quan đến thay đổi (Change-related Testing) 24 CONFIRMATION TESTING (Re-testing)",
+  "paras": [
+   "▸ Mục đích: xác nhận khiếm khuyết đã được sửa đúng và triệt để",
+   "▸ Cách làm: chạy lại chính test case đã phát hiện lỗi, với cùng dữ liệu và cùng môi trường",
+   "▸ Phạm vi: hẹp – chỉ tập trung vào lỗi đã sửa",
+   "▸ Khi nào: ngay sau khi developer báo đã fix",
+   "▸ Nếu vẫn fail ⇒ mở lại (reopen) defect",
+   "Smoke test: bộ test rất ngắn chạy ngay sau khi build để xác nhận hệ thống \"đủ sống\" để kiểm thử sâu. Sanity test: kiểm tra nhanh một vùng chức năng vừa được sửa.",
+   "REGRESSION TESTING (Kiểm thử hồi quy)",
+   "▸ Mục đích: đảm bảo thay đổi không phá vỡ chức năng đang chạy tốt",
+   "▸ Cách làm: chạy lại bộ test case của các chức năng liên quan (hoặc toàn bộ)",
+   "▸ Phạm vi: rộng – xác định qua phân tích tác động",
+   "▸ Khi nào: sau mỗi bản build / phát hành",
+   "▸ Là ứng viên số 1 cho kiểm thử tự động vì lặp lại rất nhiều lần"
+  ]
+ },
+ "main-6-0": {
+  "title": "2.7 CHANGE-RELATED Kiểm thử liên quan đến thay đổi (Change-related Testing) 24 CONFIRMATION TESTING (Re-testing)",
+  "paras": [
+   "▸ Mục đích: xác nhận khiếm khuyết đã được sửa đúng và triệt để",
+   "▸ Cách làm: chạy lại chính test case đã phát hiện lỗi, với cùng dữ liệu và cùng môi trường",
+   "▸ Phạm vi: hẹp – chỉ tập trung vào lỗi đã sửa",
+   "▸ Khi nào: ngay sau khi developer báo đã fix",
+   "▸ Nếu vẫn fail ⇒ mở lại (reopen) defect",
+   "Smoke test: bộ test rất ngắn chạy ngay sau khi build để xác nhận hệ thống \"đủ sống\" để kiểm thử sâu. Sanity test: kiểm tra nhanh một vùng chức năng vừa được sửa.",
+   "REGRESSION TESTING (Kiểm thử hồi quy)",
+   "▸ Mục đích: đảm bảo thay đổi không phá vỡ chức năng đang chạy tốt",
+   "▸ Cách làm: chạy lại bộ test case của các chức năng liên quan (hoặc toàn bộ)",
+   "▸ Phạm vi: rộng – xác định qua phân tích tác động",
+   "▸ Khi nào: sau mỗi bản build / phát hành",
+   "▸ Là ứng viên số 1 cho kiểm thử tự động vì lặp lại rất nhiều lần"
+  ]
+ },
+ "main-6-1": {
+  "title": "2.6 NON-FUNCTIONAL Các loại kiểm thử phi chức năng thường gặp 23 Kiểm thử hiệu năng (Performance)",
+  "paras": [
+   "Load test, stress test, spike test, endurance test. Đo thời gian phản hồi, thông lượng.",
+   "Kiểm thử tương thích (Compatibility) — Nhiều trình duyệt, hệ điều hành, kích thước màn hình, phiên bản thiết bị.",
+   "Kiểm thử bảo mật (Security) — Phân quyền, SQL injection, XSS, mã hoá dữ liệu, quản lý phiên đăng nhập.",
+   "Kiểm thử độ tin cậy (Reliability) — Khả năng chịu lỗi, phục hồi sau sự cố (recovery), thời gian hoạt động liên tục.",
+   "Kiểm thử khả năng sử dụng (Usability)",
+   "Số thao tác để hoàn thành tác vụ, tính rõ ràng của thông báo lỗi, hỗ trợ người khuyết tật.",
+   "Kiểm thử khả chuyển & bảo trì (Portability / Maintainability)",
+   "Cài đặt – gỡ cài đặt, nâng cấp phiên bản, độ phức tạp mã nguồn."
+  ]
+ },
+ "main-6-2": {
+  "title": "2.8 TRIGGERS Bốn nhóm nguyên nhân kích hoạt bảo trì (Maintenance Triggers) 26 Sửa lỗi – Corrective",
+  "paras": [
+   "Khắc phục defect phát hiện khi hệ thống đang vận hành. Có thể khẩn cấp (hot-fix).",
+   "Ngoài ra còn có bảo trì do di trú dữ liệu (migration) và ngừng vận hành hệ thống cũ (retirement) – cần kiểm thử di trú và kiểm thử lưu trữ dữ liệu.",
+   "Cải tiến – Perfective — Bổ sung chức năng mới, tối ưu hiệu năng, cải thiện giao diện theo phản hồi người dùng.",
+   "Thích nghi – Adaptive",
+   "Thay đổi để phù hợp môi trường mới: nâng cấp hệ điều hành, đổi trình duyệt, chuyển sang cloud.",
+   "Phòng ngừa – Preventive",
+   "Tái cấu trúc mã (refactoring), trả nợ kỹ thuật, nâng cấp thư viện để giảm rủi ro tương lai."
+  ]
+ },
+ "main-6-3": {
+  "title": "2.8 QUY TRÌNH Quy trình kiểm thử bảo trì 27 Tiếp nhận yêu cầu thay đổi",
+  "paras": [
+   "Ghi nhận change request / bug report từ vận hành, khách hàng.",
+   "Phân tích tác động khó khăn khi: đặc tả lỗi thời hoặc thiếu, không có ma trận truy vết, người viết hệ thống đã nghỉ việc, tài liệu không được cập nhật.",
+   "BƯỚC 1",
+   "BƯỚC 2 — Phân tích tác động — (Impact Analysis)",
+   "Xác định phần nào của hệ thống bị ảnh hưởng; dựa vào ma trận truy vết và kiến trúc.",
+   "BƯỚC 3 — Xác định phạm vi kiểm thử — Chọn test case cần chạy lại: retest lỗi",
+   "+ regression vùng ảnh hưởng.",
+   "BƯỚC 4 — Thực thi & đánh giá — Chạy confirmation + regression, đánh giá rủi ro còn lại, quyết định",
+   "phát hành."
+  ]
+ },
+ "main-7-0": {
+  "title": "2.2.6 DEVOPS DevOps và Kiểm thử liên tục (Continuous Testing)",
+  "paras": [
+   "BƯỚC 1 — Commit mã nguồn — Lập trình viên đẩy mã lên kho chung (Git) nhiều lần",
+   "mỗi ngày.",
+   "Lợi ích: phản hồi nhanh, phát hiện lỗi tức thì. Thách thức: phải đầu tư hạ tầng CI/CD và bộ kiểm thử tự động ổn định (ít test \"flaky\").",
+   "BƯỚC 2 — Build & Unit test — tự động",
+   "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay.",
+   "BƯỚC 3 — Kiểm thử tích hợp — & API tự động",
+   "Triển khai lên môi trường — test, chạy bộ test API và tích hợp.",
+   "BƯỚC 4 — Kiểm thử hệ thống — & hồi quy",
+   "Chạy bộ hồi quy UI tự động, kiểm thử hiệu năng, bảo mật.",
+   "BƯỚC 5 — Triển khai & giám sát — Phát hành tự động; giám sát log, cảnh báo lỗi trên",
+   "production."
+  ]
+ },
+ "main-7-1": {
+  "title": "2.3 SHIFT-LEFT Shift-left và các cách tiếp cận hợp tác (Collaboration-based approaches) 15 Shift-left testing",
+  "paras": [
+   "Dịch chuyển hoạt động kiểm thử về phía sớm của vòng đời: review yêu cầu, phân tích tĩnh, unit test, kiểm thử API trước khi có UI.",
+   "Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ — *When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký.",
+   "TDD – Test-Driven Development",
+   "Viết test trước, sau đó viết mã vừa đủ để test pass, rồi tái cấu trúc (refactor). Chu trình Red – Green – Refactor.",
+   "ATDD – Acceptance TDD",
+   "Cả nhóm cùng viết tiêu chí chấp nhận dưới dạng test trước khi phát triển, dựa trên góc nhìn người dùng.",
+   "BDD – Behaviour-Driven Development",
+   "Mô tả hành vi mong đợi bằng ngôn ngữ tự nhiên Given – When – Then, để BA, dev, tester cùng hiểu."
+  ]
+ },
+ "main-7-2": {
+  "title": "3.2 TEST CASE Cấu trúc một trường hợp kiểm thử (Test Case) chuẩn 6 Trường thông tin Mô tả Ví dụ",
+  "paras": [
+   "Test Case ID Mã định danh duy nhất, đặt theo quy ước TC_LOGIN_001 Chức năng / Module Chức năng được kiểm thử Đăng nhập",
+   "Mục tiêu kiểm thử Test case này nhằm xác minh điều gì Kiểm tra đăng nhập thành công với tài khoản hợp lệ",
+   "Điều kiện tiên quyết (Precondition) Trạng thái hệ thống trước khi thực hiện Đã có tài khoản hợp lệ, trạng thái Active",
+   "Các bước thực hiện Từng bước rõ ràng, đánh số, ai cũng làm lại được 1. Mở trang Login 2. Nhập Username 3. Nhập Password 4. Nhấn Login",
+   "Dữ liệu kiểm thử Dữ liệu đầu vào cụ thể admin / 123456",
+   "Kết quả mong đợi (Expected result) Kết quả đúng theo đặc tả – phải xác định trước khi chạy Đăng nhập thành công, chuyển tới Dashboard, hiển thị tên người dùng",
+   "Kết quả thực tế / Trạng thái Ghi nhận khi thực thi Pass / Fail / Blocked / Skipped",
+   "Bổ sung thường gặp: độ ưu tiên (priority), người thực hiện, phiên bản, liên kết yêu cầu (requirement ID), Bug ID."
+  ]
+ },
+ "main-7-3": {
+  "title": "3.2 TEST CASE Cấu trúc một trường hợp kiểm thử (Test Case) chuẩn 6 Trường thông tin Mô tả Ví dụ",
+  "paras": [
+   "Test Case ID Mã định danh duy nhất, đặt theo quy ước TC_LOGIN_001 Chức năng / Module Chức năng được kiểm thử Đăng nhập",
+   "Mục tiêu kiểm thử Test case này nhằm xác minh điều gì Kiểm tra đăng nhập thành công với tài khoản hợp lệ",
+   "Điều kiện tiên quyết (Precondition) Trạng thái hệ thống trước khi thực hiện Đã có tài khoản hợp lệ, trạng thái Active",
+   "Các bước thực hiện Từng bước rõ ràng, đánh số, ai cũng làm lại được 1. Mở trang Login 2. Nhập Username 3. Nhập Password 4. Nhấn Login",
+   "Dữ liệu kiểm thử Dữ liệu đầu vào cụ thể admin / 123456",
+   "Kết quả mong đợi (Expected result) Kết quả đúng theo đặc tả – phải xác định trước khi chạy Đăng nhập thành công, chuyển tới Dashboard, hiển thị tên người dùng",
+   "Kết quả thực tế / Trạng thái Ghi nhận khi thực thi Pass / Fail / Blocked / Skipped",
+   "Bổ sung thường gặp: độ ưu tiên (priority), người thực hiện, phiên bản, liên kết yêu cầu (requirement ID), Bug ID."
+  ]
+ },
+ "main-8-0": {
+  "title": "3.2 CHẤT LƯỢNG Tiêu chí một test case tốt 7 Rõ ràng & tái lập được",
+  "paras": [
+   "Người khác đọc và thực hiện lại cho ra cùng kết quả. Không dùng từ mơ hồ như \"kiểm tra xem có ổn không\".",
+   "Truy vết được — Liên kết tới yêu cầu / user story cụ thể để đo độ bao phủ.",
+   "Có kết quả mong đợi cụ thể",
+   "Nêu rõ thông báo, giá trị, trạng thái. Test case không có expected result là test case vô nghĩa.",
+   "Một mục tiêu duy nhất — Mỗi test case kiểm tra một điều kiện. Khi fail sẽ biết ngay nguyên nhân.",
+   "Độc lập",
+   "Không phụ thuộc kết quả của test case khác ⇒ chạy được theo bất kỳ thứ tự nào, dễ tự động hoá.",
+   "Có độ ưu tiên — Gắn priority (High/Medium/Low) theo rủi ro để chạy trước khi thời gian hạn chế."
+  ]
+ },
+ "main-8-1": {
+  "title": "3.1–3.3 CẤU TRÚC Hệ thống phân cấp tổ chức kiểm thử 5 ỨNG DỤNG ĐƯỢC KIỂM THỬ – AUT (Application Under Test) Toàn bộ hệ thống hoặc một phần cụ thể đang được kiểm thử",
+  "paras": [
+   "Ví dụ: AUT = *Website bán hàng* ⊃ Test Module *\"Thanh toán\"* ⊃ Test Suite *\"Thanh toán bằng thẻ\"* ⊃ Test Case *TC_PAY_004 – thẻ hết hạn*.",
+   "TEST MODULE – Mô-đun kiểm thử — Nhóm theo chức năng lớn / module của hệ thống. VD: \"Quản lý đơn hàng\" TEST SUITE – Bộ kiểm thử",
+   "Tập các test case liên quan, cùng kiểm tra một chức năng. VD: \"Đăng nhập\" TEST CASE – Trường hợp kiểm thử",
+   "Đơn vị nhỏ nhất: điều kiện, dữ liệu, các bước, kết quả mong đợi"
+  ]
+ },
+ "main-8-2": {
+  "title": "3.4 SCOPE & CRITERIA Phạm vi kiểm thử và tiêu chí vào/ra 8 TEST SCOPE – Phạm vi kiểm thử",
+  "paras": [
+   "▸ In scope – những gì SẼ kiểm thử:",
+   "– Chức năng / yêu cầu cần kiểm tra – Các module, hệ thống liên quan – Môi trường: trình duyệt, OS, thiết bị",
+   "▸ Out of scope – những gì KHÔNG kiểm thử:",
+   "– Ghi rõ để tránh hiểu nhầm giữa các bên – VD: \"Không kiểm thử hiệu năng ở giai đoạn này\"",
+   "Không xác định rõ phạm vi ⇒ kiểm thử lan man, tốn nguồn lực mà vẫn bỏ sót vùng quan trọng.",
+   "▸ Tiêu chí vào (Entry criteria) – đủ điều kiện bắt đầu kiểm thử:",
+   "– Môi trường sẵn sàng, build đã deploy – Smoke test Pass, test case đã review",
+   "▸ Tiêu chí ra (Exit criteria) – đủ điều kiện dừng kiểm thử:",
+   "– 100% test case ưu tiên cao đã thực thi – 0 lỗi Critical/High còn mở – Đạt độ bao phủ yêu cầu đã cam kết",
+   "ENTRY & EXIT CRITERIA"
+  ]
+ },
+ "main-8-3": {
+  "title": "3.5 STRATEGY VS PLAN Phân biệt Test Strategy và Test Plan",
+  "paras": [
+   "Tiêu chí Chiến lược kiểm thử (Test Strategy) Kế hoạch kiểm thử (Test Plan)",
+   "Cấp độ Tổ chức hoặc chương trình dự án lớn Từng dự án / từng đợt phát hành",
+   "Mục đích Định hướng chung – \"kim chỉ nam\" Điều phối cụ thể hoạt động kiểm thử",
+   "Nội dung Nguyên tắc, cách tiếp cận, chuẩn áp dụng, mức tự động hoá Mục tiêu, phạm vi, lịch trình, nhân sự, môi trường, rủi ro, tiêu chí vào/ra",
+   "Tính ổn định Ít thay đổi, dùng cho nhiều dự án Thay đổi theo dự án, cập nhật liên tục",
+   "Người lập Giám đốc chất lượng / Head of QA Test Manager / Test Lead",
+   "Quan hệ Là cơ sở để xây dựng test plan Phải tuân thủ test strategy của tổ chức"
+  ]
+ },
+ "main-9-0": {
+  "title": "3.7 TRACEABILITY Ma trận truy vết yêu cầu (Requirement Traceability Matrix – RTM) 15 Mã yêu cầu Mô tả yêu cầu Test Case ID Kết quả Bug ID",
+  "paras": [
+   "REQ-01 Đăng nhập bằng username và mật khẩu hợp lệ TC_LOGIN_001, 002 Pass –",
+   "REQ-02 Khoá tài khoản sau 5 lần nhập sai mật khẩu TC_LOGIN_005, 006 Fail BUG-118",
+   "REQ-03 Không cho phép để trống username hoặc mật khẩu TC_LOGIN_003, 004 Pass –",
+   "REQ-04 Gửi email khôi phục mật khẩu trong 60 giây TC_PWD_001 Pass –",
+   "REQ-05 Mã hoá mật khẩu khi lưu trữ (chưa có test case) Chưa bao phủ –",
+   "RTM giúp trả lời: yêu cầu nào chưa được kiểm thử? (REQ-05 ở ví dụ trên) và thay đổi yêu cầu này ảnh hưởng test case nào?"
+  ]
+ },
+ "main-9-1": {
+  "title": "3.8 DEFECT LIFE CYCLE Vòng đời khiếm khuyết (Defect Life Cycle)",
+  "paras": [
+   "BƯỚC 1 — New — Tester vừa ghi nhận lỗi.",
+   "Các trạng thái khác thường gặp: Rejected (không phải lỗi), Duplicate (trùng), Deferred (hoãn sang bản sau), Cannot Reproduce (không tái hiện được).",
+   "BƯỚC 2 — Assigned — Trưởng nhóm phân công",
+   "cho developer.",
+   "BƯỚC 3 — In Progress / — Fixed",
+   "Developer sửa và đánh dấu — đã sửa.",
+   "BƯỚC 4 — Retest — Tester chạy lại test case đã",
+   "phát hiện lỗi.",
+   "BƯỚC 5 — Closed / Reopened — Đạt ⇒ Closed. Chưa đạt ⇒",
+   "Reopened, quay lại — Assigned."
+  ]
+ },
+ "main-9-2": {
+  "title": "3.8 DEFECT LIFE CYCLE Vòng đời khiếm khuyết (Defect Life Cycle)",
+  "paras": [
+   "BƯỚC 1 — New — Tester vừa ghi nhận lỗi.",
+   "Các trạng thái khác thường gặp: Rejected (không phải lỗi), Duplicate (trùng), Deferred (hoãn sang bản sau), Cannot Reproduce (không tái hiện được).",
+   "BƯỚC 2 — Assigned — Trưởng nhóm phân công",
+   "cho developer.",
+   "BƯỚC 3 — In Progress / — Fixed",
+   "Developer sửa và đánh dấu — đã sửa.",
+   "BƯỚC 4 — Retest — Tester chạy lại test case đã",
+   "phát hiện lỗi.",
+   "BƯỚC 5 — Closed / Reopened — Đạt ⇒ Closed. Chưa đạt ⇒",
+   "Reopened, quay lại — Assigned."
+  ]
+ },
+ "main-9-3": {
+  "title": "3.8 SEVERITY VS PRIORITY Severity và Priority – hai khái niệm khác nhau 18 SEVERITY – Mức độ nghiêm trọng (kỹ thuật)",
+  "paras": [
+   "▸ Đánh giá tác động của lỗi lên hệ thống, do tester xác định",
+   "▸ Critical: hệ thống sập, mất dữ liệu, không thể tiếp tục",
+   "▸ Major/High: chức năng chính sai, không có cách khắc phục tạm",
+   "▸ Minor/Medium: chức năng phụ sai, có cách khắc phục tạm",
+   "▸ Trivial/Low: lỗi giao diện, sai chính tả, lệch canh lề",
+   "Ví dụ Severity thấp – Priority cao: logo công ty trên trang chủ bị viết sai tên thương hiệu. Severity cao – Priority thấp: hệ thống sập khi nhập 10.000 ký tự vào ô ghi chú (rất hiếm gặp).",
+   "PRIORITY – Độ ưu tiên sửa (nghiệp vụ)",
+   "▸ Đánh giá mức cấp bách phải sửa, do PO / Test Manager quyết định",
+   "▸ High: phải sửa ngay trong bản build kế tiếp",
+   "▸ Medium: sửa trong đợt phát hành hiện tại",
+   "▸ Low: có thể hoãn sang bản sau",
+   "▸ Phụ thuộc: tần suất người dùng gặp, ảnh hưởng doanh thu, hình ảnh thương hiệu"
+  ]
+ },
+ "main-10-0": {
+  "title": "3.8 SEVERITY VS PRIORITY Severity và Priority – hai khái niệm khác nhau 18 SEVERITY – Mức độ nghiêm trọng (kỹ thuật)",
+  "paras": [
+   "▸ Đánh giá tác động của lỗi lên hệ thống, do tester xác định",
+   "▸ Critical: hệ thống sập, mất dữ liệu, không thể tiếp tục",
+   "▸ Major/High: chức năng chính sai, không có cách khắc phục tạm",
+   "▸ Minor/Medium: chức năng phụ sai, có cách khắc phục tạm",
+   "▸ Trivial/Low: lỗi giao diện, sai chính tả, lệch canh lề",
+   "Ví dụ Severity thấp – Priority cao: logo công ty trên trang chủ bị viết sai tên thương hiệu. Severity cao – Priority thấp: hệ thống sập khi nhập 10.000 ký tự vào ô ghi chú (rất hiếm gặp).",
+   "PRIORITY – Độ ưu tiên sửa (nghiệp vụ)",
+   "▸ Đánh giá mức cấp bách phải sửa, do PO / Test Manager quyết định",
+   "▸ High: phải sửa ngay trong bản build kế tiếp",
+   "▸ Medium: sửa trong đợt phát hành hiện tại",
+   "▸ Low: có thể hoãn sang bản sau",
+   "▸ Phụ thuộc: tần suất người dùng gặp, ảnh hưởng doanh thu, hình ảnh thương hiệu"
+  ]
+ },
+ "main-10-1": {
+  "title": "3.9 METRICS Các chỉ số kiểm thử thường dùng (Test Metrics) 19 Tiến độ thực thi Test Execution % = TC đã chạy / tổng TC × 100%.",
+  "paras": [
+   "Cho biết còn bao nhiêu việc phải làm.",
+   "Mật độ khiếm khuyết — Defect Density = số lỗi / quy mô (KLOC hoặc số chức năng).",
+   "So sánh chất lượng giữa các module.",
+   "Cảnh báo: không dùng metrics để đánh giá cá nhân (VD: \"tester nào báo nhiều bug hơn\") – sẽ dẫn đến hành vi lệch lạc và phá hỏng tinh thần hợp tác.",
+   "Tỷ lệ đạt — Pass Rate = TC Pass / TC đã chạy × 100%.",
+   "Phản ánh mức ổn định của bản build.",
+   "Hiệu quả phát hiện lỗi — DDE/DRE = lỗi tìm được trước phát hành / tổng lỗi × 100%.",
+   "Đánh giá hiệu quả của cả quy trình kiểm thử.",
+   "Độ bao phủ yêu cầu — Requirement Coverage = yêu cầu có test case / tổng yêu cầu × 100%.",
+   "Lỗi theo mức nghiêm trọng — Phân bố số lỗi Critical / High / Medium / Low – căn cứ quyết định phát hành."
+  ]
+ },
+ "main-10-2": {
+  "title": "3.9 DELIVERABLES Sản phẩm bàn giao kiểm thử (Test Deliverables)",
+  "paras": [
+   "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+   "Test Design / Test Case Điều kiện kiểm thử, test case chi tiết, ma trận truy vết Trước khi thực thi",
+   "Test Data Dữ liệu đầu vào, script tạo dữ liệu, dữ liệu ẩn danh hoá Trước khi thực thi",
+   "Test Log / Test Results Kết quả từng lần chạy, bằng chứng (ảnh, log) Trong khi thực thi",
+   "Defect Report Danh sách lỗi, trạng thái, mức nghiêm trọng, độ ưu tiên Liên tục",
+   "Test Summary Report Tổng hợp kết quả, đánh giá chất lượng, rủi ro tồn đọng, khuyến nghị Kết thúc mỗi đợt",
+   "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau.",
+   "Sản phẩm Nội dung Thời điểm bàn giao"
+  ]
+ },
+ "main-10-3": {
+  "title": "3.6 ESTIMATION Ước lượng công sức kiểm thử (Test Estimation) 13 Dựa trên tỷ lệ (Ratio)",
+  "paras": [
+   "Công sức kiểm thử ≈ 25–40% công sức phát triển, tuỳ mức độ rủi ro và yêu cầu chất lượng.",
+   "Luôn cộng thêm hệ số dự phòng (buffer) 15–25% cho: retest, regression ngoài kế hoạch, môi trường hỏng, build trễ.",
+   "Dựa trên số test case",
+   "Ước lượng: *số TC × thời gian trung bình/TC × số vòng chạy*. Cần dữ liệu lịch sử của tổ chức.",
+   "Ý kiến chuyên gia (Expert judgement) — Người có kinh nghiệm ước lượng từng hạng mục; dùng Planning Poker trong Agile.",
+   "Ba điểm (Three-point / PERT) — Ước lượng = (Lạc quan + 4 × Khả dĩ + Bi quan) / 6 – giảm sai lệch do chủ quan."
+  ]
+ },
+ "main-11-0": {
+  "title": "3.9 DELIVERABLES Sản phẩm bàn giao kiểm thử (Test Deliverables)",
+  "paras": [
+   "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+   "Test Design / Test Case Điều kiện kiểm thử, test case chi tiết, ma trận truy vết Trước khi thực thi",
+   "Test Data Dữ liệu đầu vào, script tạo dữ liệu, dữ liệu ẩn danh hoá Trước khi thực thi",
+   "Test Log / Test Results Kết quả từng lần chạy, bằng chứng (ảnh, log) Trong khi thực thi",
+   "Defect Report Danh sách lỗi, trạng thái, mức nghiêm trọng, độ ưu tiên Liên tục",
+   "Test Summary Report Tổng hợp kết quả, đánh giá chất lượng, rủi ro tồn đọng, khuyến nghị Kết thúc mỗi đợt",
+   "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau.",
+   "Sản phẩm Nội dung Thời điểm bàn giao"
+  ]
+ },
+ "main-11-1": {
+  "title": "4.3.1 SO SÁNH So sánh kiểm thử tĩnh và kiểm thử động",
+  "paras": [
+   "Tiêu chí Kiểm thử tĩnh (Static Testing) Kiểm thử động (Dynamic Testing)",
+   "Thực thi đối tượng Không chạy chương trình Có chạy chương trình",
+   "Đối tượng Yêu cầu, thiết kế, mô hình, kế hoạch, test case, tài liệu, mã nguồn Thành phần hoặc hệ thống có thể chạy được",
+   "Cách phát hiện Nhận diện trực tiếp bất thường và khiếm khuyết Quan sát thất bại rồi phân tích ngược tìm nguyên nhân",
+   "Thời điểm Có thể bắt đầu rất sớm, ngay khi có bản nháp tài liệu Chỉ khi đã có đối tượng thực thi được",
+   "Ví dụ phát hiện Mơ hồ, mâu thuẫn, thiếu ngoại lệ, mã không thể tiếp cận, biến chưa khởi tạo Sai kết quả tính toán, lỗi thời gian chạy, rò rỉ bộ nhớ, hiệu năng kém",
+   "Giá trị chính Phòng ngừa – cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
+   "Hai phương thức bổ sung cho nhau, không thay thế nhau. Kiểm thử tĩnh phát hiện được những khiếm khuyết mà kiểm thử động không bao giờ thấy (và ngược lại)."
+  ]
+ },
+ "main-11-2": {
+  "title": "4.3.5 HÌNH THỨC So sánh bốn hình thức xem xét (Review Types) 15 Tiêu chí Informal Review (Không chính thức)",
+  "paras": [
+   "Mức chính thức Thấp Thấp – Trung bình Trung bình – Cao Cao nhất",
+   "Người dẫn dắt Không cố định Tác giả Người điều phối Người điều phối được đào tạo Chuẩn bị cá nhân Không bắt buộc Có thể có Thường có Bắt buộc",
+   "Mục tiêu nổi bật Phản hồi nhanh Hiểu & kiểm tra nội dung, chia sẻ kiến thức Đánh giá & đạt đồng thuận kỹ thuật Phát hiện tối đa bất thường",
+   "Ghi nhận Đơn giản Có thể ghi biên bản Có báo cáo chính thức Có báo cáo và số liệu đo lường",
+   "Phù hợp với Sản phẩm nhỏ, rủi ro thấp Chia sẻ kiến thức trong nhóm Vấn đề kỹ thuật quan trọng Sản phẩm quan trọng, cần kiểm soát chặt",
+   "Walkthrough — (Tuần tự) — Technical Review",
+   "(Kỹ thuật) — Inspection (Nghiêm ngặt)"
+  ]
+ },
+ "main-11-3": {
+  "title": "4.3.5 HÌNH THỨC So sánh bốn hình thức xem xét (Review Types) 15 Tiêu chí Informal Review (Không chính thức)",
+  "paras": [
+   "Mức chính thức Thấp Thấp – Trung bình Trung bình – Cao Cao nhất",
+   "Người dẫn dắt Không cố định Tác giả Người điều phối Người điều phối được đào tạo Chuẩn bị cá nhân Không bắt buộc Có thể có Thường có Bắt buộc",
+   "Mục tiêu nổi bật Phản hồi nhanh Hiểu & kiểm tra nội dung, chia sẻ kiến thức Đánh giá & đạt đồng thuận kỹ thuật Phát hiện tối đa bất thường",
+   "Ghi nhận Đơn giản Có thể ghi biên bản Có báo cáo chính thức Có báo cáo và số liệu đo lường",
+   "Phù hợp với Sản phẩm nhỏ, rủi ro thấp Chia sẻ kiến thức trong nhóm Vấn đề kỹ thuật quan trọng Sản phẩm quan trọng, cần kiểm soát chặt",
+   "Walkthrough — (Tuần tự) — Technical Review",
+   "(Kỹ thuật) — Inspection (Nghiêm ngặt)"
+  ]
+ },
+ "main-12-0": {
+  "title": "4.3.4 VAI TRÒ Năm vai trò cơ bản trong hoạt động xem xét",
+  "paras": [
+   "Quản lý (Manager) Quyết định nội dung cần xem xét, phân bổ nguồn lực và thời gian.",
+   "Tác giả (Author) Tạo ra sản phẩm, giải thích khi cần và thực hiện sửa chữa sau khi xem xét.",
+   "Người điều phối (Facilitator / Moderator) Tổ chức hoạt động, bảo đảm đạt mục tiêu, kiểm soát thời gian và giữ trao đổi khách quan.",
+   "Người xem xét (Reviewer) Đọc sản phẩm, nhận diện bất thường và đưa ra nhận xét chuyên môn.",
+   "Người ghi chép (Scribe) Ghi lại bất thường, quyết định, người phụ trách xử lý và thời hạn.",
+   "Trong hoạt động nhỏ, một người có thể đảm nhiệm nhiều vai trò. Với xem xét chính thức, việc phân tách vai trò giúp tăng tính khách quan và khả năng theo dõi.",
+   "Vai trò Trách nhiệm chính"
+  ]
+ },
+ "main-12-1": {
+  "title": "4.3.3 QUY TRÌNH Quy trình xem xét sản phẩm công việc (Work Product Review Process)",
+  "paras": [
+   "BƯỚC 1 — Lập kế hoạch — Planning",
+   "Xác định mục tiêu, phạm vi, — sản phẩm cần xem xét, tiêu chí, thành viên tham gia và",
+   "cách ghi nhận.",
+   "BƯỚC 2 — Khởi động Initiate review — Cung cấp đúng phiên bản",
+   "tài liệu, mục tiêu, phân — công vai trò và tài liệu tham chiếu.",
+   "BƯỚC 3 — Xem xét cá nhân Individual review",
+   "Mỗi thành viên tự đọc, nhận diện bất thường và ghi nhận trước khi họp – đây là bước tìm ra nhiều lỗi nhất.",
+   "BƯỚC 4 — Trao đổi & phân tích — Communication",
+   "Phân loại bất thường thành: khiếm khuyết, câu hỏi, đề xuất cải tiến hoặc nội dung ngoài phạm vi.",
+   "BƯỚC 5 — Sửa chữa & theo dõi — Fixing & reporting",
+   "Tác giả sửa, người phụ trách xác minh và kết thúc hoặc mở vòng xem xét mới."
+  ]
+ },
+ "main-12-2": {
+  "title": "4.2.3 BVA Giá trị kiểm thử tại biên của miền hợp lệ 1–25 (BVA ba giá trị)",
+  "paras": [
+   "Biên Ngay dưới biên Tại biên Ngay trên biên Ý nghĩa phát hiện lỗi",
+   "Biên dưới = 1 0 (không hợp lệ) 1 (hợp lệ) 2 (hợp lệ) Phát hiện cài đặt sai biên dưới, ví dụ dùng `credits > 1` thay cho `credits >= 1`",
+   "Biên trên = 25 24 (hợp lệ) 25 (hợp lệ) 26 (không hợp lệ) Phát hiện cài đặt sai điều kiện `< 25` thay cho `<= 25` – lỗi off-by-one điển hình",
+   "Phân vùng tương đương giúp nhận diện các miền; BVA tập trung vào những điểm rủi ro cao nhất tại ranh giới. Hai kỹ thuật hầu như luôn được dùng cùng nhau."
+  ]
+ },
+ "main-12-3": {
+  "title": "4.2.3 BVA Giá trị kiểm thử tại biên của miền hợp lệ 1–25 (BVA ba giá trị)",
+  "paras": [
+   "Biên Ngay dưới biên Tại biên Ngay trên biên Ý nghĩa phát hiện lỗi",
+   "Biên dưới = 1 0 (không hợp lệ) 1 (hợp lệ) 2 (hợp lệ) Phát hiện cài đặt sai biên dưới, ví dụ dùng `credits > 1` thay cho `credits >= 1`",
+   "Biên trên = 25 24 (hợp lệ) 25 (hợp lệ) 26 (không hợp lệ) Phát hiện cài đặt sai điều kiện `< 25` thay cho `<= 25` – lỗi off-by-one điển hình",
+   "Phân vùng tương đương giúp nhận diện các miền; BVA tập trung vào những điểm rủi ro cao nhất tại ranh giới. Hai kỹ thuật hầu như luôn được dùng cùng nhau."
+  ]
+ },
+ "main-13-0": {
+  "title": "4.2.3 HỘP ĐEN a) Phân vùng tương đương (Equivalence Par titioning – EP) 9 NGUYÊN LÝ",
+  "paras": [
+   "▸ Chia miền dữ liệu thành các vùng (partition) mà các phần tử trong cùng vùng được dự kiến xử lý giống nhau",
+   "▸ Ba tính chất bắt buộc: các vùng không rỗng, không chồng lấn, và hợp lại bao phủ toàn bộ miền",
+   "▸ Chọn một giá trị đại diện cho mỗi vùng ⇒ giảm mạnh số lượng test case",
+   "▸ Phân biệt vùng hợp lệ (valid) và vùng không hợp lệ (invalid) — LƯU Ý QUAN TRỌNG",
+   "▸ Nếu trong cùng một vùng lại tồn tại các cách xử lý khác nhau ⇒ việc phân vùng chưa đúng, phải chia lại",
+   "▸ Một giá trị đại diện không chứng minh mọi giá trị trong vùng đều đúng – đây chỉ là cách giảm số test case có hệ thống"
+  ]
+ },
+ "main-13-1": {
+  "title": "4.2.3 HỘP ĐEN b) Phân tích giá trị biên (Boundar y Value Analysis – BVA) 11 VÌ SAO CẦN BVA?",
+  "paras": [
+   "▸ Khiếm khuyết thường xuất hiện tại ranh giới do: dùng sai toán tử so sánh (`>` thay vì `>=`), đặt sai giới hạn, bỏ sót một giá trị (lỗi lệch một đơn vị – off-by-one)",
+   "HAI BIẾN THỂ",
+   "▸ BVA hai giá trị (2-value): với mỗi biên, lấy chính giá trị biên và giá trị lân cận gần nhất thuộc vùng kề",
+   "▸ BVA ba giá trị (3-value): lấy giá trị biên và hai giá trị lân cận hai phía – chặt chẽ hơn nhưng tạo nhiều dữ liệu hơn",
+   "ĐIỀU KIỆN ÁP DỤNG",
+   "▸ Chỉ áp dụng cho các vùng có thứ tự (số, ngày tháng, độ dài chuỗi, thời gian) – không áp dụng cho dữ liệu rời rạc như \"màu sắc: đỏ/xanh/vàng\""
+  ]
+ },
+ "main-13-2": {
+  "title": "4.2.3 HỘP ĐEN c) Kiểm thử bảng quyết định (Decision Table Testing) 13 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi yêu cầu có nhiều điều kiện kết hợp với nhau tạo ra các hành động khác nhau (quy tắc nghiệp vụ phức tạp) — CẤU TRÚC BẢNG",
+   "▸ Mỗi cột là một quy tắc (rule); các hàng phía trên mô tả điều kiện, các hàng phía dưới mô tả hành động",
+   "▸ Ký hiệu: T = điều kiện đúng, F = điều kiện sai, – = giá trị điều kiện không ảnh hưởng đến hành động của quy tắc",
+   "▸ Ký hiệu – *không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
+   "TIÊU CHÍ BAO PHỦ",
+   "▸ Mỗi quy tắc khả thi cần ít nhất một trường hợp kiểm thử ⇒ bao phủ 100% bảng quyết định"
+  ]
+ },
+ "main-13-3": {
+  "title": "4.2.3 HỘP ĐEN c) Kiểm thử bảng quyết định (Decision Table Testing) 13 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi yêu cầu có nhiều điều kiện kết hợp với nhau tạo ra các hành động khác nhau (quy tắc nghiệp vụ phức tạp) — CẤU TRÚC BẢNG",
+   "▸ Mỗi cột là một quy tắc (rule); các hàng phía trên mô tả điều kiện, các hàng phía dưới mô tả hành động",
+   "▸ Ký hiệu: T = điều kiện đúng, F = điều kiện sai, – = giá trị điều kiện không ảnh hưởng đến hành động của quy tắc",
+   "▸ Ký hiệu – *không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
+   "TIÊU CHÍ BAO PHỦ",
+   "▸ Mỗi quy tắc khả thi cần ít nhất một trường hợp kiểm thử ⇒ bao phủ 100% bảng quyết định"
+  ]
+ },
+ "main-14-0": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "main-14-1": {
+  "title": "4.2.3 STATE TABLE Bảng chuyển trạng thái – đăng ký học phần",
+  "paras": [
+   "Trạng thái hiện tại Sự kiện Điều kiện Hành động Trạng thái tiếp theo Hợp lệ",
+   "Chưa đăng ký Gửi yêu cầu Đợt đăng ký đang mở Tiếp nhận yêu cầu Chờ xác nhận Có",
+   "Chờ xác nhận Kiểm tra điều kiện Tất cả điều kiện đạt Lưu đăng ký, cập nhật sĩ số Đăng ký thành công Có",
+   "Chờ xác nhận Kiểm tra điều kiện Có điều kiện không đạt Thông báo nguyên nhân Chưa đăng ký Có",
+   "Đăng ký thành công Hủy đăng ký Còn trong thời hạn hủy Xóa đăng ký, cập nhật sĩ số Đã hủy Có",
+   "Đã hủy Đăng ký lại Đợt đăng ký còn mở Tiếp nhận yêu cầu mới Chờ xác nhận Có",
+   "Chưa đăng ký Xác nhận thành công Chưa có yêu cầu chờ xử lý Không thực hiện Chưa đăng ký Không",
+   "Với chuyển tiếp không hợp lệ (dòng cuối), cần kiểm tra hệ thống từ chối thao tác và giữ nguyên trạng thái đúng, không báo lỗi hệ thống (crash)."
+  ]
+ },
+ "main-14-2": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-14-3": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-15-0": {
+  "title": "5.3 SO SÁNH Bảng so sánh kiểm thử thủ công và kiểm thử tự động",
+  "paras": [
+   "Cách thực hiện Tester thao tác trực tiếp Máy chạy script đã lập trình sẵn Tốc độ Chậm Nhanh – gấp hàng chục lần",
+   "Độ chính xác Dễ sai sót do yếu tố con người Chính xác cao, nhất quán qua nhiều lần chạy",
+   "Chi phí ban đầu Thấp Cao (công cụ, đào tạo, xây dựng framework)",
+   "Chi phí dài hạn Cao (tốn nhân lực mỗi lần chạy) Thấp (chạy lại gần như miễn phí)",
+   "Khả năng lặp lại Khó, dễ mệt mỏi và bỏ sót Dễ, chạy bao nhiêu lần cũng được",
+   "Kỹ năng yêu cầu Không bắt buộc biết lập trình Bắt buộc biết lập trình",
+   "Ghi lại quá trình Khó ghi lại đầy đủ Tự động lưu log, ảnh chụp, video",
+   "Phù hợp với UI/UX, kiểm thử thăm dò, test linh hoạt Hồi quy, test lặp lại, hiệu năng, API Tiêu chí Kiểm thử thủ công Kiểm thử tự động"
+  ]
+ },
+ "main-15-1": {
+  "title": "6.3.4 ASSERT VS VERIFY Assert và Verify – hai lệnh kiểm chứng quan trọng",
+  "paras": [
+   "▸ Dừng test ngay nếu sai",
+   "▸ Dùng cho các điều kiện tiên quyết: nếu bước này sai thì các bước sau không còn ý nghĩa",
+   "▸ Ví dụ: nếu không đăng nhập thành công thì không cần chạy các bước kiểm tra giỏ hàng, thanh toán phía sau",
+   "▸ Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả — ASSERT – Khẳng định",
+   "▸ Ghi nhận lỗi nhưng vẫn chạy tiếp",
+   "▸ Dùng khi muốn kiểm tra nhiều chi tiết độc lập trên cùng một trang",
+   "▸ Ví dụ: kiểm tra logo, banner, menu và chân trang có hiển thị đủ hay không – nếu logo sai vẫn nên kiểm tra tiếp các phần còn lại",
+   "▸ Giúp thu thập được nhiều lỗi trong một lần chạy — VERIFY – Xác minh"
+  ]
+ },
+ "main-15-2": {
+  "title": "5.2 ROI Điểm hoà vốn của tự động hoá (Automation ROI) 7 Chi phí tích luỹ theo số lần thực thi bộ kiểm thử",
+  "paras": [
+   "Kết luận: tự động hoá chỉ có lợi khi bộ test được chạy lại nhiều lần. Với chức năng chỉ kiểm thử 1–2 lần, kiểm thử thủ công rẻ hơn và nhanh hơn.",
+   "Kiểm thử thủ công Kiểm thử tự động Điểm hoà vốn ≈ lần chạy thứ 6–7 L1 L3 L5 L7 L9 L11 L13"
+  ]
+ },
+ "main-15-3": {
+  "title": "5.2 ROI Điểm hoà vốn của tự động hoá (Automation ROI) 7 Chi phí tích luỹ theo số lần thực thi bộ kiểm thử",
+  "paras": [
+   "Kết luận: tự động hoá chỉ có lợi khi bộ test được chạy lại nhiều lần. Với chức năng chỉ kiểm thử 1–2 lần, kiểm thử thủ công rẻ hơn và nhanh hơn.",
+   "Kiểm thử thủ công Kiểm thử tự động Điểm hoà vốn ≈ lần chạy thứ 6–7 L1 L3 L5 L7 L9 L11 L13"
+  ]
+ },
+ "main-16-0": {
+  "title": "5.4 NÊN NÊN áp dụng kiểm thử tự động khi... 14 Chức năng lặp lại nhiều lần",
+  "paras": [
+   "Đăng nhập, đăng ký, tìm kiếm, thanh toán – được kiểm tra trong nhiều lần phát triển ⇒ tiết kiệm lớn.",
+   "Kiểm thử hiệu năng",
+   "Load test, stress test – bắt buộc phải tự động vì cần mô phỏng hàng nghìn người dùng đồng thời.",
+   "Kiểm thử hồi quy",
+   "Sau mỗi lần nâng cấp phải chạy lại toàn bộ test cũ – thủ công khó bảo đảm về mặt thời gian.",
+   "Kiểm thử API và dữ liệu — Gửi nhiều request với nhiều bộ dữ liệu khác nhau để kiểm tra tính đúng đắn và độ ổn định.",
+   "Dự án quy mô lớn — Nhiều chức năng, nhiều module, nhiều phiên bản ⇒ thủ công tốn thời gian và dễ sai sót.",
+   "Hệ thống ổn định, ít thay đổi",
+   "Script xây dựng một lần dùng được lâu dài, không phải sửa nhiều ⇒ chi phí bảo trì thấp."
+  ]
+ },
+ "main-16-1": {
+  "title": "5.5 KHÔNG NÊN KHÔNG nên áp dụng kiểm thử tự động khi... 15 Chỉ kiểm tra 1–2 lần",
+  "paras": [
+   "Công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn.",
+   "Yêu cầu chưa ổn định — Kịch bản phải cập nhật liên tục theo thay đổi ⇒ chi phí bảo trì cao và khó kiểm soát.",
+   "Nguyên tắc chung: tự động hoá chỉ phát huy hiệu quả khi được áp dụng đúng hoàn cảnh. Quyết định phải dựa trên đặc điểm cụ thể của dự án, không áp dụng cứng nhắc.",
+   "Giao diện thay đổi liên tục",
+   "Đặc biệt ở giai đoạn đầu phát triển – thay đổi nhỏ về UI cũng làm script hỏng, phải sửa liên tục.",
+   "Kiểm thử trải nghiệm người dùng",
+   "Đánh giá giao diện, tính thân thiện, cảm nhận khi sử dụng – mang tính chủ quan, cần con người.",
+   "Dự án nhỏ, thời gian ngắn — Xây dựng hệ thống tự động hoá không mang lại nhiều giá trị, thậm chí làm chậm tiến độ.",
+   "Thiếu nguồn lực hoặc kỹ năng",
+   "Đội ngũ chưa có kinh nghiệm lập trình hoặc chưa làm chủ công cụ ⇒ gây khó khăn nhiều hơn lợi ích."
+  ]
+ },
+ "main-16-2": {
+  "title": "5.6 CHI TIẾT Chi tiết từng bước trong quy trình 17 ① LỰA CHỌN CÔNG CỤ KIỂM THỬ",
+  "paras": [
+   "▸ Căn cứ: loại ứng dụng, ngôn ngữ lập trình nhóm thành thạo, chi phí bản quyền, khả năng tích hợp CI/CD, cộng đồng hỗ trợ",
+   "▸ Chọn sai công cụ ⇒ khó triển khai và làm giảm hiệu quả kiểm thử — ② THIẾT KẾ KỊCH BẢN KIỂM THỬ (TEST SCRIPT)",
+   "▸ Xác định rõ dữ liệu đầu vào – các bước thực hiện – kết quả mong đợi",
+   "▸ Script nên rõ ràng, dễ hiểu và có khả năng tái sử dụng để thuận tiện cho việc bảo trì — ③ THỰC THI KIỂM THỬ TỰ ĐỘNG",
+   "▸ Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình — ④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+   "▸ Phân biệt lỗi thật của sản phẩm với lỗi của script (false failure); ghi nhận và báo cáo cho nhóm phát triển",
+   "▸ Đánh giá hiệu quả kịch bản và đề xuất cải tiến"
+  ]
+ },
+ "main-16-3": {
+  "title": "5.8 BEST PRACTICES Rủi ro thường gặp và thực hành tốt trong kiểm thử tự động 23 Rủi ro: Test \"flaky\" Test lúc pass lúc fail do chờ đợi không ổn định.",
+  "paras": [
+   "Khắc phục: dùng explicit wait thay cho `Thread.Sleep`; tránh phụ thuộc thời gian cố định.",
+   "Rủi ro: Tự động hoá sai chỗ",
+   "Tự động hoá test chỉ chạy 1 lần, hoặc test UI cho logic nghiệp vụ.",
+   "Khắc phục: tuân thủ kim tự tháp kiểm thử – ưu tiên unit và API.",
+   "Rủi ro: Locator dễ vỡ — Dùng XPath dài, phụ thuộc vị trí ⇒ đổi giao diện là hỏng.",
+   "Khắc phục: ưu tiên ID, thêm thuộc tính `data-testid` phối hợp với developer.",
+   "Rủi ro: Test không độc lập — Test A phải chạy trước test B ⇒ không chạy song song được.",
+   "Khắc phục: mỗi test tự chuẩn bị và dọn dẹp dữ liệu của mình.",
+   "Rủi ro: Chi phí bảo trì cao Script trùng lặp, khó sửa.",
+   "Khắc phục: áp dụng mẫu Page Object Model (POM), tách dữ liệu ra khỏi script.",
+   "Rủi ro: Không ai đọc báo cáo Bộ test đỏ liên tục, cả nhóm bỏ qua.",
+   "Khắc phục: tích hợp CI, chặn merge khi test fail, phân công người trực xử lý."
+  ]
+ },
+ "main-17-0": {
+  "title": "6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA.Selenium.Support.UI;",
+  "paras": [
+   "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+   "// Chuyen vao Iframe driver.SwitchTo().Frame(\"frameName\");",
+   "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed);",
+   "driver.Close(); // Dong tab hien tai driver.Quit(); // Dong toan bo trinh duyet va giai phong bo nho",
+   "Luôn dùng `Quit()` ở cuối test để giải phóng tiến trình driver, tránh treo tài nguyên máy khi chạy hàng loạt test."
+  ]
+ },
+ "main-17-1": {
+  "title": "2.5 CHIẾN LƯỢC PHÂN BỔ Kim tự tháp kiểm thử (Test Pyramid)",
+  "paras": [
+   "Nguyên tắc: càng lên cao, test càng chậm – đắt – khó bảo trì ⇒ đặt phần lớn công sức tự động hoá ở tầng đáy (unit). Kim tự tháp lộn ngược (nhiều test UI, ít unit test) là dấu hiệu xấu (ice-cream cone anti-pattern).",
+   "KIỂM THỬ UI / E2E Ít • Chậm • Đắt • Dễ vỡ (flaky)",
+   "KIỂM THỬ TÍCH HỢP / API Vừa • Tốc độ trung bình • Ổn định hơn KIỂM THỬ ĐƠN VỊ (UNIT) Rất nhiều • Rất nhanh • Rẻ • Ổn định"
+  ]
+ },
+ "main-17-2": {
+  "title": "5.6 CHI TIẾT Chi tiết từng bước trong quy trình 17 ① LỰA CHỌN CÔNG CỤ KIỂM THỬ",
+  "paras": [
+   "▸ Căn cứ: loại ứng dụng, ngôn ngữ lập trình nhóm thành thạo, chi phí bản quyền, khả năng tích hợp CI/CD, cộng đồng hỗ trợ",
+   "▸ Chọn sai công cụ ⇒ khó triển khai và làm giảm hiệu quả kiểm thử — ② THIẾT KẾ KỊCH BẢN KIỂM THỬ (TEST SCRIPT)",
+   "▸ Xác định rõ dữ liệu đầu vào – các bước thực hiện – kết quả mong đợi",
+   "▸ Script nên rõ ràng, dễ hiểu và có khả năng tái sử dụng để thuận tiện cho việc bảo trì — ③ THỰC THI KIỂM THỬ TỰ ĐỘNG",
+   "▸ Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình — ④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+   "▸ Phân biệt lỗi thật của sản phẩm với lỗi của script (false failure); ghi nhận và báo cáo cho nhóm phát triển",
+   "▸ Đánh giá hiệu quả kịch bản và đề xuất cải tiến"
+  ]
+ },
+ "main-17-3": {
+  "title": "6.4.3 HIỆU NĂNG So sánh thực thi tuần tự và thực thi song song",
+  "paras": [
+   "Kiểm thử tương thích một website trên ba trình duyệt Chrome, Firefox và Edge (mỗi trình duyệt 10 phút) THỰC THI TUẦN TỰ (không dùng Grid)",
+   "Chrome – 10 phút Firefox – 10 phút Edge – 10 phút Tổng = 30 phút THỰC THI SONG SONG (dùng Selenium Grid) Chrome – 10 phút",
+   "Firefox – 10 phút — Edge – 10 phút",
+   "Khi chạy song song, tổng thời gian chỉ phụ thuộc vào trình duyệt chậm nhất, không còn là tổng thời gian của cả ba. Thực thi tuần tự gây nghẽn trong quy trình phát triển và làm chậm việc phản hồi lỗi.",
+   "Ba Node chạy đồng thời Tổng = 10 phút"
+  ]
+ },
+ "main-18-0": {
+  "title": "5.6 CHI TIẾT Chi tiết từng bước trong quy trình 17 ① LỰA CHỌN CÔNG CỤ KIỂM THỬ",
+  "paras": [
+   "▸ Căn cứ: loại ứng dụng, ngôn ngữ lập trình nhóm thành thạo, chi phí bản quyền, khả năng tích hợp CI/CD, cộng đồng hỗ trợ",
+   "▸ Chọn sai công cụ ⇒ khó triển khai và làm giảm hiệu quả kiểm thử — ② THIẾT KẾ KỊCH BẢN KIỂM THỬ (TEST SCRIPT)",
+   "▸ Xác định rõ dữ liệu đầu vào – các bước thực hiện – kết quả mong đợi",
+   "▸ Script nên rõ ràng, dễ hiểu và có khả năng tái sử dụng để thuận tiện cho việc bảo trì — ③ THỰC THI KIỂM THỬ TỰ ĐỘNG",
+   "▸ Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình — ④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+   "▸ Phân biệt lỗi thật của sản phẩm với lỗi của script (false failure); ghi nhận và báo cáo cho nhóm phát triển",
+   "▸ Đánh giá hiệu quả kịch bản và đề xuất cải tiến"
+  ]
+ },
+ "main-18-1": {
+  "title": "5.6 QUY TRÌNH Quy trình xây dựng kiểm thử tự động (Automation Testing Life Cycle)",
+  "paras": [
+   "BƯỚC 1 — ① Lựa chọn công cụ kiểm thử — Phù hợp loại ứng dụng (web/API/mobile), ngôn ngữ lập",
+   "trình và năng lực của nhóm.",
+   "Trong thực tế còn có bước ⓪ Đánh giá tính khả thi (chọn test case nào đáng tự động hoá) và bước ⑤ Bảo trì script – chiếm phần lớn công sức về lâu dài.",
+   "BƯỚC 2 — ② Thiết kế kịch bản kiểm thử — Mô tả thao tác người dùng dưới dạng chương trình: dữ liệu đầu vào,",
+   "các bước, kết quả mong đợi.",
+   "BƯỚC 3 — ③ Thực thi kiểm thử tự động — Chạy script trên hệ thống, có thể chạy nhiều lần và trên nhiều môi",
+   "trường khác nhau.",
+   "BƯỚC 4 — ④ Phân tích kết quả kiểm thử — Đánh giá chất lượng phần mềm, ghi nhận & báo cáo lỗi, cải tiến kịch bản",
+   "kiểm thử."
+  ]
+ },
+ "main-18-2": {
+  "title": "2.6 NON-FUNCTIONAL Các loại kiểm thử phi chức năng thường gặp 23 Kiểm thử hiệu năng (Performance)",
+  "paras": [
+   "Load test, stress test, spike test, endurance test. Đo thời gian phản hồi, thông lượng.",
+   "Kiểm thử tương thích (Compatibility) — Nhiều trình duyệt, hệ điều hành, kích thước màn hình, phiên bản thiết bị.",
+   "Kiểm thử bảo mật (Security) — Phân quyền, SQL injection, XSS, mã hoá dữ liệu, quản lý phiên đăng nhập.",
+   "Kiểm thử độ tin cậy (Reliability) — Khả năng chịu lỗi, phục hồi sau sự cố (recovery), thời gian hoạt động liên tục.",
+   "Kiểm thử khả năng sử dụng (Usability)",
+   "Số thao tác để hoàn thành tác vụ, tính rõ ràng của thông báo lỗi, hỗ trợ người khuyết tật.",
+   "Kiểm thử khả chuyển & bảo trì (Portability / Maintainability)",
+   "Cài đặt – gỡ cài đặt, nâng cấp phiên bản, độ phức tạp mã nguồn."
+  ]
+ },
+ "main-18-3": {
+  "title": "6.1.1 KHÁI NIỆM Selenium là gì?",
+  "paras": [
+   "Selenium là một bộ công cụ kiểm thử tự động mã nguồn mở (open-source test automation tool) dành cho ứng dụng web, hỗ trợ hoạt động trên nhiều trình duyệt và nhiều nền tảng khác nhau như Windows, macOS, Linux.",
+   "Tự động hoá trình duyệt",
+   "Cho phép tester tự động thực hiện các thao tác: click chuột, nhập dữ liệu, chuyển trang và kiểm tra kết quả hiển thị.",
+   "Selenium miễn phí hoàn toàn, không mất chi phí bản quyền – đặc biệt phù hợp với môi trường học tập và các dự án có ngân sách hạn chế.",
+   "Hỗ trợ đa ngôn ngữ",
+   "Viết kịch bản bằng C#, Java, Python, Ruby, JavaScript, PHP ⇒ dễ tích hợp vào nhiều môi trường phát triển.",
+   "Dùng nhiều cho hồi quy",
+   "Nhờ khả năng thực hiện thao tác lặp lại nhanh và chính xác, Selenium được dùng chủ yếu cho kiểm thử chức năng web và kiểm thử hồi quy."
+  ]
+ },
+ "main-19-0": {
+  "title": "6.3 SELENIUM IDE Selenium IDE – khái niệm và phạm vi sử dụng",
+  "paras": [
+   "▸ Selenium IDE (Integrated Development Environment) là tiện ích mở rộng trên trình duyệt (Firefox, Chrome) cho phép ghi lại (record) và phát lại (playback) thao tác của người dùng",
+   "▸ Mọi thao tác – nhấp chuột, nhập văn bản, chuyển trang – được ghi lại thành kịch bản kiểm thử",
+   "▸ Người dùng có thể chỉnh sửa, lưu trữ và chạy lại kịch bản khi cần tái kiểm thử",
+   "▸ Không yêu cầu kiến thức lập trình — KHÁI NIỆM",
+   "▸ Ưu điểm lớn nhất: tốc độ triển khai – kịch bản được tạo gần như tức thì ngay sau thao tác",
+   "▸ Phù hợp với: kiểm thử đơn vị đơn giản, kiểm thử khói (smoke testing), tạo bản mẫu kịch bản trước khi chuyển sang WebDriver",
+   "▸ Hạn chế: khó xử lý logic phức tạp, điều kiện rẽ nhánh sâu, đối tượng giao diện có tính động cao",
+   "▸ ⇒ Chỉ nên dùng cho dự án nhỏ hoặc giai đoạn thử nghiệm ban đầu — PHẠM VI PHÙ HỢP"
+  ]
+ },
+ "main-19-1": {
+  "title": "6.4.1 ĐẶC ĐIỂM Bốn đặc tính kỹ thuật cốt lõi của Selenium Grid 21 ① Thực thi song song",
+  "paras": [
+   "Thay vì xếp hàng chờ từng kịch bản chạy tuần tự, Grid kích hoạt đồng thời hàng loạt bài kiểm tra, giảm thời gian kiểm thử từ vài tiếng xuống vài phút.",
+   "② Tính đa môi trường",
+   "Cấu hình mạng lưới gồm nhiều hệ điều hành (Windows, Linux, macOS) và nhiều trình duyệt (Chrome, Firefox, Safari, Edge) ⇒ kiểm duyệt độ tương thích toàn diện.",
+   "③ Quản lý tập trung",
+   "Dù có hàng chục hay hàng trăm máy trạm, kỹ sư kiểm thử chỉ gửi yêu cầu đến một điểm điều phối duy nhất là Hub ⇒ loại bỏ việc cấu hình thủ công từng máy.",
+   "④ Tối ưu tài nguyên",
+   "Thay vì dồn ép một máy tính đơn lẻ xử lý quá tải, Grid phân tán khối lượng công việc trên nhiều máy trong mạng nội bộ hoặc trên cloud ⇒ hệ sinh thái kiểm thử bền vững, dễ mở rộng."
+  ]
+ },
+ "main-19-2": {
+  "title": "6.4.2 KIẾN TRÚC Kiến trúc Hub – Node của Selenium Grid",
+  "paras": [
+   "NODE là các máy trạm thực tế (máy vật lý hoặc máy ảo) đã đăng ký với Hub, chứa trình duyệt và driver tương ứng. Khi nhận lệnh từ Hub, Node trực tiếp khởi động trình duyệt và thực thi các bước kiểm thử.",
+   "TEST SCRIPT (máy của tester) — NODE 1 Windows + Chrome HUB (điểm điều phối duy nhất)",
+   "NODE 2 Linux + Firefox",
+   "HUB phân tích yêu cầu về môi trường (\"cần Chrome 120 trên Windows\") và tìm Node đáp ứng để gửi lệnh. Trong một mạng lưới chỉ có duy nhất một Hub.",
+   "NODE 3 macOS + Safari — NODE 4 Windows + Edge"
+  ]
+ },
+ "main-19-3": {
+  "title": "6.6.3 ③ Định vị phần tử (Locators) – dùng lớp By",
+  "paras": [
+   "driver.FindElement(By.Id(\"elementId\")); // theo thuoc tinh id driver.FindElement(By.Name(\"elementName\")); // theo thuoc tinh name driver.FindElement(By.ClassName(\"className\")); // theo thuoc tinh class driver.FindElement(By.TagName(\"input\")); // theo the HTML driver.FindElement(By.LinkText(\"Dang nhap\")); // theo van ban lien ket driver.FindElement(By.CssSelector(\"#login .btn\")); // theo CSS selector driver.FindElement(By.XPath(\"//button[@id='btnLogin']\")); // theo XPath",
+   "Thứ tự ưu tiên khuyến nghị: `Id` → `Name` → `CssSelector` → `XPath`. Ưu tiên Id vì nhanh nhất và ổn định nhất; hạn chế XPath tuyệt đối (dạng `/html/body/div[3]/...`) vì rất dễ hỏng khi giao diện thay đổi."
+  ]
+ },
+ "main-20-0": {
+  "title": "6.6.3 ③ Định vị phần tử (Locators) – dùng lớp By",
+  "paras": [
+   "driver.FindElement(By.Id(\"elementId\")); // theo thuoc tinh id driver.FindElement(By.Name(\"elementName\")); // theo thuoc tinh name driver.FindElement(By.ClassName(\"className\")); // theo thuoc tinh class driver.FindElement(By.TagName(\"input\")); // theo the HTML driver.FindElement(By.LinkText(\"Dang nhap\")); // theo van ban lien ket driver.FindElement(By.CssSelector(\"#login .btn\")); // theo CSS selector driver.FindElement(By.XPath(\"//button[@id='btnLogin']\")); // theo XPath",
+   "Thứ tự ưu tiên khuyến nghị: `Id` → `Name` → `CssSelector` → `XPath`. Ưu tiên Id vì nhanh nhất và ổn định nhất; hạn chế XPath tuyệt đối (dạng `/html/body/div[3]/...`) vì rất dễ hỏng khi giao diện thay đổi."
+  ]
+ },
+ "main-20-1": {
+  "title": "6.3.4 ASSERT VS VERIFY Assert và Verify – hai lệnh kiểm chứng quan trọng",
+  "paras": [
+   "▸ Dừng test ngay nếu sai",
+   "▸ Dùng cho các điều kiện tiên quyết: nếu bước này sai thì các bước sau không còn ý nghĩa",
+   "▸ Ví dụ: nếu không đăng nhập thành công thì không cần chạy các bước kiểm tra giỏ hàng, thanh toán phía sau",
+   "▸ Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả — ASSERT – Khẳng định",
+   "▸ Ghi nhận lỗi nhưng vẫn chạy tiếp",
+   "▸ Dùng khi muốn kiểm tra nhiều chi tiết độc lập trên cùng một trang",
+   "▸ Ví dụ: kiểm tra logo, banner, menu và chân trang có hiển thị đủ hay không – nếu logo sai vẫn nên kiểm tra tiếp các phần còn lại",
+   "▸ Giúp thu thập được nhiều lỗi trong một lần chạy — VERIFY – Xác minh"
+  ]
+ },
+ "main-20-2": {
+  "title": "6.6.4 ④ Tương tác với phần tử (WebElement)",
+  "paras": [
+   "IWebElement element = driver.FindElement(By.Id(\"elementId\"));",
+   "element.Click(); // Nhap chuot element.SendKeys(\"text\"); // Nhap du lieu element.Clear(); // Xoa du lieu trong o nhap string text = element.Text; // Lay noi dung van ban bool visible = element.Displayed; // Kiem tra co hien thi khong string val = element.GetAttribute(\"value\"); // Lay gia tri thuoc tinh"
+  ]
+ },
+ "main-20-3": {
+  "title": "6.6.4 ④ Tương tác với phần tử (WebElement)",
+  "paras": [
+   "IWebElement element = driver.FindElement(By.Id(\"elementId\"));",
+   "element.Click(); // Nhap chuot element.SendKeys(\"text\"); // Nhap du lieu element.Clear(); // Xoa du lieu trong o nhap string text = element.Text; // Lay noi dung van ban bool visible = element.Displayed; // Kiem tra co hien thi khong string val = element.GetAttribute(\"value\"); // Lay gia tri thuoc tinh"
+  ]
+ },
+ "main-21-0": {
+  "title": "6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA.Selenium.Support.UI;",
+  "paras": [
+   "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+   "// Chuyen vao Iframe driver.SwitchTo().Frame(\"frameName\");",
+   "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed);",
+   "driver.Close(); // Dong tab hien tai driver.Quit(); // Dong toan bo trinh duyet va giai phong bo nho",
+   "Luôn dùng `Quit()` ở cuối test để giải phóng tiến trình driver, tránh treo tài nguyên máy khi chạy hàng loạt test."
+  ]
+ },
+ "main-21-1": {
+  "title": "6.5.3 KHÁI NIỆM Năm khái niệm cần biết trong Selenium WebDriver 27 Khái niệm Định nghĩa và vai trò Session (Phiên làm việc)",
+  "paras": [
+   "Element (Phần tử) — Locator (Bộ định vị) Wait (Chờ đợi)",
+   "Alert (Hộp thoại)",
+   "Là kết nối giữa WebDriver và trình duyệt. Mỗi session có một ID duy nhất dùng để xác định các lệnh và kết quả. Session được tạo khi khởi tạo đối tượng WebDriver, và kết thúc khi đóng trình duyệt hoặc gọi phương thức `Quit()`.",
+   "Là đối tượng đại diện cho một thành phần giao diện trên trang web: nút bấm, liên kết, ô nhập liệu... Tìm bằng `FindElement()` (một phần tử) hoặc `FindElements()` (nhiều phần tử). Tương tác qua: `Click()`, `SendKeys()`, `Clear()`, `Text`, `GetAttribute()`.",
+   "Là cách xác định vị trí của một Element trên trang, dựa vào thuộc tính hoặc biểu thức. Các loại: ID, Name, ClassName, TagName, LinkText, CssSelector, XPath. Locator được truyền vào `FindElement()` để tìm phần tử mong muốn.",
+   "Kỹ thuật cho phép đợi một khoảng thời gian hoặc đợi đến khi một điều kiện được thoả mãn trước khi thực hiện lệnh tiếp theo. Implicit Wait: cài đặt toàn cục, đặt thời gian tối đa WebDriver chờ cho mỗi lần tìm Element. Explicit Wait: cài đặt cục bộ, đặt thời gian tối đa và một điều kiện cụ thể cho một Element nhất định.",
+   "Là hộp thoại xuất hiện trên trang web, yêu cầu người dùng nhập liệu hoặc xác nhận hành động. Ba loại: Simple Alert, Confirmation Alert, Prompt Alert. Xử lý bằng lớp `Alert` với các phương thức `Accept()`, `Dismiss()`, `SendKeys()`."
+  ]
+ },
+ "main-21-2": {
+  "title": "6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA.Selenium.Support.UI;",
+  "paras": [
+   "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+   "// Chuyen vao Iframe driver.SwitchTo().Frame(\"frameName\");",
+   "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed);",
+   "driver.Close(); // Dong tab hien tai driver.Quit(); // Dong toan bo trinh duyet va giai phong bo nho",
+   "Luôn dùng `Quit()` ở cuối test để giải phóng tiến trình driver, tránh treo tài nguyên máy khi chạy hàng loạt test."
+  ]
+ },
+ "main-21-3": {
+  "title": "6.3.4 ASSERT VS VERIFY Assert và Verify – hai lệnh kiểm chứng quan trọng",
+  "paras": [
+   "▸ Dừng test ngay nếu sai",
+   "▸ Dùng cho các điều kiện tiên quyết: nếu bước này sai thì các bước sau không còn ý nghĩa",
+   "▸ Ví dụ: nếu không đăng nhập thành công thì không cần chạy các bước kiểm tra giỏ hàng, thanh toán phía sau",
+   "▸ Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả — ASSERT – Khẳng định",
+   "▸ Ghi nhận lỗi nhưng vẫn chạy tiếp",
+   "▸ Dùng khi muốn kiểm tra nhiều chi tiết độc lập trên cùng một trang",
+   "▸ Ví dụ: kiểm tra logo, banner, menu và chân trang có hiển thị đủ hay không – nếu logo sai vẫn nên kiểm tra tiếp các phần còn lại",
+   "▸ Giúp thu thập được nhiều lỗi trong một lần chạy — VERIFY – Xác minh"
+  ]
+ },
+ "main-22-0": {
+  "title": "6.6.7 VÍ DỤ Ví dụ hoàn chỉnh: kịch bản kiểm thử chức năng đăng nhập 35 using OpenQA.Selenium; using OpenQA.Selenium.Chrome;",
+  "paras": [
+   "IWebDriver driver = new ChromeDriver(); driver.Manage().Window.Maximize();",
+   "driver.Navigate().GoToUrl(\"https://the-internet.herokuapp.com/login\");",
+   "driver.FindElement(By.Id(\"username\")).SendKeys(\"tomsmith\"); driver.FindElement(By.Id(\"password\")).SendKeys(\"SuperSecretPassword!\"); driver.FindElement(By.CssSelector(\"button.radius\")).Click();",
+   "// Kiem chung ket qua string msg = driver.FindElement(By.Id(\"flash\")).Text; Console.WriteLine(msg.Contains(\"You logged into a secure area\")",
+   "driver.Quit();",
+   "? \"TEST PASSED\" : \"TEST FAILED\");"
+  ]
+ },
+ "main-22-1": {
+  "title": "",
+  "paras": []
+ },
+ "main-22-2": {
+  "title": "1.5 PRINCIPLES Bảy nguyên tắc kiểm thử",
+  "paras": [
+   "1. Kiểm thử chỉ chứng minh sự hiện diện của lỗi — Testing shows the presence, not the absence of defects.",
+   "Tìm được lỗi ⇒ chắc chắn có lỗi. Không tìm được lỗi ⇒ KHÔNG chứng minh phần mềm không có lỗi.",
+   "5. Nghịch lý thuốc trừ sâu — Pesticide paradox.",
+   "Lặp mãi một bộ test ⇒ không còn tìm được lỗi mới. Phải rà soát và bổ sung test case liên tục.",
+   "2. Không thể kiểm thử vét cạn — Exhaustive testing is impossible.",
+   "Số tổ hợp đầu vào là vô hạn trên thực tế ⇒ phải dùng phân tích rủi ro và kỹ thuật thiết kế test để chọn tập kiểm thử tiêu biểu.",
+   "6. Kiểm thử phụ thuộc ngữ cảnh — Testing is context dependent.",
+   "Kiểm thử app thương mại điện tử khác hoàn toàn kiểm thử phần mềm điều khiển thiết bị y tế.",
+   "3. Kiểm thử sớm tiết kiệm chi phí — Early testing saves time and money (shift-left).",
+   "Bắt đầu kiểm thử tĩnh ngay từ tài liệu yêu cầu, không đợi có mã nguồn.",
+   "7. Ngộ nhận \"không lỗi\" — Absence-of-errors fallacy.",
+   "Sửa hết lỗi nhưng phần mềm không đáp ứng nhu cầu người dùng thì vẫn là sản phẩm thất bại.",
+   "4. Lỗi thường tập trung theo cụm — Defects cluster together.",
+   "Theo quy tắc Pareto, ~80% lỗi nằm trong ~20% mô-đun ⇒ ưu tiên kiểm thử vùng rủi ro cao."
+  ]
+ },
+ "main-22-3": {
+  "title": "1.3 BA KHÁI NIỆM CỐT LÕI Error – Defect – Failure: chuỗi nhân quả 9 ERROR (Sai sót) Sai sót do con người",
+  "paras": [
+   "trong quá trình phát triển:",
+   "hiểu sai yêu cầu, tính nhầm...",
+   "Lưu ý quan trọng (ISTQB):",
+   "▸ Không phải mọi khiếm khuyết đều gây thất bại – có defect nằm im vì đoạn mã đó không bao giờ được thực thi.",
+   "▸ Ngược lại, một thất bại có thể do điều kiện môi trường (nhiễu điện từ, lỗi phần cứng, cấu hình sai) chứ không do defect.",
+   "▸ Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error – ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ.",
+   "DEFECT / BUG (Khiếm khuyết) — Lỗi tồn tại trong sản phẩm:",
+   "mã nguồn, tài liệu, thiết kế.",
+   "Còn gọi là \"fault\".",
+   "FAILURE (Thất bại) — Hành vi sai khi chạy thực tế mà người dùng quan sát được."
+  ]
+ },
+ "main-23-0": {
+  "title": "2.6 NON-FUNCTIONAL Các loại kiểm thử phi chức năng thường gặp 23 Kiểm thử hiệu năng (Performance)",
+  "paras": [
+   "Load test, stress test, spike test, endurance test. Đo thời gian phản hồi, thông lượng.",
+   "Kiểm thử tương thích (Compatibility) — Nhiều trình duyệt, hệ điều hành, kích thước màn hình, phiên bản thiết bị.",
+   "Kiểm thử bảo mật (Security) — Phân quyền, SQL injection, XSS, mã hoá dữ liệu, quản lý phiên đăng nhập.",
+   "Kiểm thử độ tin cậy (Reliability) — Khả năng chịu lỗi, phục hồi sau sự cố (recovery), thời gian hoạt động liên tục.",
+   "Kiểm thử khả năng sử dụng (Usability)",
+   "Số thao tác để hoàn thành tác vụ, tính rõ ràng của thông báo lỗi, hỗ trợ người khuyết tật.",
+   "Kiểm thử khả chuyển & bảo trì (Portability / Maintainability)",
+   "Cài đặt – gỡ cài đặt, nâng cấp phiên bản, độ phức tạp mã nguồn."
+  ]
+ },
+ "main-23-1": {
+  "title": "2.2.6 DEVOPS DevOps và Kiểm thử liên tục (Continuous Testing)",
+  "paras": [
+   "BƯỚC 1 — Commit mã nguồn — Lập trình viên đẩy mã lên kho chung (Git) nhiều lần",
+   "mỗi ngày.",
+   "Lợi ích: phản hồi nhanh, phát hiện lỗi tức thì. Thách thức: phải đầu tư hạ tầng CI/CD và bộ kiểm thử tự động ổn định (ít test \"flaky\").",
+   "BƯỚC 2 — Build & Unit test — tự động",
+   "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay.",
+   "BƯỚC 3 — Kiểm thử tích hợp — & API tự động",
+   "Triển khai lên môi trường — test, chạy bộ test API và tích hợp.",
+   "BƯỚC 4 — Kiểm thử hệ thống — & hồi quy",
+   "Chạy bộ hồi quy UI tự động, kiểm thử hiệu năng, bảo mật.",
+   "BƯỚC 5 — Triển khai & giám sát — Phát hành tự động; giám sát log, cảnh báo lỗi trên",
+   "production."
+  ]
+ },
+ "main-23-2": {
+  "title": "1.6 APPROACHES Các cách tiếp cận trong kiểm thử (Testing Approaches) 17 Dựa trên rủi ro (Risk-based)",
+  "paras": [
+   "Ưu tiên kiểm thử phần có xác suất lỗi cao hoặc tác động lớn. Rủi ro = Xác suất × Mức thiệt hại.",
+   "Có hệ thống / theo kỹ thuật (Methodical)",
+   "Áp dụng bộ kỹ thuật chuẩn: phân vùng tương đương, giá trị biên, checklist chất lượng.",
+   "Nguyên tắc định hướng tư duy – Cách tiếp cận cung cấp phương pháp triển khai. Dự án thực tế thường phối hợp nhiều cách tiếp cận.",
+   "Dựa trên phân tích (Analytical) — Xây dựng test case có hệ thống từ tài liệu yêu cầu, đặc tả, thiết kế.",
+   "Dựa trên kinh nghiệm (Experience-based) — Dựa vào hiểu biết và trực giác của tester: đoán lỗi, kiểm thử thăm dò.",
+   "Dựa trên mô hình (Model-based) — Dùng sơ đồ trạng thái, luồng nghiệp vụ, mô hình dữ liệu để sinh test.",
+   "Linh hoạt / phản ứng (Reactive) — Điều chỉnh hoạt động kiểm thử theo kết quả thu được trong quá trình chạy test."
+  ]
+ },
+ "main-23-3": {
+  "title": "3.9 DELIVERABLES Sản phẩm bàn giao kiểm thử (Test Deliverables)",
+  "paras": [
+   "Test Plan Mục tiêu, phạm vi, nguồn lực, lịch trình, rủi ro, tiêu chí vào/ra Đầu dự án",
+   "Test Design / Test Case Điều kiện kiểm thử, test case chi tiết, ma trận truy vết Trước khi thực thi",
+   "Test Data Dữ liệu đầu vào, script tạo dữ liệu, dữ liệu ẩn danh hoá Trước khi thực thi",
+   "Test Log / Test Results Kết quả từng lần chạy, bằng chứng (ảnh, log) Trong khi thực thi",
+   "Defect Report Danh sách lỗi, trạng thái, mức nghiêm trọng, độ ưu tiên Liên tục",
+   "Test Summary Report Tổng hợp kết quả, đánh giá chất lượng, rủi ro tồn đọng, khuyến nghị Kết thúc mỗi đợt",
+   "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau.",
+   "Sản phẩm Nội dung Thời điểm bàn giao"
+  ]
+ },
+ "main-24-0": {
+  "title": "4.3.2 ĐỐI TƯỢNG Đối tượng và khiếm khuyết có thể phát hiện bằng kiểm thử tĩnh 12 Sản phẩm công việc Ví dụ khiếm khuyết có thể phát hiện",
+  "paras": [
+   "Tài liệu yêu cầu Mơ hồ, mâu thuẫn giữa các mục, thiếu xử lý ngoại lệ, yêu cầu không thể kiểm thử được, thuật ngữ không nhất quán.",
+   "Thiết kế và mô hình Thiếu thành phần hoặc luồng xử lý, giao diện giữa các module không thống nhất, thiếu cơ chế xử lý lỗi.",
+   "Kế hoạch, test case, dữ liệu Không truy vết được về yêu cầu, thiếu kết quả mong đợi, dữ liệu không đủ, bước thực hiện không rõ ràng.",
+   "Mã nguồn Biến chưa khởi tạo, mã không thể tiếp cận, mã trùng lặp, độ phức tạp quá cao, vi phạm quy tắc viết mã."
+  ]
+ },
+ "main-24-1": {
+  "title": "4.3.5 HÌNH THỨC So sánh bốn hình thức xem xét (Review Types) 15 Tiêu chí Informal Review (Không chính thức)",
+  "paras": [
+   "Mức chính thức Thấp Thấp – Trung bình Trung bình – Cao Cao nhất",
+   "Người dẫn dắt Không cố định Tác giả Người điều phối Người điều phối được đào tạo Chuẩn bị cá nhân Không bắt buộc Có thể có Thường có Bắt buộc",
+   "Mục tiêu nổi bật Phản hồi nhanh Hiểu & kiểm tra nội dung, chia sẻ kiến thức Đánh giá & đạt đồng thuận kỹ thuật Phát hiện tối đa bất thường",
+   "Ghi nhận Đơn giản Có thể ghi biên bản Có báo cáo chính thức Có báo cáo và số liệu đo lường",
+   "Phù hợp với Sản phẩm nhỏ, rủi ro thấp Chia sẻ kiến thức trong nhóm Vấn đề kỹ thuật quan trọng Sản phẩm quan trọng, cần kiểm soát chặt",
+   "Walkthrough — (Tuần tự) — Technical Review",
+   "(Kỹ thuật) — Inspection (Nghiêm ngặt)"
+  ]
+ },
+ "main-24-2": {
+  "title": "5.8 BEST PRACTICES Rủi ro thường gặp và thực hành tốt trong kiểm thử tự động 23 Rủi ro: Test \"flaky\" Test lúc pass lúc fail do chờ đợi không ổn định.",
+  "paras": [
+   "Khắc phục: dùng explicit wait thay cho `Thread.Sleep`; tránh phụ thuộc thời gian cố định.",
+   "Rủi ro: Tự động hoá sai chỗ",
+   "Tự động hoá test chỉ chạy 1 lần, hoặc test UI cho logic nghiệp vụ.",
+   "Khắc phục: tuân thủ kim tự tháp kiểm thử – ưu tiên unit và API.",
+   "Rủi ro: Locator dễ vỡ — Dùng XPath dài, phụ thuộc vị trí ⇒ đổi giao diện là hỏng.",
+   "Khắc phục: ưu tiên ID, thêm thuộc tính `data-testid` phối hợp với developer.",
+   "Rủi ro: Test không độc lập — Test A phải chạy trước test B ⇒ không chạy song song được.",
+   "Khắc phục: mỗi test tự chuẩn bị và dọn dẹp dữ liệu của mình.",
+   "Rủi ro: Chi phí bảo trì cao Script trùng lặp, khó sửa.",
+   "Khắc phục: áp dụng mẫu Page Object Model (POM), tách dữ liệu ra khỏi script.",
+   "Rủi ro: Không ai đọc báo cáo Bộ test đỏ liên tục, cả nhóm bỏ qua.",
+   "Khắc phục: tích hợp CI, chặn merge khi test fail, phân công người trực xử lý."
+  ]
+ },
+ "main-24-3": {
+  "title": "2.2.6 DEVOPS DevOps và Kiểm thử liên tục (Continuous Testing)",
+  "paras": [
+   "BƯỚC 1 — Commit mã nguồn — Lập trình viên đẩy mã lên kho chung (Git) nhiều lần",
+   "mỗi ngày.",
+   "Lợi ích: phản hồi nhanh, phát hiện lỗi tức thì. Thách thức: phải đầu tư hạ tầng CI/CD và bộ kiểm thử tự động ổn định (ít test \"flaky\").",
+   "BƯỚC 2 — Build & Unit test — tự động",
+   "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay.",
+   "BƯỚC 3 — Kiểm thử tích hợp — & API tự động",
+   "Triển khai lên môi trường — test, chạy bộ test API và tích hợp.",
+   "BƯỚC 4 — Kiểm thử hệ thống — & hồi quy",
+   "Chạy bộ hồi quy UI tự động, kiểm thử hiệu năng, bảo mật.",
+   "BƯỚC 5 — Triển khai & giám sát — Phát hành tự động; giám sát log, cảnh báo lỗi trên",
+   "production."
+  ]
+ },
+ "main-25-0": {
+  "title": "",
+  "paras": []
+ },
+ "main-25-1": {
+  "title": "",
+  "paras": []
+ },
+ "main-25-2": {
+  "title": "2.4 TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB",
+  "paras": [
+   "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+   "2. Kiểm thử tích hợp (Integration)",
+   "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+   "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+   "Lưu ý: cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện – không đơn thuần là thứ tự thời gian.",
+   "Cấp độ Đối tượng kiểm thử Cơ sở kiểm thử Người thực hiện",
+   "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester"
+  ]
+ },
+ "main-25-3": {
+  "title": "2.7 CHANGE-RELATED Kiểm thử liên quan đến thay đổi (Change-related Testing) 24 CONFIRMATION TESTING (Re-testing)",
+  "paras": [
+   "▸ Mục đích: xác nhận khiếm khuyết đã được sửa đúng và triệt để",
+   "▸ Cách làm: chạy lại chính test case đã phát hiện lỗi, với cùng dữ liệu và cùng môi trường",
+   "▸ Phạm vi: hẹp – chỉ tập trung vào lỗi đã sửa",
+   "▸ Khi nào: ngay sau khi developer báo đã fix",
+   "▸ Nếu vẫn fail ⇒ mở lại (reopen) defect",
+   "Smoke test: bộ test rất ngắn chạy ngay sau khi build để xác nhận hệ thống \"đủ sống\" để kiểm thử sâu. Sanity test: kiểm tra nhanh một vùng chức năng vừa được sửa.",
+   "REGRESSION TESTING (Kiểm thử hồi quy)",
+   "▸ Mục đích: đảm bảo thay đổi không phá vỡ chức năng đang chạy tốt",
+   "▸ Cách làm: chạy lại bộ test case của các chức năng liên quan (hoặc toàn bộ)",
+   "▸ Phạm vi: rộng – xác định qua phân tích tác động",
+   "▸ Khi nào: sau mỗi bản build / phát hành",
+   "▸ Là ứng viên số 1 cho kiểm thử tự động vì lặp lại rất nhiều lần"
+  ]
+ },
+ "main-26-0": {
+  "title": "2.2.4 AGILE Mô hình Agile – Scrum 11 Product Backlog Tester tham gia sớm",
+  "paras": [
+   "Cùng viết tiêu chí chấp nhận (acceptance criteria) trong buổi refinement, trước khi code.",
+   "Sprint Planning — KIỂM THỬ DIỄN RA LIÊN TỤC TRONG SUỐT SPRINT – tester tham gia từ ngày đầu tiên Sprint 1–4 tuần Daily Scrum",
+   "Tự động hoá là bắt buộc — Sprint ngắn ⇒ phải có bộ hồi quy tự động chạy trong CI, nếu không sẽ không kịp.",
+   "Sprint Review — Chất lượng là việc của cả nhóm",
+   "Whole-team approach: dev, tester, PO cùng chịu trách nhiệm về chất lượng.",
+   "Retro- spective"
+  ]
+ },
+ "main-26-1": {
+  "title": "1.7 ISTQB Bảy hoạt động kiểm thử theo ISTQB CTFL v4.0 20 1 Lập kế hoạch Test planning 2 Giám sát & kiểm soát Monitoring & control",
+  "paras": [
+   "3 Phân tích Test analysis — 4 Thiết kế Test design 5 Triển khai Test implementation",
+   "6 Thực thi Test execution — 7 Kết thúc Test completion",
+   "Giám sát & kiểm soát diễn ra song song, xuyên suốt tất cả các hoạt động còn lại.",
+   "Xác định mục tiêu, cách tiếp cận, nguồn lực, lịch trình.",
+   "So sánh tiến độ thực tế với kế hoạch; đưa ra hành động điều chỉnh.",
+   "\"Kiểm thử CÁI GÌ?\" – phân tích cơ sở kiểm thử, xác định điều kiện kiểm thử.",
+   "\"Kiểm thử NHƯ THẾ NÀO?\" – thiết kế test case, xác định dữ liệu cần thiết.",
+   "Chuẩn bị testware: test script, test data, môi trường, sắp thứ tự thực thi.",
+   "Chạy test, so sánh kết quả thực tế với mong đợi, ghi nhận và báo cáo lỗi.",
+   "Bàn giao testware, đóng báo cáo lỗi, tổng kết, rút kinh nghiệm."
+  ]
+ },
+ "main-26-2": {
+  "title": "3.9 METRICS Các chỉ số kiểm thử thường dùng (Test Metrics) 19 Tiến độ thực thi Test Execution % = TC đã chạy / tổng TC × 100%.",
+  "paras": [
+   "Cho biết còn bao nhiêu việc phải làm.",
+   "Mật độ khiếm khuyết — Defect Density = số lỗi / quy mô (KLOC hoặc số chức năng).",
+   "So sánh chất lượng giữa các module.",
+   "Cảnh báo: không dùng metrics để đánh giá cá nhân (VD: \"tester nào báo nhiều bug hơn\") – sẽ dẫn đến hành vi lệch lạc và phá hỏng tinh thần hợp tác.",
+   "Tỷ lệ đạt — Pass Rate = TC Pass / TC đã chạy × 100%.",
+   "Phản ánh mức ổn định của bản build.",
+   "Hiệu quả phát hiện lỗi — DDE/DRE = lỗi tìm được trước phát hành / tổng lỗi × 100%.",
+   "Đánh giá hiệu quả của cả quy trình kiểm thử.",
+   "Độ bao phủ yêu cầu — Requirement Coverage = yêu cầu có test case / tổng yêu cầu × 100%.",
+   "Lỗi theo mức nghiêm trọng — Phân bố số lỗi Critical / High / Medium / Low – căn cứ quyết định phát hành."
+  ]
+ },
+ "main-26-3": {
+  "title": "3.6 TEST PLAN Nội dung chính của một Test Plan (theo ISO/IEC/IEEE 29119-3)",
+  "paras": [
+   "1. Thông tin chung Test Plan ID, tên dự án, phiên bản, người lập, ngày lập, lịch sử thay đổi.",
+   "2. Mục tiêu & phạm vi Mục tiêu kiểm thử; danh sách chức năng in scope / out of scope.",
+   "3. Cách tiếp cận Cấp độ kiểm thử áp dụng, loại kiểm thử, kỹ thuật thiết kế test, mức tự động hoá.",
+   "4. Tiêu chí Entry criteria, exit criteria, tiêu chí tạm dừng (suspension) và tiếp tục (resumption).",
+   "5. Nguồn lực Nhân sự và vai trò, công cụ (quản lý test, quản lý lỗi), môi trường phần cứng/phần mềm.",
+   "6. Lịch trình Các mốc thời gian, thứ tự thực hiện, phụ thuộc giữa các hoạt động.",
+   "7. Rủi ro Rủi ro dự án và rủi ro sản phẩm, mức độ, biện pháp giảm thiểu và phương án dự phòng.",
+   "8. Sản phẩm bàn giao Test cases, test data, test log, defect report, test summary report.",
+   "Mục Nội dung cần trình bày"
+  ]
+ },
+ "main-27-0": {
+  "title": "4.3.1 SO SÁNH So sánh kiểm thử tĩnh và kiểm thử động",
+  "paras": [
+   "Tiêu chí Kiểm thử tĩnh (Static Testing) Kiểm thử động (Dynamic Testing)",
+   "Thực thi đối tượng Không chạy chương trình Có chạy chương trình",
+   "Đối tượng Yêu cầu, thiết kế, mô hình, kế hoạch, test case, tài liệu, mã nguồn Thành phần hoặc hệ thống có thể chạy được",
+   "Cách phát hiện Nhận diện trực tiếp bất thường và khiếm khuyết Quan sát thất bại rồi phân tích ngược tìm nguyên nhân",
+   "Thời điểm Có thể bắt đầu rất sớm, ngay khi có bản nháp tài liệu Chỉ khi đã có đối tượng thực thi được",
+   "Ví dụ phát hiện Mơ hồ, mâu thuẫn, thiếu ngoại lệ, mã không thể tiếp cận, biến chưa khởi tạo Sai kết quả tính toán, lỗi thời gian chạy, rò rỉ bộ nhớ, hiệu năng kém",
+   "Giá trị chính Phòng ngừa – cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
+   "Hai phương thức bổ sung cho nhau, không thay thế nhau. Kiểm thử tĩnh phát hiện được những khiếm khuyết mà kiểm thử động không bao giờ thấy (và ngược lại)."
+  ]
+ },
+ "main-27-1": {
+  "title": "4.4.6 PHÂN TÍCH Kết quả phân tích đoạn mã trên",
+  "paras": [
+   "▸ Biến `isValid` được khai báo nhưng không sử dụng",
+   "▸ `student` hoặc `course` có nguy cơ null (tuỳ cấu hình nullable và bộ quy tắc)",
+   "▸ Chuỗi `\"Locked\"` và số `25` được viết trực tiếp trong mã (magic string / magic number)",
+   "▸ Điều kiện `AvailableSeats < 0` đáng ngờ – lớp có 0 chỗ vẫn được chấp nhận",
+   "Bài học: công cụ phù hợp với mẫu vấn đề đã xác định trước, còn con người phải đánh giá ý nghĩa nghiệp vụ. Sau khi sửa mã, nhóm phải phân tích lại và thực hiện kiểm thử động để xác nhận hành vi.",
+   "CÔNG CỤ CÓ THỂ CẢNH BÁO — NGƯỜI XEM XÉT PHẢI PHÁT HIỆN THÊM",
+   "▸ Hàm chưa kiểm tra học phần tiên quyết – thiếu hẳn một quy tắc nghiệp vụ",
+   "▸ Quy tắc tín chỉ có thể cần tính cả học phần đang chờ xác nhận",
+   "▸ Cần xác định các trạng thái tài khoản khác ngoài \"Locked\" (Suspended, Pending...)",
+   "▸ Cần làm rõ hành vi khi hai yêu cầu tranh chấp chỗ cuối cùng (race condition)"
+  ]
+ },
+ "main-27-2": {
+  "title": "4.2.3 USE CASE e) Kiểm thử dựa trên trường hợp sử dụng (Use Case Testing)",
+  "paras": [
+   "▸ Xây dựng test case từ luồng tương tác giữa tác nhân (actor) và hệ thống để đạt một mục tiêu nghiệp vụ",
+   "▸ Mỗi use case gồm: luồng chính (basic flow), luồng thay thế (alternative flow) và luồng ngoại lệ (exception flow)",
+   "▸ Tối thiểu: một test case cho luồng chính + mỗi luồng thay thế/ngoại lệ một test case — ĐẶC ĐIỂM",
+   "▸ Ưu điểm: rất hữu ích cho kiểm thử đầu-cuối (end-to-end) và kiểm thử chấp nhận; dễ hiểu với khách hàng",
+   "▸ Hạn chế: có thể bỏ sót biên dữ liệu và tổ hợp điều kiện chi tiết",
+   "▸ ⇒ Thường phối hợp với phân vùng tương đương, giá trị biên và bảng quyết định để bù đắp — ƯU ĐIỂM & HẠN CHẾ"
+  ]
+ },
+ "main-27-3": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-28-0": {
+  "title": "6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA.Selenium.Support.UI;",
+  "paras": [
+   "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+   "// Chuyen vao Iframe driver.SwitchTo().Frame(\"frameName\");",
+   "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed);",
+   "driver.Close(); // Dong tab hien tai driver.Quit(); // Dong toan bo trinh duyet va giai phong bo nho",
+   "Luôn dùng `Quit()` ở cuối test để giải phóng tiến trình driver, tránh treo tài nguyên máy khi chạy hàng loạt test."
+  ]
+ },
+ "main-28-1": {
+  "title": "6.6.5–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA.Selenium.Support.UI;",
+  "paras": [
+   "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\");",
+   "// Chuyen vao Iframe driver.SwitchTo().Frame(\"frameName\");",
+   "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed);",
+   "driver.Close(); // Dong tab hien tai driver.Quit(); // Dong toan bo trinh duyet va giai phong bo nho",
+   "Luôn dùng `Quit()` ở cuối test để giải phóng tiến trình driver, tránh treo tài nguyên máy khi chạy hàng loạt test."
+  ]
+ },
+ "main-28-2": {
+  "title": "",
+  "paras": []
+ },
+ "main-28-3": {
+  "title": "4.2.3 HỘP ĐEN c) Kiểm thử bảng quyết định (Decision Table Testing) 13 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi yêu cầu có nhiều điều kiện kết hợp với nhau tạo ra các hành động khác nhau (quy tắc nghiệp vụ phức tạp) — CẤU TRÚC BẢNG",
+   "▸ Mỗi cột là một quy tắc (rule); các hàng phía trên mô tả điều kiện, các hàng phía dưới mô tả hành động",
+   "▸ Ký hiệu: T = điều kiện đúng, F = điều kiện sai, – = giá trị điều kiện không ảnh hưởng đến hành động của quy tắc",
+   "▸ Ký hiệu – *không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
+   "TIÊU CHÍ BAO PHỦ",
+   "▸ Mỗi quy tắc khả thi cần ít nhất một trường hợp kiểm thử ⇒ bao phủ 100% bảng quyết định"
+  ]
+ },
+ "main-29-0": {
+  "title": "4.2.3 DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học phần",
+  "paras": [
+   "C1. Tài khoản đang hoạt động T F T T T",
+   "C2. Đã đạt học phần tiên quyết T – F T T",
+   "C3. Lớp còn chỗ T – – F T",
+   "C4. Không vượt quá 25 tín chỉ T – – – F",
+   "A1. Cho phép đăng ký X",
+   "A2. Báo tài khoản không hoạt động X",
+   "A3. Báo chưa đạt học phần tiên quyết X",
+   "A4. Báo lớp đã đủ chỗ X",
+   "A5. Báo vượt giới hạn tín chỉ X",
+   "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5.",
+   "Điều kiện / Hành động R1 R2 R3 R4 R5"
+  ]
+ },
+ "main-29-1": {
+  "title": "4.2.3 DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học phần",
+  "paras": [
+   "C1. Tài khoản đang hoạt động T F T T T",
+   "C2. Đã đạt học phần tiên quyết T – F T T",
+   "C3. Lớp còn chỗ T – – F T",
+   "C4. Không vượt quá 25 tín chỉ T – – – F",
+   "A1. Cho phép đăng ký X",
+   "A2. Báo tài khoản không hoạt động X",
+   "A3. Báo chưa đạt học phần tiên quyết X",
+   "A4. Báo lớp đã đủ chỗ X",
+   "A5. Báo vượt giới hạn tín chỉ X",
+   "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5.",
+   "Điều kiện / Hành động R1 R2 R3 R4 R5"
+  ]
+ },
+ "main-29-2": {
+  "title": "4.2.3 BVA Giá trị kiểm thử tại biên của miền hợp lệ 1–25 (BVA ba giá trị)",
+  "paras": [
+   "Biên Ngay dưới biên Tại biên Ngay trên biên Ý nghĩa phát hiện lỗi",
+   "Biên dưới = 1 0 (không hợp lệ) 1 (hợp lệ) 2 (hợp lệ) Phát hiện cài đặt sai biên dưới, ví dụ dùng `credits > 1` thay cho `credits >= 1`",
+   "Biên trên = 25 24 (hợp lệ) 25 (hợp lệ) 26 (không hợp lệ) Phát hiện cài đặt sai điều kiện `< 25` thay cho `<= 25` – lỗi off-by-one điển hình",
+   "Phân vùng tương đương giúp nhận diện các miền; BVA tập trung vào những điểm rủi ro cao nhất tại ranh giới. Hai kỹ thuật hầu như luôn được dùng cùng nhau."
+  ]
+ },
+ "main-29-3": {
+  "title": "4.2.3 EP Ví dụ phân vùng tương đương – tổng số tín chỉ hợp lệ 1–25 10 VÙNG 1 – KHÔNG HỢP LỆ < 1 (tín chỉ ≤ 0)",
+  "paras": [
+   "Đại diện: 0 — CÁC VÙNG BỔ SUNG CẦN XÉT (thường bị bỏ sót)",
+   "▸ Bỏ trống ô nhập • Nhập chữ cái thay vì số • Nhập số thập phân (12,5 tín chỉ) • Nhập số âm • Nhập ký tự đặc biệt",
+   "▸ Kết quả: chỉ cần 3 test case chính thay vì thử hàng nghìn giá trị – kèm khoảng 5 test case cho dữ liệu không hợp lệ về kiểu.",
+   "VÙNG 2 – HỢP LỆ — 1 ≤ tín chỉ ≤ 25 Đại diện: 15",
+   "VÙNG 3 – KHÔNG HỢP LỆ — > 25 Đại diện: 26"
+  ]
+ },
+ "main-30-0": {
+  "title": "4.2.3 HỘP ĐEN b) Phân tích giá trị biên (Boundar y Value Analysis – BVA) 11 VÌ SAO CẦN BVA?",
+  "paras": [
+   "▸ Khiếm khuyết thường xuất hiện tại ranh giới do: dùng sai toán tử so sánh (`>` thay vì `>=`), đặt sai giới hạn, bỏ sót một giá trị (lỗi lệch một đơn vị – off-by-one)",
+   "HAI BIẾN THỂ",
+   "▸ BVA hai giá trị (2-value): với mỗi biên, lấy chính giá trị biên và giá trị lân cận gần nhất thuộc vùng kề",
+   "▸ BVA ba giá trị (3-value): lấy giá trị biên và hai giá trị lân cận hai phía – chặt chẽ hơn nhưng tạo nhiều dữ liệu hơn",
+   "ĐIỀU KIỆN ÁP DỤNG",
+   "▸ Chỉ áp dụng cho các vùng có thứ tự (số, ngày tháng, độ dài chuỗi, thời gian) – không áp dụng cho dữ liệu rời rạc như \"màu sắc: đỏ/xanh/vàng\""
+  ]
+ },
+ "main-30-1": {
+  "title": "4.2.3 STATE TRANSITION Sơ đồ trạng thái – đăng ký học phần",
+  "paras": [
+   "\"Bị từ chối\" không phải là một trạng thái lưu giữ mà là kết quả xử lý tức thời – sau khi bị từ chối, đối tượng trở về trạng thái *Chưa đăng ký*. Xác định đúng ranh giới trạng thái là bước khó nhất của kỹ thuật này.",
+   "CHƯA ĐĂNG KÝ — Gửi yêu cầu [đợt ĐK mở]",
+   "CHỜ XÁC NHẬN — Điều kiện không đạt → quay lại Chưa đăng ký",
+   "Điều kiện đạt — Hủy đăng ký [còn hạn hủy]",
+   "ĐĂNG KÝ THÀNH CÔNG — ĐÃ HỦY Đăng ký lại",
+   "[đợt ĐK còn mở]"
+  ]
+ },
+ "main-30-2": {
+  "title": "4.2.3 HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing) 15 KHI NÀO DÙNG?",
+  "paras": [
+   "▸ Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+   "NĂM THÀNH PHẦN CỦA MÔ HÌNH",
+   "▸ Trạng thái (State) – tình trạng hiện tại của đối tượng được mô hình hoá",
+   "▸ Sự kiện (Event) – tác động làm hệ thống chuyển trạng thái",
+   "▸ Điều kiện bảo vệ (Guard) – điều kiện phải thoả để chuyển tiếp xảy ra",
+   "▸ Hành động (Action) – việc hệ thống thực hiện khi chuyển tiếp",
+   "▸ Trạng thái tiếp theo (Next state) – trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
+   "▸ Bao phủ tất cả trạng thái → bao phủ tất cả chuyển tiếp hợp lệ (0-switch) → kiểm tra cả chuyển tiếp KHÔNG hợp lệ"
+  ]
+ },
+ "main-30-3": {
+  "title": "4.2.3 STATE TABLE Bảng chuyển trạng thái – đăng ký học phần",
+  "paras": [
+   "Trạng thái hiện tại Sự kiện Điều kiện Hành động Trạng thái tiếp theo Hợp lệ",
+   "Chưa đăng ký Gửi yêu cầu Đợt đăng ký đang mở Tiếp nhận yêu cầu Chờ xác nhận Có",
+   "Chờ xác nhận Kiểm tra điều kiện Tất cả điều kiện đạt Lưu đăng ký, cập nhật sĩ số Đăng ký thành công Có",
+   "Chờ xác nhận Kiểm tra điều kiện Có điều kiện không đạt Thông báo nguyên nhân Chưa đăng ký Có",
+   "Đăng ký thành công Hủy đăng ký Còn trong thời hạn hủy Xóa đăng ký, cập nhật sĩ số Đã hủy Có",
+   "Đã hủy Đăng ký lại Đợt đăng ký còn mở Tiếp nhận yêu cầu mới Chờ xác nhận Có",
+   "Chưa đăng ký Xác nhận thành công Chưa có yêu cầu chờ xử lý Không thực hiện Chưa đăng ký Không",
+   "Với chuyển tiếp không hợp lệ (dòng cuối), cần kiểm tra hệ thống từ chối thao tác và giữ nguyên trạng thái đúng, không báo lỗi hệ thống (crash)."
+  ]
+ },
+ "main-31-0": {
+  "title": "4.2.4 VÍ DỤ Ví dụ tính độ bao phủ – đoạn mã kiểm tra số tín chỉ",
+  "paras": [
+   "Sáu dòng S1–S6 là sáu câu lệnh cần bao phủ; hai quyết định D1 và D2 tạo ra bốn nhánh đúng/sai.",
+   "S1: result ← \"Hợp lệ\" S2: if credits < 1 then // Quyết định D1 S3: result ← \"Không hợp lệ\" S4: else if credits > 25 then // Quyết định D2 S5: result ← \"Không hợp lệ\" S6: return result",
+   "Tổng số câu lệnh = 6. Tổng số nhánh = 4 (D1-True, D1-False, D2-True, D2-False)."
+  ]
+ },
+ "main-31-1": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-31-2": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-31-3": {
+  "title": "4.2.4 VÍ DỤ Ví dụ tính độ bao phủ – đoạn mã kiểm tra số tín chỉ",
+  "paras": [
+   "Sáu dòng S1–S6 là sáu câu lệnh cần bao phủ; hai quyết định D1 và D2 tạo ra bốn nhánh đúng/sai.",
+   "S1: result ← \"Hợp lệ\" S2: if credits < 1 then // Quyết định D1 S3: result ← \"Không hợp lệ\" S4: else if credits > 25 then // Quyết định D2 S5: result ← \"Không hợp lệ\" S6: return result",
+   "Tổng số câu lệnh = 6. Tổng số nhánh = 4 (D1-True, D1-False, D2-True, D2-False)."
+  ]
+ },
+ "main-32-0": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ },
+ "main-32-1": {
+  "title": "4.2.4 COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statement Coverage",
+  "paras": [
+   "▸ Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+   "▸ Công thức:",
+   "SC = (Số câu lệnh đã thực thi / Tổng số câu lệnh có thể thực thi) × 100%",
+   "▸ Đạt 100% nghĩa là mọi câu lệnh đã chạy ít nhất một lần",
+   "▸ Không bảo đảm mọi nhánh hoặc mọi tổ hợp dữ liệu đã được kiểm tra",
+   "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
+   "BAO PHỦ NHÁNH – Branch Coverage",
+   "▸ Đo tỷ lệ các nhánh điều khiển đã được thực hiện",
+   "▸ Công thức:",
+   "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%",
+   "▸ Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+   "▸ 100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)"
+  ]
+ }
+}
