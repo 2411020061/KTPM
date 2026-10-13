@@ -17,7 +17,8 @@
             "100"
           ]
         ]
-      }
+      },
+      "concept": "execution"
     },
     {
       "q": "Trước khi phát hành tìm được 45 khiếm khuyết; sau phát hành còn phát hiện 5. DRE (Defect Removal Efficiency) là bao nhiêu?",
@@ -36,7 +37,8 @@
             "50"
           ]
         ]
-      }
+      },
+      "concept": "dre"
     },
     {
       "q": "Có 90 yêu cầu; 72 yêu cầu đã có test case tương ứng. Requirement Coverage bằng bao nhiêu?",
@@ -55,7 +57,8 @@
             "18"
           ]
         ]
-      }
+      },
+      "concept": "requirements"
     },
     {
       "q": "Một sản phẩm có 8 KLOC mã nguồn và tìm được 24 khiếm khuyết. Defect Density là bao nhiêu?",
@@ -74,7 +77,8 @@
             "KLOC"
           ]
         ]
-      }
+      },
+      "concept": "density"
     }
   ],
   "main-12-2": {
@@ -85,38 +89,42 @@
     "imageAlt": "Trục số đánh dấu các giá trị 19, 20, 21 và 49, 50, 51 quanh hai biên"
   },
   "main-13-2": {
-    "q": "Bảng quy tắc đăng ký có bốn điều kiện độc lập, mỗi điều kiện chỉ Đúng hoặc Sai. Cần tối đa bao nhiêu cột để liệt kê mọi tổ hợp?",
-    "a": "16 cột quy tắc.",
-    "explain": "Mỗi điều kiện có 2 khả năng; bốn điều kiện độc lập tạo 2 × 2 × 2 × 2 = 2⁴ = 16 tổ hợp.",
+    "q": "Bảng quyết định khuyến mãi dưới đây: khách không là thành viên, đơn 700.000 đồng. Mức giảm hợp lệ là bao nhiêu?",
+    "a": "Giảm 5% (quy tắc R2).",
+    "explain": "Đọc cột R2: không là thành viên và đơn ≥500.000 đồng. Hàng kết quả của đúng cột R2 là giảm 5%. Không lấy R1 vì R1 đòi là thành viên.",
     "table": {
       "headers": [
-        "Điều kiện",
-        "Số khả năng"
+        "Điều kiện / kết quả",
+        "R1",
+        "R2",
+        "R3"
       ],
       "rows": [
         [
-          "C1",
-          "2"
+          "Là thành viên",
+          "Đúng",
+          "Sai",
+          "–"
         ],
         [
-          "C2",
-          "2"
+          "Đơn ≥500.000",
+          "Đúng",
+          "Đúng",
+          "Sai"
         ],
         [
-          "C3",
-          "2"
-        ],
-        [
-          "C4",
-          "2"
+          "Mức giảm",
+          "10%",
+          "5%",
+          "0%"
         ]
       ]
     }
   },
   "main-15-3": {
-    "q": "Chạy tay mất 12 phút/lần. Viết script mất 90 phút, sau đó mỗi lần chạy tự động mất 3 phút. Từ lần chạy thứ mấy thì tổng thời gian tự động không còn lớn hơn chạy tay?",
-    "a": "Lần chạy thứ 10.",
-    "explain": "Gọi n là số lần chạy. Thủ công: 12n phút; tự động: 90 + 3n phút. Giải 90 + 3n ≤ 12n ⇒ n ≥ 10. Tại n = 10, hai cách cùng mất 120 phút.",
+    "q": "Một bộ test chạy 20 lần. Chạy tay mất 12 phút/lần; viết script mất 90 phút và mỗi lần chạy tự động mất 3 phút. Tự động hoá tiết kiệm tổng cộng bao nhiêu phút?",
+    "a": "90 phút.",
+    "explain": "Thủ công: 20×12 = 240 phút. Tự động: 90 + 20×3 = 150 phút. Chênh lệch tiết kiệm = 240 − 150 = 90 phút.",
     "table": {
       "headers": [
         "Cách làm",

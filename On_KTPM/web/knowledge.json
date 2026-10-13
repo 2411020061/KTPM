@@ -585,11 +585,18 @@
   ]
  },
  "pdf-C3-6": {
-  "title": "3.8 Quản lý khiếm khuyết (Defect Management) THỜI LƯỢNG: ≈ 0,5 TIẾT",
+  "title": "3.8 DEFECT LIFE CYCLE Vòng đời khiếm khuyết (Defect Life Cycle)",
   "paras": [
-   "• Vòng đời khiếm khuyết",
-   "• Nội dung báo cáo lỗi",
-   "• Severity vs Priority"
+   "BƯỚC 1 — New — Tester vừa ghi nhận lỗi.",
+   "Các trạng thái khác thường gặp: Rejected (không phải lỗi), Duplicate (trùng), Deferred (hoãn sang bản sau), Cannot Reproduce (không tái hiện được).",
+   "BƯỚC 2 — Assigned — Trưởng nhóm phân công",
+   "cho developer.",
+   "BƯỚC 3 — In Progress / — Fixed",
+   "Developer sửa và đánh dấu — đã sửa.",
+   "BƯỚC 4 — Retest — Tester chạy lại test case đã",
+   "phát hiện lỗi.",
+   "BƯỚC 5 — Closed / Reopened — Đạt ⇒ Closed. Chưa đạt ⇒",
+   "Reopened, quay lại — Assigned."
   ]
  },
  "pdf-C3-7": {

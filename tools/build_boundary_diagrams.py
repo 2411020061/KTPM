@@ -83,6 +83,19 @@ diagram('bva-10-20.svg', 'BVA 3 giá trị: miền hợp lệ 10–20',
          (592, 20, 'BVA 2 và 3', 'valid'), (662, 21, 'BVA 2 và 3', 'invalid')],
         'Hai số BVA 3 thêm vào là 11 và 19.')
 
+diagram('bva-10-30.svg', 'BVA 3 giá trị: miền hợp lệ 10–30',
+        [('Dưới 10', 'không hợp lệ', 'invalid'), ('10–30', 'hợp lệ', 'valid'), ('Trên 30', 'không hợp lệ', 'invalid')],
+        [(238, 9, 'ngoài biên', 'invalid'), (308, 10, 'biên dưới', 'valid'),
+         (378, 11, 'sát biên', 'added'), (522, 29, 'sát biên', 'added'),
+         (592, 30, 'biên trên', 'valid'), (662, 31, 'ngoài biên', 'invalid')],
+        'Lấy ngay dưới, tại và ngay trên mỗi biên: 9–10–11; 29–30–31.')
+
+diagram('ep-age-18-60.svg', 'Phân vùng tuổi hợp lệ 18–60',
+        [('< 18 tuổi', 'không hợp lệ', 'invalid'), ('18–60 tuổi', 'hợp lệ', 'valid'), ('> 60 tuổi', 'không hợp lệ', 'invalid')],
+        [(238, 17, 'vùng dưới', 'invalid'), (450, 35, 'vùng hợp lệ', 'valid'),
+         (662, 61, 'vùng trên', 'invalid')],
+        'Ba số đại diện: 17 (không hợp lệ), 35 (hợp lệ), 61 (không hợp lệ).')
+
 diagram('ep-score-50.svg', 'Ba mức kết quả của bài thi 50 câu',
         [('0–29', 'chưa đạt', 'invalid'), ('30–44', 'đạt', 'valid'), ('45–50', 'xuất sắc', 'added')],
         [(220, 29, 'chưa đạt', 'invalid'), (308, 30, 'bắt đầu đạt', 'valid'),

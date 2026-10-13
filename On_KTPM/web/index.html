@@ -136,7 +136,8 @@
     const k=knowledge[q.id];
     const extra=extraQuestions[q.id]||[];
     const hist=quizMap[q.id]?`<span class="kp-hist">Đã ra trong QUIZ ${quizMap[q.id].chapter}</span>`:'';
-    const slideBtn=q.page?`<button type="button" class="slide-link verified" data-file="${escapeHtml(q.file||'')}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}"><span class="ref-main">Xem slide ${chapterName(q.chapter)} · tr. ${q.page} ↗</span></button>`:'';
+    const slideChapter=(q.file&&/BaiGiang_(C[0-9]+[AB]?)/.exec(q.file)||[])[1]||chapterName(q.chapter);
+    const slideBtn=q.page?`<button type="button" class="slide-link ${q.matchType==='Khớp chủ đề câu hỏi'?'reference':'verified'}" data-file="${escapeHtml(q.file||'')}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}"><span class="ref-main">Xem slide ${q.matchType==='Khớp chủ đề câu hỏi'?'liên quan ':''}${slideChapter} · tr. ${q.page} ↗</span></button>`:'';
     const foot=`<div class="kp-foot">${slideBtn}${hist}</div>`;
 
     if(!extra.length){
@@ -158,9 +159,9 @@
       const related = x.relatedFile && x.relatedPage ? `<button type="button" class="slide-link verified" data-file="${escapeHtml(x.relatedFile)}" data-page="${Number(x.relatedPage)}" data-title="${escapeHtml(FILES[x.relatedFile]||x.relatedFile)}" data-question="${escapeHtml(q.id)}">Xem slide liên quan · tr. ${Number(x.relatedPage)} ↗</button>` : '';
       return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span>${img}${table}<span class="kp-a">${escapeHtml(x.a)}</span>${explain}${related}</li>`;
     }).join('');
-    const title = k && k.title ? escapeHtml(k.title) : 'Slide bài giảng';
+    const title = k && k.title ? escapeHtml(k.title) : 'Kiến thức từ slide liên quan';
     const subParts = [];
-    if (slideItems.length) subParts.push(`📌 ${slideItems.length} câu hỏi về phần khác trên cùng slide`);
+    if (slideItems.length) subParts.push(`📌 ${slideItems.length} câu hỏi từ ${q.page && q.matchType!=='Khớp chủ đề câu hỏi' ? 'phần khác trên cùng slide' : 'slide liên quan'}`);
     if (appliedItems.length) subParts.push(`🧮 ${appliedItems.length} bài áp dụng từ kiến thức slide`);
     const subText = subParts.join(' • ') + ' (mỗi câu có một đáp án đúng):';
     return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng · ${title}</h4><p class="kp-sub">${subText}</p><ul class="kp-qa">${items}</ul>${foot}</div>`;
@@ -182,11 +183,11 @@
     const supplement=(q.supplementHtml||'').replace(/<p class="answer-choice[^"]*" data-option="([A-D])">([\s\S]*?)<\/p>/gi,(_,opt,inner)=>`<button type="button" class="answer-choice" data-option="${opt}">${inner}</button>`);
     const explanation=q.explanation?`<div class="answer-explanation">${escapeHtml(q.explanation).replace(/\n/g,'<br>')}</div>`:'';
     const note=questionNotes[q.id]||'';
-    const ch=chapterName(q.chapter), file=escapeHtml(q.file||'');
-    const label=q.page?`${ch} · tr. ${q.page}`:'Không có slide';
+    const ch=(q.file&&/BaiGiang_(C[0-9]+[AB]?)/.exec(q.file)||[])[1]||chapterName(q.chapter), file=escapeHtml(q.file||'');
+    const label=q.page?`${q.matchType==='Khớp chủ đề câu hỏi'?'Liên quan · ':''}${ch} · tr. ${q.page}`:'Không có slide';
     const pageClass=q.matchType==='Khớp chủ đề câu hỏi'?'reference':'verified';
     const basisText=q.matchType==='Khớp chủ đề câu hỏi'?`Gợi ý từ khóa · ${q.basis}`:`Đối chiếu nội dung · ${q.basis}`;
-    const pageControl=q.page?`<button class="slide-link ${pageClass}" data-file="${file}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}" title="${escapeHtml(basisText)}"><span class="ref-main">${label}</span><small class="basis">Khoanh vùng minh chứng · ${escapeHtml(basisText)}</small></button>`:`<span class="slide-link unavailable" aria-disabled="true" title="${escapeHtml(q.basis||'Không có slide')}"><span class="ref-main">Không có slide</span><small class="basis">${escapeHtml(q.basis||'Không thuộc slide bài giảng C1–C6')}</small></span>`;
+    const pageControl=q.page?`<button class="slide-link ${pageClass}" data-file="${file}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}" title="${escapeHtml(basisText)}"><span class="ref-main">${label}</span><small class="basis">${q.matchType==='Khớp chủ đề câu hỏi'?'Tham khảo chủ đề':'Khoanh vùng minh chứng'} · ${escapeHtml(basisText)}</small></button>`:`<span class="slide-link unavailable" aria-disabled="true" title="${escapeHtml(q.basis||'Không có slide')}"><span class="ref-main">Không có slide</span><small class="basis">${escapeHtml(q.basis||'Không thuộc slide bài giảng C1–C6')}</small></span>`;
     const supplemental=images+supplement;
     const cardClass=q.kind==='pdf'?'question-card pdf-card':(q.kind==='main'?'question-card main-card':'question-card');
     const labelText=q.kind==='pdf'?`PDF · Câu ${q.number}`:(q.kind==='standalone'?'Câu minh họa':`${q.section==='Ngân hàng tổng hợp'?'Tổng hợp · ':''}Câu ${q.number}`);

@@ -1,0 +1,1562 @@
+{
+  "C1:5": [
+    {
+      "q": "Nhóm rà soát bản nháp yêu cầu trước khi có phần mềm chạy được đang dùng hình thức kiểm thử nào?",
+      "a": "Kiểm thử tĩnh."
+    },
+    {
+      "q": "Một test case nhập dữ liệu vào chương trình và đối chiếu kết quả thuộc hình thức nào?",
+      "a": "Kiểm thử động."
+    },
+    {
+      "q": "Sau khi hoàn tất thực thi, nhóm tổng hợp kết quả và báo cáo để hỗ trợ quyết định phát hành. Hoạt động này có thuộc kiểm thử không?",
+      "a": "Có. Báo cáo và kết thúc cũng là hoạt động kiểm thử."
+    }
+  ],
+  "C1:6": [
+    {
+      "q": "Khách hàng cần quyết định có phát hành hệ thống hay không. Mục tiêu kiểm thử nào cung cấp căn cứ cho quyết định?",
+      "a": "Cung cấp thông tin về chất lượng và rủi ro còn lại."
+    },
+    {
+      "q": "Hệ thống chạy đúng đặc tả nhưng không giúp người dùng đạt mục tiêu thực tế. Mục tiêu kiểm thử nào chưa đạt?",
+      "a": "Kiểm tra sự phù hợp với kỳ vọng và nhu cầu người dùng (validation)."
+    },
+    {
+      "q": "Phần mềm y tế đã chạy đúng các chức năng; nhóm vẫn kiểm tra quy định ngành. Đây là mục tiêu kiểm thử nào?",
+      "a": "Đánh giá sự tuân thủ pháp lý và tiêu chuẩn ngành."
+    },
+    {
+      "q": "Ở cấp độ chấp nhận, mục tiêu nào thường quan trọng hơn việc tìm lỗi mã nguồn nhỏ?",
+      "a": "Xây dựng niềm tin rằng hệ thống đáp ứng nhu cầu nghiệp vụ."
+    },
+    {
+      "q": "Sau nhiều vòng test vẫn còn vài rủi ro đã biết. Mục tiêu kiểm thử liên quan đến các rủi ro đó là gì?",
+      "a": "Giảm mức rủi ro chất lượng còn tồn đọng đến mức chấp nhận được."
+    }
+  ],
+  "C1:7": [
+    {
+      "q": "Tester tái hiện lỗi; developer lần theo mã để tìm nguyên nhân và sửa. Hoạt động của developer gọi là gì?",
+      "a": "Gỡ lỗi (debugging)."
+    },
+    {
+      "q": "Bản sửa đã được bàn giao. Ai thường chạy lại ca kiểm thử để xác nhận lỗi đã hết?",
+      "a": "Người kiểm thử chạy kiểm thử xác nhận."
+    },
+    {
+      "q": "Một chương trình cho ra kết quả sai nhưng chưa biết dòng mã gây ra. Việc chạy test đã phát hiện điều gì?",
+      "a": "Thất bại quan sát được (failure)."
+    }
+  ],
+  "C1:9": [
+    {
+      "q": "Lập trình viên hiểu nhầm “từ 18 tuổi” là “trên 18 tuổi”. Sự hiểu nhầm ban đầu được gọi là gì?",
+      "a": "Sai sót của con người (error).",
+      "skipFor": [
+        "main-0-0"
+      ]
+    },
+    {
+      "q": "Điều kiện sai đã lưu trong tài liệu thiết kế nhưng chương trình chưa chạy. Vấn đề nằm trong tài liệu gọi là gì?",
+      "a": "Khiếm khuyết (defect/fault).",
+      "skipFor": [
+        "main-0-1",
+        "main-0-0"
+      ]
+    },
+    {
+      "q": "Ứng dụng tính sai tiền và hiển thị cho khách hàng. Hành vi sai quan sát được gọi là gì?",
+      "a": "Thất bại (failure).",
+      "skipFor": [
+        "main-0-2"
+      ]
+    },
+    {
+      "q": "Không có lỗi mã nguồn nào được kích hoạt nhưng phần mềm vẫn chạy sai do máy chủ hỏng. Có thể quy thất bại này ngay cho defect không?",
+      "a": "Không; điều kiện môi trường cũng có thể gây thất bại."
+    },
+    {
+      "q": "Cả nhóm thường xuyên hiểu sai cùng một quy tắc do thiếu đào tạo. Thiếu đào tạo được phân loại là gì?",
+      "a": "Nguyên nhân gốc (root cause)."
+    }
+  ],
+  "C1:10": [
+    {
+      "q": "Yêu cầu giảm 10% chỉ khi đơn hàng trên 1.000.000 đồng, nhưng mã dùng ngưỡng 500.000. Đơn 600.000 đồng được giảm. Phần nào là defect?",
+      "a": "Điều kiện ngưỡng 500.000 đồng trong mã nguồn."
+    },
+    {
+      "q": "Với cùng quy tắc giảm giá, đơn 600.000 đồng vẫn được giảm 10%. Kết quả quan sát đó được gọi là gì?",
+      "a": "Failure: đơn không đủ điều kiện vẫn được giảm giá.",
+      "skipFor": [
+        "main-0-2"
+      ]
+    },
+    {
+      "q": "Yêu cầu chỉ giảm giá khi đơn trên 1.000.000 đồng, nhưng lập trình viên hiểu thành trên 500.000 đồng. Sự hiểu sai ban đầu gọi là gì?",
+      "a": "Error (sai sót của con người)."
+    }
+  ],
+  "C1:11": [
+    {
+      "q": "Theo mô hình chi phí trên slide, sửa lỗi lúc lập trình tốn gấp khoảng bao nhiêu lần lúc yêu cầu?",
+      "a": "Khoảng 10 lần."
+    },
+    {
+      "q": "Một lỗi được phát hiện khi hệ thống đã vận hành. Theo biểu đồ, chi phí sửa gấp bao nhiêu lần phát hiện ở kiểm thử?",
+      "a": "Khoảng 4 lần (100 ÷ 25)."
+    }
+  ],
+  "C1:12": [
+    {
+      "q": "Một ứng dụng khó học và khó dùng dù tính toán đúng. Đặc tính ISO/IEC 25010 nào yếu?",
+      "a": "Khả năng sử dụng (usability)."
+    },
+    {
+      "q": "Ứng dụng thường mất dữ liệu sau sự cố và không phục hồi được. Đặc tính nào yếu?",
+      "a": "Độ tin cậy (reliability)."
+    },
+    {
+      "q": "Ứng dụng không giữ bí mật dữ liệu khách hàng. Đặc tính chất lượng nào yếu?",
+      "a": "Bảo mật (security)."
+    },
+    {
+      "q": "Ứng dụng không trao đổi được dữ liệu với hệ thống khác. Đặc tính nào yếu?",
+      "a": "Tính tương thích (compatibility)."
+    },
+    {
+      "q": "Một phần mềm chỉ chạy trên hệ điều hành cũ, rất khó chuyển sang môi trường khác. Đặc tính nào yếu?",
+      "a": "Tính khả chuyển (portability)."
+    }
+  ],
+  "C1:13": [
+    {
+      "q": "Sự cố Ariane 5 trong bài giảng xảy ra do lỗi xử lý dữ liệu kiểu gì?",
+      "a": "Lỗi ép kiểu số."
+    },
+    {
+      "q": "Hệ thống xạ trị điều khiển sai liều có thể gây hậu quả nghiêm trọng nào?",
+      "a": "Nguy hiểm tính mạng người bệnh."
+    },
+    {
+      "q": "Phát hiện lỗi từ giai đoạn yêu cầu giúp giảm loại chi phí nào trong các đợt sau?",
+      "a": "Chi phí khắc phục khiếm khuyết."
+    }
+  ],
+  "C1:15": [
+    {
+      "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
+      "a": "Không; kiểm thử không chứng minh sự vắng mặt của lỗi."
+    },
+    {
+      "q": "Kiểm thử cùng một ứng dụng ngân hàng và một trò chơi giải trí theo đúng một chiến lược có phù hợp không?",
+      "a": "Không; kiểm thử phụ thuộc ngữ cảnh và rủi ro của sản phẩm."
+    },
+    {
+      "q": "Sản phẩm không có defect đã biết nhưng không giải quyết nhu cầu khách hàng. Đây là ngộ nhận nào?",
+      "a": "Ngộ nhận “không lỗi” (absence-of-errors fallacy)."
+    },
+    {
+      "q": "Khi defect tập trung ở một số ít mô-đun, cách phân bổ kiểm thử hợp lý là gì?",
+      "a": "Ưu tiên các mô-đun có rủi ro và mật độ lỗi cao."
+    }
+  ],
+  "C1:17": [
+    {
+      "q": "Tester thiết kế ca kiểm thử từ sơ đồ trạng thái đơn hàng. Đây là cách tiếp cận nào?",
+      "a": "Kiểm thử dựa trên mô hình (model-based)."
+    },
+    {
+      "q": "Tester dùng lịch sử lỗi và trực giác để nghĩ ra đầu vào bất thường. Đây là cách tiếp cận nào?",
+      "a": "Kiểm thử dựa trên kinh nghiệm."
+    },
+    {
+      "q": "Nhóm điều chỉnh test sau khi vừa quan sát một lỗi mới trong phiên thăm dò. Đây là cách tiếp cận nào?",
+      "a": "Kiểm thử phản ứng (reactive)."
+    },
+    {
+      "q": "Nhóm dùng checklist và phân tích giá trị biên để thiết kế test. Đây là cách tiếp cận nào?",
+      "a": "Kiểm thử có hệ thống theo kỹ thuật (methodical)."
+    }
+  ],
+  "C1:19": [
+    {
+      "q": "Trước khi chạy test, nhóm xác định mục tiêu, phạm vi, nguồn lực và lịch trình. Đó là bước nào?",
+      "a": "Lập kế hoạch kiểm thử."
+    },
+    {
+      "q": "Tester đọc yêu cầu để xác định điều kiện kiểm thử, dữ liệu và test case. Đó là bước nào?",
+      "a": "Phân tích và thiết kế kiểm thử."
+    },
+    {
+      "q": "Tester chuẩn bị môi trường, chạy test, ghi Pass/Fail và báo lỗi. Đó là bước nào?",
+      "a": "Triển khai và thực thi kiểm thử."
+    },
+    {
+      "q": "Nhóm so với exit criteria, tổng hợp báo cáo và lưu testware. Đó là bước nào?",
+      "a": "Đánh giá và kết thúc kiểm thử."
+    }
+  ],
+  "C1:20": [
+    {
+      "q": "Khi xác định “kiểm thử cái gì?” từ tài liệu cơ sở, đó là hoạt động ISTQB nào?",
+      "a": "Phân tích kiểm thử (test analysis)."
+    },
+    {
+      "q": "Khi xác định “kiểm thử như thế nào?” và dữ liệu cần thiết, đó là hoạt động nào?",
+      "a": "Thiết kế kiểm thử (test design)."
+    },
+    {
+      "q": "Sắp thứ tự chạy test, chuẩn bị script và môi trường thuộc hoạt động nào?",
+      "a": "Triển khai kiểm thử (test implementation)."
+    },
+    {
+      "q": "Sau đợt test, nhóm bàn giao testware và tổng kết bài học. Đó là hoạt động nào?",
+      "a": "Kết thúc kiểm thử (test completion)."
+    }
+  ],
+  "C1:23": [
+    {
+      "q": "Ai làm rõ yêu cầu nghiệp vụ và xác nhận tiêu chí chấp nhận trước khi nhóm thiết kế test?",
+      "a": "Business Analyst (BA)."
+    },
+    {
+      "q": "Ai thường xác định ưu tiên nghiệp vụ, tham gia UAT và quyết định phát hành?",
+      "a": "Product Owner hoặc khách hàng."
+    },
+    {
+      "q": "Ai phân bổ nguồn lực và theo dõi tiến độ kiểm thử toàn dự án?",
+      "a": "Test Manager hoặc QA Manager."
+    }
+  ],
+  "C1:24": [
+    {
+      "q": "Báo lỗi bằng câu “Lập trình viên quá kém” có phù hợp tâm lý kiểm thử không?",
+      "a": "Không; cần mô tả khách quan hành vi sản phẩm và bước tái hiện.",
+      "skipFor": [
+        "pdf-C1-9"
+      ]
+    },
+    {
+      "q": "Tester thử trường hợp thẻ hết hạn ngoài luồng thanh toán thành công. Đây là loại luồng gì?",
+      "a": "Luồng ngoại lệ (negative path).",
+      "skipFor": [
+        "pdf-C1-9"
+      ]
+    },
+    {
+      "q": "Tự viết chức năng rồi chỉ thử dữ liệu mình tin là đúng có thể bị ảnh hưởng bởi thiên kiến nào?",
+      "a": "Thiên kiến xác nhận (confirmation bias)."
+    }
+  ],
+  "C1:25": [
+    {
+      "q": "Tác giả tự kiểm thử sản phẩm do mình tạo ra thuộc mức độc lập nào?",
+      "a": "Mức 0: tự kiểm thử."
+    },
+    {
+      "q": "Một đồng nghiệp cùng nhóm phát triển kiểm thử chức năng của bạn thuộc mức độc lập nào?",
+      "a": "Mức 1: đồng nghiệp kiểm thử."
+    },
+    {
+      "q": "Một nhóm kiểm thử riêng trong tổ chức thực hiện kiểm thử thuộc mức nào?",
+      "a": "Mức 2: nhóm kiểm thử độc lập trong tổ chức."
+    },
+    {
+      "q": "Thuê bên ngoài kiểm định phần mềm giúp tăng khách quan nhưng đánh đổi điều gì?",
+      "a": "Chi phí cao hơn và hiểu nghiệp vụ nội bộ ít hơn."
+    }
+  ],
+  "C2:5": [
+    {
+      "q": "Trong giai đoạn phân tích yêu cầu, tài liệu nào có thể được rà soát để tìm mơ hồ và thiếu sót?",
+      "a": "Tài liệu yêu cầu."
+    },
+    {
+      "q": "Sau khi cài đặt lên môi trường triển khai, loại test nhanh nào cần chạy?",
+      "a": "Smoke test."
+    },
+    {
+      "q": "Ở giai đoạn lập trình, developer thường viết loại test nào?",
+      "a": "Unit test."
+    }
+  ],
+  "C2:6": [
+    {
+      "q": "Tester nhận bản nháp thiết kế để viết test trước khi có mã nguồn. Đây là nguyên tắc nào?",
+      "a": "Phân tích và thiết kế kiểm thử bắt đầu sớm khi có cơ sở kiểm thử."
+    },
+    {
+      "q": "Các cấp độ kiểm thử khác nhau cần có mục tiêu riêng để tránh điều gì?",
+      "a": "Tránh trùng lặp và bỏ sót kiểm thử."
+    }
+  ],
+  "C2:7": [
+    {
+      "q": "Nhóm phát triển lặp nhiều vòng ngắn, mỗi vòng tạo một phiên bản và kiểm thử. Trong danh sách trên slide, đó là mô hình nào?",
+      "a": "Mô hình Iterative."
+    }
+  ],
+  "C2:9": [
+    {
+      "q": "Trong mô hình chữ V, thiết kế kiến trúc tương ứng với cấp độ kiểm thử nào?",
+      "a": "Kiểm thử tích hợp."
+    },
+    {
+      "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
+      "a": "Kiểm thử hệ thống."
+    },
+    {
+      "q": "Trong mô hình chữ V, phân tích yêu cầu tương ứng với cấp độ kiểm thử nào?",
+      "a": "Kiểm thử chấp nhận."
+    }
+  ],
+  "C2:11": [
+    {
+      "q": "Tester tham gia buổi refinement trước khi code để thống nhất điều gì?",
+      "a": "Tiêu chí chấp nhận (acceptance criteria)."
+    },
+    {
+      "q": "Trong Sprint ngắn, nhóm cần bộ kiểm thử nào để kịp chạy lại sau mỗi thay đổi?",
+      "a": "Bộ hồi quy tự động chạy trong CI."
+    }
+  ],
+  "C2:13": [
+    {
+      "q": "Một commit làm unit test Fail. Pipeline CI nên làm gì trước bước triển khai?",
+      "a": "Chặn quy trình và báo lỗi."
+    },
+    {
+      "q": "Sau khi build và unit test Pass, bước kiểm thử tự động kế tiếp thường là gì?",
+      "a": "Kiểm thử tích hợp và API."
+    },
+    {
+      "q": "Sau phát hành, DevOps dùng dữ liệu nào để sớm nhận biết lỗi production?",
+      "a": "Log và cảnh báo giám sát."
+    }
+  ],
+  "C2:14": [
+    {
+      "q": "Dự án lớn, phức tạp và rủi ro cao nên cân nhắc mô hình vòng đời nào trên bảng?",
+      "a": "Spiral."
+    },
+    {
+      "q": "Dự án yêu cầu ổn định, tài liệu đầy đủ và ít thay đổi phù hợp mô hình nào?",
+      "a": "Waterfall."
+    },
+    {
+      "q": "Dự án SaaS phát hành thường xuyên phù hợp cách tổ chức kiểm thử nào?",
+      "a": "DevOps/CI-CD với kiểm thử tự động liên tục."
+    }
+  ],
+  "C2:15": [
+    {
+      "q": "Trong TDD, sau khi test mới viết đang Fail, developer làm bước gì?",
+      "a": "Viết mã vừa đủ để test Pass (Green)."
+    },
+    {
+      "q": "Cả nhóm cùng viết tiêu chí chấp nhận dạng test trước khi phát triển là cách tiếp cận nào?",
+      "a": "ATDD."
+    },
+    {
+      "q": "Cấu trúc Given–When–Then giúp những vai trò nào cùng hiểu hành vi mong đợi?",
+      "a": "BA, developer và tester."
+    }
+  ],
+  "C2:17": [
+    {
+      "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
+      "a": "Kiểm thử đơn vị."
+    },
+    {
+      "q": "Kiểm tra giao tiếp giữa hai module dựa trên đặc tả giao diện thuộc cấp độ nào?",
+      "a": "Kiểm thử tích hợp."
+    },
+    {
+      "q": "Kiểm tra toàn bộ hệ thống theo đặc tả chức năng và phi chức năng thuộc cấp độ nào?",
+      "a": "Kiểm thử hệ thống."
+    },
+    {
+      "q": "Người dùng xác nhận hệ thống đáp ứng quy trình thực tế thuộc cấp độ nào?",
+      "a": "Kiểm thử chấp nhận."
+    }
+  ],
+  "C2:18": [
+    {
+      "q": "Tích hợp từ module cấp cao xuống khi module dưới chưa xong cần thành phần giả nào?",
+      "a": "Stub."
+    },
+    {
+      "q": "Ghép mọi module rồi mới kiểm thử khiến việc khoanh vùng lỗi khó. Chiến lược đó là gì?",
+      "a": "Big Bang."
+    },
+    {
+      "q": "Kiểm tra tương tác giữa ứng dụng bán hàng và cổng thanh toán thuộc loại tích hợp nào?",
+      "a": "Tích hợp hệ thống."
+    }
+  ],
+  "C2:19": [
+    {
+      "q": "Người dùng cuối dùng hệ thống theo nghiệp vụ thực để quyết định nghiệm thu. Đó là loại kiểm thử nào?",
+      "a": "UAT (User Acceptance Testing)."
+    },
+    {
+      "q": "Người dùng thử tại nơi phát triển phần mềm thuộc kiểu kiểm thử nào?",
+      "a": "Alpha testing."
+    },
+    {
+      "q": "Kiểm tra điều khoản hợp đồng và tiêu chuẩn ngành trước nghiệm thu thuộc loại nào?",
+      "a": "Contractual/Regulatory Acceptance Testing."
+    }
+  ],
+  "C2:20": [
+    {
+      "q": "Tầng kiểm thử nào của kim tự tháp chạy rất nhanh, rẻ và nên có nhiều test nhất?",
+      "a": "Kiểm thử đơn vị (unit).",
+      "skipFor": [
+        "main-5-2",
+        "main-17-1"
+      ]
+    },
+    {
+      "q": "Tầng nào kiểm tra API/giao tiếp, số lượng vừa phải và ổn định hơn UI test?",
+      "a": "Kiểm thử tích hợp/API."
+    }
+  ],
+  "C2:23": [
+    {
+      "q": "Một ứng dụng tải bình thường nhưng sập khi tăng tải vượt ngưỡng. Cần loại kiểm thử nào?",
+      "a": "Stress testing."
+    },
+    {
+      "q": "Nhóm thử hệ thống trên nhiều trình duyệt và hệ điều hành. Đó là kiểm thử gì?",
+      "a": "Kiểm thử tương thích."
+    },
+    {
+      "q": "Kiểm tra khả năng phục hồi sau khi mất điện thuộc đặc tính phi chức năng nào?",
+      "a": "Độ tin cậy (reliability)."
+    },
+    {
+      "q": "Kiểm tra SQL injection, XSS và phân quyền thuộc loại nào?",
+      "a": "Kiểm thử bảo mật."
+    }
+  ],
+  "C2:24": [
+    {
+      "q": "Sau khi fix lỗi, chạy lại đúng ca từng phát hiện lỗi và cùng dữ liệu là kiểm thử gì?",
+      "a": "Kiểm thử xác nhận (confirmation/retest).",
+      "skipFor": [
+        "main-5-3"
+      ]
+    },
+    {
+      "q": "Sau bản sửa, chạy các ca chức năng liên quan để phát hiện tác động phụ là kiểm thử gì?",
+      "a": "Kiểm thử hồi quy."
+    },
+    {
+      "q": "Một build mới vừa có, chạy vài chức năng cốt lõi để xem có thể test sâu hay chưa là gì?",
+      "a": "Smoke test.",
+      "skipFor": [
+        "main-6-0"
+      ]
+    }
+  ],
+  "C2:26": [
+    {
+      "q": "Hệ thống phải chạy trên phiên bản hệ điều hành mới. Đây là loại bảo trì nào?",
+      "a": "Bảo trì thích nghi (adaptive).",
+      "skipFor": [
+        "main-6-2"
+      ]
+    },
+    {
+      "q": "Thêm chức năng theo phản hồi người dùng thuộc loại bảo trì nào?",
+      "a": "Bảo trì cải tiến (perfective)."
+    },
+    {
+      "q": "Sửa lỗi đã xuất hiện ở production thuộc loại bảo trì nào?",
+      "a": "Bảo trì sửa lỗi (corrective)."
+    }
+  ],
+  "C2:27": [
+    {
+      "q": "Trước khi chọn test chạy lại sau thay đổi, nhóm cần xác định phần hệ thống bị ảnh hưởng. Đó là bước nào?",
+      "a": "Phân tích tác động (impact analysis).",
+      "skipFor": [
+        "main-6-3"
+      ]
+    },
+    {
+      "q": "Sau thay đổi, phạm vi kiểm thử nên bao gồm hai nhóm ca nào?",
+      "a": "Retest lỗi đã sửa và regression vùng bị ảnh hưởng."
+    },
+    {
+      "q": "Thiếu ma trận truy vết và tài liệu lỗi thời làm khó hoạt động nào?",
+      "a": "Phân tích tác động.",
+      "skipFor": [
+        "main-6-3"
+      ]
+    }
+  ],
+  "C3:5": [
+    {
+      "q": "Bộ “Thanh toán bằng thẻ” gồm nhiều trường hợp thử liên quan. Trong hệ thống phân cấp, đó là gì?",
+      "a": "Test suite."
+    },
+    {
+      "q": "Trong AUT là website bán hàng, nhóm “Quản lý đơn hàng” ở cấp nào?",
+      "a": "Test module.",
+      "skipFor": [
+        "main-8-1"
+      ]
+    },
+    {
+      "q": "Đơn vị nhỏ nhất chứa dữ liệu, bước chạy và expected result được gọi là gì?",
+      "a": "Test case."
+    }
+  ],
+  "C3:6": [
+    {
+      "q": "Trước khi chạy test đăng nhập, tài khoản phải ở trạng thái Active. Thông tin đó nằm ở trường nào?",
+      "a": "Điều kiện tiên quyết (precondition)."
+    },
+    {
+      "q": "Trước khi chạy, tester phải ghi kết quả đúng theo đặc tả vào trường nào?",
+      "a": "Kết quả mong đợi (expected result)."
+    },
+    {
+      "q": "Sau khi chạy, tester ghi giá trị hệ thống thật sự trả về vào trường nào?",
+      "a": "Kết quả thực tế (actual result)."
+    },
+    {
+      "q": "Muốn liên kết một test case tới yêu cầu nghiệp vụ, cần ghi thêm mã gì?",
+      "a": "Requirement ID của yêu cầu liên quan."
+    },
+    {
+      "q": "Để người khác lặp lại test đăng nhập, trường nào phải ghi từng thao tác theo thứ tự?",
+      "a": "Các bước thực hiện rõ ràng, đánh số."
+    },
+    {
+      "q": "Một test case dùng tài khoản admin / 123456. Giá trị này thuộc trường nào?",
+      "a": "Dữ liệu kiểm thử (test data)."
+    }
+  ],
+  "C3:7": [
+    {
+      "q": "Một test case ghi “kiểm tra hệ thống ổn” nhưng không nêu đầu ra. Tiêu chí chất lượng nào chưa đạt?",
+      "a": "Kết quả mong đợi phải cụ thể và có thể kiểm chứng."
+    },
+    {
+      "q": "Test B chỉ chạy được khi test A tạo dữ liệu trước. Test B thiếu tiêu chí chất lượng nào?",
+      "a": "Tính độc lập."
+    },
+    {
+      "q": "Khi thời gian kiểm thử thiếu, trường nào giúp xếp ca rủi ro cao chạy trước?",
+      "a": "Độ ưu tiên (priority)."
+    },
+    {
+      "q": "Muốn đo yêu cầu nào đã được thử, mỗi test case cần gắn với thông tin gì?",
+      "a": "Mã yêu cầu hoặc user story để truy vết."
+    }
+  ],
+  "C3:8": [
+    {
+      "q": "Kế hoạch ghi “không kiểm thử hiệu năng đợt này”. Nội dung đó nằm ở phần nào?",
+      "a": "Out of scope."
+    },
+    {
+      "q": "Build chưa deploy và smoke test Fail. Nhóm đã đáp ứng entry criteria chưa?",
+      "a": "Chưa; môi trường và build chưa đủ điều kiện bắt đầu."
+    },
+    {
+      "q": "Còn lỗi Critical đang mở. Đợt kiểm thử có đạt exit criteria “0 Critical mở” không?",
+      "a": "Không."
+    }
+  ],
+  "C3:10": [
+    {
+      "q": "Tài liệu định hướng chung về phương pháp, chuẩn và mức tự động hoá cho nhiều dự án là gì?",
+      "a": "Test Strategy."
+    },
+    {
+      "q": "Tài liệu ghi lịch trình, nhân sự, môi trường và rủi ro của một đợt phát hành là gì?",
+      "a": "Test Plan."
+    },
+    {
+      "q": "Ai thường lập Test Plan cho một dự án?",
+      "a": "Test Manager hoặc Test Lead."
+    }
+  ],
+  "C3:11": [
+    {
+      "q": "Nhóm cần ghi điều kiện tạm dừng và tiếp tục kiểm thử. Chúng thuộc mục nào của Test Plan?",
+      "a": "Mục tiêu chí (suspension và resumption criteria)."
+    },
+    {
+      "q": "Trong Test Plan, lịch trình cần nêu thêm điều gì ngoài các mốc thời gian?",
+      "a": "Thứ tự thực hiện và phụ thuộc giữa các hoạt động."
+    },
+    {
+      "q": "Test case, test data và defect report được liệt kê dưới mục nào của Test Plan?",
+      "a": "Sản phẩm bàn giao kiểm thử."
+    },
+    {
+      "q": "Thiếu dự phòng cho môi trường test hỏng là thiếu nội dung nào trong Test Plan?",
+      "a": "Rủi ro và phương án giảm thiểu/dự phòng."
+    }
+  ],
+  "C3:13": [
+    {
+      "q": "Có 40 test case, mỗi ca mất 15 phút và chạy 2 vòng. Tổng thời gian thực thi ước lượng là bao nhiêu?",
+      "a": "20 giờ.",
+      "table": {
+        "headers": [
+          "Test case",
+          "Phút/ca",
+          "Số vòng"
+        ],
+        "rows": [
+          [
+            "40",
+            "15",
+            "2"
+          ]
+        ]
+      },
+      "explain": "40 × 15 × 2 = 1200 phút = 20 giờ."
+    },
+    {
+      "q": "Ước lượng cơ sở 80 giờ và dự phòng 20%. Tổng công sức cần lập kế hoạch là bao nhiêu?",
+      "a": "96 giờ.",
+      "table": {
+        "headers": [
+          "Cơ sở",
+          "Dự phòng"
+        ],
+        "rows": [
+          [
+            "80 giờ",
+            "20%"
+          ]
+        ]
+      },
+      "explain": "80 × (1 + 0,20) = 96 giờ."
+    },
+    {
+      "q": "Ước lượng ba điểm 3, 6, 9 ngày. Theo PERT, thời gian kỳ vọng là bao nhiêu?",
+      "a": "6 ngày.",
+      "table": {
+        "headers": [
+          "Lạc quan",
+          "Khả dĩ nhất",
+          "Bi quan"
+        ],
+        "rows": [
+          [
+            "3",
+            "6",
+            "9"
+          ]
+        ]
+      },
+      "explain": "PERT = (3 + 4×6 + 9) ÷ 6 = 6 ngày."
+    }
+  ],
+  "C3:15": [
+    {
+      "q": "RTM ghi REQ-05 chưa liên kết với test case nào. Nhóm kết luận gì?",
+      "a": "REQ-05 chưa được bao phủ bởi test case."
+    },
+    {
+      "q": "Yêu cầu đăng nhập đổi quy tắc khoá tài khoản. RTM giúp tìm nhanh đối tượng nào cần rà lại?",
+      "a": "Các test case liên kết với yêu cầu đó."
+    }
+  ],
+  "C3:17": [
+    {
+      "q": "Tester vừa gửi báo cáo lỗi mới; trạng thái đầu tiên thường là gì?",
+      "a": "New."
+    },
+    {
+      "q": "Developer đã sửa và chuyển lỗi cho tester chạy lại. Trạng thái kiểm tra tiếp theo là gì?",
+      "a": "Retest."
+    },
+    {
+      "q": "Chạy lại vẫn Fail sau khi developer báo Fixed. Lỗi nên chuyển sang trạng thái nào?",
+      "a": "Reopened."
+    },
+    {
+      "q": "Một báo cáo không tái hiện được với thông tin hiện có có thể mang trạng thái gì?",
+      "a": "Cannot Reproduce."
+    }
+  ],
+  "C3:18": [
+    {
+      "q": "Lỗi làm hệ thống sập và mất dữ liệu thuộc mức severity nào?",
+      "a": "Critical."
+    },
+    {
+      "q": "Logo sai tên thương hiệu trên trang chủ: tác động kỹ thuật thấp nhưng cần sửa gấp. Cặp đánh giá nào phù hợp?",
+      "a": "Severity thấp, Priority cao."
+    },
+    {
+      "q": "Một lỗi rất hiếm chỉ xảy ra với dữ liệu bất thường có thể có severity cao nhưng priority thế nào?",
+      "a": "Priority có thể thấp nếu xác suất gặp và tác động kinh doanh trước mắt thấp."
+    }
+  ],
+  "C3:19": [
+    {
+      "q": "Một đợt có 300 test case, đã chạy 210. Test Execution % là bao nhiêu?",
+      "a": "70%.",
+      "concept": "execution"
+    },
+    {
+      "q": "Tìm 36 lỗi trước phát hành và 4 lỗi sau phát hành. DRE bằng bao nhiêu?",
+      "a": "90%.",
+      "concept": "dre"
+    },
+    {
+      "q": "Module có 12 KLOC và 18 defect. Defect Density là bao nhiêu?",
+      "a": "1,5 defect/KLOC.",
+      "concept": "density"
+    },
+    {
+      "q": "Có 80 yêu cầu; 68 yêu cầu có ít nhất một test case. Requirement Coverage là bao nhiêu?",
+      "a": "85%.",
+      "concept": "requirements"
+    },
+    {
+      "q": "Sau một đợt kiểm thử có 2 lỗi Critical và 12 lỗi Low. Chỉ nhìn tổng số 14 lỗi có đủ căn cứ quyết định phát hành không?",
+      "a": "Không; cần xem phân bố lỗi theo mức nghiêm trọng và rủi ro còn lại.",
+      "concept": "severity-distribution"
+    },
+    {
+      "q": "Dùng số bug mỗi tester báo được để xếp hạng cá nhân có phù hợp với cảnh báo trên slide không?",
+      "a": "Không; cách đó dễ tạo hành vi lệch lạc và hại tinh thần hợp tác.",
+      "concept": "metrics-misuse"
+    }
+  ],
+  "C3:21": [
+    {
+      "q": "Báo cáo tổng hợp kết quả, rủi ro còn lại và khuyến nghị cuối đợt là sản phẩm bàn giao nào?",
+      "a": "Test Summary Report."
+    },
+    {
+      "q": "Bằng chứng ảnh và log của từng lần chạy thuộc sản phẩm nào?",
+      "a": "Test Log/Test Results."
+    },
+    {
+      "q": "Dữ liệu đầu vào và script tạo dữ liệu cần chuẩn bị trước khi thực thi gọi là gì?",
+      "a": "Test Data."
+    },
+    {
+      "q": "Danh sách lỗi, trạng thái, severity và priority thuộc sản phẩm nào?",
+      "a": "Defect Report."
+    }
+  ],
+  "C4A:7": [
+    {
+      "q": "Kiểm tra một hàm ở phạm vi nhỏ nhất là cấp độ hay kỹ thuật kiểm thử?",
+      "a": "Cấp độ kiểm thử: kiểm thử đơn vị."
+    },
+    {
+      "q": "Phân vùng tương đương trả lời câu hỏi thiết kế ca thử thế nào. Nó thuộc nhóm khái niệm nào?",
+      "a": "Kỹ thuật kiểm thử."
+    },
+    {
+      "q": "Đánh giá thời gian phản hồi của hệ thống thuộc khái niệm nào?",
+      "a": "Loại kiểm thử: kiểm thử hiệu năng."
+    },
+    {
+      "q": "Dùng Selenium để chạy kịch bản là đang nhắc đến loại khái niệm nào?",
+      "a": "Công cụ kiểm thử."
+    }
+  ],
+  "C4A:11": [
+    {
+      "q": "Rà soát yêu cầu có thể phát hiện mâu thuẫn trước khi chạy phần mềm. Đây là kiểm thử gì?",
+      "a": "Kiểm thử tĩnh."
+    },
+    {
+      "q": "Chạy phần mềm rồi thấy kết quả tính toán sai. Đây là kiểm thử gì?",
+      "a": "Kiểm thử động."
+    },
+    {
+      "q": "Kiểm thử tĩnh có thể bắt đầu vào thời điểm nào?",
+      "a": "Ngay khi có bản nháp sản phẩm công việc để xem xét."
+    }
+  ],
+  "C4A:12": [
+    {
+      "q": "Review tài liệu yêu cầu phát hiện hai mục quy định khác nhau cho cùng điều kiện. Đây là dạng defect nào?",
+      "a": "Mâu thuẫn trong tài liệu yêu cầu."
+    },
+    {
+      "q": "Phân tích tĩnh mã phát hiện biến khai báo nhưng chưa khởi tạo. Đó là defect ở đối tượng nào?",
+      "a": "Mã nguồn."
+    },
+    {
+      "q": "Test case không có expected result bị phát hiện khi review. Đó là defect của đối tượng nào?",
+      "a": "Sản phẩm công việc kiểm thử (test case)."
+    }
+  ],
+  "C4A:13": [
+    {
+      "q": "Trong review chính thức, thành viên tự đọc tài liệu và ghi bất thường trước buổi họp. Đó là bước nào?",
+      "a": "Xem xét cá nhân (individual review)."
+    },
+    {
+      "q": "Ai sửa tài liệu sau khi review và ai xác minh bản sửa?",
+      "a": "Tác giả sửa; người được phân công xác minh."
+    },
+    {
+      "q": "Khi phân loại một ý kiến thành defect, câu hỏi hoặc đề xuất cải tiến, nhóm đang ở bước nào?",
+      "a": "Trao đổi và phân tích (communication)."
+    }
+  ],
+  "C4A:14": [
+    {
+      "q": "Người tổ chức buổi review, giữ trao đổi khách quan và kiểm soát thời gian là ai?",
+      "a": "Người điều phối (facilitator/moderator)."
+    },
+    {
+      "q": "Người ghi bất thường, quyết định và thời hạn xử lý là ai?",
+      "a": "Người ghi chép (scribe)."
+    },
+    {
+      "q": "Ai đọc sản phẩm công việc và nêu bất thường chuyên môn?",
+      "a": "Người xem xét (reviewer).",
+      "skipFor": [
+        "main-12-0"
+      ]
+    }
+  ],
+  "C4A:15": [
+    {
+      "q": "Dự án nhỏ, rủi ro thấp cần phản hồi nhanh và ít thủ tục. Nên dùng hình thức review nào?",
+      "a": "Informal Review."
+    },
+    {
+      "q": "Tác giả dẫn dắt cả nhóm đi qua tài liệu để chia sẻ hiểu biết. Đó là hình thức nào?",
+      "a": "Walkthrough."
+    },
+    {
+      "q": "Cần đánh giá và thống nhất về vấn đề kỹ thuật quan trọng. Chọn hình thức review nào?",
+      "a": "Technical Review."
+    },
+    {
+      "q": "Sản phẩm quan trọng cần chuẩn bị bắt buộc và đo lường chính thức. Chọn hình thức nào?",
+      "a": "Inspection."
+    }
+  ],
+  "C4A:23": [
+    {
+      "q": "Mã kiểm tra số chỗ còn lại bằng AvailableSeats < 0. Giá trị biên nào dễ bị bỏ sót?",
+      "a": "0 chỗ còn lại."
+    },
+    {
+      "q": "Hàm chưa kiểm tra học phần tiên quyết. Công cụ phân tích cú pháp có chắc phát hiện được không?",
+      "a": "Không; người review phải đối chiếu quy tắc nghiệp vụ."
+    },
+    {
+      "q": "Hai yêu cầu cùng tranh chỗ cuối cùng có thể gây lỗi gì?",
+      "a": "Race condition, cần xác định cách xử lý đồng thời."
+    }
+  ],
+  "C4B:7": [
+    {
+      "q": "Tester thiết kế test từ yêu cầu mà không xem mã nguồn. Đây là nhóm kỹ thuật nào?",
+      "a": "Dựa trên đặc tả (hộp đen)."
+    },
+    {
+      "q": "Tester đo số nhánh của mã đã được đi qua. Đây là nhóm kỹ thuật nào?",
+      "a": "Dựa trên cấu trúc (hộp trắng)."
+    },
+    {
+      "q": "Đặc tả thiếu; tester dùng lịch sử lỗi và phán đoán để thử. Đây là nhóm nào?",
+      "a": "Dựa trên kinh nghiệm."
+    }
+  ],
+  "C4B:9": [
+    {
+      "q": "Miền tuổi hợp lệ 18–60 được chia thành <18, 18–60 và >60. Hai vùng không hợp lệ là gì?",
+      "a": "Tuổi dưới 18 và tuổi trên 60.",
+      "image": "media/extra/ep-age-18-60.svg",
+      "imageAlt": "Ba vùng tuổi dưới 18, từ 18 đến 60, trên 60 với số đại diện 17, 35 và 61",
+      "explain": "Dưới 18 và trên 60 là hai vùng không hợp lệ; 18–60 là vùng hợp lệ. Có thể chọn một số đại diện mỗi vùng."
+    },
+    {
+      "q": "Nếu hai giá trị trong cùng một lớp tương đương được hệ thống xử lý khác nhau, phải làm gì?",
+      "a": "Chia lại lớp tương đương đó."
+    },
+    {
+      "q": "Các lớp tương đương hợp lệ cần thỏa ba điều kiện nào?",
+      "a": "Không rỗng, không chồng lấn và hợp lại bao phủ toàn bộ miền."
+    }
+  ],
+  "C4B:10": [
+    {
+      "q": "Ô số tín chỉ nhận 1–25. Chọn một đại diện cho mỗi vùng số <1, 1–25 và >25 là bộ nào?",
+      "a": "Ví dụ 0, 15, 26.",
+      "skipFor": [
+        "main-29-3"
+      ]
+    },
+    {
+      "q": "Ô số tín chỉ chỉ nhận số nguyên. Ngoài các vùng số, đầu vào nào cần thử để bắt lỗi kiểu dữ liệu?",
+      "a": "Ví dụ bỏ trống hoặc nhập chữ cái."
+    }
+  ],
+  "C4B:11": [
+    {
+      "q": "Ô số nguyên hợp lệ 10–30. BVA ba giá trị quanh hai biên cho bộ nào?",
+      "a": "9, 10, 11, 29, 30, 31.",
+      "image": "media/extra/bva-10-30.svg",
+      "imageAlt": "Trục số ba vùng: dưới 10, từ 10 đến 30, trên 30; các giá trị BVA 9, 10, 11, 29, 30, 31",
+      "explain": "Quanh biên dưới 10 lấy 9–10–11; quanh biên trên 30 lấy 29–30–31. Hai vùng ngoài đều không hợp lệ."
+    },
+    {
+      "q": "Vì sao nhập giá trị đúng tại biên giúp phát hiện lỗi điều kiện > thay vì ≥?",
+      "a": "Hai toán tử cho kết quả khác nhau ngay tại giá trị biên."
+    },
+    {
+      "q": "Danh sách màu đỏ/xanh/vàng có áp dụng BVA được không?",
+      "a": "Không; đây là dữ liệu rời rạc, không có quan hệ thứ tự để chọn giá trị lân cận."
+    }
+  ],
+  "C4B:12": [
+    {
+      "q": "Số tín chỉ hợp lệ 1–25. Nếu mã dùng credits < 25 thay cho ≤25, giá trị nào bộc lộ lỗi?",
+      "a": "25 tín chỉ."
+    },
+    {
+      "q": "Số tín chỉ hợp lệ 1–25. Nếu mã dùng credits > 1 thay cho ≥1, giá trị nào bộc lộ lỗi?",
+      "a": "1 tín chỉ."
+    }
+  ],
+  "C4B:13": [
+    {
+      "q": "Bảng quyết định có ba điều kiện nhị phân độc lập. Có tối đa bao nhiêu tổ hợp trước rút gọn?",
+      "a": "8 tổ hợp.",
+      "skipFor": [
+        "main-28-3",
+        "main-13-2"
+      ]
+    },
+    {
+      "q": "Trong bảng quyết định, một cột thể hiện đơn vị gì?",
+      "a": "Một quy tắc (rule) với tổ hợp điều kiện và hành động tương ứng."
+    },
+    {
+      "q": "Ký hiệu “–” ở hàng điều kiện có nghĩa gì?",
+      "a": "Điều kiện đó không ảnh hưởng đến hành động của quy tắc.",
+      "skipFor": [
+        "main-28-3"
+      ]
+    },
+    {
+      "q": "Bảng có 5 quy tắc khả thi. Muốn bao phủ mọi quy tắc ít nhất một lần cần tối thiểu bao nhiêu test case?",
+      "a": "5 test case."
+    }
+  ],
+  "C4B:14": [
+    {
+      "q": "Trong bảng đăng ký học phần, tài khoản không hoạt động. Hệ thống trả về nguyên nhân nào trước?",
+      "a": "Báo tài khoản không hoạt động.",
+      "table": {
+        "headers": [
+          "Điều kiện/hành động",
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "rows": [
+          [
+            "Tài khoản hoạt động",
+            "Sai",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Đạt tiên quyết",
+            "–",
+            "Sai",
+            "Đúng"
+          ],
+          [
+            "Còn chỗ",
+            "–",
+            "–",
+            "Đúng"
+          ],
+          [
+            "Không vượt 25 tín chỉ",
+            "–",
+            "–",
+            "Đúng"
+          ],
+          [
+            "Kết quả",
+            "Báo TK không hoạt động",
+            "Báo thiếu tiên quyết",
+            "Cho đăng ký"
+          ]
+        ]
+      },
+      "explain": "Tìm cột có mọi điều kiện phù hợp rồi đọc hàng Kết quả trong chính cột đó; dấu “–” nghĩa là điều kiện ấy không ảnh hưởng quy tắc."
+    },
+    {
+      "q": "Tài khoản hoạt động nhưng chưa đạt tiên quyết. Theo thứ tự C1→C4, hành động nào xảy ra?",
+      "a": "Báo chưa đạt học phần tiên quyết.",
+      "table": {
+        "headers": [
+          "Điều kiện/hành động",
+          "R1",
+          "R2",
+          "R3"
+        ],
+        "rows": [
+          [
+            "Tài khoản hoạt động",
+            "Sai",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Đạt tiên quyết",
+            "–",
+            "Sai",
+            "Đúng"
+          ],
+          [
+            "Còn chỗ",
+            "–",
+            "–",
+            "Đúng"
+          ],
+          [
+            "Không vượt 25 tín chỉ",
+            "–",
+            "–",
+            "Đúng"
+          ],
+          [
+            "Kết quả",
+            "Báo TK không hoạt động",
+            "Báo thiếu tiên quyết",
+            "Cho đăng ký"
+          ]
+        ]
+      },
+      "explain": "Tìm cột có mọi điều kiện phù hợp rồi đọc hàng Kết quả trong chính cột đó; dấu “–” nghĩa là điều kiện ấy không ảnh hưởng quy tắc."
+    },
+    {
+      "q": "Bốn điều kiện nhị phân có 16 tổ hợp; bảng được rút còn bao nhiêu quy tắc?",
+      "a": "5 quy tắc."
+    }
+  ],
+  "C4B:15": [
+    {
+      "q": "Hành vi đơn hàng phụ thuộc trạng thái hiện tại và sự kiện trước đó. Nên dùng kỹ thuật nào?",
+      "a": "Kiểm thử chuyển trạng thái."
+    },
+    {
+      "q": "Một chuyển tiếp chỉ xảy ra nếu còn chỗ. “Còn chỗ” là thành phần gì?",
+      "a": "Điều kiện bảo vệ (guard)."
+    },
+    {
+      "q": "Để bao phủ mọi chuyển tiếp hợp lệ, phải tạo ca kiểm thử theo đối tượng nào?",
+      "a": "Mỗi cạnh chuyển tiếp hợp lệ của mô hình."
+    }
+  ],
+  "C4B:16": [
+    {
+      "q": "Yêu cầu đăng ký bị từ chối từ trạng thái Chờ xác nhận. Trạng thái lưu giữ sau đó là gì?",
+      "a": "Chưa đăng ký."
+    },
+    {
+      "q": "Đơn đã Đăng ký thành công, người dùng hủy trong thời hạn. Trạng thái tiếp theo là gì?",
+      "a": "Đã hủy."
+    }
+  ],
+  "C4B:17": [
+    {
+      "q": "Ở trạng thái Chưa đăng ký, hệ thống nhận lệnh “Xác nhận thành công” dù chưa có yêu cầu chờ. Kết quả đúng là gì?",
+      "a": "Từ chối thao tác và giữ nguyên trạng thái Chưa đăng ký.",
+      "table": {
+        "headers": [
+          "Trạng thái hiện tại",
+          "Sự kiện/điều kiện",
+          "Trạng thái tiếp"
+        ],
+        "rows": [
+          [
+            "Chưa đăng ký",
+            "Xác nhận khi chưa có yêu cầu",
+            "Chưa đăng ký (từ chối)"
+          ],
+          [
+            "Đã hủy",
+            "Đăng ký lại khi đợt còn mở",
+            "Chờ xác nhận"
+          ]
+        ]
+      },
+      "explain": "Đọc theo cùng một hàng: trạng thái hiện tại và sự kiện quyết định trạng thái tiếp theo; sự kiện sai phải bị từ chối và giữ trạng thái."
+    },
+    {
+      "q": "Đã hủy nhưng đợt đăng ký còn mở; sự kiện Đăng ký lại đưa đối tượng sang trạng thái nào?",
+      "a": "Chờ xác nhận.",
+      "table": {
+        "headers": [
+          "Trạng thái hiện tại",
+          "Sự kiện/điều kiện",
+          "Trạng thái tiếp"
+        ],
+        "rows": [
+          [
+            "Chưa đăng ký",
+            "Xác nhận khi chưa có yêu cầu",
+            "Chưa đăng ký (từ chối)"
+          ],
+          [
+            "Đã hủy",
+            "Đăng ký lại khi đợt còn mở",
+            "Chờ xác nhận"
+          ]
+        ]
+      },
+      "explain": "Đọc theo cùng một hàng: trạng thái hiện tại và sự kiện quyết định trạng thái tiếp theo; sự kiện sai phải bị từ chối và giữ trạng thái."
+    }
+  ],
+  "C4B:18": [
+    {
+      "q": "Use case có một luồng chính, hai luồng thay thế và một luồng ngoại lệ. Cần tối thiểu bao nhiêu test case để phủ các luồng?",
+      "a": "4 test case."
+    },
+    {
+      "q": "Kỹ thuật use case thuận lợi cho kiểm thử cấp nào vì bám luồng nghiệp vụ đầu-cuối?",
+      "a": "Kiểm thử end-to-end và chấp nhận."
+    },
+    {
+      "q": "Use case test dễ bỏ sót loại dữ liệu nào?",
+      "a": "Giá trị biên và tổ hợp điều kiện chi tiết."
+    }
+  ],
+  "C4B:21": [
+    {
+      "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
+      "a": "75%.",
+      "concept": "statement",
+      "table": {
+        "headers": [
+          "Tổng câu lệnh",
+          "Đã chạy"
+        ],
+        "rows": [
+          [
+            "20",
+            "15"
+          ]
+        ]
+      },
+      "explain": "Statement Coverage = 15 ÷ 20 × 100 = 75%."
+    },
+    {
+      "q": "Mã có 10 nhánh, test đã đi qua 7 nhánh. Branch Coverage là bao nhiêu?",
+      "a": "70%.",
+      "concept": "branch",
+      "table": {
+        "headers": [
+          "Tổng nhánh",
+          "Đã đi qua"
+        ],
+        "rows": [
+          [
+            "10",
+            "7"
+          ]
+        ]
+      },
+      "explain": "Branch Coverage = 7 ÷ 10 × 100 = 70%."
+    },
+    {
+      "q": "Đạt 100% statement coverage có bảo đảm mọi nhánh đã thử không?",
+      "a": "Không.",
+      "concept": "statement-limit"
+    },
+    {
+      "q": "Đạt 100% branch coverage có chứng minh chương trình hết lỗi không?",
+      "a": "Không; bao phủ chỉ đo phần cấu trúc đã chạy.",
+      "concept": "branch-limit"
+    },
+    {
+      "q": "Nếu đã thử cả hai nhánh của mọi quyết định có thể tiếp cận, statement coverage thường đạt mức nào?",
+      "a": "100% câu lệnh có thể tiếp cận."
+    }
+  ],
+  "C4B:22": [
+    {
+      "q": "Đoạn mã có hai quyết định nhị phân D1 và D2. Tổng số nhánh cần bao phủ là bao nhiêu?",
+      "a": "4 nhánh."
+    },
+    {
+      "q": "Đoạn mã có sáu câu lệnh có thể thực thi; test chạy đủ sáu câu. Statement Coverage là bao nhiêu?",
+      "a": "100%."
+    }
+  ],
+  "C5:6": [
+    {
+      "q": "Bộ hồi quy chạy sau mỗi commit giúp phát hiện lỗi ở giai đoạn nào?",
+      "a": "Sớm ngay trong CI/CD, trước khi triển khai."
+    },
+    {
+      "q": "Một script được dùng lại qua mười phiên bản. Đây là lợi ích nào của tự động hoá?",
+      "a": "Khả năng tái sử dụng."
+    },
+    {
+      "q": "Chạy cùng một thao tác trên hàng trăm bộ dữ liệu đầu vào giúp tăng chỉ số gì?",
+      "a": "Độ bao phủ kiểm thử."
+    },
+    {
+      "q": "Vì sao chi phí tự động hoá có thể giảm về dài hạn dù đầu tư ban đầu cao?",
+      "a": "Chi phí trên mỗi lần chạy giảm khi tái sử dụng script nhiều lần."
+    }
+  ],
+  "C5:7": [
+    {
+      "q": "Chạy tay 10 phút/lần; viết script mất 50 phút rồi chạy 2 phút/lần. Từ lần thứ mấy tự động hoá không còn tốn thời gian hơn?",
+      "a": "Lần thứ 7.",
+      "skipFor": [
+        "main-15-3"
+      ]
+    },
+    {
+      "q": "Một chức năng chỉ chạy test hai lần. Theo nguyên tắc ROI, cách nào thường tiết kiệm hơn?",
+      "a": "Kiểm thử thủ công."
+    }
+  ],
+  "C5:10": [
+    {
+      "q": "Bộ test cần chạy hàng trăm lần sau mỗi bản build. Thủ công hay tự động có chi phí dài hạn thấp hơn?",
+      "a": "Kiểm thử tự động."
+    },
+    {
+      "q": "Đánh giá người mới có hiểu giao diện hay không phù hợp với cách nào?",
+      "a": "Kiểm thử thủ công với đánh giá của con người."
+    },
+    {
+      "q": "Cần lưu log, ảnh và video đầy đủ sau mỗi lần chạy. Cách nào hỗ trợ sẵn hơn?",
+      "a": "Kiểm thử tự động."
+    }
+  ],
+  "C5:14": [
+    {
+      "q": "Cần mô phỏng hàng nghìn người dùng đồng thời để đo tải. Nên chọn cách thực thi nào?",
+      "a": "Kiểm thử hiệu năng tự động."
+    },
+    {
+      "q": "Một API phải chạy với rất nhiều bộ dữ liệu sau mỗi thay đổi. Có phù hợp để tự động hoá không?",
+      "a": "Có; bài test lặp lại nhiều lần với nhiều dữ liệu."
+    },
+    {
+      "q": "Giao diện ổn định qua nhiều bản phát hành giúp tự động hoá giảm chi phí gì?",
+      "a": "Chi phí bảo trì script."
+    }
+  ],
+  "C5:15": [
+    {
+      "q": "Giao diện đang đổi mỗi ngày. Vì sao viết nhiều UI script ngay lúc này chưa hiệu quả?",
+      "a": "Locator và kịch bản phải sửa liên tục, chi phí bảo trì cao."
+    },
+    {
+      "q": "Nhóm chưa làm chủ công cụ và chỉ có dự án rất ngắn. Rủi ro chính khi tự động hoá ngay là gì?",
+      "a": "Chi phí xây dựng và học công cụ có thể lớn hơn lợi ích."
+    },
+    {
+      "q": "Kiểm tra cảm nhận người dùng về giao diện nên giao cho ai?",
+      "a": "Người kiểm thử/người dùng đánh giá trực tiếp."
+    }
+  ],
+  "C5:16": [
+    {
+      "q": "Trước khi chọn công cụ, cần quyết định ca thử nào đáng tự động hoá. Đây là bước nào trong vòng đời thực tế?",
+      "a": "Đánh giá tính khả thi."
+    },
+    {
+      "q": "Sau khi chạy script, nhóm xác định Fail do sản phẩm hay do script. Đây là bước nào?",
+      "a": "Phân tích kết quả kiểm thử."
+    },
+    {
+      "q": "Về lâu dài, bước nào thường chiếm nhiều công sức khi giao diện và yêu cầu thay đổi?",
+      "a": "Bảo trì script."
+    }
+  ],
+  "C5:17": [
+    {
+      "q": "Trước khi viết script, cần xác định ba thành phần nào của kịch bản?",
+      "a": "Dữ liệu đầu vào, các bước thực hiện và kết quả mong đợi."
+    },
+    {
+      "q": "Sau khi chạy script, Pass/Fail nên đi kèm bằng chứng nào?",
+      "a": "Log và ảnh chụp màn hình.",
+      "skipFor": [
+        "main-16-2"
+      ]
+    },
+    {
+      "q": "Một test báo Fail do script sai, trong khi sản phẩm đúng. Kết quả này gọi là gì?",
+      "a": "False failure."
+    }
+  ],
+  "C5:18": [
+    {
+      "q": "Cần tự động hoá thao tác trình duyệt web. Nhóm công cụ nào trên slide phù hợp?",
+      "a": "Công cụ kiểm thử Web."
+    },
+    {
+      "q": "Cần gửi HTTP request và xem response. Nhóm công cụ nào phù hợp?",
+      "a": "Công cụ kiểm thử API."
+    },
+    {
+      "q": "Cần chạy test cho ứng dụng Android và iOS. Nhóm công cụ nào phù hợp?",
+      "a": "Công cụ kiểm thử Mobile."
+    }
+  ],
+  "C5:19": [
+    {
+      "q": "Dự án cần chạy E2E trên Chromium, Firefox và WebKit. Công cụ nào trên slide hỗ trợ cả ba?",
+      "a": "Playwright."
+    },
+    {
+      "q": "Công cụ web nào có time-travel debugging để xem lại từng bước chạy?",
+      "a": "Cypress."
+    },
+    {
+      "q": "Công cụ nào có auto-waiting giúp giảm test flaky?",
+      "a": "Playwright."
+    },
+    {
+      "q": "Nhóm chỉ dùng Python và cần tự động hoá trình duyệt. Trong ba công cụ được nêu, công cụ nào hỗ trợ Python?",
+      "a": "Selenium hoặc Playwright."
+    }
+  ],
+  "C5:20": [
+    {
+      "q": "Tester muốn gửi GET/POST tới API bằng GUI và lưu các request thành collection. Dùng công cụ nào?",
+      "a": "Postman."
+    },
+    {
+      "q": "Muốn chạy collection Postman trong CI, dùng công cụ dòng lệnh nào?",
+      "a": "Newman."
+    },
+    {
+      "q": "Cần mô phỏng nhiều người dùng đồng thời qua HTTP để đo tải. Dùng công cụ nào?",
+      "a": "JMeter."
+    }
+  ],
+  "C5:21": [
+    {
+      "q": "Cần cùng một công cụ thử native, hybrid và mobile web trên Android/iOS. Công cụ nào?",
+      "a": "Appium."
+    },
+    {
+      "q": "Muốn xây kịch bản kéo–thả cho Web, API và Mobile trên cùng nền tảng. Công cụ nào?",
+      "a": "Katalon Studio."
+    }
+  ],
+  "C5:23": [
+    {
+      "q": "Test lúc Pass lúc Fail vì chờ phần tử bằng Thread.Sleep cố định. Nên sửa bằng gì?",
+      "a": "Explicit Wait đợi đúng điều kiện."
+    },
+    {
+      "q": "UI thay đổi làm nhiều XPath theo vị trí bị hỏng. Nên ưu tiên loại locator nào?",
+      "a": "ID ổn định hoặc data-testid.",
+      "skipFor": [
+        "main-16-3"
+      ]
+    },
+    {
+      "q": "Test A phải chạy trước Test B mới Pass. Cần thay đổi cách chuẩn bị dữ liệu thế nào?",
+      "a": "Mỗi test tự chuẩn bị và dọn dẹp dữ liệu riêng."
+    },
+    {
+      "q": "Nhiều script trùng thao tác trang đăng nhập. Mẫu thiết kế nào giúp bảo trì tập trung?",
+      "a": "Page Object Model."
+    },
+    {
+      "q": "Bộ test trên CI liên tục đỏ nhưng không ai xem. Nhóm cần quy trình gì?",
+      "a": "Chặn merge khi test Fail và phân công người xử lý kết quả."
+    }
+  ],
+  "C6:5": [
+    {
+      "q": "Selenium được thiết kế chủ yếu để tự động hoá loại ứng dụng nào?",
+      "a": "Ứng dụng web trên trình duyệt."
+    },
+    {
+      "q": "Muốn viết Selenium bằng Python thay vì C# có được không?",
+      "a": "Có; Selenium hỗ trợ nhiều ngôn ngữ, gồm Python và C#."
+    },
+    {
+      "q": "Những bài test nào thường tận dụng Selenium do phải chạy đi chạy lại?",
+      "a": "Kiểm thử chức năng web và hồi quy."
+    }
+  ],
+  "C6:12": [
+    {
+      "q": "Người chưa biết lập trình muốn ghi thao tác trình duyệt để chạy lại nhanh. Chọn công cụ nào?",
+      "a": "Selenium IDE.",
+      "skipFor": [
+        "main-19-0"
+      ]
+    },
+    {
+      "q": "Script cần logic rẽ nhánh phức tạp và phần tử động. Selenium IDE có phù hợp nhất không?",
+      "a": "Không; IDE hạn chế với logic phức tạp và giao diện động."
+    },
+    {
+      "q": "Ngoài smoke test, Selenium IDE có thể dùng để tạo gì trước khi chuyển sang WebDriver?",
+      "a": "Bản mẫu kịch bản kiểm thử."
+    }
+  ],
+  "C6:17": [
+    {
+      "q": "Nếu đăng nhập thất bại, các bước mua hàng sau đó không còn ý nghĩa. Nên dùng Assert hay Verify?",
+      "a": "Assert."
+    },
+    {
+      "q": "Cần ghi lỗi logo nhưng vẫn kiểm tra banner và menu. Nên dùng Assert hay Verify?",
+      "a": "Verify."
+    },
+    {
+      "q": "Vì sao Assert ở điều kiện tiên quyết giúp tránh hàng loạt lỗi giả?",
+      "a": "Nó dừng test ngay khi bước nền tảng thất bại."
+    }
+  ],
+  "C6:21": [
+    {
+      "q": "Chạy cùng suite trên nhiều hệ điều hành và trình duyệt bằng Grid thể hiện đặc tính nào?",
+      "a": "Tính đa môi trường."
+    },
+    {
+      "q": "Nhiều máy chạy test nhưng script chỉ gửi yêu cầu tới một Hub. Đây là đặc tính nào?",
+      "a": "Quản lý tập trung."
+    },
+    {
+      "q": "Dồn test lên một máy gây quá tải. Grid khắc phục bằng cách nào?",
+      "a": "Phân tán công việc cho nhiều Node."
+    }
+  ],
+  "C6:22": [
+    {
+      "q": "Một yêu cầu cần Chrome trên Windows. Thành phần nào chọn Node đáp ứng?",
+      "a": "Hub."
+    },
+    {
+      "q": "Thành phần nào trực tiếp khởi động trình duyệt và thực thi lệnh?",
+      "a": "Node."
+    },
+    {
+      "q": "Máy Linux chỉ có Firefox có đáp ứng yêu cầu Chrome trên Windows không?",
+      "a": "Không; Hub phải chọn Node có đúng môi trường yêu cầu."
+    }
+  ],
+  "C6:23": [
+    {
+      "q": "Ba trình duyệt lần lượt chạy 8, 12 và 10 phút. Nếu chạy tuần tự, tổng thời gian là bao nhiêu?",
+      "a": "30 phút."
+    },
+    {
+      "q": "Ba trình duyệt chạy song song trong 8, 12 và 10 phút. Thời gian hoàn tất xấp xỉ bao nhiêu?",
+      "a": "12 phút, bằng thời gian của tác vụ chậm nhất."
+    }
+  ],
+  "C6:27": [
+    {
+      "q": "Muốn tìm tất cả phần tử khớp một locator thay vì chỉ một, dùng phương thức nào?",
+      "a": "FindElements()."
+    },
+    {
+      "q": "Mỗi phiên WebDriver có mã riêng để nhận diện lệnh và kết quả. Đó là gì?",
+      "a": "Session ID."
+    },
+    {
+      "q": "Trang hiện hộp thoại yêu cầu xác nhận. Nhóm khái niệm WebDriver nào cần dùng để xử lý?",
+      "a": "Alert."
+    },
+    {
+      "q": "Phần tử chưa hiện ngay sau khi tải trang. Cần áp dụng khái niệm nào?",
+      "a": "Wait."
+    }
+  ],
+  "C6:32": [
+    {
+      "q": "Nút có id ổn định “saveBtn”. Nên định vị bằng lệnh nào?",
+      "a": "By.Id(\"saveBtn\").",
+      "skipFor": [
+        "main-19-3"
+      ]
+    },
+    {
+      "q": "Muốn chọn nút bằng CSS selector “#login .btn”, dùng phương thức nào?",
+      "a": "By.CssSelector(\"#login .btn\")."
+    },
+    {
+      "q": "Vì sao XPath tuyệt đối dạng /html/body/div[3] dễ hỏng?",
+      "a": "Nó phụ thuộc cấu trúc và vị trí DOM; thay đổi giao diện làm đường dẫn đổi."
+    }
+  ],
+  "C6:33": [
+    {
+      "q": "Đã tìm được ô nhập liệu, gọi phương thức nào để gõ chuỗi?",
+      "a": "SendKeys(\"text\")."
+    },
+    {
+      "q": "Đã tìm được nút, gọi phương thức nào để nhấp?",
+      "a": "Click()."
+    },
+    {
+      "q": "Muốn xoá nội dung cũ của ô nhập trước khi gõ, gọi phương thức nào?",
+      "a": "Clear()."
+    },
+    {
+      "q": "Muốn đọc chữ hiển thị của phần tử, dùng thuộc tính nào?",
+      "a": "Text."
+    }
+  ],
+  "C6:34": [
+    {
+      "q": "Dropdown thành phố cần chọn mục “Vinh Long” theo chữ hiển thị. Gọi phương thức nào?",
+      "a": "SelectByText(\"Vinh Long\") qua SelectElement."
+    },
+    {
+      "q": "Phần tử nằm trong iframe. WebDriver cần làm gì trước khi tìm?",
+      "a": "Chuyển vào iframe bằng driver.SwitchTo().Frame(...)."
+    },
+    {
+      "q": "Chỉ đóng tab hiện tại nhưng vẫn giữ các tab khác. Gọi lệnh nào?",
+      "a": "driver.Close()."
+    },
+    {
+      "q": "Kết thúc test, muốn đóng toàn bộ trình duyệt và giải phóng tiến trình driver. Gọi lệnh nào?",
+      "a": "driver.Quit()."
+    }
+  ],
+  "C6:35": [
+    {
+      "q": "Trong ví dụ đăng nhập, trước khi nhập tài khoản script điều hướng tới trang bằng lệnh nào?",
+      "a": "driver.Navigate().GoToUrl(...)."
+    },
+    {
+      "q": "Sau khi bấm Login, script đọc nội dung thông báo bằng thuộc tính nào?",
+      "a": "Text của phần tử thông báo."
+    },
+    {
+      "q": "Thông báo chứa “You logged into a secure area”. Kết quả kịch bản là gì?",
+      "a": "TEST PASSED."
+    }
+  ]
+}

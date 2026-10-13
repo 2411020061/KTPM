@@ -23,10 +23,6 @@
     "q": "Trong mô hình chữ V, giai đoạn phân tích yêu cầu nghiệp vụ tương ứng với cấp độ kiểm thử nào?",
     "a": "Kiểm thử chấp nhận."
   },
-  "pdf-C2-8": {
-    "q": "Đánh giá sản phẩm có đáp ứng nhu cầu sử dụng thực tế là verification hay validation?",
-    "a": "Validation (xác nhận giá trị sử dụng)."
-  },
   "pdf-C2-15": {
     "q": "Kiểm thử tích hợp hệ thống kiểm tra tương tác nào giữa hệ thống bán hàng và dịch vụ ngoài?",
     "a": "Tương tác với cổng thanh toán VNPay."
@@ -46,10 +42,6 @@
   "pdf-C3-4": {
     "q": "Khi cần tự động kiểm thử ứng dụng di động, nên chọn nhóm công cụ nào trong ba nhóm Web, API và Mobile?",
     "a": "Nhóm công cụ kiểm thử Mobile."
-  },
-  "pdf-C3-6": {
-    "q": "Ngoài vòng đời lỗi, quản lý khiếm khuyết cần phân biệt hai mức đánh giá nào?",
-    "a": "Severity và Priority."
   },
   "pdf-C3-7": {
     "q": "Test tự động lúc Pass lúc Fail vì chờ đợi không ổn định; nên dùng loại chờ nào thay cho Thread.Sleep?",
@@ -126,10 +118,6 @@
   "main-0-1": {
     "q": "Vì sao một lỗi trong đoạn mã không bao giờ được gọi có thể chưa tạo ra thất bại?",
     "a": "Vì khiếm khuyết chưa được kích hoạt khi thực thi."
-  },
-  "main-0-2": {
-    "q": "Hàm miễn phí vận chuyển dùng điều kiện tổng tiền > 500.000 thay vì ≥ 500.000. Đầu vào nào bộc lộ lỗi ở biên?",
-    "a": "Đơn hàng đúng 500.000 đồng."
   },
   "main-0-3": {
     "q": "Nhóm liên tục hiểu sai cùng một quy tắc nghiệp vụ vì tài liệu mơ hồ. Điều nào là nguyên nhân gốc?",
@@ -246,10 +234,6 @@
   "main-13-3": {
     "q": "Bảng quyết định có sáu quy tắc khả thi. Cần tối thiểu bao nhiêu test case để thử mỗi quy tắc một lần?",
     "a": "Sáu test case."
-  },
-  "main-14-0": {
-    "q": "Một nhánh chỉ chạy khi x > 0 và y == 1. Bộ giá trị nào làm điều kiện bảo vệ nhánh đúng?",
-    "a": "Ví dụ x = 1 và y = 1."
   },
   "main-15-2": {
     "q": "Một kịch bản chỉ chạy một lần và viết script tốn nhiều giờ. Cách nào thường tiết kiệm hơn?",

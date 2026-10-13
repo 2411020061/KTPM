@@ -16,6 +16,7 @@ knowledge = json.loads((ROOT / 'knowledge.json').read_text())
 questions = {q['id']: q for name in ('questions.json', 'pdf-questions.json') for q in json.loads((ROOT / name).read_text())}
 applied = json.loads((ROOT / 'applied-questions.json').read_text())
 supplemental = json.loads((ROOT / 'supplemental-questions.json').read_text())
+reviewed_slides = json.loads((ROOT / 'reviewed-slide-questions.json').read_text())
 
 STOP = set('cau nao sau day la cua de va trong cho voi mot nhung cac theo tren slide bai giang kiem thu phan mem duoc co the hay khong khi ve den tu'.split())
 
@@ -199,14 +200,74 @@ for id, k in knowledge.items():
             })
         else:
             related = item.get('related')
-            label = f'Slide liên quan {related}' if related else f"Slide tr. {questions[id]['page']}"
+            qref = questions[id]
+            if related:
+                label = f'Slide liên quan {related}'
+            elif qref.get('matchType') == 'Khớp chủ đề câu hỏi':
+                label = f"Slide liên quan {qref['file'].split('_')[1]} · tr. {qref['page']}"
+            else:
+                label = f"Slide tr. {qref['page']}"
             result[id].append({'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': label, 'badgeClass': 'yes', 'source': label, **{k: item[k] for k in ('relatedFile', 'relatedPage') if k in item}})
         used_questions.add(qkey)
         used_answers.add(akey)
 
+    q = questions[id]
+    related = supplemental.get(id, {})
+    slide_file = q.get('file') or related.get('relatedFile')
+    slide_page = q.get('page') or related.get('relatedPage')
+    if slide_file and slide_page:
+        page_key = f"{slide_file.split('_')[1]}:{slide_page}"
+        if page_key not in reviewed_slides:
+            raise ValueError(f'Unreviewed slide {page_key} for {id}')
+        original = original_text(q)
+        existing_questions = [x['q'] for x in result[id]]
+        existing_answers = {key(x['a']) for x in result[id]}
+        existing_concepts = {x['concept'] for x in result[id] if x.get('concept')}
+        for item in reviewed_slides[page_key]:
+            if id in item.get('skipFor', []):
+                continue
+            qkey, akey = key(item['q']), key(item['a'])
+            if qkey in bank_questions or any(qkey == key(x) for x in existing_questions):
+                continue
+            if akey in existing_answers:
+                continue
+            if item.get('concept') in existing_concepts:
+                continue
+            # Omit another wording of the fact answered by the original item.
+            if len(akey) > 15 and akey in key(original):
+                continue
+            if any(len(words(item['q']) & words(x)) / max(1, len(words(item['q']) | words(x))) > .55 for x in [original, *existing_questions]):
+                continue
+            related_slide = not q.get('page') or q.get('matchType') == 'Khớp chủ đề câu hỏi'
+            label = f"Slide liên quan {slide_file.split('_')[1]} · tr. {slide_page}" if related_slide else f"Slide tr. {slide_page}"
+            result[id].append({**{k: v for k, v in item.items() if k != 'skipFor'}, 'tag': 'Cùng slide', 'badge': label, 'badgeClass': 'yes', 'source': label,
+                               **({'relatedFile': slide_file, 'relatedPage': slide_page} if not q.get('page') else {})})
+            existing_questions.append(item['q'])
+            existing_answers.add(akey)
+            if item.get('concept'):
+                existing_concepts.add(item['concept'])
+
 missing = [id for id, entries in result.items() if not entries]
 if missing:
     raise ValueError(f'{len(missing)} questions lack a follow-up: {missing}')
+for id, entries in result.items():
+    seen = set()
+    for item in entries:
+        if not item.get('q') or not item.get('a'):
+            raise ValueError(f'Missing exam question or single answer in {id}')
+        qkey = key(item['q'])
+        if qkey in seen:
+            raise ValueError(f'Repeated question in {id}: {item["q"]}')
+        seen.add(qkey)
+        if item.get('image') and not (ROOT / item['image']).is_file():
+            raise ValueError(f'Missing diagram in {id}: {item["image"]}')
+        table = item.get('table')
+        if table and (not table.get('headers') or not all(len(row) == len(table['headers']) for row in table.get('rows', []))):
+            raise ValueError(f'Incomplete table in {id}: {item["q"]}')
+if not any(item.get('table') for item in result['pdf-C4-19']):
+    raise ValueError('PDF C4 question 19 needs a new decision table')
+if not {'execution', 'dre', 'requirements', 'density'} <= {x.get('concept') for x in result['main-10-1']}:
+    raise ValueError('Question 42 needs formulas other than Pass Rate')
 
 (ROOT / 'extra-questions.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
 print('Generated', sum(bool(v) for v in result.values()), 'questions for', len(result), 'original questions')
