@@ -31,6 +31,14 @@ def original_text(q):
 def clean(s):
     return re.sub(r'\s+', ' ', re.sub(r'^[▸•\-\s]+', '', s)).strip(' .;:')
 
+def key(s):
+    s = unicodedata.normalize('NFD', s.lower())
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return ' '.join(re.findall(r'[a-z0-9]+', s))
+
+def question_stem(raw):
+    return re.sub(r'^Câu\s*\d+\s*:\s*', '', re.split(r'\n\s*[A-D][.．)]\s*', raw, maxsplit=1)[0], flags=re.I)
+
 def score(para, original):
     p = clean(para)
     if len(p) < 42 or len(p) > 380: return -100
@@ -64,6 +72,13 @@ def question_for(para, title):
     return f'Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “{topic}”?', p
 
 OVERRIDES = {
+    'pdf-C1-9': ('Tư duy người kiểm thử cần chú ý đến loại luồng nào ngoài luồng thành công?', 'Luồng ngoại lệ (negative path) và các tình huống có thể xảy ra ngoài dự kiến.'),
+    'pdf-C1-17': ('Một thất bại có thể xảy ra mà không do khiếm khuyết phần mềm trong trường hợp nào?', 'Khi điều kiện môi trường như phần cứng, nhiễu điện từ hoặc cấu hình sai gây ra hành vi sai.'),
+    'pdf-C3-2': ('Kiểm thử tự động hỗ trợ CI/CD phát hiện lỗi sớm bằng cách nào?', 'Sau mỗi lần đẩy mã nguồn, hệ thống tự động chạy test để phát hiện lỗi trước khi triển khai.'),
+    'pdf-C3-5': ('Vì sao một script kiểm thử tự động có thể tiết kiệm công sức qua nhiều phiên bản?', 'Script viết một lần có thể tái sử dụng để kiểm thử nhiều phiên bản phần mềm.'),
+    'pdf-C2-4': ('Trong mô hình chữ V, việc thiết kế test diễn ra song song với hoạt động nào?', 'Song song với các giai đoạn phát triển ở nhánh trái của mô hình.'),
+    'pdf-C2-9': ('Trong mô hình chữ V, thiết kế test sớm đem lại lợi ích gì so với Waterfall?', 'Giúp phát hiện lỗi sớm hơn vì mỗi giai đoạn phát triển có cấp độ kiểm thử tương ứng.'),
+    'main-24-0': ('Khi xem xét test case bằng kiểm thử tĩnh, có thể phát hiện thiếu những nội dung nào?', 'Thiếu liên kết truy vết tới yêu cầu, thiếu kết quả mong đợi, dữ liệu không đủ hoặc bước thực hiện không rõ.'),
     'main-20-0': ('Vì sao nên ưu tiên bộ định vị Id khi tìm phần tử?', 'Id thường nhanh và ổn định hơn các bộ định vị khác.'),
     'pdf-C1-1': ('Việc xem xét tài liệu yêu cầu và thiết kế từ sớm giúp ngăn ngừa điều gì?', 'Ngăn ngừa khiếm khuyết phát sinh trong mã nguồn.'),
     'pdf-C1-2': ('Sau khi lập trình viên sửa lỗi, hoạt động nào xác nhận lỗi đã được sửa đúng?', 'Kiểm thử xác nhận (confirmation testing): chạy lại kiểm thử để xác nhận lỗi đã được sửa đúng.'),
@@ -149,18 +164,28 @@ OVERRIDES = {
 }
 
 result = {}
+bank_questions = {key(question_stem(q['raw'])) for q in questions.values()}
+used_questions = set()
+used_answers = set()
 for id, k in knowledge.items():
     paras = k.get('paras') or []
     original = original_text(questions[id])
     ranked = sorted(paras, key=lambda p: score(p, original), reverse=True)
+    candidates = []
     if id in OVERRIDES:
-        question, answer = OVERRIDES[id]
-    elif ranked and score(ranked[0], original) > -100:
-        question, answer = question_for(ranked[0], k.get('title') or 'nội dung bài giảng')
-    else:
-        result[id] = []
-        continue
-    result[id] = [{'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': f"Slide tr. {questions[id]['page']}", 'badgeClass': 'yes', 'source': f"Slide tr. {questions[id]['page']}"}]
+        candidates.append(OVERRIDES[id])
+    candidates.extend(question_for(p, k.get('title') or 'nội dung bài giảng') for p in ranked if score(p, original) > -100)
+    result[id] = []
+    for question, answer in candidates:
+        if question.startswith('Ngoài nội dung câu hỏi gốc') or 'cần biết thêm điều gì' in question:
+            continue
+        qkey, akey = key(question), key(answer)
+        if qkey in bank_questions or qkey in used_questions or akey in used_answers:
+            continue
+        result[id] = [{'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': f"Slide tr. {questions[id]['page']}", 'badgeClass': 'yes', 'source': f"Slide tr. {questions[id]['page']}"}]
+        used_questions.add(qkey)
+        used_answers.add(akey)
+        break
 
 (ROOT / 'extra-questions.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
 print('Generated', sum(bool(v) for v in result.values()), 'questions for', len(result), 'original questions')

@@ -71,8 +71,8 @@
   ],
   "pdf-C1-8": [
     {
-      "q": "Ở bước 2 của quy trình, cần làm gì?",
-      "a": "Phân tích & thiết kế kiểm thử (Analysis & Design) — Đọc hiểu yêu cầu, xác định điều kiện",
+      "q": "Slide mô tả “Quy trình này có tính lặp (iterative)” như thế nào?",
+      "a": "khi lỗi được sửa hoặc yêu cầu thay đổi, ta quay lại bước thiết kế / thực thi",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
       "badgeClass": "yes",
@@ -81,8 +81,8 @@
   ],
   "pdf-C1-9": [
     {
-      "q": "Slide mô tả “Thiên kiến xác nhận (confirmation bias)” như thế nào?",
-      "a": "khó tự thấy lỗi của chính mình",
+      "q": "Tư duy người kiểm thử cần chú ý đến loại luồng nào ngoài luồng thành công?",
+      "a": "Luồng ngoại lệ (negative path) và các tình huống có thể xảy ra ngoài dự kiến.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 24",
       "badgeClass": "yes",
@@ -101,8 +101,8 @@
   ],
   "pdf-C1-11": [
     {
-      "q": "Slide mô tả “Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error” như thế nào?",
-      "a": "ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ",
+      "q": "Slide mô tả “DEFECT / BUG (Khiếm khuyết)” như thế nào?",
+      "a": "Lỗi tồn tại trong sản phẩm",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -111,8 +111,8 @@
   ],
   "pdf-C1-12": [
     {
-      "q": "Slide mô tả “Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error” như thế nào?",
-      "a": "ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ",
+      "q": "Slide mô tả “FAILURE (Thất bại)” như thế nào?",
+      "a": "Hành vi sai khi chạy thực tế mà người dùng quan sát được",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -129,16 +129,7 @@
       "source": "Slide tr. 11"
     }
   ],
-  "pdf-C1-14": [
-    {
-      "q": "Slide mô tả “Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left)” như thế nào?",
-      "a": "phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
-    }
-  ],
+  "pdf-C1-14": [],
   "pdf-C1-15": [
     {
       "q": "Slide mô tả “Giáo trình tóm gọn thành 5 tiêu chí: đúng chức năng” như thế nào?",
@@ -149,20 +140,11 @@
       "source": "Slide tr. 12"
     }
   ],
-  "pdf-C1-16": [
-    {
-      "q": "Vì sao không phải mọi khiếm khuyết đều gây thất bại?",
-      "a": "có defect nằm im vì đoạn mã đó không bao giờ được thực thi",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "pdf-C1-16": [],
   "pdf-C1-17": [
     {
-      "q": "Slide mô tả “FAILURE (Thất bại)” như thế nào?",
-      "a": "Hành vi sai khi chạy thực tế mà người dùng quan sát được",
+      "q": "Một thất bại có thể xảy ra mà không do khiếm khuyết phần mềm trong trường hợp nào?",
+      "a": "Khi điều kiện môi trường như phần cứng, nhiễu điện từ hoặc cấu hình sai gây ra hành vi sai.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -222,8 +204,8 @@
   ],
   "pdf-C2-4": [
     {
-      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
-      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
+      "q": "Trong mô hình chữ V, việc thiết kế test diễn ra song song với hoạt động nào?",
+      "a": "Song song với các giai đoạn phát triển ở nhánh trái của mô hình.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -232,8 +214,8 @@
   ],
   "pdf-C2-5": [
     {
-      "q": "Slide mô tả “Phân tích yêu cầu” như thế nào?",
-      "a": "Đặc tả hệ thống Thiết kế kiến trúc",
+      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
+      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -260,20 +242,11 @@
       "source": "Slide tr. 9"
     }
   ],
-  "pdf-C2-8": [
-    {
-      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
-      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "pdf-C2-8": [],
   "pdf-C2-9": [
     {
-      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
-      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
+      "q": "Trong mô hình chữ V, thiết kế test sớm đem lại lợi ích gì so với Waterfall?",
+      "a": "Giúp phát hiện lỗi sớm hơn vì mỗi giai đoạn phát triển có cấp độ kiểm thử tương ứng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -290,26 +263,8 @@
       "source": "Slide tr. 6"
     }
   ],
-  "pdf-C2-11": [
-    {
-      "q": "Điểm cần lưu ý trên slide về cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện là gì?",
-      "a": "không đơn thuần là thứ tự thời gian",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 17",
-      "badgeClass": "yes",
-      "source": "Slide tr. 17"
-    }
-  ],
-  "pdf-C2-12": [
-    {
-      "q": "Điểm cần lưu ý trên slide về cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện là gì?",
-      "a": "không đơn thuần là thứ tự thời gian",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 17",
-      "badgeClass": "yes",
-      "source": "Slide tr. 17"
-    }
-  ],
+  "pdf-C2-11": [],
+  "pdf-C2-12": [],
   "pdf-C2-13": [
     {
       "q": "Kiểm thử hệ thống dựa trên cơ sở nào và thường do ai thực hiện?",
@@ -320,16 +275,7 @@
       "source": "Slide tr. 17"
     }
   ],
-  "pdf-C2-14": [
-    {
-      "q": "Điểm cần lưu ý trên slide về cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện là gì?",
-      "a": "không đơn thuần là thứ tự thời gian",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 17",
-      "badgeClass": "yes",
-      "source": "Slide tr. 17"
-    }
-  ],
+  "pdf-C2-14": [],
   "pdf-C2-15": [
     {
       "q": "Slide mô tả “Big Bang” như thế nào?",
@@ -340,16 +286,7 @@
       "source": "Slide tr. 18"
     }
   ],
-  "pdf-C2-16": [
-    {
-      "q": "Điểm cần lưu ý trên slide về cấp độ kiểm thử phân biệt bởi đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện là gì?",
-      "a": "không đơn thuần là thứ tự thời gian",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 17",
-      "badgeClass": "yes",
-      "source": "Slide tr. 17"
-    }
-  ],
+  "pdf-C2-16": [],
   "pdf-C2-17": [
     {
       "q": "Slide mô tả “Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ” như thế nào?",
@@ -372,8 +309,8 @@
   ],
   "pdf-C2-19": [
     {
-      "q": "Slide mô tả “Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ” như thế nào?",
-      "a": "*When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký",
+      "q": "Slide mô tả “Mô tả hành vi mong đợi bằng ngôn ngữ tự nhiên Given” như thế nào?",
+      "a": "When – Then, để BA, dev, tester cùng hiểu",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -402,8 +339,8 @@
   ],
   "pdf-C3-2": [
     {
-      "q": "Slide mô tả “Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing)” như thế nào?",
-      "a": "điều mà kiểm thử thủ công rất khó thực hiện đầy đủ",
+      "q": "Kiểm thử tự động hỗ trợ CI/CD phát hiện lỗi sớm bằng cách nào?",
+      "a": "Sau mỗi lần đẩy mã nguồn, hệ thống tự động chạy test để phát hiện lỗi trước khi triển khai.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -423,8 +360,8 @@
   "pdf-C3-4": [],
   "pdf-C3-5": [
     {
-      "q": "Slide mô tả “Dễ dàng kiểm thử hàng trăm bộ dữ liệu đầu vào (data-driven testing)” như thế nào?",
-      "a": "điều mà kiểm thử thủ công rất khó thực hiện đầy đủ",
+      "q": "Vì sao một script kiểm thử tự động có thể tiết kiệm công sức qua nhiều phiên bản?",
+      "a": "Script viết một lần có thể tái sử dụng để kiểm thử nhiều phiên bản phần mềm.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -476,8 +413,8 @@
   ],
   "pdf-C3-13": [
     {
-      "q": "Slide mô tả “Hỗ trợ” như thế nào?",
-      "a": "collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+      "q": "Slide mô tả “Hỗ trợ nhiều giao thức” như thế nào?",
+      "a": "HTTP, FTP, JDBC và các giao thức khác",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -506,8 +443,8 @@
   ],
   "pdf-C3-16": [
     {
-      "q": "Slide mô tả “Big Bang” như thế nào?",
-      "a": "ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+      "q": "Slide mô tả “Tích hợp hệ thống (System integration)” như thế nào?",
+      "a": "– Kiểm tra tương tác giữa các hệ thống hoặc với dịch vụ ngoài — – Ví dụ: hệ thống bán hàng ⇄ cổng thanh toán VNPay",
       "tag": "Cùng slide",
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
@@ -526,8 +463,8 @@
   ],
   "pdf-C3-18": [
     {
-      "q": "Slide mô tả “Hỗ trợ” như thế nào?",
-      "a": "collection, biến môi trường, kiểm chứng tự động bằng script, chạy hàng loạt bằng Newman trong CI/CD",
+      "q": "Slide mô tả “Công cụ kiểm thử hiệu năng” như thế nào?",
+      "a": "đánh giá khả năng chịu tải của hệ thống",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -576,8 +513,8 @@
   ],
   "pdf-C4-3": [
     {
-      "q": "Slide mô tả “Ba nhóm bổ sung cho nhau” như thế nào?",
-      "a": "hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*",
+      "q": "Slide mô tả “③ Dựa trên kinh nghiệm (Experience-based)” như thế nào?",
+      "a": "Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
@@ -586,8 +523,8 @@
   ],
   "pdf-C4-4": [
     {
-      "q": "Slide mô tả “Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD” như thế nào?",
-      "a": "giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống",
+      "q": "Slide mô tả “Phương thức thực hiện Có cần vận hành đối tượng kiểm thử không? Kiểm thử động (có chạy)” như thế nào?",
+      "a": "kiểm thử tĩnh (không chạy)",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
@@ -604,16 +541,7 @@
       "source": "Slide tr. 21"
     }
   ],
-  "pdf-C4-6": [
-    {
-      "q": "Slide mô tả “Một kỹ thuật dùng được ở nhiều cấp độ và cho nhiều loại kiểm thử. VD” như thế nào?",
-      "a": "giá trị biên dùng cho một hàm ở mức đơn vị, cũng dùng cho một biểu mẫu ở mức hệ thống",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
-    }
-  ],
+  "pdf-C4-6": [],
   "pdf-C4-7": [
     {
       "q": "Vì sao bảng quyết định đầy đủ 16 quy tắc trong ví dụ được rút gọn còn 5?",
@@ -626,44 +554,17 @@
   ],
   "pdf-C4-8": [
     {
-      "q": "Slide mô tả “③ Dựa trên kinh nghiệm (Experience-based)” như thế nào?",
-      "a": "Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử",
+      "q": "Slide mô tả “Xây dựng test case và đo độ bao phủ dựa trên cấu trúc bên trong” như thế nào?",
+      "a": "câu lệnh, nhánh, luồng điều khiển",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
     }
   ],
-  "pdf-C4-9": [
-    {
-      "q": "Slide mô tả “③ Dựa trên kinh nghiệm (Experience-based)” như thế nào?",
-      "a": "Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
-    }
-  ],
-  "pdf-C4-10": [
-    {
-      "q": "Slide mô tả “Ba nhóm bổ sung cho nhau” như thế nào?",
-      "a": "hộp đen kiểm tra *hành vi phải có*; hộp trắng đánh giá *phần đã được cài đặt*; kinh nghiệm tập trung vào *nơi dễ phát sinh lỗi*",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
-    }
-  ],
-  "pdf-C4-11": [
-    {
-      "q": "Slide mô tả “③ Dựa trên kinh nghiệm (Experience-based)” như thế nào?",
-      "a": "Sử dụng hiểu biết nghiệp vụ, lịch sử khiếm khuyết và phán đoán của người kiểm thử",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
-    }
-  ],
+  "pdf-C4-9": [],
+  "pdf-C4-10": [],
+  "pdf-C4-11": [],
   "pdf-C4-12": [
     {
       "q": "Slide mô tả “Một giá trị đại diện không chứng minh mọi giá trị trong vùng đều đúng” như thế nào?",
@@ -754,26 +655,8 @@
       "source": "Slide tr. 17"
     }
   ],
-  "main-0-0": [
-    {
-      "q": "Vì sao không phải mọi khiếm khuyết đều gây thất bại?",
-      "a": "có defect nằm im vì đoạn mã đó không bao giờ được thực thi",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
-  "main-0-1": [
-    {
-      "q": "Slide mô tả “Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error” như thế nào?",
-      "a": "ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "main-0-0": [],
+  "main-0-1": [],
   "main-0-2": [
     {
       "q": "Slide mô tả “// YÊU CẦU (Requirement)” như thế nào?",
@@ -784,16 +667,7 @@
       "source": "Slide tr. 10"
     }
   ],
-  "main-0-3": [
-    {
-      "q": "Slide mô tả “Root cause (nguyên nhân gốc): lý do sâu xa sinh ra error” như thế nào?",
-      "a": "ví dụ tài liệu yêu cầu mơ hồ, thiếu đào tạo, áp lực tiến độ",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "main-0-3": [],
   "main-1-0": [
     {
       "q": "Slide mô tả “Kiểm thử sớm tiết kiệm chi phí” như thế nào?",
@@ -806,8 +680,8 @@
   ],
   "main-1-1": [
     {
-      "q": "Slide mô tả “Kiểm thử sớm tiết kiệm chi phí” như thế nào?",
-      "a": "Early testing saves time and money (shift-left)",
+      "q": "Slide mô tả “Kiểm thử phụ thuộc ngữ cảnh” như thế nào?",
+      "a": "Testing is context dependent",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -816,8 +690,8 @@
   ],
   "main-1-2": [
     {
-      "q": "Slide mô tả “Kiểm thử sớm tiết kiệm chi phí” như thế nào?",
-      "a": "Early testing saves time and money (shift-left)",
+      "q": "Slide mô tả “Không thể kiểm thử vét cạn” như thế nào?",
+      "a": "Exhaustive testing is impossible",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -826,8 +700,8 @@
   ],
   "main-1-3": [
     {
-      "q": "Slide mô tả “Giáo trình tóm gọn thành 5 tiêu chí: đúng chức năng” như thế nào?",
-      "a": "ổn định – dễ sử dụng – an toàn – dễ bảo trì. ISO 25010 là bản chi tiết hoá quốc tế của các tiêu chí này",
+      "q": "Slide mô tả “Tính tương thích (Compatibility)” như thế nào?",
+      "a": "Cùng tồn tại và trao đổi dữ liệu tốt với hệ thống khác",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -844,16 +718,7 @@
       "source": "Slide tr. 7"
     }
   ],
-  "main-2-1": [
-    {
-      "q": "Slide mô tả “Đây là cơ sở của nguyên tắc \"Kiểm thử sớm\" (Early testing / Shift-left)” như thế nào?",
-      "a": "phát hiện lỗi ở giai đoạn yêu cầu rẻ hơn hàng chục tới hàng trăm lần so với khi phần mềm đã vận hành",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
-    }
-  ],
+  "main-2-1": [],
   "main-2-2": [
     {
       "q": "Slide mô tả “Giá trị chính Phòng ngừa” như thế nào?",
@@ -904,26 +769,8 @@
       "source": "Slide tr. 21"
     }
   ],
-  "main-3-3": [
-    {
-      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
-      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
-  "main-4-0": [
-    {
-      "q": "Slide mô tả “Kiểm thử chấp nhận” như thế nào?",
-      "a": "Kiểm thử hệ thống Kiểm thử tích hợp",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "main-3-3": [],
+  "main-4-0": [],
   "main-4-1": [
     {
       "q": "Kiểm thử hệ thống thường do ai thực hiện?",
@@ -966,8 +813,8 @@
   ],
   "main-5-1": [
     {
-      "q": "Slide mô tả “Big Bang” như thế nào?",
-      "a": "ghép tất cả cùng lúc rồi test. Nhanh nhưng rất khó khoanh vùng lỗi",
+      "q": "Slide mô tả “Tích hợp thành phần (Component integration)” như thế nào?",
+      "a": "– Kiểm tra tương tác giữa các module bên trong một hệ thống — – Thường tự động hoá, chạy trong CI",
       "tag": "Cùng slide",
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
@@ -1046,8 +893,8 @@
   ],
   "main-7-1": [
     {
-      "q": "Slide mô tả “Ví dụ BDD: *Given* sinh viên đã đăng ký 24 tín chỉ” như thế nào?",
-      "a": "*When* đăng ký thêm học phần 3 tín chỉ — *Then* hệ thống báo \"Vượt giới hạn 25 tín chỉ\" và không lưu đăng ký",
+      "q": "Slide mô tả “Dịch chuyển hoạt động kiểm thử về phía sớm của vòng đời” như thế nào?",
+      "a": "review yêu cầu, phân tích tĩnh, unit test, kiểm thử API trước khi có UI",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1064,16 +911,7 @@
       "source": "Slide tr. 6"
     }
   ],
-  "main-7-3": [
-    {
-      "q": "Slide mô tả “Bổ sung thường gặp” như thế nào?",
-      "a": "độ ưu tiên (priority), người thực hiện, phiên bản, liên kết yêu cầu (requirement ID), Bug ID",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 6",
-      "badgeClass": "yes",
-      "source": "Slide tr. 6"
-    }
-  ],
+  "main-7-3": [],
   "main-8-0": [
     {
       "q": "Slide mô tả “Có độ ưu tiên” như thế nào?",
@@ -1204,16 +1042,7 @@
       "source": "Slide tr. 21"
     }
   ],
-  "main-11-1": [
-    {
-      "q": "Slide mô tả “Giá trị chính Phòng ngừa” như thế nào?",
-      "a": "cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
-    }
-  ],
+  "main-11-1": [],
   "main-11-2": [
     {
       "q": "Mục tiêu nổi bật của informal review là gì?",
@@ -1304,20 +1133,11 @@
       "source": "Slide tr. 13"
     }
   ],
-  "main-13-3": [
-    {
-      "q": "Slide mô tả “Ký hiệu” như thế nào?",
-      "a": "*không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 13",
-      "badgeClass": "yes",
-      "source": "Slide tr. 13"
-    }
-  ],
+  "main-13-3": [],
   "main-14-0": [
     {
-      "q": "Slide mô tả “Điều kiện bảo vệ (Guard)” như thế nào?",
-      "a": "điều kiện phải thoả để chuyển tiếp xảy ra",
+      "q": "Slide mô tả “Trạng thái tiếp theo (Next state)” như thế nào?",
+      "a": "trạng thái sau khi chuyển tiếp — BA MỨC BAO PHỦ",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1384,16 +1204,7 @@
       "source": "Slide tr. 7"
     }
   ],
-  "main-15-3": [
-    {
-      "q": "Slide mô tả “Kết luận” như thế nào?",
-      "a": "tự động hoá chỉ có lợi khi bộ test được chạy lại nhiều lần. Với chức năng chỉ kiểm thử 1–2 lần, kiểm thử thủ công rẻ hơn và nhanh hơn",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
-    }
-  ],
+  "main-15-3": [],
   "main-16-0": [
     {
       "q": "Slide mô tả “Kiểm thử API và dữ liệu” như thế nào?",
@@ -1444,16 +1255,7 @@
       "source": "Slide tr. 34"
     }
   ],
-  "main-17-1": [
-    {
-      "q": "Slide mô tả “Nguyên tắc: càng lên cao, test càng chậm” như thế nào?",
-      "a": "đắt – khó bảo trì ⇒ đặt phần lớn công sức tự động hoá ở tầng đáy (unit). Kim tự tháp lộn ngược (nhiều test UI, ít unit test) là dấu hiệu xấu (ice-cream cone anti-pattern)",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 20",
-      "badgeClass": "yes",
-      "source": "Slide tr. 20"
-    }
-  ],
+  "main-17-1": [],
   "main-17-2": [
     {
       "q": "Slide mô tả “Căn cứ” như thế nào?",
@@ -1476,8 +1278,8 @@
   ],
   "main-18-0": [
     {
-      "q": "Khi phân tích kết quả chạy tự động, cần xem những bằng chứng nào?",
-      "a": "Trạng thái Pass/Fail, log và ảnh chụp màn hình.",
+      "q": "Slide mô tả “Chọn sai công cụ ⇒ khó triển khai và làm giảm hiệu quả kiểm thử” như thế nào?",
+      "a": "② THIẾT KẾ KỊCH BẢN KIỂM THỬ (TEST SCRIPT)",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1486,8 +1288,8 @@
   ],
   "main-18-1": [
     {
-      "q": "Ở bước 2 của quy trình, cần làm gì?",
-      "a": "② Thiết kế kịch bản kiểm thử — Mô tả thao tác người dùng dưới dạng chương trình: dữ liệu đầu vào,",
+      "q": "Ở bước 1 của quy trình, cần làm gì?",
+      "a": "① Lựa chọn công cụ kiểm thử — Phù hợp loại ứng dụng (web/API/mobile), ngôn ngữ lập",
       "tag": "Cùng slide",
       "badge": "Slide tr. 16",
       "badgeClass": "yes",
@@ -1647,28 +1449,19 @@
   "main-22-1": [],
   "main-22-2": [
     {
-      "q": "Slide mô tả “Kiểm thử sớm tiết kiệm chi phí” như thế nào?",
-      "a": "Early testing saves time and money (shift-left)",
+      "q": "Slide mô tả “Lỗi thường tập trung theo cụm” như thế nào?",
+      "a": "Defects cluster together",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
     }
   ],
-  "main-22-3": [
-    {
-      "q": "Vì sao không phải mọi khiếm khuyết đều gây thất bại?",
-      "a": "có defect nằm im vì đoạn mã đó không bao giờ được thực thi",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 9",
-      "badgeClass": "yes",
-      "source": "Slide tr. 9"
-    }
-  ],
+  "main-22-3": [],
   "main-23-0": [
     {
-      "q": "Slide mô tả “Kiểm thử tương thích (Compatibility)” như thế nào?",
-      "a": "Nhiều trình duyệt, hệ điều hành, kích thước màn hình, phiên bản thiết bị",
+      "q": "Slide mô tả “Kiểm thử bảo mật (Security)” như thế nào?",
+      "a": "Phân quyền, SQL injection, XSS, mã hoá dữ liệu, quản lý phiên đăng nhập",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -1677,8 +1470,8 @@
   ],
   "main-23-1": [
     {
-      "q": "Ở bước 1 của quy trình, cần làm gì?",
-      "a": "Commit mã nguồn — Lập trình viên đẩy mã lên kho chung (Git) nhiều lần",
+      "q": "Ở bước 5 của quy trình, cần làm gì?",
+      "a": "Triển khai & giám sát — Phát hành tự động; giám sát log, cảnh báo lỗi trên",
       "tag": "Cùng slide",
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
@@ -1687,8 +1480,8 @@
   ],
   "main-23-2": [
     {
-      "q": "Slide mô tả “Dựa trên kinh nghiệm (Experience-based)” như thế nào?",
-      "a": "Dựa vào hiểu biết và trực giác của tester: đoán lỗi, kiểm thử thăm dò",
+      "q": "Slide mô tả “Dựa trên mô hình (Model-based)” như thế nào?",
+      "a": "Dùng sơ đồ trạng thái, luồng nghiệp vụ, mô hình dữ liệu để sinh test",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1727,8 +1520,8 @@
   ],
   "main-24-2": [
     {
-      "q": "Slide mô tả “Khắc phục” như thế nào?",
-      "a": "dùng explicit wait thay cho `Thread.Sleep`; tránh phụ thuộc thời gian cố định",
+      "q": "Slide mô tả “Rủi ro: Test không độc lập” như thế nào?",
+      "a": "Test A phải chạy trước test B ⇒ không chạy song song được",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -1759,8 +1552,8 @@
   ],
   "main-25-3": [
     {
-      "q": "Slide mô tả “Smoke test” như thế nào?",
-      "a": "bộ test rất ngắn chạy ngay sau khi build để xác nhận hệ thống \"đủ sống\" để kiểm thử sâu. Sanity test: kiểm tra nhanh một vùng chức năng vừa được sửa",
+      "q": "Slide mô tả “Cách làm” như thế nào?",
+      "a": "chạy lại chính test case đã phát hiện lỗi, với cùng dữ liệu và cùng môi trường",
       "tag": "Cùng slide",
       "badge": "Slide tr. 24",
       "badgeClass": "yes",
@@ -1807,16 +1600,7 @@
       "source": "Slide tr. 11"
     }
   ],
-  "main-27-0": [
-    {
-      "q": "Slide mô tả “Giá trị chính Phòng ngừa” như thế nào?",
-      "a": "cải thiện sản phẩm trước khi nó thành đầu vào bước sau Phát hiện – xác nhận hành vi thực tế đúng như mong đợi",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
-    }
-  ],
+  "main-27-0": [],
   "main-27-1": [
     {
       "q": "Slide mô tả “Hàm chưa kiểm tra học phần tiên quyết” như thế nào?",
@@ -1868,16 +1652,7 @@
     }
   ],
   "main-28-2": [],
-  "main-28-3": [
-    {
-      "q": "Slide mô tả “Ký hiệu” như thế nào?",
-      "a": "*không* mặc định nghĩa là tổ hợp không khả thi. Nếu tổ hợp không thể xảy ra, dùng N/A hoặc chú thích riêng",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 13",
-      "badgeClass": "yes",
-      "source": "Slide tr. 13"
-    }
-  ],
+  "main-28-3": [],
   "main-29-0": [
     {
       "q": "Trong ví dụ bảng quyết định, hệ thống kiểm tra các điều kiện theo thứ tự nào?",
