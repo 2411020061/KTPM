@@ -96,6 +96,18 @@ diagram('ep-age-18-60.svg', 'Phân vùng tuổi hợp lệ 18–60',
          (662, 61, 'vùng trên', 'invalid')],
         'Ba số đại diện: 17 (không hợp lệ), 35 (hợp lệ), 61 (không hợp lệ).')
 
+diagram('bva-age-1-99.svg', 'Giá trị biên: tuổi hợp lệ 1–99',
+        [('< 1 tuổi', 'không hợp lệ', 'invalid'), ('1–99 tuổi', 'hợp lệ', 'valid'), ('> 99 tuổi', 'không hợp lệ', 'invalid')],
+        [(238, 0, 'ngay dưới 1', 'invalid'), (308, 1, 'biên dưới', 'valid'),
+         (592, 99, 'biên trên', 'valid'), (662, 100, 'ngay trên 99', 'invalid')],
+        'BVA 2 giá trị: 0–1 quanh biên dưới, 99–100 quanh biên trên.')
+
+diagram('ep-integer-1-15.svg', 'Ba lớp tương đương cho số nguyên 1–15',
+        [('< 1', 'không hợp lệ', 'invalid'), ('1–15', 'hợp lệ', 'valid'), ('> 15', 'không hợp lệ', 'invalid')],
+        [(238, 0, 'lớp dưới', 'invalid'), (450, 8, 'lớp hợp lệ', 'valid'),
+         (662, 16, 'lớp trên', 'invalid')],
+        'Các lớp không chồng lấn; mỗi lớp chọn một số đại diện.')
+
 diagram('ep-score-50.svg', 'Ba mức kết quả của bài thi 50 câu',
         [('0–29', 'chưa đạt', 'invalid'), ('30–44', 'đạt', 'valid'), ('45–50', 'xuất sắc', 'added')],
         [(220, 29, 'chưa đạt', 'invalid'), (308, 30, 'bắt đầu đạt', 'valid'),

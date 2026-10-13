@@ -9,6 +9,14 @@
       "source": "Slide tr. 6"
     },
     {
+      "q": "Lý do chính để kiểm thử phần mềm trước khi phát hành là gì?",
+      "a": "Cung cấp thông tin để đưa ra quyết định dựa trên rủi ro về việc phát hành",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 341",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 341"
+    },
+    {
       "q": "Khách hàng cần quyết định có phát hành hệ thống hay không. Mục tiêu kiểm thử nào cung cấp căn cứ cho quyết định?",
       "a": "Cung cấp thông tin về chất lượng và rủi ro còn lại.",
       "tag": "Cùng slide",
@@ -47,6 +55,22 @@
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
       "source": "Slide tr. 6"
+    },
+    {
+      "q": "Một yêu cầu đã được đặc tả nhưng chưa được lập trình. Mục tiêu kiểm thử nào kiểm tra điều này?",
+      "a": "Xác minh việc cài đặt đầy đủ yêu cầu (verification).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Khi test tìm ra một hành vi sai và truy tới defect, mục tiêu kiểm thử nào đã được thực hiện?",
+      "a": "Tìm khiếm khuyết và thất bại càng sớm càng tốt.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
     }
   ],
   "pdf-C1-2": [
@@ -59,16 +83,16 @@
       "source": "Slide tr. 7"
     },
     {
-      "q": "Tester tái hiện lỗi; developer lần theo mã để tìm nguyên nhân và sửa. Hoạt động của developer gọi là gì?",
-      "a": "Gỡ lỗi (debugging).",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 7",
-      "badgeClass": "yes",
-      "source": "Slide tr. 7"
+      "q": "Ai THƯỜNG thực hiện các hoạt động gỡ lỗi?",
+      "a": "Các nhà phát triển",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 7",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 7"
     },
     {
-      "q": "Bản sửa đã được bàn giao. Ai thường chạy lại ca kiểm thử để xác nhận lỗi đã hết?",
-      "a": "Người kiểm thử chạy kiểm thử xác nhận.",
+      "q": "Tester tái hiện lỗi; developer lần theo mã để tìm nguyên nhân và sửa. Hoạt động của developer gọi là gì?",
+      "a": "Gỡ lỗi (debugging).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
@@ -185,6 +209,14 @@
       "source": "Slide tr. 15"
     },
     {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
+    },
+    {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
       "a": "Không; kiểm thử không chứng minh sự vắng mặt của lỗi.",
       "tag": "Cùng slide",
@@ -225,6 +257,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
     },
     {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
@@ -379,14 +419,6 @@
       "source": "Slide tr. 13"
     },
     {
-      "q": "Hệ thống xạ trị điều khiển sai liều có thể gây hậu quả nghiêm trọng nào?",
-      "a": "Nguy hiểm tính mạng người bệnh.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 13",
-      "badgeClass": "yes",
-      "source": "Slide tr. 13"
-    },
-    {
       "q": "Phát hiện lỗi từ giai đoạn yêu cầu giúp giảm loại chi phí nào trong các đợt sau?",
       "a": "Chi phí khắc phục khiếm khuyết.",
       "tag": "Cùng slide",
@@ -505,6 +537,14 @@
       "source": "Slide tr. 11"
     },
     {
+      "q": "Lỗi càng được phát hiện muộn trong chu kỳ phát triển sản phẩm thì chi phí sửa chữa càng cao. Tại sao?",
+      "a": "Lỗi đã được tích hợp vào nhiều tài liệu, mã nguồn, bài kiểm tra, v.v. hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 335",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 335"
+    },
+    {
       "q": "Theo mô hình chi phí trên slide, sửa lỗi lúc lập trình tốn gấp khoảng bao nhiêu lần lúc yêu cầu?",
       "a": "Khoảng 10 lần.",
       "tag": "Cùng slide",
@@ -529,6 +569,14 @@
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
       "source": "Slide tr. 11"
+    },
+    {
+      "q": "Lỗi càng được phát hiện muộn trong chu kỳ phát triển sản phẩm thì chi phí sửa chữa càng cao. Tại sao?",
+      "a": "Lỗi đã được tích hợp vào nhiều tài liệu, mã nguồn, bài kiểm tra, v.v. hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 335",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 335"
     },
     {
       "q": "Một lỗi được phát hiện khi hệ thống đã vận hành. Theo biểu đồ, chi phí sửa gấp bao nhiêu lần phát hiện ở kiểm thử?",
@@ -583,6 +631,14 @@
     {
       "q": "Một phần mềm chỉ chạy trên hệ điều hành cũ, rất khó chuyển sang môi trường khác. Đặc tính nào yếu?",
       "a": "Tính khả chuyển (portability).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Chức năng tính lương thiếu một quy tắc đã được yêu cầu. Đặc tính chất lượng nào không đạt?",
+      "a": "Tính phù hợp chức năng (functional suitability).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -725,6 +781,14 @@
       "source": "Slide tr. 6"
     },
     {
+      "q": "Lý do chính để kiểm thử phần mềm trước khi phát hành là gì?",
+      "a": "Cung cấp thông tin để đưa ra quyết định dựa trên rủi ro về việc phát hành",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 341",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 341"
+    },
+    {
       "q": "Khách hàng cần quyết định có phát hành hệ thống hay không. Mục tiêu kiểm thử nào cung cấp căn cứ cho quyết định?",
       "a": "Cung cấp thông tin về chất lượng và rủi ro còn lại.",
       "tag": "Cùng slide",
@@ -763,6 +827,22 @@
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
       "source": "Slide tr. 6"
+    },
+    {
+      "q": "Một yêu cầu đã được đặc tả nhưng chưa được lập trình. Mục tiêu kiểm thử nào kiểm tra điều này?",
+      "a": "Xác minh việc cài đặt đầy đủ yêu cầu (verification).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Khi test tìm ra một hành vi sai và truy tới defect, mục tiêu kiểm thử nào đã được thực hiện?",
+      "a": "Tìm khiếm khuyết và thất bại càng sớm càng tốt.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
     }
   ],
   "pdf-C1-20": [
@@ -773,6 +853,14 @@
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
       "source": "Slide tr. 6"
+    },
+    {
+      "q": "Nếu không xác định kết quả mong muốn thì",
+      "a": "Có thể khó xác định liệu bài kiểm tra đã đạt hay không",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 209",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 209"
     },
     {
       "q": "Trước khi chạy test đăng nhập, tài khoản phải ở trạng thái Active. Thông tin đó nằm ở trường nào?",
@@ -821,6 +909,22 @@
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
       "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trong test case, trường nào ghi chức năng cụ thể đang được kiểm tra, ví dụ Đăng nhập?",
+      "a": "Chức năng hoặc module.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trường nào nêu test case nhằm xác minh điều gì trước khi viết các bước?",
+      "a": "Mục tiêu kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
     }
   ],
   "pdf-C2-1": [
@@ -831,6 +935,14 @@
       "badge": "Slide tr. 5",
       "badgeClass": "yes",
       "source": "Slide tr. 5"
+    },
+    {
+      "q": "Các hoạt động kiểm chứng trong giai đoạn thiết kế là gì?",
+      "a": "Xem xét và kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 415",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 415"
     },
     {
       "q": "Trong giai đoạn phân tích yêu cầu, tài liệu nào có thể được rà soát để tìm mơ hồ và thiếu sót?",
@@ -885,6 +997,14 @@
       "source": "Slide tr. 9"
     },
     {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
+    },
+    {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
       "a": "Kiểm thử hệ thống.",
       "tag": "Cùng slide",
@@ -909,6 +1029,14 @@
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
       "source": "Slide tr. 9"
+    },
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
     },
     {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
@@ -937,6 +1065,14 @@
       "source": "Slide tr. 9"
     },
     {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
+    },
+    {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
       "a": "Kiểm thử hệ thống.",
       "tag": "Cùng slide",
@@ -953,6 +1089,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -997,6 +1141,14 @@
       "source": "Slide liên quan C2 · tr. 9"
     },
     {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
+    },
+    {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
       "a": "Kiểm thử hệ thống.",
       "tag": "Cùng slide",
@@ -1014,6 +1166,14 @@
     }
   ],
   "pdf-C2-8": [
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
+    },
     {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
       "a": "Kiểm thử hệ thống.",
@@ -1039,6 +1199,14 @@
       "badge": "Slide liên quan C2 · tr. 9",
       "badgeClass": "yes",
       "source": "Slide liên quan C2 · tr. 9"
+    },
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
     },
     {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
@@ -1093,6 +1261,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
+    },
+    {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
       "a": "Kiểm thử đơn vị.",
       "tag": "Cùng slide",
@@ -1133,6 +1309,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -1177,6 +1361,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
+    },
+    {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
       "a": "Kiểm thử đơn vị.",
       "tag": "Cùng slide",
@@ -1217,6 +1409,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -1261,6 +1461,30 @@
       "source": "Slide tr. 18"
     },
     {
+      "q": "Phương pháp nào sau đây không phải là một loại kiểm thử tăng dần?",
+      "a": "Vụ nổ lớn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 279",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 279"
+    },
+    {
+      "q": "Tại sao phương pháp tích hợp gia tăng được ưa chuộng hơn phương pháp tích hợp \"đột phá\"?",
+      "a": "Vì tích hợp gia tăng có khả năng sàng lọc và cô lập lỗi sớm tốt hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 394",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 394"
+    },
+    {
+      "q": "Điều nào sau đây thường được coi là lỗi giao diện của các thành phần?",
+      "a": "Đối với hai thành phần trao đổi dữ liệu, một thành phần sử dụng đơn vị đo lường hệ mét, thành phần còn lại sử dụng đơn vị đo lường hệ Anh",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 380",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 380"
+    },
+    {
       "q": "Tích hợp từ module cấp cao xuống khi module dưới chưa xong cần thành phần giả nào?",
       "a": "Stub.",
       "tag": "Cùng slide",
@@ -1283,6 +1507,14 @@
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
       "source": "Slide tr. 18"
+    },
+    {
+      "q": "Hai module trong cùng một hệ thống truyền sai định dạng dữ liệu cho nhau. Đây là loại kiểm thử tích hợp nào?",
+      "a": "Tích hợp thành phần (component integration).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
     }
   ],
   "pdf-C2-16": [
@@ -1293,6 +1525,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -1487,6 +1727,22 @@
       "badge": "Slide liên quan C3 · tr. 21",
       "badgeClass": "yes",
       "source": "Slide liên quan C3 · tr. 21"
+    },
+    {
+      "q": "Tài liệu ghi mục tiêu, phạm vi, lịch trình và exit criteria đầu dự án gọi là gì?",
+      "a": "Test Plan.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C3 · tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C3 · tr. 21"
+    },
+    {
+      "q": "Trước khi thực thi, tài liệu nào mô tả điều kiện và test case chi tiết cùng ma trận truy vết?",
+      "a": "Test Design/Test Case.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C3 · tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C3 · tr. 21"
     }
   ],
   "pdf-C3-2": [
@@ -1497,6 +1753,14 @@
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
       "source": "Slide tr. 6"
+    },
+    {
+      "q": "Phương án nào sau đây có tiềm năng tiết kiệm chi phí lớn nhất khi sử dụng CAST?",
+      "a": "Test execution",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 326",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 326"
     },
     {
       "q": "Bộ hồi quy chạy sau mỗi commit giúp phát hiện lỗi ở giai đoạn nào?",
@@ -1525,6 +1789,14 @@
     {
       "q": "Vì sao chi phí tự động hoá có thể giảm về dài hạn dù đầu tư ban đầu cao?",
       "a": "Chi phí trên mỗi lần chạy giảm khi tái sử dụng script nhiều lần.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Script lặp đúng các bước mà không mệt mỏi hay bỏ sót. Đây là lợi ích nào của tự động hoá?",
+      "a": "Độ chính xác và tính nhất quán cao.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -1563,6 +1835,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Yêu cầu nghiệp vụ đổi liên tục làm kịch bản phải sửa theo. Rủi ro của tự động hoá là gì?",
+      "a": "Chi phí bảo trì script cao và khó kiểm soát.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "pdf-C3-4": [
@@ -1589,14 +1869,6 @@
       "badge": "Slide liên quan C5 · tr. 18",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 18"
-    },
-    {
-      "q": "Cần chạy test cho ứng dụng Android và iOS. Nhóm công cụ nào phù hợp?",
-      "a": "Công cụ kiểm thử Mobile.",
-      "tag": "Cùng slide",
-      "badge": "Slide liên quan C5 · tr. 18",
-      "badgeClass": "yes",
-      "source": "Slide liên quan C5 · tr. 18"
     }
   ],
   "pdf-C3-5": [
@@ -1607,6 +1879,14 @@
       "badge": "Slide liên quan C5 · tr. 6",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 6"
+    },
+    {
+      "q": "Phương án nào sau đây có tiềm năng tiết kiệm chi phí lớn nhất khi sử dụng CAST?",
+      "a": "Test execution",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 326",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 326"
     },
     {
       "q": "Bộ hồi quy chạy sau mỗi commit giúp phát hiện lỗi ở giai đoạn nào?",
@@ -1635,6 +1915,14 @@
     {
       "q": "Vì sao chi phí tự động hoá có thể giảm về dài hạn dù đầu tư ban đầu cao?",
       "a": "Chi phí trên mỗi lần chạy giảm khi tái sử dụng script nhiều lần.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 6"
+    },
+    {
+      "q": "Script lặp đúng các bước mà không mệt mỏi hay bỏ sót. Đây là lợi ích nào của tự động hoá?",
+      "a": "Độ chính xác và tính nhất quán cao.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 6",
       "badgeClass": "yes",
@@ -1669,6 +1957,30 @@
     {
       "q": "Một báo cáo không tái hiện được với thông tin hiện có có thể mang trạng thái gì?",
       "a": "Cannot Reproduce.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C3 · tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C3 · tr. 17"
+    },
+    {
+      "q": "Báo cáo bị xác nhận không phải lỗi sản phẩm. Trạng thái phù hợp là gì?",
+      "a": "Rejected.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C3 · tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C3 · tr. 17"
+    },
+    {
+      "q": "Lỗi có thật nhưng được chuyển sang phiên bản sau. Trạng thái phù hợp là gì?",
+      "a": "Deferred.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C3 · tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C3 · tr. 17"
+    },
+    {
+      "q": "Tester chạy Retest thành công sau khi sửa. Trạng thái cuối là gì?",
+      "a": "Closed.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C3 · tr. 17",
       "badgeClass": "yes",
@@ -1711,6 +2023,14 @@
     {
       "q": "Bộ test trên CI liên tục đỏ nhưng không ai xem. Nhóm cần quy trình gì?",
       "a": "Chặn merge khi test Fail và phân công người xử lý kết quả.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 23"
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 23",
       "badgeClass": "yes",
@@ -1787,6 +2107,14 @@
       "source": "Slide liên quan C5 · tr. 6"
     },
     {
+      "q": "Phương án nào sau đây có tiềm năng tiết kiệm chi phí lớn nhất khi sử dụng CAST?",
+      "a": "Test execution",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 326",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 326"
+    },
+    {
       "q": "Bộ hồi quy chạy sau mỗi commit giúp phát hiện lỗi ở giai đoạn nào?",
       "a": "Sớm ngay trong CI/CD, trước khi triển khai.",
       "tag": "Cùng slide",
@@ -1813,6 +2141,14 @@
     {
       "q": "Vì sao chi phí tự động hoá có thể giảm về dài hạn dù đầu tư ban đầu cao?",
       "a": "Chi phí trên mỗi lần chạy giảm khi tái sử dụng script nhiều lần.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 6"
+    },
+    {
+      "q": "Script lặp đúng các bước mà không mệt mỏi hay bỏ sót. Đây là lợi ích nào của tự động hoá?",
+      "a": "Độ chính xác và tính nhất quán cao.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 6",
       "badgeClass": "yes",
@@ -1851,6 +2187,14 @@
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
       "source": "Slide tr. 20"
+    },
+    {
+      "q": "Postman lưu các request cùng biến môi trường để chạy lại theo nhóm. Nhóm request đó gọi là gì?",
+      "a": "Collection.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
     }
   ],
   "pdf-C3-12": [
@@ -1885,6 +2229,14 @@
       "badge": "Slide liên quan C5 · tr. 20",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 20"
+    },
+    {
+      "q": "Postman lưu các request cùng biến môi trường để chạy lại theo nhóm. Nhóm request đó gọi là gì?",
+      "a": "Collection.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 20"
     }
   ],
   "pdf-C3-13": [
@@ -1907,6 +2259,14 @@
     {
       "q": "Cần mô phỏng nhiều người dùng đồng thời qua HTTP để đo tải. Dùng công cụ nào?",
       "a": "JMeter.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
+    },
+    {
+      "q": "Postman lưu các request cùng biến môi trường để chạy lại theo nhóm. Nhóm request đó gọi là gì?",
+      "a": "Collection.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -1945,6 +2305,14 @@
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
       "source": "Slide tr. 20"
+    },
+    {
+      "q": "Postman lưu các request cùng biến môi trường để chạy lại theo nhóm. Nhóm request đó gọi là gì?",
+      "a": "Collection.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide tr. 20"
     }
   ],
   "pdf-C3-15": [
@@ -1971,6 +2339,14 @@
       "badge": "Slide liên quan C5 · tr. 21",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 21"
+    },
+    {
+      "q": "Appium có thể tự động hoá những kiểu ứng dụng di động nào?",
+      "a": "Native app, hybrid app và mobile web.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 21"
     }
   ],
   "pdf-C3-16": [
@@ -1983,6 +2359,30 @@
       "source": "Slide tr. 18"
     },
     {
+      "q": "Phương pháp nào sau đây không phải là một loại kiểm thử tăng dần?",
+      "a": "Vụ nổ lớn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 279",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 279"
+    },
+    {
+      "q": "Tại sao phương pháp tích hợp gia tăng được ưa chuộng hơn phương pháp tích hợp \"đột phá\"?",
+      "a": "Vì tích hợp gia tăng có khả năng sàng lọc và cô lập lỗi sớm tốt hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 394",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 394"
+    },
+    {
+      "q": "Điều nào sau đây thường được coi là lỗi giao diện của các thành phần?",
+      "a": "Đối với hai thành phần trao đổi dữ liệu, một thành phần sử dụng đơn vị đo lường hệ mét, thành phần còn lại sử dụng đơn vị đo lường hệ Anh",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 380",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 380"
+    },
+    {
       "q": "Tích hợp từ module cấp cao xuống khi module dưới chưa xong cần thành phần giả nào?",
       "a": "Stub.",
       "tag": "Cùng slide",
@@ -1993,6 +2393,14 @@
     {
       "q": "Kiểm tra tương tác giữa ứng dụng bán hàng và cổng thanh toán thuộc loại tích hợp nào?",
       "a": "Tích hợp hệ thống.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Hai module trong cùng một hệ thống truyền sai định dạng dữ liệu cho nhau. Đây là loại kiểm thử tích hợp nào?",
+      "a": "Tích hợp thành phần (component integration).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
@@ -2031,6 +2439,14 @@
       "badge": "Slide liên quan C5 · tr. 19",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 19"
+    },
+    {
+      "q": "Với Playwright, tính năng nào cho phép rút ngắn thời gian khi chạy nhiều test case?",
+      "a": "Chạy song song nhiều test case.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 19",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 19"
     }
   ],
   "pdf-C3-18": [
@@ -2057,6 +2473,14 @@
       "badge": "Slide liên quan C5 · tr. 20",
       "badgeClass": "yes",
       "source": "Slide liên quan C5 · tr. 20"
+    },
+    {
+      "q": "Postman lưu các request cùng biến môi trường để chạy lại theo nhóm. Nhóm request đó gọi là gì?",
+      "a": "Collection.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 20",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 20"
     }
   ],
   "pdf-C3-19": [
@@ -2079,6 +2503,14 @@
     {
       "q": "Muốn xây kịch bản kéo–thả cho Web, API và Mobile trên cùng nền tảng. Công cụ nào?",
       "a": "Katalon Studio.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 21"
+    },
+    {
+      "q": "Appium có thể tự động hoá những kiểu ứng dụng di động nào?",
+      "a": "Native app, hybrid app và mobile web.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 21",
       "badgeClass": "yes",
@@ -2185,6 +2617,14 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Rà soát tài liệu không chạy chương trình, còn chạy mã với dữ liệu đầu vào. Đây là hai phương thức thực hiện nào?",
+      "a": "Kiểm thử tĩnh và kiểm thử động.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
     }
   ],
   "pdf-C4-3": [
@@ -2261,6 +2701,14 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Rà soát tài liệu không chạy chương trình, còn chạy mã với dữ liệu đầu vào. Đây là hai phương thức thực hiện nào?",
+      "a": "Kiểm thử tĩnh và kiểm thử động.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
     }
   ],
   "pdf-C4-5": [
@@ -2271,6 +2719,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -2379,6 +2843,14 @@
     {
       "q": "Dùng Selenium để chạy kịch bản là đang nhắc đến loại khái niệm nào?",
       "a": "Công cụ kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
+    },
+    {
+      "q": "Rà soát tài liệu không chạy chương trình, còn chạy mã với dữ liệu đầu vào. Đây là hai phương thức thực hiện nào?",
+      "a": "Kiểm thử tĩnh và kiểm thử động.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
@@ -2495,6 +2967,67 @@
     {
       "q": "Bốn điều kiện nhị phân có 16 tổ hợp; bảng được rút còn bao nhiêu quy tắc?",
       "a": "5 quy tắc.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
+    },
+    {
+      "q": "Tài khoản hoạt động và đã đạt tiên quyết nhưng lớp hết chỗ. Theo thứ tự kiểm tra C1→C4, hệ thống báo gì?",
+      "a": "Báo lớp đã đủ chỗ.",
+      "table": {
+        "headers": [
+          "Điều kiện / kết quả",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "rows": [
+          [
+            "Tài khoản hoạt động",
+            "Đúng",
+            "Sai",
+            "Đúng",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Đạt tiên quyết",
+            "Đúng",
+            "–",
+            "Sai",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Lớp còn chỗ",
+            "Đúng",
+            "–",
+            "–",
+            "Sai",
+            "Đúng"
+          ],
+          [
+            "Không vượt 25 tín chỉ",
+            "Đúng",
+            "–",
+            "–",
+            "–",
+            "Sai"
+          ],
+          [
+            "Kết quả",
+            "Cho đăng ký",
+            "Báo tài khoản không hoạt động",
+            "Báo thiếu tiên quyết",
+            "Báo lớp đã đủ chỗ",
+            "Báo vượt tín chỉ"
+          ]
+        ]
+      },
+      "explain": "Xét điều kiện từ trên xuống; chọn cột quy tắc khớp đầu vào rồi đọc kết quả trong chính cột đó.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -2710,6 +3243,14 @@
       "source": "Kiến thức slide tr. 11"
     },
     {
+      "q": "Tại sao phân tích giá trị biên lại cung cấp các trường hợp thử nghiệm tốt?",
+      "a": "Vì lỗi thường xuyên xảy ra trong quá trình lập trình các trường hợp khác nhau gần \"các cạnh\" của phạm vi giá trị",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 367",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 367"
+    },
+    {
       "q": "Ô số nguyên hợp lệ 10–30. BVA ba giá trị quanh hai biên cho bộ nào?",
       "a": "9, 10, 11, 29, 30, 31.",
       "image": "media/extra/bva-10-30.svg",
@@ -2731,6 +3272,17 @@
     {
       "q": "Danh sách màu đỏ/xanh/vàng có áp dụng BVA được không?",
       "a": "Không; đây là dữ liệu rời rạc, không có quan hệ thứ tự để chọn giá trị lân cận.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Với biên 30, BVA hai giá trị lấy hai số nào nếu 30 là giá trị đầu tiên hợp lệ?",
+      "a": "29 và 30; giá trị ngay dưới biên và chính biên.",
+      "image": "media/extra/bva-10-30.svg",
+      "imageAlt": "Trục số quanh hai biên của miền 10 đến 30, trong đó 29 sát bên 30",
+      "explain": "Biên trên 30: giá trị lân cận hợp lệ là 29, tại biên là 30. Với BVA hai giá trị, chọn cặp này quanh biên trên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -2812,6 +3364,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "pdf-C4-16": [
@@ -2845,6 +3405,14 @@
     {
       "q": "Để bao phủ mọi chuyển tiếp hợp lệ, phải tạo ca kiểm thử theo đối tượng nào?",
       "a": "Mỗi cạnh chuyển tiếp hợp lệ của mô hình.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -2886,6 +3454,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "pdf-C4-18": [
@@ -2919,6 +3495,14 @@
     {
       "q": "Để bao phủ mọi chuyển tiếp hợp lệ, phải tạo ca kiểm thử theo đối tượng nào?",
       "a": "Mỗi cạnh chuyển tiếp hợp lệ của mô hình.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -3012,6 +3596,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Một hệ thống quản lý lỗi phải theo dõi trạng thái của mọi lỗi đã được ghi nhận và thực thi các quy tắc về việc thay đổi các trạng thái này. Nếu nhiệm vụ của bạn là kiểm tra việc theo dõi trạng thái, phương pháp nào sẽ là tốt nhất?",
+      "a": "Kiểm tra chuyển đổi trạng thái",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 369",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 369"
+    },
+    {
       "q": "Ở trạng thái Chưa đăng ký, hệ thống nhận lệnh “Xác nhận thành công” dù chưa có yêu cầu chờ. Kết quả đúng là gì?",
       "a": "Từ chối thao tác và giữ nguyên trạng thái Chưa đăng ký.",
       "table": {
@@ -3062,6 +3654,31 @@
         ]
       },
       "explain": "Đọc theo cùng một hàng: trạng thái hiện tại và sự kiện quyết định trạng thái tiếp theo; sự kiện sai phải bị từ chối và giữ trạng thái.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Ở trạng thái Chờ xác nhận, mọi điều kiện đều đạt. Hệ thống phải thực hiện hành động nào và sang trạng thái nào?",
+      "a": "Lưu đăng ký, cập nhật sĩ số; chuyển sang Đăng ký thành công.",
+      "table": {
+        "headers": [
+          "Trạng thái",
+          "Sự kiện / điều kiện",
+          "Hành động",
+          "Trạng thái tiếp"
+        ],
+        "rows": [
+          [
+            "Chờ xác nhận",
+            "Kiểm tra điều kiện / tất cả đạt",
+            "Lưu đăng ký, cập nhật sĩ số",
+            "Đăng ký thành công"
+          ]
+        ]
+      },
+      "explain": "Đọc cùng một hàng chuyển tiếp: từ Chờ xác nhận, điều kiện đạt thì thực hiện hành động rồi sang Đăng ký thành công.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -3222,6 +3839,14 @@
       "source": "Slide tr. 15"
     },
     {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
+    },
+    {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
       "a": "Không; kiểm thử không chứng minh sự vắng mặt của lỗi.",
       "tag": "Cùng slide",
@@ -3262,6 +3887,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
     },
     {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
@@ -3306,6 +3939,14 @@
       "source": "Slide tr. 15"
     },
     {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
+    },
+    {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
       "a": "Không; kiểm thử không chứng minh sự vắng mặt của lỗi.",
       "tag": "Cùng slide",
@@ -3348,6 +3989,14 @@
       "source": "Slide tr. 12"
     },
     {
+      "q": "Một hệ thống đáng tin cậy sẽ là hệ thống",
+      "a": "Ít có khả năng gây ra sự cố",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 214",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 214"
+    },
+    {
       "q": "Một ứng dụng khó học và khó dùng dù tính toán đúng. Đặc tính ISO/IEC 25010 nào yếu?",
       "a": "Khả năng sử dụng (usability).",
       "tag": "Cùng slide",
@@ -3386,6 +4035,14 @@
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
       "source": "Slide tr. 12"
+    },
+    {
+      "q": "Chức năng tính lương thiếu một quy tắc đã được yêu cầu. Đặc tính chất lượng nào không đạt?",
+      "a": "Tính phù hợp chức năng (functional suitability).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
     }
   ],
   "main-2-0": [
@@ -3396,6 +4053,14 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Ai THƯỜNG thực hiện các hoạt động gỡ lỗi?",
+      "a": "Các nhà phát triển",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 7",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 7"
     },
     {
       "q": "Tester tái hiện lỗi; developer lần theo mã để tìm nguyên nhân và sửa. Hoạt động của developer gọi là gì?",
@@ -3430,6 +4095,14 @@
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
       "source": "Slide tr. 11"
+    },
+    {
+      "q": "Lỗi càng được phát hiện muộn trong chu kỳ phát triển sản phẩm thì chi phí sửa chữa càng cao. Tại sao?",
+      "a": "Lỗi đã được tích hợp vào nhiều tài liệu, mã nguồn, bài kiểm tra, v.v. hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 335",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 335"
     },
     {
       "q": "Theo mô hình chi phí trên slide, sửa lỗi lúc lập trình tốn gấp khoảng bao nhiêu lần lúc yêu cầu?",
@@ -3476,6 +4149,14 @@
     {
       "q": "Kiểm thử tĩnh có thể bắt đầu vào thời điểm nào?",
       "a": "Ngay khi có bản nháp sản phẩm công việc để xem xét.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Vì sao review tài liệu có thể thấy một yêu cầu mơ hồ mà chạy test chưa chắc thấy?",
+      "a": "Kiểm thử tĩnh nhận diện trực tiếp khiếm khuyết trong tài liệu trước khi có chương trình thực thi.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -3552,6 +4233,14 @@
       "source": "Slide tr. 25"
     },
     {
+      "q": "Điều nào sau đây là lợi ích của tính độc lập của phép thử?",
+      "a": "Phương pháp này tránh được sự thiên vị của tác giả trong việc định nghĩa các bài kiểm tra hiệu quả",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 38",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 38"
+    },
+    {
       "q": "Tác giả tự kiểm thử sản phẩm do mình tạo ra thuộc mức độc lập nào?",
       "a": "Mức 0: tự kiểm thử.",
       "tag": "Cùng slide",
@@ -3624,6 +4313,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Tài liệu ghi mục tiêu, phạm vi, lịch trình và exit criteria đầu dự án gọi là gì?",
+      "a": "Test Plan.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Trước khi thực thi, tài liệu nào mô tả điều kiện và test case chi tiết cùng ma trận truy vết?",
+      "a": "Test Design/Test Case.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
     }
   ],
   "main-3-3": [
@@ -3634,6 +4339,14 @@
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
       "source": "Slide tr. 9"
+    },
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
     },
     {
       "q": "Trong mô hình chữ V, phân tích yêu cầu tương ứng với cấp độ kiểm thử nào?",
@@ -3652,6 +4365,14 @@
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
       "source": "Slide tr. 9"
+    },
+    {
+      "q": "Chúng ta sử dụng kết quả phân tích yêu cầu và bản đặc tả yêu cầu làm đầu vào để viết",
+      "a": "User Acceptance Test Cases",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 287",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 287"
     },
     {
       "q": "Trong mô hình chữ V, đặc tả hệ thống được kiểm chứng ở cấp độ nào?",
@@ -3678,6 +4399,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -3722,6 +4451,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
+    },
+    {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
       "a": "Kiểm thử đơn vị.",
       "tag": "Cùng slide",
@@ -3764,6 +4501,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
+    },
+    {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
       "a": "Kiểm thử đơn vị.",
       "tag": "Cùng slide",
@@ -3790,36 +4535,36 @@
   ],
   "main-5-0": [
     {
-      "q": "Phiên bản gần hoàn thiện được phát cho nhóm người dùng ngoài tổ chức dùng thử là loại kiểm thử chấp nhận nào?",
-      "a": "Beta testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 19",
-      "badgeClass": "yes",
-      "source": "Slide tr. 19"
+      "q": "Thử nghiệm beta là gì?",
+      "a": "Khách hàng tiềm năng tiến hành thử nghiệm tại địa điểm của chính họ",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 15",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 15"
     },
     {
-      "q": "Người dùng cuối dùng hệ thống theo nghiệp vụ thực để quyết định nghiệm thu. Đó là loại kiểm thử nào?",
-      "a": "UAT (User Acceptance Testing).",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 19",
-      "badgeClass": "yes",
-      "source": "Slide tr. 19"
+      "q": "Kiểm tra hợp đồng và quy định là một phần của",
+      "a": "Acceptance testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 54",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 54"
     },
     {
-      "q": "Người dùng thử tại nơi phát triển phần mềm thuộc kiểu kiểm thử nào?",
-      "a": "Alpha testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 19",
-      "badgeClass": "yes",
-      "source": "Slide tr. 19"
+      "q": "Việc kiểm thử __________ được thực hiện tại địa điểm của tổ chức phát triển",
+      "a": "Alpha testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 76",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 76"
     },
     {
-      "q": "Kiểm tra điều khoản hợp đồng và tiêu chuẩn ngành trước nghiệm thu thuộc loại nào?",
-      "a": "Contractual/Regulatory Acceptance Testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 19",
-      "badgeClass": "yes",
-      "source": "Slide tr. 19"
+      "q": "Kiểm thử chấp nhận có nghĩa là gì?",
+      "a": "Kiểm thử để đảm bảo hệ thống đáp ứng nhu cầu của tổ chức và người dùng cuối",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 398",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 398"
     }
   ],
   "main-5-1": [
@@ -3830,6 +4575,30 @@
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
       "source": "Slide tr. 18"
+    },
+    {
+      "q": "Phương pháp nào sau đây không phải là một loại kiểm thử tăng dần?",
+      "a": "Vụ nổ lớn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 279",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 279"
+    },
+    {
+      "q": "Tại sao phương pháp tích hợp gia tăng được ưa chuộng hơn phương pháp tích hợp \"đột phá\"?",
+      "a": "Vì tích hợp gia tăng có khả năng sàng lọc và cô lập lỗi sớm tốt hơn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 394",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 394"
+    },
+    {
+      "q": "Điều nào sau đây thường được coi là lỗi giao diện của các thành phần?",
+      "a": "Đối với hai thành phần trao đổi dữ liệu, một thành phần sử dụng đơn vị đo lường hệ mét, thành phần còn lại sử dụng đơn vị đo lường hệ Anh",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 380",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 380"
     },
     {
       "q": "Tích hợp từ module cấp cao xuống khi module dưới chưa xong cần thành phần giả nào?",
@@ -3850,6 +4619,14 @@
     {
       "q": "Kiểm tra tương tác giữa ứng dụng bán hàng và cổng thanh toán thuộc loại tích hợp nào?",
       "a": "Tích hợp hệ thống.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Hai module trong cùng một hệ thống truyền sai định dạng dữ liệu cho nhau. Đây là loại kiểm thử tích hợp nào?",
+      "a": "Tích hợp thành phần (component integration).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
@@ -3884,6 +4661,22 @@
       "source": "Slide tr. 24"
     },
     {
+      "q": "Sự khác biệt giữa kiểm tra lại và kiểm tra hồi quy là gì?",
+      "a": "Kiểm thử lại là chạy lại một bài kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 220",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 220"
+    },
+    {
+      "q": "Kiểm định hồi quy",
+      "a": "Giúp đảm bảo các khu vực không thay đổi của phần mềm không bị ảnh hưởng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 216",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 216"
+    },
+    {
       "q": "Sau bản sửa, chạy các ca chức năng liên quan để phát hiện tác động phụ là kiểm thử gì?",
       "a": "Kiểm thử hồi quy.",
       "tag": "Cùng slide",
@@ -3910,6 +4703,22 @@
       "source": "Slide tr. 24"
     },
     {
+      "q": "Sự khác biệt giữa kiểm tra lại và kiểm tra hồi quy là gì?",
+      "a": "Kiểm thử lại là chạy lại một bài kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 220",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 220"
+    },
+    {
+      "q": "Kiểm định hồi quy",
+      "a": "Giúp đảm bảo các khu vực không thay đổi của phần mềm không bị ảnh hưởng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 216",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 216"
+    },
+    {
       "q": "Sau khi fix lỗi, chạy lại đúng ca từng phát hiện lỗi và cùng dữ liệu là kiểm thử gì?",
       "a": "Kiểm thử xác nhận (confirmation/retest).",
       "tag": "Cùng slide",
@@ -3928,12 +4737,20 @@
       "source": "Slide tr. 23"
     },
     {
-      "q": "Một ứng dụng tải bình thường nhưng sập khi tăng tải vượt ngưỡng. Cần loại kiểm thử nào?",
-      "a": "Stress testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 23",
-      "badgeClass": "yes",
-      "source": "Slide tr. 23"
+      "q": "Thử nghiệm trong đó chúng ta đặt đối tượng thử nghiệm vào các khối lượng công việc khác nhau để đo lường và đánh giá hành vi hoạt động và khả năng của đối tượng thử nghiệm cũng như khả năng tiếp tục hoạt động bình thường dưới các khối lượng công việc khác nhau này",
+      "a": "Load Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 90",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 90"
+    },
+    {
+      "q": "Phương pháp kiểm thử nào được sử dụng để xác minh rằng hệ thống có thể hoạt động bình thường khi các giới hạn nội bộ của chương trình hoặc hệ thống bị vượt quá?",
+      "a": "Stress Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 159",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 159"
     },
     {
       "q": "Kiểm tra khả năng phục hồi sau khi mất điện thuộc đặc tính phi chức năng nào?",
@@ -3950,6 +4767,14 @@
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
       "source": "Slide tr. 23"
+    },
+    {
+      "q": "Ứng dụng khó cài đặt và nâng cấp trên máy khác. Cần đánh giá đặc tính phi chức năng nào?",
+      "a": "Khả năng khả chuyển và bảo trì.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
     }
   ],
   "main-6-2": [
@@ -3960,6 +4785,14 @@
       "badge": "Slide tr. 26",
       "badgeClass": "yes",
       "source": "Slide tr. 26"
+    },
+    {
+      "q": "Kiểm tra bảo trì là",
+      "a": "Được kích hoạt bởi các thay đổi, di chuyển hoặc ngừng sử dụng phần mềm hiện có",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 393",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 393"
     },
     {
       "q": "Thêm chức năng theo phản hồi người dùng thuộc loại bảo trì nào?",
@@ -3990,6 +4823,22 @@
     {
       "q": "Sau thay đổi, phạm vi kiểm thử nên bao gồm hai nhóm ca nào?",
       "a": "Retest lỗi đã sửa và regression vùng bị ảnh hưởng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    },
+    {
+      "q": "Một yêu cầu thay đổi vừa đến từ khách hàng. Trước phân tích tác động, nhóm cần ghi nhận gì?",
+      "a": "Change request hoặc bug report của thay đổi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
+    },
+    {
+      "q": "Sau khi chọn các ca retest và regression, nhóm cần làm gì trước khi quyết định phát hành?",
+      "a": "Thực thi các ca đã chọn và đánh giá rủi ro còn lại.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 27",
       "badgeClass": "yes",
@@ -4074,6 +4923,14 @@
       "source": "Slide tr. 6"
     },
     {
+      "q": "Nếu không xác định kết quả mong muốn thì",
+      "a": "Có thể khó xác định liệu bài kiểm tra đã đạt hay không",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 209",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 209"
+    },
+    {
       "q": "Trước khi chạy test đăng nhập, tài khoản phải ở trạng thái Active. Thông tin đó nằm ở trường nào?",
       "a": "Điều kiện tiên quyết (precondition).",
       "tag": "Cùng slide",
@@ -4116,6 +4973,22 @@
     {
       "q": "Một test case dùng tài khoản admin / 123456. Giá trị này thuộc trường nào?",
       "a": "Dữ liệu kiểm thử (test data).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trong test case, trường nào ghi chức năng cụ thể đang được kiểm tra, ví dụ Đăng nhập?",
+      "a": "Chức năng hoặc module.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trường nào nêu test case nhằm xác minh điều gì trước khi viết các bước?",
+      "a": "Mục tiêu kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -4132,6 +5005,14 @@
       "source": "Slide tr. 6"
     },
     {
+      "q": "Nếu không xác định kết quả mong muốn thì",
+      "a": "Có thể khó xác định liệu bài kiểm tra đã đạt hay không",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 209",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 209"
+    },
+    {
       "q": "Trước khi chạy test đăng nhập, tài khoản phải ở trạng thái Active. Thông tin đó nằm ở trường nào?",
       "a": "Điều kiện tiên quyết (precondition).",
       "tag": "Cùng slide",
@@ -4174,6 +5055,22 @@
     {
       "q": "Một test case dùng tài khoản admin / 123456. Giá trị này thuộc trường nào?",
       "a": "Dữ liệu kiểm thử (test data).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trong test case, trường nào ghi chức năng cụ thể đang được kiểm tra, ví dụ Đăng nhập?",
+      "a": "Chức năng hoặc module.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 6",
+      "badgeClass": "yes",
+      "source": "Slide tr. 6"
+    },
+    {
+      "q": "Trường nào nêu test case nhằm xác minh điều gì trước khi viết các bước?",
+      "a": "Mục tiêu kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -4220,6 +5117,14 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Hai tester đọc cùng test case mà thực hiện ra hai cách khác nhau. Tiêu chí nào của test case chưa đạt?",
+      "a": "Rõ ràng và có thể tái lập.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 7",
+      "badgeClass": "yes",
+      "source": "Slide tr. 7"
     }
   ],
   "main-8-1": [
@@ -4232,12 +5137,12 @@
       "source": "Slide tr. 5"
     },
     {
-      "q": "Bộ “Thanh toán bằng thẻ” gồm nhiều trường hợp thử liên quan. Trong hệ thống phân cấp, đó là gì?",
-      "a": "Test suite.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 5",
-      "badgeClass": "yes",
-      "source": "Slide tr. 5"
+      "q": "Các trường hợp kiểm thử được nhóm thành các đơn vị có thể quản lý (và lên lịch) được gọi là",
+      "a": "Test Suite",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 142",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 142"
     },
     {
       "q": "Đơn vị nhỏ nhất chứa dữ liệu, bước chạy và expected result được gọi là gì?",
@@ -4258,6 +5163,22 @@
       "source": "Slide tr. 8"
     },
     {
+      "q": "Mục đích của tiêu chí thoát là gì?",
+      "a": "Xác định thời điểm hoàn thành một cấp độ kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 29",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 29"
+    },
+    {
+      "q": "Khi nào thì ngừng kiểm tra?",
+      "a": "Khi các tiêu chí hoàn thành bài kiểm tra được đáp ứng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 309",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 309"
+    },
+    {
       "q": "Kế hoạch ghi “không kiểm thử hiệu năng đợt này”. Nội dung đó nằm ở phần nào?",
       "a": "Out of scope.",
       "tag": "Cùng slide",
@@ -4276,6 +5197,14 @@
     {
       "q": "Còn lỗi Critical đang mở. Đợt kiểm thử có đạt exit criteria “0 Critical mở” không?",
       "a": "Không.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 8",
+      "badgeClass": "yes",
+      "source": "Slide tr. 8"
+    },
+    {
+      "q": "Kế hoạch đợt này ghi sẽ thử đăng nhập trên Chrome và Firefox. Đây là phần nào của test scope?",
+      "a": "In scope: chức năng và môi trường sẽ kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 8",
       "badgeClass": "yes",
@@ -4310,6 +5239,14 @@
     {
       "q": "Ai thường lập Test Plan cho một dự án?",
       "a": "Test Manager hoặc Test Lead.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 10",
+      "badgeClass": "yes",
+      "source": "Slide tr. 10"
+    },
+    {
+      "q": "Tài liệu chiến lược được dùng lại cho nhiều dự án, còn kế hoạch đổi theo từng đợt. Điểm khác nhau là gì?",
+      "a": "Test Strategy ổn định hơn; Test Plan cập nhật theo dự án hoặc đợt phát hành.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 10",
       "badgeClass": "yes",
@@ -4382,6 +5319,30 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Báo cáo bị xác nhận không phải lỗi sản phẩm. Trạng thái phù hợp là gì?",
+      "a": "Rejected.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Lỗi có thật nhưng được chuyển sang phiên bản sau. Trạng thái phù hợp là gì?",
+      "a": "Deferred.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Tester chạy Retest thành công sau khi sửa. Trạng thái cuối là gì?",
+      "a": "Closed.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
     }
   ],
   "main-9-2": [
@@ -4424,6 +5385,30 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Báo cáo bị xác nhận không phải lỗi sản phẩm. Trạng thái phù hợp là gì?",
+      "a": "Rejected.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Lỗi có thật nhưng được chuyển sang phiên bản sau. Trạng thái phù hợp là gì?",
+      "a": "Deferred.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Tester chạy Retest thành công sau khi sửa. Trạng thái cuối là gì?",
+      "a": "Closed.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
     }
   ],
   "main-9-3": [
@@ -4458,6 +5443,14 @@
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
       "source": "Slide tr. 18"
+    },
+    {
+      "q": "Lỗi gây mất dữ liệu, nhưng gần như không người dùng nào gặp trong bản sắp phát hành. Severity và Priority có thể khác nhau ra sao?",
+      "a": "Severity cao, Priority có thể thấp tùy quyết định nghiệp vụ.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
     }
   ],
   "main-10-0": [
@@ -4488,6 +5481,14 @@
     {
       "q": "Một lỗi rất hiếm chỉ xảy ra với dữ liệu bất thường có thể có severity cao nhưng priority thế nào?",
       "a": "Priority có thể thấp nếu xác suất gặp và tác động kinh doanh trước mắt thấp.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 18",
+      "badgeClass": "yes",
+      "source": "Slide tr. 18"
+    },
+    {
+      "q": "Lỗi gây mất dữ liệu, nhưng gần như không người dùng nào gặp trong bản sắp phát hành. Severity và Priority có thể khác nhau ra sao?",
+      "a": "Severity cao, Priority có thể thấp tùy quyết định nghiệp vụ.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 18",
       "badgeClass": "yes",
@@ -4592,6 +5593,14 @@
       "source": "Kiến thức slide tr. 19"
     },
     {
+      "q": "Tập hợp các chỉ số nào có thể được sử dụng để giám sát quá trình thực thi kiểm thử?",
+      "a": "Số lượng trường hợp kiểm thử đã chạy/chưa chạy; trường hợp kiểm thử đã vượt qua/thất bại",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 383",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 383"
+    },
+    {
       "q": "Sau một đợt kiểm thử có 2 lỗi Critical và 12 lỗi Low. Chỉ nhìn tổng số 14 lỗi có đủ căn cứ quyết định phát hành không?",
       "a": "Không; cần xem phân bố lỗi theo mức nghiêm trọng và rủi ro còn lại.",
       "concept": "severity-distribution",
@@ -4638,6 +5647,22 @@
     {
       "q": "Danh sách lỗi, trạng thái, severity và priority thuộc sản phẩm nào?",
       "a": "Defect Report.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Tài liệu ghi mục tiêu, phạm vi, lịch trình và exit criteria đầu dự án gọi là gì?",
+      "a": "Test Plan.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Trước khi thực thi, tài liệu nào mô tả điều kiện và test case chi tiết cùng ma trận truy vết?",
+      "a": "Test Design/Test Case.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -4711,6 +5736,22 @@
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
       "source": "Slide tr. 13"
+    },
+    {
+      "q": "Theo khoảng tham khảo trên slide, công sức kiểm thử thường chiếm xấp xỉ bao nhiêu phần trăm công sức phát triển?",
+      "a": "Khoảng 25–40%, tùy rủi ro và yêu cầu chất lượng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nhóm dùng Planning Poker để ước lượng từng hạng mục. Đây là cách ước lượng nào?",
+      "a": "Ý kiến chuyên gia (expert judgement).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 13",
+      "badgeClass": "yes",
+      "source": "Slide tr. 13"
     }
   ],
   "main-11-0": [
@@ -4753,6 +5794,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Tài liệu ghi mục tiêu, phạm vi, lịch trình và exit criteria đầu dự án gọi là gì?",
+      "a": "Test Plan.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Trước khi thực thi, tài liệu nào mô tả điều kiện và test case chi tiết cùng ma trận truy vết?",
+      "a": "Test Design/Test Case.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
     }
   ],
   "main-11-1": [
@@ -4787,6 +5844,14 @@
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
       "source": "Slide tr. 11"
+    },
+    {
+      "q": "Vì sao review tài liệu có thể thấy một yêu cầu mơ hồ mà chạy test chưa chắc thấy?",
+      "a": "Kiểm thử tĩnh nhận diện trực tiếp khiếm khuyết trong tài liệu trước khi có chương trình thực thi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
     }
   ],
   "main-11-2": [
@@ -4797,6 +5862,22 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Phát biểu nào sau đây mô tả chính xác nhất sự khác biệt giữa việc kiểm tra và việc đi khảo sát thực địa?",
+      "a": "Việc kiểm tra được thực hiện bởi người điều phối, còn việc hướng dẫn thực hành được thực hiện bởi tác giả",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 4",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 4"
+    },
+    {
+      "q": "Điều gì làm cho việc kiểm tra khác với các loại đánh giá khác?",
+      "a": "Được dẫn dắt bởi một người lãnh đạo được đào tạo, sử dụng các tiêu chí đầu vào và đầu ra chính thức cùng với danh sách kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 366",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 366"
     },
     {
       "q": "Dự án nhỏ, rủi ro thấp cần phản hồi nhanh và ít thủ tục. Nên dùng hình thức review nào?",
@@ -4841,6 +5922,22 @@
       "source": "Slide tr. 15"
     },
     {
+      "q": "Phát biểu nào sau đây mô tả chính xác nhất sự khác biệt giữa việc kiểm tra và việc đi khảo sát thực địa?",
+      "a": "Việc kiểm tra được thực hiện bởi người điều phối, còn việc hướng dẫn thực hành được thực hiện bởi tác giả",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 4",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 4"
+    },
+    {
+      "q": "Điều gì làm cho việc kiểm tra khác với các loại đánh giá khác?",
+      "a": "Được dẫn dắt bởi một người lãnh đạo được đào tạo, sử dụng các tiêu chí đầu vào và đầu ra chính thức cùng với danh sách kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 366",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 366"
+    },
+    {
       "q": "Dự án nhỏ, rủi ro thấp cần phản hồi nhanh và ít thủ tục. Nên dùng hình thức review nào?",
       "a": "Informal Review.",
       "tag": "Cùng slide",
@@ -4883,6 +5980,22 @@
       "source": "Slide tr. 14"
     },
     {
+      "q": "Ai chịu trách nhiệm ghi lại tất cả các vấn đề, sự cố và điểm chưa được giải quyết đã được xác định trong cuộc họp đánh giá?",
+      "a": "Thư ký",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 60",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 60"
+    },
+    {
+      "q": "Người chủ trì việc xem xét tài liệu, lập kế hoạch xem xét, điều hành cuộc họp và theo dõi sau cuộc họp",
+      "a": "Người điều phối",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 138",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 138"
+    },
+    {
       "q": "Người tổ chức buổi review, giữ trao đổi khách quan và kiểm soát thời gian là ai?",
       "a": "Người điều phối (facilitator/moderator).",
       "tag": "Cùng slide",
@@ -4897,6 +6010,14 @@
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
       "source": "Slide tr. 14"
+    },
+    {
+      "q": "Ai quyết định nội dung cần xem xét và phân bổ thời gian cho hoạt động review?",
+      "a": "Manager (người quản lý).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
     }
   ],
   "main-12-1": [
@@ -4907,6 +6028,22 @@
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
       "source": "Slide tr. 13"
+    },
+    {
+      "q": "Mục đích nào sau đây là mục đích của giai đoạn lập kế hoạch đánh giá?",
+      "a": "Phân công vai trò cho từng cá nhân",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 42",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 42"
+    },
+    {
+      "q": "Giai đoạn Khởi động của một cuộc đánh giá chính thức bao gồm những điều sau",
+      "a": "Giải thích mục tiêu",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 262",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 262"
     },
     {
       "q": "Trong review chính thức, thành viên tự đọc tài liệu và ghi bất thường trước buổi họp. Đó là bước nào?",
@@ -4946,6 +6083,17 @@
       "source": "Kiến thức slide tr. 12"
     },
     {
+      "q": "‘X’ đã cung cấp dữ liệu về tuổi của một người, tuổi này nằm trong khoảng từ 1 đến 99. Sử dụng BVA, đâu là đáp án thích hợp?",
+      "a": "0, 1, 99, 100",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 61",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 61",
+      "image": "media/extra/bva-age-1-99.svg",
+      "imageAlt": "Tuổi hợp lệ 1 đến 99; kiểm tra 0, 1, 99 và 100 tại hai biên",
+      "explain": "Tuổi hợp lệ là 1–99. BVA hai giá trị lấy ngay ngoài và tại mỗi biên: 0–1, 99–100."
+    },
+    {
       "q": "Số tín chỉ hợp lệ 1–25. Nếu mã dùng credits < 25 thay cho ≤25, giá trị nào bộc lộ lỗi?",
       "a": "25 tín chỉ.",
       "tag": "Cùng slide",
@@ -4965,6 +6113,17 @@
       "badge": "Đổi dữ kiện",
       "badgeClass": "quiz",
       "source": "Kiến thức slide tr. 12"
+    },
+    {
+      "q": "‘X’ đã cung cấp dữ liệu về tuổi của một người, tuổi này nằm trong khoảng từ 1 đến 99. Sử dụng BVA, đâu là đáp án thích hợp?",
+      "a": "0, 1, 99, 100",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 61",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 61",
+      "image": "media/extra/bva-age-1-99.svg",
+      "imageAlt": "Tuổi hợp lệ 1 đến 99; kiểm tra 0, 1, 99 và 100 tại hai biên",
+      "explain": "Tuổi hợp lệ là 1–99. BVA hai giá trị lấy ngay ngoài và tại mỗi biên: 0–1, 99–100."
     },
     {
       "q": "Số tín chỉ hợp lệ 1–25. Nếu mã dùng credits < 25 thay cho ≤25, giá trị nào bộc lộ lỗi?",
@@ -5028,15 +6187,12 @@
       "source": "Kiến thức slide tr. 11"
     },
     {
-      "q": "Ô số nguyên hợp lệ 10–30. BVA ba giá trị quanh hai biên cho bộ nào?",
-      "a": "9, 10, 11, 29, 30, 31.",
-      "image": "media/extra/bva-10-30.svg",
-      "imageAlt": "Trục số ba vùng: dưới 10, từ 10 đến 30, trên 30; các giá trị BVA 9, 10, 11, 29, 30, 31",
-      "explain": "Quanh biên dưới 10 lấy 9–10–11; quanh biên trên 30 lấy 29–30–31. Hai vùng ngoài đều không hợp lệ.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
+      "q": "Tại sao phân tích giá trị biên lại cung cấp các trường hợp thử nghiệm tốt?",
+      "a": "Vì lỗi thường xuyên xảy ra trong quá trình lập trình các trường hợp khác nhau gần \"các cạnh\" của phạm vi giá trị",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 367",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 367"
     },
     {
       "q": "Vì sao nhập giá trị đúng tại biên giúp phát hiện lỗi điều kiện > thay vì ≥?",
@@ -5049,6 +6205,17 @@
     {
       "q": "Danh sách màu đỏ/xanh/vàng có áp dụng BVA được không?",
       "a": "Không; đây là dữ liệu rời rạc, không có quan hệ thứ tự để chọn giá trị lân cận.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Với biên 30, BVA hai giá trị lấy hai số nào nếu 30 là giá trị đầu tiên hợp lệ?",
+      "a": "29 và 30; giá trị ngay dưới biên và chính biên.",
+      "image": "media/extra/bva-10-30.svg",
+      "imageAlt": "Trục số quanh hai biên của miền 10 đến 30, trong đó 29 sát bên 30",
+      "explain": "Biên trên 30: giá trị lân cận hợp lệ là 29, tại biên là 30. Với BVA hai giá trị, chọn cặp này quanh biên trên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -5168,6 +6335,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "main-14-1": [
@@ -5178,6 +6353,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Một hệ thống quản lý lỗi phải theo dõi trạng thái của mọi lỗi đã được ghi nhận và thực thi các quy tắc về việc thay đổi các trạng thái này. Nếu nhiệm vụ của bạn là kiểm tra việc theo dõi trạng thái, phương pháp nào sẽ là tốt nhất?",
+      "a": "Kiểm tra chuyển đổi trạng thái",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 369",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 369"
     },
     {
       "q": "Ở trạng thái Chưa đăng ký, hệ thống nhận lệnh “Xác nhận thành công” dù chưa có yêu cầu chờ. Kết quả đúng là gì?",
@@ -5234,6 +6417,31 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Ở trạng thái Chờ xác nhận, mọi điều kiện đều đạt. Hệ thống phải thực hiện hành động nào và sang trạng thái nào?",
+      "a": "Lưu đăng ký, cập nhật sĩ số; chuyển sang Đăng ký thành công.",
+      "table": {
+        "headers": [
+          "Trạng thái",
+          "Sự kiện / điều kiện",
+          "Hành động",
+          "Trạng thái tiếp"
+        ],
+        "rows": [
+          [
+            "Chờ xác nhận",
+            "Kiểm tra điều kiện / tất cả đạt",
+            "Lưu đăng ký, cập nhật sĩ số",
+            "Đăng ký thành công"
+          ]
+        ]
+      },
+      "explain": "Đọc cùng một hàng chuyển tiếp: từ Chờ xác nhận, điều kiện đạt thì thực hiện hành động rồi sang Đăng ký thành công.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
     }
   ],
   "main-14-2": [
@@ -5244,6 +6452,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -5324,6 +6548,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -5536,6 +6776,14 @@
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
       "source": "Slide tr. 14"
+    },
+    {
+      "q": "Một bộ hồi quy lớn cần chạy sau mỗi lần nâng cấp. Vì sao nên tự động hoá?",
+      "a": "Vì chạy lặp nhiều lần và thủ công khó kịp thời gian.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
     }
   ],
   "main-16-1": [
@@ -5570,6 +6818,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Yêu cầu nghiệp vụ đổi liên tục làm kịch bản phải sửa theo. Rủi ro của tự động hoá là gì?",
+      "a": "Chi phí bảo trì script cao và khó kiểm soát.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "main-16-2": [
@@ -5582,6 +6838,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Nếu bạn muốn tìm một công cụ kiểm thử (mới), hãy bắt đầu từ đâu?",
+      "a": "Phân tích nhu cầu và yêu cầu của bạn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 258",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 258"
+    },
+    {
       "q": "Trước khi viết script, cần xác định ba thành phần nào của kịch bản?",
       "a": "Dữ liệu đầu vào, các bước thực hiện và kết quả mong đợi.",
       "tag": "Cùng slide",
@@ -5592,6 +6856,14 @@
     {
       "q": "Một test báo Fail do script sai, trong khi sản phẩm đúng. Kết quả này gọi là gì?",
       "a": "False failure.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -5638,6 +6910,14 @@
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
       "source": "Slide tr. 23"
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
     }
   ],
   "main-17-0": [
@@ -5680,6 +6960,14 @@
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
       "source": "Slide tr. 34"
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
     }
   ],
   "main-17-1": [
@@ -5710,6 +6998,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Nếu bạn muốn tìm một công cụ kiểm thử (mới), hãy bắt đầu từ đâu?",
+      "a": "Phân tích nhu cầu và yêu cầu của bạn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 258",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 258"
+    },
+    {
       "q": "Sau khi chạy script, Pass/Fail nên đi kèm bằng chứng nào?",
       "a": "Log và ảnh chụp màn hình.",
       "tag": "Cùng slide",
@@ -5720,6 +7016,14 @@
     {
       "q": "Một test báo Fail do script sai, trong khi sản phẩm đúng. Kết quả này gọi là gì?",
       "a": "False failure.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -5754,6 +7058,14 @@
       "source": "Slide tr. 17"
     },
     {
+      "q": "Nếu bạn muốn tìm một công cụ kiểm thử (mới), hãy bắt đầu từ đâu?",
+      "a": "Phân tích nhu cầu và yêu cầu của bạn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 258",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 258"
+    },
+    {
       "q": "Trước khi viết script, cần xác định ba thành phần nào của kịch bản?",
       "a": "Dữ liệu đầu vào, các bước thực hiện và kết quả mong đợi.",
       "tag": "Cùng slide",
@@ -5770,8 +7082,8 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Một test báo Fail do script sai, trong khi sản phẩm đúng. Kết quả này gọi là gì?",
-      "a": "False failure.",
+      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -5810,6 +7122,14 @@
       "badge": "Slide tr. 16",
       "badgeClass": "yes",
       "source": "Slide tr. 16"
+    },
+    {
+      "q": "Ở bước thiết kế script, bộ ba nào phải được mô tả trước khi chạy tự động?",
+      "a": "Đầu vào, các bước thực hiện và kết quả mong đợi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 16",
+      "badgeClass": "yes",
+      "source": "Slide tr. 16"
     }
   ],
   "main-18-2": [
@@ -5822,12 +7142,20 @@
       "source": "Slide tr. 23"
     },
     {
-      "q": "Một ứng dụng tải bình thường nhưng sập khi tăng tải vượt ngưỡng. Cần loại kiểm thử nào?",
-      "a": "Stress testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 23",
-      "badgeClass": "yes",
-      "source": "Slide tr. 23"
+      "q": "Thử nghiệm trong đó chúng ta đặt đối tượng thử nghiệm vào các khối lượng công việc khác nhau để đo lường và đánh giá hành vi hoạt động và khả năng của đối tượng thử nghiệm cũng như khả năng tiếp tục hoạt động bình thường dưới các khối lượng công việc khác nhau này",
+      "a": "Load Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 90",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 90"
+    },
+    {
+      "q": "Phương pháp kiểm thử nào được sử dụng để xác minh rằng hệ thống có thể hoạt động bình thường khi các giới hạn nội bộ của chương trình hoặc hệ thống bị vượt quá?",
+      "a": "Stress Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 159",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 159"
     },
     {
       "q": "Nhóm thử hệ thống trên nhiều trình duyệt và hệ điều hành. Đó là kiểm thử gì?",
@@ -5848,6 +7176,14 @@
     {
       "q": "Kiểm tra SQL injection, XSS và phân quyền thuộc loại nào?",
       "a": "Kiểm thử bảo mật.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Ứng dụng khó cài đặt và nâng cấp trên máy khác. Cần đánh giá đặc tính phi chức năng nào?",
+      "a": "Khả năng khả chuyển và bảo trì.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -5908,6 +7244,14 @@
     {
       "q": "Ngoài smoke test, Selenium IDE có thể dùng để tạo gì trước khi chuyển sang WebDriver?",
       "a": "Bản mẫu kịch bản kiểm thử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
+    },
+    {
+      "q": "Kịch bản được ghi bằng Selenium IDE có thể làm gì sau khi lưu?",
+      "a": "Chỉnh sửa và phát lại khi cần tái kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -6000,8 +7344,8 @@
       "source": "Slide tr. 32"
     },
     {
-      "q": "Vì sao XPath tuyệt đối dạng /html/body/div[3] dễ hỏng?",
-      "a": "Nó phụ thuộc cấu trúc và vị trí DOM; thay đổi giao diện làm đường dẫn đổi.",
+      "q": "Liên kết có chữ hiển thị “Đăng nhập”. Locator nào tìm theo đúng văn bản liên kết?",
+      "a": "By.LinkText(\"Đăng nhập\").",
       "tag": "Cùng slide",
       "badge": "Slide tr. 32",
       "badgeClass": "yes",
@@ -6040,6 +7384,14 @@
       "badge": "Slide tr. 32",
       "badgeClass": "yes",
       "source": "Slide tr. 32"
+    },
+    {
+      "q": "Liên kết có chữ hiển thị “Đăng nhập”. Locator nào tìm theo đúng văn bản liên kết?",
+      "a": "By.LinkText(\"Đăng nhập\").",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 32",
+      "badgeClass": "yes",
+      "source": "Slide tr. 32"
     }
   ],
   "main-20-1": [
@@ -6074,6 +7426,14 @@
       "badge": "Slide tr. 32",
       "badgeClass": "yes",
       "source": "Slide tr. 32"
+    },
+    {
+      "q": "Liên kết có chữ hiển thị “Đăng nhập”. Locator nào tìm theo đúng văn bản liên kết?",
+      "a": "By.LinkText(\"Đăng nhập\").",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 32",
+      "badgeClass": "yes",
+      "source": "Slide tr. 32"
     }
   ],
   "main-20-2": [
@@ -6096,14 +7456,6 @@
     {
       "q": "Muốn xoá nội dung cũ của ô nhập trước khi gõ, gọi phương thức nào?",
       "a": "Clear().",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 33",
-      "badgeClass": "yes",
-      "source": "Slide tr. 33"
-    },
-    {
-      "q": "Muốn đọc chữ hiển thị của phần tử, dùng thuộc tính nào?",
-      "a": "Text.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 33",
       "badgeClass": "yes",
@@ -6176,6 +7528,14 @@
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
       "source": "Slide tr. 34"
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
     }
   ],
   "main-21-1": [
@@ -6218,6 +7578,14 @@
       "badge": "Slide tr. 27",
       "badgeClass": "yes",
       "source": "Slide tr. 27"
+    },
+    {
+      "q": "Bộ định vị xác định một phần tử dựa vào ID, Name hoặc XPath được gọi là gì?",
+      "a": "Locator.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 27",
+      "badgeClass": "yes",
+      "source": "Slide tr. 27"
     }
   ],
   "main-21-2": [
@@ -6256,6 +7624,14 @@
     {
       "q": "Kết thúc test, muốn đóng toàn bộ trình duyệt và giải phóng tiến trình driver. Gọi lệnh nào?",
       "a": "driver.Quit().",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -6372,6 +7748,16 @@
       "source": "Slide liên quan C5 · tr. 23",
       "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
       "relatedPage": 23
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 23",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 23
     }
   ],
   "main-22-2": [
@@ -6382,6 +7768,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Có thể tiến hành kiểm tra toàn diện",
+      "a": "Sai",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 169",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 169"
     },
     {
       "q": "Một bộ test đều Pass. Nhóm có thể kết luận phần mềm không còn khiếm khuyết không?",
@@ -6476,12 +7870,20 @@
       "source": "Slide tr. 23"
     },
     {
-      "q": "Một ứng dụng tải bình thường nhưng sập khi tăng tải vượt ngưỡng. Cần loại kiểm thử nào?",
-      "a": "Stress testing.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 23",
-      "badgeClass": "yes",
-      "source": "Slide tr. 23"
+      "q": "Thử nghiệm trong đó chúng ta đặt đối tượng thử nghiệm vào các khối lượng công việc khác nhau để đo lường và đánh giá hành vi hoạt động và khả năng của đối tượng thử nghiệm cũng như khả năng tiếp tục hoạt động bình thường dưới các khối lượng công việc khác nhau này",
+      "a": "Load Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 90",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 90"
+    },
+    {
+      "q": "Phương pháp kiểm thử nào được sử dụng để xác minh rằng hệ thống có thể hoạt động bình thường khi các giới hạn nội bộ của chương trình hoặc hệ thống bị vượt quá?",
+      "a": "Stress Testing",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 159",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 159"
     },
     {
       "q": "Nhóm thử hệ thống trên nhiều trình duyệt và hệ điều hành. Đó là kiểm thử gì?",
@@ -6502,6 +7904,14 @@
     {
       "q": "Kiểm tra SQL injection, XSS và phân quyền thuộc loại nào?",
       "a": "Kiểm thử bảo mật.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Ứng dụng khó cài đặt và nâng cấp trên máy khác. Cần đánh giá đặc tính phi chức năng nào?",
+      "a": "Khả năng khả chuyển và bảo trì.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -6542,6 +7952,22 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Điều gì quyết định mức độ rủi ro?",
+      "a": "Xác suất xảy ra sự kiện bất lợi và tác động của sự kiện đó",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 30",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 30"
+    },
+    {
+      "q": "Các bài kiểm tra nên được thực hiện theo thứ tự nào?",
+      "a": "Các bài kiểm tra quan trọng nhất sẽ được thực hiện trước",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 344",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 344"
     },
     {
       "q": "Tester thiết kế ca kiểm thử từ sơ đồ trạng thái đơn hàng. Đây là cách tiếp cận nào?",
@@ -6608,6 +8034,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Tài liệu ghi mục tiêu, phạm vi, lịch trình và exit criteria đầu dự án gọi là gì?",
+      "a": "Test Plan.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
+    },
+    {
+      "q": "Trước khi thực thi, tài liệu nào mô tả điều kiện và test case chi tiết cùng ma trận truy vết?",
+      "a": "Test Design/Test Case.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 21",
+      "badgeClass": "yes",
+      "source": "Slide tr. 21"
     }
   ],
   "main-24-0": [
@@ -6642,6 +8084,14 @@
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
       "source": "Slide tr. 12"
+    },
+    {
+      "q": "Review bản thiết kế cho thấy giao diện giữa hai module không thống nhất. Vấn đề được tìm trong sản phẩm công việc nào?",
+      "a": "Tài liệu thiết kế hoặc mô hình hệ thống.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 12",
+      "badgeClass": "yes",
+      "source": "Slide tr. 12"
     }
   ],
   "main-24-1": [
@@ -6652,6 +8102,22 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Phát biểu nào sau đây mô tả chính xác nhất sự khác biệt giữa việc kiểm tra và việc đi khảo sát thực địa?",
+      "a": "Việc kiểm tra được thực hiện bởi người điều phối, còn việc hướng dẫn thực hành được thực hiện bởi tác giả",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 4",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 4"
+    },
+    {
+      "q": "Điều gì làm cho việc kiểm tra khác với các loại đánh giá khác?",
+      "a": "Được dẫn dắt bởi một người lãnh đạo được đào tạo, sử dụng các tiêu chí đầu vào và đầu ra chính thức cùng với danh sách kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 366",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 366"
     },
     {
       "q": "Dự án nhỏ, rủi ro thấp cần phản hồi nhanh và ít thủ tục. Nên dùng hình thức review nào?",
@@ -6722,6 +8188,14 @@
     {
       "q": "Bộ test trên CI liên tục đỏ nhưng không ai xem. Nhóm cần quy trình gì?",
       "a": "Chặn merge khi test Fail và phân công người xử lý kết quả.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -6812,6 +8286,16 @@
       "source": "Slide liên quan C5 · tr. 23",
       "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
       "relatedPage": 23
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 23",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 23
     }
   ],
   "main-25-1": [
@@ -6874,6 +8358,16 @@
       "source": "Slide liên quan C5 · tr. 23",
       "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
       "relatedPage": 23
+    },
+    {
+      "q": "Một dự án tự động hoá kịch bản chỉ chạy đúng một lần trên UI dù logic nghiệp vụ có thể thử ở API. Rủi ro thực hành nào?",
+      "a": "Tự động hoá sai chỗ; nên ưu tiên tầng unit/API theo kim tự tháp.",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C5 · tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C5 · tr. 23",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 23
     }
   ],
   "main-25-2": [
@@ -6884,6 +8378,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Việc kiểm thử hệ thống nên điều tra",
+      "a": "Yêu cầu phi chức năng và Yêu cầu chức năng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 53",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 53"
     },
     {
       "q": "Kiểm tra một hàm độc lập dựa trên mã nguồn và thiết kế chi tiết thuộc cấp độ nào?",
@@ -6918,6 +8420,22 @@
       "badge": "Slide tr. 24",
       "badgeClass": "yes",
       "source": "Slide tr. 24"
+    },
+    {
+      "q": "Sự khác biệt giữa kiểm tra lại và kiểm tra hồi quy là gì?",
+      "a": "Kiểm thử lại là chạy lại một bài kiểm thử; kiểm thử hồi quy tìm kiếm các tác dụng phụ không mong muốn",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 220",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 220"
+    },
+    {
+      "q": "Kiểm định hồi quy",
+      "a": "Giúp đảm bảo các khu vực không thay đổi của phần mềm không bị ảnh hưởng",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 216",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 216"
     },
     {
       "q": "Sau khi fix lỗi, chạy lại đúng ca từng phát hiện lỗi và cùng dữ liệu là kiểm thử gì?",
@@ -6972,6 +8490,22 @@
       "source": "Slide tr. 20"
     },
     {
+      "q": "Tài liệu cơ sở kiểm thử được phân tích ở giai đoạn nào của quá trình kiểm thử?",
+      "a": "Test Analysis",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 409",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 409"
+    },
+    {
+      "q": "Việc bàn giao phần mềm kiểm thử là một phần của giai đoạn nào?",
+      "a": "Các hoạt động kết thúc bài kiểm tra",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 124",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 124"
+    },
+    {
       "q": "Khi xác định “kiểm thử cái gì?” từ tài liệu cơ sở, đó là hoạt động ISTQB nào?",
       "a": "Phân tích kiểm thử (test analysis).",
       "tag": "Cùng slide",
@@ -7012,6 +8546,14 @@
       "badge": "Slide tr. 19",
       "badgeClass": "yes",
       "source": "Slide tr. 19"
+    },
+    {
+      "q": "Tập hợp các chỉ số nào có thể được sử dụng để giám sát quá trình thực thi kiểm thử?",
+      "a": "Số lượng trường hợp kiểm thử đã chạy/chưa chạy; trường hợp kiểm thử đã vượt qua/thất bại",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 383",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 383"
     },
     {
       "q": "Một đợt có 300 test case, đã chạy 210. Test Execution % là bao nhiêu?",
@@ -7078,6 +8620,14 @@
       "source": "Slide tr. 11"
     },
     {
+      "q": "Nhiệm vụ nào sau đây là nhiệm vụ CHÍNH của việc lập kế hoạch kiểm thử?",
+      "a": "Lên lịch phân tích và thiết kế thử nghiệm",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 3",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 3"
+    },
+    {
       "q": "Nhóm cần ghi điều kiện tạm dừng và tiếp tục kiểm thử. Chúng thuộc mục nào của Test Plan?",
       "a": "Mục tiêu chí (suspension và resumption criteria).",
       "tag": "Cùng slide",
@@ -7104,6 +8654,22 @@
     {
       "q": "Thiếu dự phòng cho môi trường test hỏng là thiếu nội dung nào trong Test Plan?",
       "a": "Rủi ro và phương án giảm thiểu/dự phòng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Test Plan cần ghi nhân sự, công cụ và môi trường dưới mục nào?",
+      "a": "Nguồn lực.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Test Plan nêu cấp độ, loại, kỹ thuật kiểm thử và mức tự động hoá dưới mục nào?",
+      "a": "Cách tiếp cận kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -7142,6 +8708,14 @@
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
       "source": "Slide tr. 11"
+    },
+    {
+      "q": "Vì sao review tài liệu có thể thấy một yêu cầu mơ hồ mà chạy test chưa chắc thấy?",
+      "a": "Kiểm thử tĩnh nhận diện trực tiếp khiếm khuyết trong tài liệu trước khi có chương trình thực thi.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
     }
   ],
   "main-27-1": [
@@ -7172,6 +8746,22 @@
     {
       "q": "Hai yêu cầu cùng tranh chỗ cuối cùng có thể gây lỗi gì?",
       "a": "Race condition, cần xác định cách xử lý đồng thời.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Phân tích mã thấy biến isValid được khai báo nhưng không dùng. Đây là loại bất thường nào?",
+      "a": "Biến không được sử dụng.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 23",
+      "badgeClass": "yes",
+      "source": "Slide tr. 23"
+    },
+    {
+      "q": "Code dùng student hoặc course trước khi kiểm tra null. Rủi ro nào có thể xảy ra?",
+      "a": "Lỗi truy cập tham chiếu null.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -7212,6 +8802,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -7267,15 +8873,6 @@
       "source": "Slide tr. 21"
     },
     {
-      "q": "Đạt 100% branch coverage có chứng minh chương trình hết lỗi không?",
-      "a": "Không; bao phủ chỉ đo phần cấu trúc đã chạy.",
-      "concept": "branch-limit",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 21",
-      "badgeClass": "yes",
-      "source": "Slide tr. 21"
-    },
-    {
       "q": "Nếu đã thử cả hai nhánh của mọi quyết định có thể tiếp cận, statement coverage thường đạt mức nào?",
       "a": "100% câu lệnh có thể tiếp cận.",
       "tag": "Cùng slide",
@@ -7324,20 +8921,20 @@
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
       "source": "Slide tr. 34"
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
     }
   ],
   "main-28-1": [
     {
       "q": "Với dropdown HTML, muốn chọn mục Vinh Long bằng Selenium C# thì dùng lệnh nào?",
       "a": "Tạo SelectElement rồi gọi SelectByText(\"Vinh Long\").",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 34",
-      "badgeClass": "yes",
-      "source": "Slide tr. 34"
-    },
-    {
-      "q": "Dropdown thành phố cần chọn mục “Vinh Long” theo chữ hiển thị. Gọi phương thức nào?",
-      "a": "SelectByText(\"Vinh Long\") qua SelectElement.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -7362,6 +8959,14 @@
     {
       "q": "Kết thúc test, muốn đóng toàn bộ trình duyệt và giải phóng tiến trình driver. Gọi lệnh nào?",
       "a": "driver.Quit().",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide tr. 34"
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -7402,6 +9007,16 @@
     {
       "q": "Kết thúc test, muốn đóng toàn bộ trình duyệt và giải phóng tiến trình driver. Gọi lệnh nào?",
       "a": "driver.Quit().",
+      "tag": "Cùng slide",
+      "badge": "Slide liên quan C6 · tr. 34",
+      "badgeClass": "yes",
+      "source": "Slide liên quan C6 · tr. 34",
+      "relatedFile": "BaiGiang_C6_Selenium.pdf",
+      "relatedPage": 34
+    },
+    {
+      "q": "Muốn chờ tối đa 10 giây cho tới khi một phần tử xuất hiện, nên dùng kiểu chờ nào?",
+      "a": "Explicit Wait với WebDriverWait và điều kiện xuất hiện phần tử.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C6 · tr. 34",
       "badgeClass": "yes",
@@ -7577,6 +9192,67 @@
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
       "source": "Slide tr. 14"
+    },
+    {
+      "q": "Tài khoản hoạt động và đã đạt tiên quyết nhưng lớp hết chỗ. Theo thứ tự kiểm tra C1→C4, hệ thống báo gì?",
+      "a": "Báo lớp đã đủ chỗ.",
+      "table": {
+        "headers": [
+          "Điều kiện / kết quả",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "rows": [
+          [
+            "Tài khoản hoạt động",
+            "Đúng",
+            "Sai",
+            "Đúng",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Đạt tiên quyết",
+            "Đúng",
+            "–",
+            "Sai",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Lớp còn chỗ",
+            "Đúng",
+            "–",
+            "–",
+            "Sai",
+            "Đúng"
+          ],
+          [
+            "Không vượt 25 tín chỉ",
+            "Đúng",
+            "–",
+            "–",
+            "–",
+            "Sai"
+          ],
+          [
+            "Kết quả",
+            "Cho đăng ký",
+            "Báo tài khoản không hoạt động",
+            "Báo thiếu tiên quyết",
+            "Báo lớp đã đủ chỗ",
+            "Báo vượt tín chỉ"
+          ]
+        ]
+      },
+      "explain": "Xét điều kiện từ trên xuống; chọn cột quy tắc khớp đầu vào rồi đọc kết quả trong chính cột đó.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
     }
   ],
   "main-29-1": [
@@ -7735,6 +9411,67 @@
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
       "source": "Slide tr. 14"
+    },
+    {
+      "q": "Tài khoản hoạt động và đã đạt tiên quyết nhưng lớp hết chỗ. Theo thứ tự kiểm tra C1→C4, hệ thống báo gì?",
+      "a": "Báo lớp đã đủ chỗ.",
+      "table": {
+        "headers": [
+          "Điều kiện / kết quả",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "rows": [
+          [
+            "Tài khoản hoạt động",
+            "Đúng",
+            "Sai",
+            "Đúng",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Đạt tiên quyết",
+            "Đúng",
+            "–",
+            "Sai",
+            "Đúng",
+            "Đúng"
+          ],
+          [
+            "Lớp còn chỗ",
+            "Đúng",
+            "–",
+            "–",
+            "Sai",
+            "Đúng"
+          ],
+          [
+            "Không vượt 25 tín chỉ",
+            "Đúng",
+            "–",
+            "–",
+            "–",
+            "Sai"
+          ],
+          [
+            "Kết quả",
+            "Cho đăng ký",
+            "Báo tài khoản không hoạt động",
+            "Báo thiếu tiên quyết",
+            "Báo lớp đã đủ chỗ",
+            "Báo vượt tín chỉ"
+          ]
+        ]
+      },
+      "explain": "Xét điều kiện từ trên xuống; chọn cột quy tắc khớp đầu vào rồi đọc kết quả trong chính cột đó.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 14",
+      "badgeClass": "yes",
+      "source": "Slide tr. 14"
     }
   ],
   "main-29-2": [
@@ -7770,6 +9507,17 @@
       "source": "Kiến thức slide tr. 12"
     },
     {
+      "q": "‘X’ đã cung cấp dữ liệu về tuổi của một người, tuổi này nằm trong khoảng từ 1 đến 99. Sử dụng BVA, đâu là đáp án thích hợp?",
+      "a": "0, 1, 99, 100",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 61",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 61",
+      "image": "media/extra/bva-age-1-99.svg",
+      "imageAlt": "Tuổi hợp lệ 1 đến 99; kiểm tra 0, 1, 99 và 100 tại hai biên",
+      "explain": "Tuổi hợp lệ là 1–99. BVA hai giá trị lấy ngay ngoài và tại mỗi biên: 0–1, 99–100."
+    },
+    {
       "q": "Số tín chỉ hợp lệ 1–25. Nếu mã dùng credits < 25 thay cho ≤25, giá trị nào bộc lộ lỗi?",
       "a": "25 tín chỉ.",
       "tag": "Cùng slide",
@@ -7789,6 +9537,17 @@
       "badge": "Đổi dữ kiện",
       "badgeClass": "quiz",
       "source": "Kiến thức slide tr. 10"
+    },
+    {
+      "q": "Tập hợp các lớp tương đương nào sau đây là hợp lệ cho bài toán sau: Một trường số nguyên phải chứa các giá trị từ 1 đến 15 (bao gồm cả 15)",
+      "a": "Ít hơn 1, từ 1 đến 15, hơn 15",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 378",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 378",
+      "image": "media/extra/ep-integer-1-15.svg",
+      "imageAlt": "Ba vùng số nguyên: nhỏ hơn 1, từ 1 đến 15, lớn hơn 15",
+      "explain": "Các vùng không chồng lấn và phủ toàn bộ miền: <1, 1–15, >15. Chọn một đại diện mỗi vùng."
     },
     {
       "q": "Ô số tín chỉ chỉ nhận số nguyên. Ngoài các vùng số, đầu vào nào cần thử để bắt lỗi kiểu dữ liệu?",
@@ -7812,6 +9571,14 @@
       "source": "Kiến thức slide tr. 11"
     },
     {
+      "q": "Tại sao phân tích giá trị biên lại cung cấp các trường hợp thử nghiệm tốt?",
+      "a": "Vì lỗi thường xuyên xảy ra trong quá trình lập trình các trường hợp khác nhau gần \"các cạnh\" của phạm vi giá trị",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 367",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 367"
+    },
+    {
       "q": "Ô số nguyên hợp lệ 10–30. BVA ba giá trị quanh hai biên cho bộ nào?",
       "a": "9, 10, 11, 29, 30, 31.",
       "image": "media/extra/bva-10-30.svg",
@@ -7833,6 +9600,17 @@
     {
       "q": "Danh sách màu đỏ/xanh/vàng có áp dụng BVA được không?",
       "a": "Không; đây là dữ liệu rời rạc, không có quan hệ thứ tự để chọn giá trị lân cận.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Với biên 30, BVA hai giá trị lấy hai số nào nếu 30 là giá trị đầu tiên hợp lệ?",
+      "a": "29 và 30; giá trị ngay dưới biên và chính biên.",
+      "image": "media/extra/bva-10-30.svg",
+      "imageAlt": "Trục số quanh hai biên của miền 10 đến 30, trong đó 29 sát bên 30",
+      "explain": "Biên trên 30: giá trị lân cận hợp lệ là 29, tại biên là 30. Với BVA hai giá trị, chọn cặp này quanh biên trên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -7903,6 +9681,14 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Trong mô hình chuyển trạng thái, thao tác “gửi yêu cầu” do người dùng kích hoạt được gọi là gì?",
+      "a": "Sự kiện (event).",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 15",
+      "badgeClass": "yes",
+      "source": "Slide tr. 15"
     }
   ],
   "main-30-3": [
@@ -7913,6 +9699,14 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Một hệ thống quản lý lỗi phải theo dõi trạng thái của mọi lỗi đã được ghi nhận và thực thi các quy tắc về việc thay đổi các trạng thái này. Nếu nhiệm vụ của bạn là kiểm tra việc theo dõi trạng thái, phương pháp nào sẽ là tốt nhất?",
+      "a": "Kiểm tra chuyển đổi trạng thái",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 369",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 369"
     },
     {
       "q": "Ở trạng thái Chưa đăng ký, hệ thống nhận lệnh “Xác nhận thành công” dù chưa có yêu cầu chờ. Kết quả đúng là gì?",
@@ -7969,6 +9763,31 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Ở trạng thái Chờ xác nhận, mọi điều kiện đều đạt. Hệ thống phải thực hiện hành động nào và sang trạng thái nào?",
+      "a": "Lưu đăng ký, cập nhật sĩ số; chuyển sang Đăng ký thành công.",
+      "table": {
+        "headers": [
+          "Trạng thái",
+          "Sự kiện / điều kiện",
+          "Hành động",
+          "Trạng thái tiếp"
+        ],
+        "rows": [
+          [
+            "Chờ xác nhận",
+            "Kiểm tra điều kiện / tất cả đạt",
+            "Lưu đăng ký, cập nhật sĩ số",
+            "Đăng ký thành công"
+          ]
+        ]
+      },
+      "explain": "Đọc cùng một hàng chuyển tiếp: từ Chờ xác nhận, điều kiện đạt thì thực hiện hành động rồi sang Đăng ký thành công.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 17",
+      "badgeClass": "yes",
+      "source": "Slide tr. 17"
     }
   ],
   "main-31-0": [
@@ -8003,6 +9822,22 @@
       "badge": "Đổi dữ kiện",
       "badgeClass": "quiz",
       "source": "Kiến thức slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -8110,6 +9945,22 @@
       "badge": "Đổi dữ kiện",
       "badgeClass": "quiz",
       "source": "Kiến thức slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
@@ -8221,6 +10072,22 @@
       "source": "Slide tr. 21"
     },
     {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
+    },
+    {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",
       "a": "75%.",
       "concept": "statement",
@@ -8299,6 +10166,22 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Chúng ta có thể đạt được độ bao phủ câu lệnh hoàn chỉnh nhưng vẫn bỏ sót lỗi vì",
+      "a": "Lỗi xảy ra là do chương trình không có khả năng xử lý các giá trị dữ liệu cụ thể, chứ không phải do luồng điều khiển của chương trình",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 49",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 49"
+    },
+    {
+      "q": "Kỹ thuật hộp trắng còn được gọi là",
+      "a": "Kiểm tra cấu trúc",
+      "tag": "Từ QUIZ",
+      "badge": "QUIZ · câu 93",
+      "badgeClass": "quiz",
+      "source": "QUIZ C1–C6 · câu 93"
     },
     {
       "q": "Mã có 20 câu lệnh có thể thực thi, test đã chạy 15 câu. Statement Coverage là bao nhiêu?",

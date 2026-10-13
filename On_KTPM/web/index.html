@@ -149,6 +149,7 @@
 
     const slideItems = extra.filter(x => x.tag === 'Cùng slide');
     const appliedItems = extra.filter(x => x.tag === 'Bài áp dụng');
+    const quizItems = extra.filter(x => x.tag === 'Từ QUIZ');
     const items = extra.map((x, i) => {
       const badge = x.badge ? `<span class="pdf-badge ${x.badgeClass || (x.tag === 'Cùng slide' ? 'yes' : 'quiz')}">${escapeHtml(x.badge)}</span> ` : '';
       const img = x.image && /^media\/[A-Za-z0-9/_-]+\.(svg|png|jpe?g)$/.test(x.image)
@@ -163,6 +164,7 @@
     const subParts = [];
     if (slideItems.length) subParts.push(`📌 ${slideItems.length} câu hỏi từ ${q.page && q.matchType!=='Khớp chủ đề câu hỏi' ? 'phần khác trên cùng slide' : 'slide liên quan'}`);
     if (appliedItems.length) subParts.push(`🧮 ${appliedItems.length} bài áp dụng từ kiến thức slide`);
+    if (quizItems.length) subParts.push(`📝 ${quizItems.length} câu liên quan từ file QUIZ`);
     const subText = subParts.join(' • ') + ' (mỗi câu có một đáp án đúng):';
     return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng · ${title}</h4><p class="kp-sub">${subText}</p><ul class="kp-qa">${items}</ul>${foot}</div>`;
   }

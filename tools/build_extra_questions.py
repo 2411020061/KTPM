@@ -17,6 +17,21 @@ questions = {q['id']: q for name in ('questions.json', 'pdf-questions.json') for
 applied = json.loads((ROOT / 'applied-questions.json').read_text())
 supplemental = json.loads((ROOT / 'supplemental-questions.json').read_text())
 reviewed_slides = json.loads((ROOT / 'reviewed-slide-questions.json').read_text())
+quiz_links = json.loads((ROOT / 'reviewed-quiz-links.json').read_text())
+quiz_bank = {q['id']: q for q in json.loads((ROOT / 'questions.json').read_text())}
+
+QUIZ_VISUALS = {
+    't7-2-1': {
+        'image': 'media/extra/bva-age-1-99.svg',
+        'imageAlt': 'Tuổi hợp lệ 1 đến 99; kiểm tra 0, 1, 99 và 100 tại hai biên',
+        'explain': 'Tuổi hợp lệ là 1–99. BVA hai giá trị lấy ngay ngoài và tại mỗi biên: 0–1, 99–100.',
+    },
+    't36-1-3': {
+        'image': 'media/extra/ep-integer-1-15.svg',
+        'imageAlt': 'Ba vùng số nguyên: nhỏ hơn 1, từ 1 đến 15, lớn hơn 15',
+        'explain': 'Các vùng không chồng lấn và phủ toàn bộ miền: <1, 1–15, >15. Chọn một đại diện mỗi vùng.',
+    },
+}
 
 STOP = set('cau nao sau day la cua de va trong cho voi mot nhung cac theo tren slide bai giang kiem thu phan mem duoc co the hay khong khi ve den tu'.split())
 
@@ -42,6 +57,12 @@ def key(s):
 
 def question_stem(raw):
     return re.sub(r'^Câu\s*\d+\s*:\s*', '', re.split(r'\n\s*[A-D][.．)]\s*', raw, maxsplit=1)[0], flags=re.I)
+
+def correct_option_text(q):
+    match = re.search(r'(?m)^\s*' + re.escape(q['answer']) + r'[.．)]\s*(.*?)(?=^\s*[A-E][.．)]\s*|\Z)', q['raw'], re.S)
+    if not match:
+        raise ValueError(f'Quiz question has no marked answer text: {q["id"]}')
+    return clean(match.group(1))
 
 OVERRIDES = {
     'pdf-C1-9': ('Tư duy người kiểm thử cần chú ý đến loại luồng nào ngoài luồng thành công?', 'Luồng ngoại lệ (negative path) và các tình huống có thể xảy ra ngoài dự kiến.'),
@@ -172,6 +193,7 @@ OVERRIDES.update({
 
 result = {}
 bank_questions = {key(question_stem(q['raw'])) for q in questions.values()}
+visible_questions = {key(question_stem(questions[id]['raw'])) for id in knowledge}
 used_questions = set()
 used_answers = set()
 for id, k in knowledge.items():
@@ -223,6 +245,29 @@ for id, k in knowledge.items():
         existing_questions = [x['q'] for x in result[id]]
         existing_answers = {key(x['a']) for x in result[id]}
         existing_concepts = {x['concept'] for x in result[id] if x.get('concept')}
+        for quiz_id in quiz_links.get(page_key, []):
+            source = quiz_bank[quiz_id]
+            if not source.get('answerVerified') or source.get('kind') != 'supplemental':
+                raise ValueError(f'Quiz source lacks verified answer: {quiz_id}')
+            if source.get('file') != slide_file or source.get('page') != slide_page:
+                raise ValueError(f'Quiz source maps to a different slide: {quiz_id}')
+            quiz_question = clean(question_stem(source['raw']))
+            quiz_answer = correct_option_text(source)
+            qkey, akey = key(quiz_question), key(quiz_answer)
+            if qkey in visible_questions or qkey in {key(x) for x in existing_questions} or akey in existing_answers:
+                continue
+            if len(akey) > 15 and akey in key(original):
+                continue
+            if any(len(words(quiz_question) & words(x)) / max(1, len(words(quiz_question) | words(x))) > .55 for x in [original, *existing_questions]):
+                continue
+            result[id].append({
+                'q': quiz_question, 'a': quiz_answer, 'tag': 'Từ QUIZ',
+                'badge': f"QUIZ · câu {source['number']}", 'badgeClass': 'quiz',
+                'source': f"QUIZ C1–C6 · câu {source['number']}",
+                **QUIZ_VISUALS.get(quiz_id, {}),
+            })
+            existing_questions.append(quiz_question)
+            existing_answers.add(akey)
         for item in reviewed_slides[page_key]:
             if id in item.get('skipFor', []):
                 continue

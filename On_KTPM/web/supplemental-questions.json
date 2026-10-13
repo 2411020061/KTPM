@@ -159,10 +159,6 @@
     "q": "Trong V-Model, thiết kế chi tiết tương ứng với cấp độ kiểm thử nào?",
     "a": "Kiểm thử đơn vị."
   },
-  "main-5-0": {
-    "q": "Phiên bản gần hoàn thiện được phát cho nhóm người dùng ngoài tổ chức dùng thử là loại kiểm thử chấp nhận nào?",
-    "a": "Beta testing."
-  },
   "main-5-1": {
     "q": "Khi tích hợp từ mô-đun cấp thấp lên mà mô-đun gọi phía trên chưa có, cần thành phần thay thế nào?",
     "a": "Driver."
