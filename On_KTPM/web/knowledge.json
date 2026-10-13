@@ -2104,16 +2104,10 @@
   ]
  },
  "main-20-1": {
-  "title": "6.3.4 ASSERT VS VERIFY Assert và Verify – hai lệnh kiểm chứng quan trọng",
+  "title": "6.6.3 ③ Định vị phần tử (Locators) – dùng lớp By",
   "paras": [
-   "▸ Dừng test ngay nếu sai",
-   "▸ Dùng cho các điều kiện tiên quyết: nếu bước này sai thì các bước sau không còn ý nghĩa",
-   "▸ Ví dụ: nếu không đăng nhập thành công thì không cần chạy các bước kiểm tra giỏ hàng, thanh toán phía sau",
-   "▸ Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả — ASSERT – Khẳng định",
-   "▸ Ghi nhận lỗi nhưng vẫn chạy tiếp",
-   "▸ Dùng khi muốn kiểm tra nhiều chi tiết độc lập trên cùng một trang",
-   "▸ Ví dụ: kiểm tra logo, banner, menu và chân trang có hiển thị đủ hay không – nếu logo sai vẫn nên kiểm tra tiếp các phần còn lại",
-   "▸ Giúp thu thập được nhiều lỗi trong một lần chạy — VERIFY – Xác minh"
+   "driver.FindElement(By.Id(\"elementId\")); // theo thuoc tinh id driver.FindElement(By.Name(\"elementName\")); // theo thuoc tinh name driver.FindElement(By.ClassName(\"className\")); // theo thuoc tinh class driver.FindElement(By.TagName(\"input\")); // theo the HTML driver.FindElement(By.LinkText(\"Dang nhap\")); // theo van ban lien ket driver.FindElement(By.CssSelector(\"#login .btn\")); // theo CSS selector driver.FindElement(By.XPath(\"//button[@id='btnLogin']\")); // theo XPath",
+   "Thứ tự ưu tiên khuyến nghị: `Id` → `Name` → `CssSelector` → `XPath`. Ưu tiên Id vì nhanh nhất và ổn định nhất; hạn chế XPath tuyệt đối (dạng `/html/body/div[3]/...`) vì rất dễ hỏng khi giao diện thay đổi."
   ]
  },
  "main-20-2": {

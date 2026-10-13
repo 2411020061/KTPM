@@ -1,0 +1,342 @@
+{
+  "pdf-C1-6": {
+    "q": "Không thể thử hết các tổ hợp đầu vào; nhóm kiểm thử nên chọn ca kiểm thử đại diện dựa vào đâu?",
+    "a": "Phân tích rủi ro và kỹ thuật thiết kế kiểm thử."
+  },
+  "pdf-C1-12": {
+    "q": "Một khiếm khuyết (defect) trong sản phẩm còn được gọi bằng thuật ngữ tiếng Anh nào?",
+    "a": "Fault."
+  },
+  "pdf-C1-14": {
+    "q": "Theo mô hình chi phí trên slide, sửa lỗi phát hiện ở giai đoạn kiểm thử tốn khoảng bao nhiêu lần so với giai đoạn yêu cầu?",
+    "a": "Khoảng 25 lần."
+  },
+  "pdf-C1-16": {
+    "q": "Một sai sót đã đi vào tài liệu thiết kế được phân loại là gì?",
+    "a": "Khiếm khuyết (defect) trong sản phẩm công việc."
+  },
+  "pdf-C2-2": {
+    "q": "Trong các mô hình vòng đời được liệt kê, cách tiếp cận nào gắn phát triển với vận hành liên tục?",
+    "a": "DevOps."
+  },
+  "pdf-C2-5": {
+    "q": "Trong mô hình chữ V, giai đoạn phân tích yêu cầu nghiệp vụ tương ứng với cấp độ kiểm thử nào?",
+    "a": "Kiểm thử chấp nhận."
+  },
+  "pdf-C2-8": {
+    "q": "Đánh giá sản phẩm có đáp ứng nhu cầu sử dụng thực tế là verification hay validation?",
+    "a": "Validation (xác nhận giá trị sử dụng)."
+  },
+  "pdf-C2-15": {
+    "q": "Kiểm thử tích hợp hệ thống kiểm tra tương tác nào giữa hệ thống bán hàng và dịch vụ ngoài?",
+    "a": "Tương tác với cổng thanh toán VNPay."
+  },
+  "pdf-C2-16": {
+    "q": "Đặc tả giao diện giữa các module là cơ sở thiết kế test cho cấp độ nào?",
+    "a": "Kiểm thử tích hợp."
+  },
+  "pdf-C2-17": {
+    "q": "Trong TDD, chu trình viết test và mã diễn ra theo ba bước nào?",
+    "a": "Red → Green → Refactor."
+  },
+  "pdf-C2-19": {
+    "q": "Mẫu Given–When–Then mô tả hành vi mong đợi thuộc cách tiếp cận nào?",
+    "a": "BDD (phát triển hướng hành vi)."
+  },
+  "pdf-C3-4": {
+    "q": "Khi cần tự động kiểm thử ứng dụng di động, nên chọn nhóm công cụ nào trong ba nhóm Web, API và Mobile?",
+    "a": "Nhóm công cụ kiểm thử Mobile."
+  },
+  "pdf-C3-6": {
+    "q": "Ngoài vòng đời lỗi, quản lý khiếm khuyết cần phân biệt hai mức đánh giá nào?",
+    "a": "Severity và Priority."
+  },
+  "pdf-C3-7": {
+    "q": "Test tự động lúc Pass lúc Fail vì chờ đợi không ổn định; nên dùng loại chờ nào thay cho Thread.Sleep?",
+    "a": "Explicit Wait."
+  },
+  "pdf-C3-8": {
+    "q": "Ba nhóm công cụ Web, API và Mobile được phân chia theo đặc điểm nào của đối tượng kiểm thử?",
+    "a": "Theo loại ứng dụng hoặc giao diện được kiểm thử."
+  },
+  "pdf-C3-9": {
+    "q": "Nhóm công cụ nào phù hợp để gửi yêu cầu và kiểm tra phản hồi của một giao diện lập trình?",
+    "a": "Công cụ kiểm thử API."
+  },
+  "pdf-C3-12": {
+    "q": "Postman có thể gửi bốn phương thức HTTP nào được liệt kê trong bài giảng?",
+    "a": "GET, POST, PUT và DELETE."
+  },
+  "pdf-C3-13": {
+    "q": "Muốn chạy hàng loạt collection Postman trong CI/CD, có thể dùng công cụ nào?",
+    "a": "Newman."
+  },
+  "pdf-C3-16": {
+    "q": "Ghép tất cả module cùng lúc rồi mới kiểm thử là chiến lược tích hợp nào?",
+    "a": "Big Bang."
+  },
+  "pdf-C3-17": {
+    "q": "Khả năng tự động chờ của Playwright chủ yếu giúp giảm hiện tượng nào trong test tự động?",
+    "a": "Test không ổn định (flaky test)."
+  },
+  "pdf-C3-18": {
+    "q": "Công cụ giao diện đồ họa nào cho phép gửi HTTP request và xem response mà không cần viết mã?",
+    "a": "Postman."
+  },
+  "pdf-C4-1": {
+    "q": "Thiết kế test dựa vào hiểu biết nghiệp vụ và lịch sử lỗi thuộc nhóm kỹ thuật nào?",
+    "a": "Kỹ thuật dựa trên kinh nghiệm (experience-based)."
+  },
+  "pdf-C4-2": {
+    "q": "Phân tích giá trị biên được phân loại là kỹ thuật, loại hay cấp độ kiểm thử?",
+    "a": "Kỹ thuật thiết kế kiểm thử."
+  },
+  "pdf-C4-3": {
+    "q": "Thiết kế test dựa trên mã nguồn và luồng điều khiển thuộc nhóm kỹ thuật nào?",
+    "a": "Kỹ thuật hộp trắng (white-box)."
+  },
+  "pdf-C4-4": {
+    "q": "Khái niệm “loại kiểm thử” trả lời câu hỏi chính nào?",
+    "a": "Đặc tính hoặc mục tiêu nào của sản phẩm được đánh giá."
+  },
+  "pdf-C4-6": {
+    "q": "Khác biệt cốt lõi giữa kiểm thử động và kiểm thử tĩnh về việc vận hành đối tượng là gì?",
+    "a": "Kiểm thử động có thực thi đối tượng; kiểm thử tĩnh không thực thi."
+  },
+  "pdf-C4-8": {
+    "q": "Bao phủ nhánh (branch coverage) là kỹ thuật thuộc nhóm hộp đen hay hộp trắng?",
+    "a": "Hộp trắng."
+  },
+  "pdf-C4-9": {
+    "q": "Kiểm thử thăm dò (exploratory testing) thuộc nhóm kỹ thuật thiết kế nào?",
+    "a": "Kỹ thuật dựa trên kinh nghiệm."
+  },
+  "pdf-C4-10": {
+    "q": "Ngoài đặc tả, kỹ thuật hộp đen có thể lấy tài liệu nào làm cơ sở thiết kế test?",
+    "a": "Yêu cầu và user story."
+  },
+  "pdf-C4-11": {
+    "q": "Kiểm thử hộp trắng dùng những thành phần cấu trúc nào để thiết kế và đo độ bao phủ?",
+    "a": "Câu lệnh, nhánh và luồng điều khiển."
+  },
+  "main-0-0": {
+    "q": "Một phép tính sai đã được ghi vào tài liệu thiết kế nhưng chưa chạy chương trình. Đây là loại vấn đề gì?",
+    "a": "Khiếm khuyết (defect) trong tài liệu thiết kế."
+  },
+  "main-0-1": {
+    "q": "Vì sao một lỗi trong đoạn mã không bao giờ được gọi có thể chưa tạo ra thất bại?",
+    "a": "Vì khiếm khuyết chưa được kích hoạt khi thực thi."
+  },
+  "main-0-2": {
+    "q": "Hàm miễn phí vận chuyển dùng điều kiện tổng tiền > 500.000 thay vì ≥ 500.000. Đầu vào nào bộc lộ lỗi ở biên?",
+    "a": "Đơn hàng đúng 500.000 đồng."
+  },
+  "main-0-3": {
+    "q": "Nhóm liên tục hiểu sai cùng một quy tắc nghiệp vụ vì tài liệu mơ hồ. Điều nào là nguyên nhân gốc?",
+    "a": "Tài liệu yêu cầu mơ hồ."
+  },
+  "main-1-0": {
+    "q": "Nếu 80% khiếm khuyết nằm trong 20% mô-đun, nên ưu tiên kiểm thử nhóm mô-đun nào?",
+    "a": "Nhóm 20% mô-đun chứa nhiều khiếm khuyết."
+  },
+  "main-1-1": {
+    "q": "Khi không thể thử hết mọi tổ hợp đầu vào, tiêu chí nào giúp chọn test case đại diện?",
+    "a": "Rủi ro và kỹ thuật thiết kế kiểm thử."
+  },
+  "main-1-2": {
+    "q": "Chưa có mã nguồn nhưng đã có bản nháp yêu cầu. Hoạt động kiểm thử nào bắt đầu được?",
+    "a": "Rà soát tĩnh bản nháp yêu cầu."
+  },
+  "main-1-3": {
+    "q": "Sản phẩm chạy đúng nhưng rất khó sửa đổi khi yêu cầu thay đổi. Thuộc tính chất lượng nào còn yếu?",
+    "a": "Khả năng bảo trì."
+  },
+  "main-2-1": {
+    "q": "Theo biểu đồ Boehm, chi phí sửa lỗi ở thiết kế gấp mấy lần khi phát hiện ngay ở yêu cầu?",
+    "a": "Khoảng 5 lần."
+  },
+  "main-2-2": {
+    "q": "Yêu cầu ghi “hệ thống phải phản hồi nhanh” mà không có ngưỡng đo. Rà soát tài liệu có thể phát hiện vấn đề gì?",
+    "a": "Yêu cầu mơ hồ, khó kiểm chứng."
+  },
+  "main-3-0": {
+    "q": "Báo lỗi cần nêu dữ kiện gì để lập trình viên tái hiện được thất bại?",
+    "a": "Các bước tái hiện, dữ liệu đầu vào, kết quả thực tế và kết quả mong đợi."
+  },
+  "main-3-3": {
+    "q": "Trong V-Model, đặc tả hệ thống làm cơ sở thiết kế cho cấp độ kiểm thử nào?",
+    "a": "Kiểm thử hệ thống."
+  },
+  "main-4-0": {
+    "q": "Trong V-Model, thiết kế chi tiết tương ứng với cấp độ kiểm thử nào?",
+    "a": "Kiểm thử đơn vị."
+  },
+  "main-5-0": {
+    "q": "Phiên bản gần hoàn thiện được phát cho nhóm người dùng ngoài tổ chức dùng thử là loại kiểm thử chấp nhận nào?",
+    "a": "Beta testing."
+  },
+  "main-5-1": {
+    "q": "Khi tích hợp từ mô-đun cấp thấp lên mà mô-đun gọi phía trên chưa có, cần thành phần thay thế nào?",
+    "a": "Driver."
+  },
+  "main-5-2": {
+    "q": "Vì sao không nên đưa phần lớn ca kiểm thử vào tầng giao diện E2E của kim tự tháp?",
+    "a": "Chúng chậm, tốn chi phí và dễ không ổn định."
+  },
+  "main-5-3": {
+    "q": "Sau khi sửa một lỗi nhỏ, nhóm chạy nhanh vài luồng chính để xác nhận bản sửa đủ ổn định. Đây là gì?",
+    "a": "Sanity testing."
+  },
+  "main-6-0": {
+    "q": "Một bản build mới vừa được tạo; nhóm chạy nhanh các chức năng chính trước khi kiểm thử sâu. Đó là gì?",
+    "a": "Smoke testing."
+  },
+  "main-6-1": {
+    "q": "Một trang hoạt động ở Chrome nhưng vỡ giao diện ở Firefox. Cần bổ sung loại kiểm thử phi chức năng nào?",
+    "a": "Kiểm thử tương thích."
+  },
+  "main-6-2": {
+    "q": "Nâng phiên bản thư viện trước khi bản cũ hết hỗ trợ thuộc loại bảo trì nào?",
+    "a": "Bảo trì phòng ngừa."
+  },
+  "main-7-1": {
+    "q": "Theo quy tắc không cho người dưới 25 tuổi đăng ký, Given 24 tuổi, When gửi form, Then kết quả mong đợi là gì?",
+    "a": "Hệ thống từ chối đăng ký và không lưu hồ sơ."
+  },
+  "main-7-2": {
+    "q": "Để truy vết từng ca kiểm thử khi báo lỗi, test case cần trường định danh nào?",
+    "a": "Test Case ID duy nhất."
+  },
+  "main-7-3": {
+    "q": "Sau khi chạy test case, tester phải ghi gì để xác định Pass hay Fail?",
+    "a": "Kết quả thực tế và trạng thái thực thi."
+  },
+  "main-8-0": {
+    "q": "Một test case cùng lúc kiểm tra đăng nhập, thanh toán và hoàn tiền gây khó xác định lỗi. Nên thiết kế lại thế nào?",
+    "a": "Tách thành các test case, mỗi ca tập trung một mục tiêu kiểm tra."
+  },
+  "main-8-1": {
+    "q": "Trong test case, AUT viết tắt cho đối tượng nào?",
+    "a": "Application Under Test, tức ứng dụng đang được kiểm thử."
+  },
+  "main-8-2": {
+    "q": "Chưa có môi trường và dữ liệu thử phù hợp thì điều kiện nào để bắt đầu thực thi chưa đạt?",
+    "a": "Entry criteria (tiêu chí bắt đầu kiểm thử)."
+  },
+  "main-9-1": {
+    "q": "Tester nhận lỗi ở trạng thái Assigned và bắt đầu xử lý. Trạng thái tiếp theo thường là gì?",
+    "a": "In Progress."
+  },
+  "main-9-2": {
+    "q": "Một báo cáo lỗi mới trùng hoàn toàn với lỗi đã ghi trước đó. Nên đặt trạng thái gì?",
+    "a": "Duplicate."
+  },
+  "main-9-3": {
+    "q": "Một lỗi nhỏ về giao diện nhưng cản buổi trình diễn ngày mai có thể được ưu tiên sửa cao vì yếu tố nào?",
+    "a": "Priority phụ thuộc nhu cầu kinh doanh và thời điểm phát hành."
+  },
+  "main-11-1": {
+    "q": "Một test case chạy chương trình và thấy tổng tiền thực tế sai với mong đợi. Đây là kiểm thử gì?",
+    "a": "Kiểm thử động; nó quan sát thất bại khi thực thi."
+  },
+  "main-12-1": {
+    "q": "Trong review tài liệu, ai chịu trách nhiệm sửa sản phẩm công việc sau khi nhận góp ý?",
+    "a": "Tác giả tài liệu (author)."
+  },
+  "main-13-3": {
+    "q": "Bảng quyết định có sáu quy tắc khả thi. Cần tối thiểu bao nhiêu test case để thử mỗi quy tắc một lần?",
+    "a": "Sáu test case."
+  },
+  "main-14-0": {
+    "q": "Một nhánh chỉ chạy khi x > 0 và y == 1. Bộ giá trị nào làm điều kiện bảo vệ nhánh đúng?",
+    "a": "Ví dụ x = 1 và y = 1."
+  },
+  "main-15-2": {
+    "q": "Một kịch bản chỉ chạy một lần và viết script tốn nhiều giờ. Cách nào thường tiết kiệm hơn?",
+    "a": "Kiểm thử thủ công."
+  },
+  "main-16-0": {
+    "q": "Cần mô phỏng đồng thời 10.000 người dùng để đo tải. Cách thực thi nào phù hợp?",
+    "a": "Kiểm thử hiệu năng bằng công cụ tự động tạo tải."
+  },
+  "main-16-1": {
+    "q": "Đánh giá thông báo lỗi có dễ hiểu với người mới dùng hay không phù hợp với loại kiểm thử nào?",
+    "a": "Kiểm thử khả năng sử dụng với đánh giá của con người."
+  },
+  "main-16-3": {
+    "q": "Script Selenium thường hỏng khi vị trí phần tử trong DOM thay đổi. Nên ưu tiên locator ổn định nào?",
+    "a": "ID hoặc thuộc tính data-testid ổn định."
+  },
+  "main-17-1": {
+    "q": "Một dự án có rất nhiều E2E nhưng ít unit test tạo hình dạng trái kim tự tháp. Mô hình đó thường gọi là gì?",
+    "a": "Hình kem ốc quế (ice cream cone)."
+  },
+  "main-17-2": {
+    "q": "Trước khi viết script tự động, cần xác định ba thành phần cơ bản nào của ca kiểm thử?",
+    "a": "Đầu vào, các bước thực hiện và kết quả mong đợi."
+  },
+  "main-18-0": {
+    "q": "Script báo Fail do locator đã đổi dù tính năng đúng. Đây là loại kết quả gì?",
+    "a": "False failure: test thất bại giả do kịch bản kiểm thử."
+  },
+  "main-18-1": {
+    "q": "Sau khi chạy bộ test tự động, cần làm gì trước khi kết luận sản phẩm lỗi?",
+    "a": "Phân tích kết quả, log và nguyên nhân các test Fail."
+  },
+  "main-19-3": {
+    "q": "Một XPath tuyệt đối phụ thuộc toàn bộ cây DOM hay hỏng khi thêm thẻ bao. Vì sao?",
+    "a": "Vì đường dẫn thay đổi khi cấu trúc DOM thay đổi."
+  },
+  "main-20-1": {
+    "q": "Nút có id=\"submit-order\" ổn định. Selenium nên ưu tiên cách định vị nào?",
+    "a": "By.Id(\"submit-order\")."
+  },
+  "main-21-3": {
+    "q": "Nếu điều kiện đăng nhập tiên quyết sai, dùng Assert hay Verify để dừng test ngay?",
+    "a": "Assert."
+  },
+  "main-22-1": {
+    "q": "Trong Page Object Model, sửa selector của nút Đăng nhập ở đâu để nhiều test dùng lại?",
+    "a": "Trong Page Object của trang đăng nhập.",
+    "related": "C5 · tr. 23",
+    "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "relatedPage": 23
+  },
+  "main-22-2": {
+    "q": "Một bộ test cũ không tìm thấy lỗi mới dù sản phẩm thay đổi. Cần làm gì theo nghịch lý thuốc trừ sâu?",
+    "a": "Rà soát, cập nhật và bổ sung test case."
+  },
+  "main-22-3": {
+    "q": "Một test tự động Fail do máy chạy hết dung lượng đĩa. Cần kiểm tra nguồn thất bại nào?",
+    "a": "Môi trường chạy test, không chỉ mã ứng dụng."
+  },
+  "main-24-2": {
+    "q": "Thay đổi giao diện khiến nhiều script cùng hỏng locator. Cách tổ chức nào giúp chỉ sửa locator một nơi?",
+    "a": "Page Object Model."
+  },
+  "main-25-0": {
+    "q": "Trong Page Object Model, thao tác click nút Đăng nhập nên được viết ở đâu?",
+    "a": "Phương thức của Page Object đại diện trang đăng nhập.",
+    "related": "C5 · tr. 23",
+    "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "relatedPage": 23
+  },
+  "main-25-1": {
+    "q": "Nhiều test cùng dùng một trang. Lợi ích bảo trì chính của Page Object là gì?",
+    "a": "Tái sử dụng thao tác và cập nhật locator tập trung.",
+    "related": "C5 · tr. 23",
+    "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "relatedPage": 23
+  },
+  "main-27-0": {
+    "q": "Chưa có bản build, tester đã có bản nháp tài liệu yêu cầu. Nên bắt đầu hình thức nào?",
+    "a": "Kiểm thử tĩnh bằng rà soát tài liệu."
+  },
+  "main-28-2": {
+    "q": "Sau khi mở thêm một cửa sổ bằng Selenium, muốn đóng riêng cửa sổ hiện tại thì gọi lệnh nào?",
+    "a": "driver.Close();",
+    "related": "C6 · tr. 34",
+    "relatedFile": "BaiGiang_C6_Selenium.pdf",
+    "relatedPage": 34
+  }
+}

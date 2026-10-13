@@ -1881,8 +1881,8 @@
     "raw": "Câu 82: Vì sao không nên định vị phần tử theo ClassName?\nA. Selenium không hỗ trợ\nB. Class dùng cho trình bày nên hay đổi và thường không duy nhất\nC. Class chỉ có ở thẻ div\nD. Class chạy chậm nhất",
     "kind": "main",
     "chapter": 6,
-    "page": 17,
-    "basis": "Slide 17: Trang giảng giải trực tiếp khái niệm hoặc kỹ thuật được hỏi.",
+    "page": 32,
+    "basis": "Slide 32: Định vị phần tử bằng lớp By; ưu tiên Id vì ổn định.",
     "file": "BaiGiang_C6_Selenium.pdf",
     "section": "C6",
     "matchType": "Đối chiếu nội dung câu",
@@ -1890,13 +1890,7 @@
     "answer": "B",
     "answerVerified": true,
     "answerSource": "Dấu gạch dưới trong file Word",
-    "target": {
-      "x": 0.50919,
-      "y": 0.39656,
-      "w": 0.45609,
-      "h": 0.08132,
-      "quality": "text"
-    }
+    "target": null
   },
   {
     "id": "main-20-2",

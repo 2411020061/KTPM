@@ -155,7 +155,8 @@
       const table = x.table && Array.isArray(x.table.headers) && Array.isArray(x.table.rows)
         ? `<div class="kp-table-wrap"><table class="kp-table"><thead><tr>${x.table.headers.map(h=>`<th scope="col">${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${x.table.rows.map(row=>`<tr>${row.map(c=>`<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
       const explain = x.explain ? `<p class="kp-explain"><b>Cách ra đáp án:</b> ${escapeHtml(x.explain)}</p>` : '';
-      return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span>${img}${table}<span class="kp-a">${escapeHtml(x.a)}</span>${explain}</li>`;
+      const related = x.relatedFile && x.relatedPage ? `<button type="button" class="slide-link verified" data-file="${escapeHtml(x.relatedFile)}" data-page="${Number(x.relatedPage)}" data-title="${escapeHtml(FILES[x.relatedFile]||x.relatedFile)}" data-question="${escapeHtml(q.id)}">Xem slide liên quan · tr. ${Number(x.relatedPage)} ↗</button>` : '';
+      return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span>${img}${table}<span class="kp-a">${escapeHtml(x.a)}</span>${explain}${related}</li>`;
     }).join('');
     const title = k && k.title ? escapeHtml(k.title) : 'Slide bài giảng';
     const subParts = [];

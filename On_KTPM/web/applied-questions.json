@@ -1,11 +1,82 @@
 {
-  "main-10-1": {
-    "q": "Một đợt có 200 test case; 160 đã chạy, gồm 144 Pass và 16 Fail. Tỷ lệ Pass trên số ca đã chạy là bao nhiêu?",
-    "a": "90%",
-    "explain": "Mẫu số là 160 ca đã chạy, không phải 200 ca được lập kế hoạch. Tính 144 ÷ 160 × 100 = 90%.",
-    "image": "media/extra/pass-rate.svg",
-    "imageAlt": "160 ca đã chạy gồm 144 Pass và 16 Fail; 40 ca chưa chạy"
-  },
+  "main-10-1": [
+    {
+      "q": "Kế hoạch có 250 test case; nhóm đã chạy 150. Tỷ lệ thực thi (Test Execution %) là bao nhiêu?",
+      "a": "60%.",
+      "explain": "Tỷ lệ thực thi = số test case đã chạy ÷ tổng số test case theo kế hoạch × 100 = 150 ÷ 250 × 100 = 60%. Ở đây không dùng số ca Pass.",
+      "table": {
+        "headers": [
+          "Tổng số test case",
+          "Đã chạy",
+          "Chưa chạy"
+        ],
+        "rows": [
+          [
+            "250",
+            "150",
+            "100"
+          ]
+        ]
+      }
+    },
+    {
+      "q": "Trước khi phát hành tìm được 45 khiếm khuyết; sau phát hành còn phát hiện 5. DRE (Defect Removal Efficiency) là bao nhiêu?",
+      "a": "90%.",
+      "explain": "DRE = số lỗi phát hiện và loại bỏ trước phát hành ÷ tổng số lỗi phát hiện trước và sau phát hành × 100 = 45 ÷ (45 + 5) × 100 = 90%.",
+      "table": {
+        "headers": [
+          "Trước phát hành",
+          "Sau phát hành",
+          "Tổng lỗi"
+        ],
+        "rows": [
+          [
+            "45",
+            "5",
+            "50"
+          ]
+        ]
+      }
+    },
+    {
+      "q": "Có 90 yêu cầu; 72 yêu cầu đã có test case tương ứng. Requirement Coverage bằng bao nhiêu?",
+      "a": "80%.",
+      "explain": "Requirement Coverage = số yêu cầu đã có test case ÷ tổng số yêu cầu × 100 = 72 ÷ 90 × 100 = 80%.",
+      "table": {
+        "headers": [
+          "Tổng yêu cầu",
+          "Có test case",
+          "Chưa có test case"
+        ],
+        "rows": [
+          [
+            "90",
+            "72",
+            "18"
+          ]
+        ]
+      }
+    },
+    {
+      "q": "Một sản phẩm có 8 KLOC mã nguồn và tìm được 24 khiếm khuyết. Defect Density là bao nhiêu?",
+      "a": "3 khiếm khuyết/KLOC.",
+      "explain": "Defect Density = số khiếm khuyết ÷ kích thước mã nguồn (KLOC) = 24 ÷ 8 = 3 khiếm khuyết/KLOC.",
+      "table": {
+        "headers": [
+          "Khiếm khuyết",
+          "Kích thước mã",
+          "Đơn vị"
+        ],
+        "rows": [
+          [
+            "24",
+            "8",
+            "KLOC"
+          ]
+        ]
+      }
+    }
+  ],
   "main-12-2": {
     "q": "Ô tuổi chấp nhận từ 20 đến 50. Với BVA ba giá trị quanh mỗi biên, cần thử đúng bộ giá trị nào?",
     "a": "19, 20, 21, 49, 50, 51.",
@@ -339,5 +410,63 @@
     "explain": "19°C ở giữa hai ngưỡng: chưa xuống dưới 18°C để bật, cũng chưa tới 21°C để tắt. Máy giữ trạng thái trước đó.",
     "image": "media/extra/temperature-18-21.svg",
     "imageAlt": "Ba vùng nhiệt độ dưới 18, từ 18 đến 20, và từ 21 độ với điểm 19 ở giữa"
+  },
+  "pdf-C4-19": {
+    "q": "Bảng quyết định bảo hiểm dưới đây: khách 58 tuổi chọn gói D. Phí và mức vượt quá hợp lệ là bao nhiêu?",
+    "a": "Phí £80; mức vượt quá £1.200 (quy tắc R3).",
+    "explain": "Đọc hàng tuổi: 58 thuộc nhóm >50. Đọc tiếp hàng gói: D được nhận ở R3. Trong cùng cột R3, hai hàng kết quả là phí £80 và mức vượt quá £1.200. Không lấy kết quả từ cột tuổi 30–50.",
+    "table": {
+      "headers": [
+        "Điều kiện / kết quả",
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "rows": [
+        [
+          "Tuổi",
+          "<30",
+          "30–50",
+          ">50"
+        ],
+        [
+          "Gói được nhận",
+          "A hoặc B",
+          "C hoặc D",
+          "C hoặc D"
+        ],
+        [
+          "Phí",
+          "£110",
+          "£75",
+          "£80"
+        ],
+        [
+          "Mức vượt quá",
+          "£2.000",
+          "£600",
+          "£1.200"
+        ]
+      ]
+    }
+  },
+  "main-10-3": {
+    "q": "Ước lượng một hoạt động có thời gian lạc quan 2 ngày, khả dĩ nhất 4 ngày và bi quan 8 ngày. Theo PERT, thời gian kỳ vọng là bao nhiêu?",
+    "a": "4,33 ngày (xấp xỉ).",
+    "explain": "PERT = (lạc quan + 4 × khả dĩ nhất + bi quan) ÷ 6 = (2 + 4×4 + 8) ÷ 6 = 26 ÷ 6 ≈ 4,33 ngày.",
+    "table": {
+      "headers": [
+        "Lạc quan",
+        "Khả dĩ nhất",
+        "Bi quan"
+      ],
+      "rows": [
+        [
+          "2 ngày",
+          "4 ngày",
+          "8 ngày"
+        ]
+      ]
+    }
   }
 }

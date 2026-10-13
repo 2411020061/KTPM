@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1] / 'On_KTPM' / 'web'
 knowledge = json.loads((ROOT / 'knowledge.json').read_text())
 questions = {q['id']: q for name in ('questions.json', 'pdf-questions.json') for q in json.loads((ROOT / name).read_text())}
 applied = json.loads((ROOT / 'applied-questions.json').read_text())
+supplemental = json.loads((ROOT / 'supplemental-questions.json').read_text())
 
 STOP = set('cau nao sau day la cua de va trong cho voi mot nhung cac theo tren slide bai giang kiem thu phan mem duoc co the hay khong khi ve den tu'.split())
 
@@ -174,28 +175,38 @@ used_questions = set()
 used_answers = set()
 for id, k in knowledge.items():
     if id in applied:
-        item = applied[id]
-        candidates = [(item['q'], item['a'])]
+        items = applied[id] if isinstance(applied[id], list) else [applied[id]]
+        candidates = [(item['q'], item['a'], item, True) for item in items]
+    elif id in supplemental:
+        item = supplemental[id]
+        candidates = [(item['q'], item['a'], item, False)]
     else:
-        candidates = [OVERRIDES[id]] if id in OVERRIDES else []
+        candidates = [(*OVERRIDES[id], {}, False)] if id in OVERRIDES else []
     result[id] = []
-    for question, answer in candidates:
+    for question, answer, item, is_applied in candidates:
         qkey, akey = key(question), key(answer)
         if qkey in bank_questions or qkey in used_questions or akey in used_answers:
+            if id in supplemental or id in applied:
+                raise ValueError(f'Duplicate follow-up for {id}: {question}')
             continue
-        if id in applied:
-            result[id] = [{
+        if is_applied:
+            result[id].append({
                 **item,
                 'tag': 'Bài áp dụng',
                 'badge': 'Đổi dữ kiện',
                 'badgeClass': 'quiz',
                 'source': f"Kiến thức slide tr. {questions[id]['page']}",
-            }]
+            })
         else:
-            result[id] = [{'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': f"Slide tr. {questions[id]['page']}", 'badgeClass': 'yes', 'source': f"Slide tr. {questions[id]['page']}"}]
+            related = item.get('related')
+            label = f'Slide liên quan {related}' if related else f"Slide tr. {questions[id]['page']}"
+            result[id].append({'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': label, 'badgeClass': 'yes', 'source': label, **{k: item[k] for k in ('relatedFile', 'relatedPage') if k in item}})
         used_questions.add(qkey)
         used_answers.add(akey)
-        break
+
+missing = [id for id, entries in result.items() if not entries]
+if missing:
+    raise ValueError(f'{len(missing)} questions lack a follow-up: {missing}')
 
 (ROOT / 'extra-questions.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
 print('Generated', sum(bool(v) for v in result.values()), 'questions for', len(result), 'original questions')
