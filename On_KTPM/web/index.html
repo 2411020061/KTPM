@@ -42,13 +42,20 @@
     .knowledge-panel .kp-none{font-size:10px;color:var(--muted);font-style:italic;margin:0}
     .knowledge-panel .slide-link{max-width:100%;font-size:10px}
     .knowledge-panel .kp-sub{margin:0 0 7px;font-size:9.5px;color:#5c6880;line-height:1.4}
-    .kp-qa{list-style:none;margin:0;padding:0;max-height:430px;overflow:auto}
+    .kp-qa{list-style:none;margin:0;padding:0;max-height:560px;overflow:auto}
     .kp-qa li{padding:6px 0;border-top:1px dashed #dde4f2}
     .kp-qa li:first-child{border-top:0;padding-top:0}
     .kp-qa .kp-q{display:block;font-size:10px;font-weight:700;color:#2b3550;line-height:1.45}
     .kp-qa .kp-a{display:block;margin-top:3px;font-size:10px;color:#1c7653;line-height:1.45}
     .kp-qa .kp-a::before{content:"✓ ";font-weight:800}
     .kp-qa .kp-num{display:inline-block;min-width:15px;color:#8791a2;font-weight:800}
+    .kp-visual{margin:7px 0 4px;padding:5px;border:1px solid #dbe4f1;border-radius:7px;background:#fff}
+    .kp-visual img{display:block;width:100%;height:auto;max-height:230px;object-fit:contain}
+    .kp-table-wrap{max-width:100%;overflow-x:auto;margin:7px 0 4px}
+    .kp-table{width:100%;border-collapse:collapse;background:#fff;font-size:10px;line-height:1.35}
+    .kp-table th,.kp-table td{border:1px solid #d6dfed;padding:5px 6px;text-align:left;white-space:nowrap}
+    .kp-table th{background:#eaf0fb;color:#284170}
+    .kp-explain{margin:5px 0 0;padding:6px 7px;border-left:2px solid #83a6d9;background:#eef4ff;color:#334767;font-size:10px;line-height:1.5}
     .question-note{min-width:0;min-height:100px;padding:9px;border:1px solid #e5e8ee;border-radius:8px;background:#fafbfc;cursor:text;display:flex;flex-direction:column}.note-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.note-label{font-size:10px;font-weight:750;color:#667184}.note-saved{font-size:9px;color:#7d8796}.note-input{display:block;flex:1;width:100%;min-height:70px;max-height:180px;resize:vertical;border:0;border-radius:5px;padding:8px;background:#fff;color:#293347;font:11px/1.5 inherit;outline:none}.note-input:focus{box-shadow:0 0 0 2px #3659d91a}.note-input::placeholder{color:#9aa3b1}
     .slide-panel{display:flex;flex-direction:column}.slide-head{height:54px;display:flex;align-items:center;gap:12px;padding:0 14px;border-bottom:1px solid var(--line);flex:none}.slide-info{min-width:0;flex:1}.slide-info h2{font-size:13px;margin:0;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.slide-info p{font-size:10px;margin:3px 0 0;color:var(--muted)}.page-control{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted)}.page-control input{width:55px;height:29px;border:1px solid var(--line);border-radius:7px;padding:0 7px;font-size:12px;text-align:center;color:var(--ink)}.page-control button,.open-file{height:29px;border:1px solid var(--line);background:#fff;border-radius:7px;padding:0 9px;color:#465168;font-size:10px;cursor:pointer}.page-control button:hover,.open-file:hover{background:#f5f7fb}.pdf-wrap{position:relative;flex:1;min-height:0;background:#697386;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:14px}.slide-stage{position:relative;display:inline-block;max-width:100%;height:max-content;line-height:0}.slide-image{display:none;max-width:100%;height:auto;background:#fff;box-shadow:0 3px 18px #15223a45}.pdf-wrap.loaded .slide-image{display:block}.proof-overlay{position:absolute;inset:0;width:100%;height:100%;overflow:visible;opacity:0;pointer-events:none;transition:opacity .18s}.pdf-wrap.loaded .proof-overlay.has-proof{opacity:1}.proof-box{fill:#ff51451c;stroke:#ef4037;stroke-width:3;stroke-dasharray:8 5;vector-effect:non-scaling-stroke}.welcome{position:absolute;inset:0;display:grid;place-items:center;color:#fff;text-align:center;padding:24px;pointer-events:none}.welcome div{max-width:430px;background:#192337c9;border:1px solid #ffffff32;border-radius:15px;padding:22px 26px;backdrop-filter:blur(5px)}.welcome b{font-size:15px}.welcome p{font-size:12px;line-height:1.6;color:#e2e7ef;margin:8px 0 0}.pdf-wrap.loaded .welcome{display:none}.statusbar{height:27px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;background:#fafbfc;border-top:1px solid var(--line);font-size:9px;color:var(--muted);flex:none}.legend{display:flex;gap:12px}.legend span{display:flex;align-items:center;gap:5px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}.dot.tentative{background:var(--red)}
     @media(max-width:900px){.app{padding:8px;gap:8px;grid-template-rows:auto minmax(0,1fr)}.topbar{flex-wrap:wrap;gap:8px;padding:10px}.brand{min-width:190px}.filters{order:3;width:100%;overflow:auto}.workspace{grid-template-columns:minmax(300px,43%) minmax(0,57%);gap:8px}.count{margin-left:0}.panel-toggle{right:-11px}}
@@ -136,14 +143,21 @@
     }
 
     const slideItems = extra.filter(x => x.tag === 'Cùng slide');
+    const appliedItems = extra.filter(x => x.tag === 'Bài áp dụng');
     const items = extra.map((x, i) => {
       const badge = x.badge ? `<span class="pdf-badge ${x.badgeClass || (x.tag === 'Cùng slide' ? 'yes' : 'quiz')}">${escapeHtml(x.badge)}</span> ` : '';
-      return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span><span class="kp-a">${escapeHtml(x.a)}</span></li>`;
+      const img = x.image && /^media\/[A-Za-z0-9/_-]+\.(svg|png|jpe?g)$/.test(x.image)
+        ? `<figure class="kp-visual"><img src="${escapeHtml(x.image)}" alt="${escapeHtml(x.imageAlt||'Hình minh họa cho bài áp dụng')}" loading="lazy"></figure>` : '';
+      const table = x.table && Array.isArray(x.table.headers) && Array.isArray(x.table.rows)
+        ? `<div class="kp-table-wrap"><table class="kp-table"><thead><tr>${x.table.headers.map(h=>`<th scope="col">${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${x.table.rows.map(row=>`<tr>${row.map(c=>`<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
+      const explain = x.explain ? `<p class="kp-explain"><b>Cách ra đáp án:</b> ${escapeHtml(x.explain)}</p>` : '';
+      return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span>${img}${table}<span class="kp-a">${escapeHtml(x.a)}</span>${explain}</li>`;
     }).join('');
     const title = k && k.title ? escapeHtml(k.title) : 'Slide bài giảng';
     const subParts = [];
     if (slideItems.length) subParts.push(`📌 ${slideItems.length} câu hỏi về phần khác trên cùng slide`);
-    const subText = subParts.join(' • ') + ' (kèm đáp án):';
+    if (appliedItems.length) subParts.push(`🧮 ${appliedItems.length} bài áp dụng từ kiến thức slide`);
+    const subText = subParts.join(' • ') + ' (mỗi câu có một đáp án đúng):';
     return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng · ${title}</h4><p class="kp-sub">${subText}</p><ul class="kp-qa">${items}</ul>${foot}</div>`;
   }
   const PDF_BADGE={C:['yes','Có trong ngân hàng'],G:['near','Gần giống'],K:['no','Không có']};

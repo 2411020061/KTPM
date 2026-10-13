@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="250" viewBox="0 0 720 250" role="img" aria-label="Ba trạng thái S0, S1, S2 và ba chuyển tiếp">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#16844a"/></marker><marker id="missing" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0 0L9 3L0 6Z" fill="#c5453e"/></marker></defs>
+<rect width="720" height="250" rx="14" fill="white"/>
+<text x="25" y="37" fill="#183153" font-family="Arial" font-size="21" font-weight="700">Bao phủ chuyển tiếp</text>
+<path d="M168 116H313" fill="none" stroke="#16844a" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M408 116H553" fill="none" stroke="#16844a" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M598 161C588 228 125 228 122 161" fill="none" stroke="#c5453e" stroke-width="4" stroke-dasharray="9 6" marker-end="url(#missing)"/>
+<g fill="#eff6ff" stroke="#2563eb" stroke-width="3"><circle cx="120" cy="115" r="43"/><circle cx="360" cy="115" r="43"/><circle cx="600" cy="115" r="43"/></g>
+<g fill="#183153" font-family="Arial" font-size="22" font-weight="700" text-anchor="middle"><text x="120" y="122">S0</text><text x="360" y="122">S1</text><text x="600" y="122">S2</text></g>
+<text x="245" y="99" fill="#16844a" font-family="Arial" font-size="15">Đã đi</text><text x="485" y="99" fill="#16844a" font-family="Arial" font-size="15">Đã đi</text><text x="320" y="211" fill="#c5453e" font-family="Arial" font-size="15">Chưa đi</text></svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240" role="img" aria-labelledby="title">
+  <title id="title">160 ca đã chạy gồm 144 Pass, 16 Fail; 40 ca chưa chạy</title>
+  <rect width="720" height="240" rx="14" fill="#ffffff"/>
+  <text x="28" y="38" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#183153">200 test case được lập kế hoạch</text>
+  <text x="28" y="78" font-family="Arial,sans-serif" font-size="17" fill="#334155">160 đã chạy</text>
+  <rect x="28" y="96" width="576" height="62" rx="9" fill="#16844a"/>
+  <path d="M546 96h49a9 9 0 0 1 9 9v44a9 9 0 0 1-9 9h-49z" fill="#c5453e"/>
+  <text x="258" y="135" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="white">144 Pass</text>
+  <text x="553" y="135" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="white">16</text>
+  <rect x="616" y="96" width="76" height="62" rx="9" fill="#d8e0eb"/>
+  <text x="631" y="134" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#334155">40</text>
+  <text x="29" y="194" font-family="Arial,sans-serif" font-size="16" fill="#16844a">Pass</text>
+  <text x="92" y="194" font-family="Arial,sans-serif" font-size="16" fill="#c5453e">Fail</text>
+  <text x="148" y="194" font-family="Arial,sans-serif" font-size="16" fill="#475569">Chưa chạy</text>
+</svg>

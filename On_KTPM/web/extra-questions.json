@@ -440,7 +440,37 @@
   "pdf-C4-10": [],
   "pdf-C4-11": [],
   "pdf-C4-12": [],
-  "pdf-C4-13": [],
+  "pdf-C4-13": [
+    {
+      "q": "Một ô nhập số đơn hàng hợp lệ từ 120 đến 450. Bộ ba BVA quanh biên trên là gì?",
+      "a": "449, 450, 451.",
+      "explain": "Biên trên là 450; chọn một giá trị ngay dưới biên (449), đúng tại biên (450) và ngay trên biên (451).",
+      "table": {
+        "headers": [
+          "Giá trị",
+          "Vị trí"
+        ],
+        "rows": [
+          [
+            "449",
+            "Trong miền hợp lệ"
+          ],
+          [
+            "450",
+            "Đúng biên trên"
+          ],
+          [
+            "451",
+            "Ngoài miền hợp lệ"
+          ]
+        ]
+      },
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 11"
+    }
+  ],
   "pdf-C4-14": [
     {
       "q": "Khi một vùng tương đương chứa các cách xử lý khác nhau, cần làm gì?",
@@ -453,24 +483,54 @@
   ],
   "pdf-C4-15": [
     {
-      "q": "Khi nào nên dùng kiểm thử chuyển trạng thái?",
-      "a": "Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử các sự kiện đã xảy ra.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 15",
-      "badgeClass": "yes",
-      "source": "Slide tr. 15"
+      "q": "Trong sơ đồ, bắt đầu ở S0 rồi đi theo các chuyển tiếp A, B, C. Cuối cùng ở trạng thái nào?",
+      "a": "S0.",
+      "explain": "Lần theo mũi tên: A đưa S0→S1, B đưa S1→S2, C đưa S2→S0.",
+      "image": "media/pdf/C4-15.jpeg",
+      "imageAlt": "Sơ đồ S0, S1, S2 với các mũi tên A, B, C, D",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 15"
     }
   ],
-  "pdf-C4-16": [],
-  "pdf-C4-17": [],
+  "pdf-C4-16": [
+    {
+      "q": "Từ trạng thái Checkout, nếu người mua quay lại giỏ hàng thay vì thanh toán, trạng thái kế tiếp hợp lệ là gì?",
+      "a": "Basket.",
+      "explain": "Theo mũi tên E ở nửa dưới sơ đồ, Checkout quay ngược về Basket. Đường F mới đi từ Checkout tới Pay.",
+      "image": "media/pdf/C4-16.png",
+      "imageAlt": "Sơ đồ Login, Browser, Basket, Checkout, Pay và Logout với mũi tên E quay về Basket",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 15"
+    }
+  ],
+  "pdf-C4-17": [
+    {
+      "q": "Theo sơ đồ trạng thái hôn nhân, đi từ S1 qua S2 rồi tới S3 thì trạng thái cuối là gì?",
+      "a": "S3 – Divorced (đã ly hôn).",
+      "explain": "Lần theo mũi tên S1 → S2 (Separated), rồi từ S2 có mũi tên xuống S3 (Divorced).",
+      "image": "media/pdf/C4-17.jpeg",
+      "imageAlt": "Sơ đồ S1 Married, S2 Separated, S3 Divorced",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 15"
+    }
+  ],
   "pdf-C4-18": [
     {
-      "q": "Hai yếu tố nào quyết định hành vi của hệ thống trong kiểm thử chuyển trạng thái?",
-      "a": "Trạng thái hiện tại và lịch sử các sự kiện đã xảy ra.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 15",
-      "badgeClass": "yes",
-      "source": "Slide tr. 15"
+      "q": "Trong Hình 4.6, từ S4 có thể chuyển trực tiếp về trạng thái nào?",
+      "a": "S1.",
+      "explain": "Quan sát mũi tên cong từ S4 quay lên S1; không có mũi tên trực tiếp từ S4 đến S2 hoặc ES.",
+      "image": "media/pdf/C4-18.jpeg",
+      "imageAlt": "Sơ đồ trạng thái với mũi tên từ S4 quay về S1",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 15"
     }
   ],
   "pdf-C4-19": [],
@@ -633,7 +693,19 @@
       "source": "Slide tr. 18"
     }
   ],
-  "main-10-1": [],
+  "main-10-1": [
+    {
+      "q": "Một đợt có 200 test case; 160 đã chạy, gồm 144 Pass và 16 Fail. Tỷ lệ Pass trên số ca đã chạy là bao nhiêu?",
+      "a": "90%",
+      "explain": "Mẫu số là 160 ca đã chạy, không phải 200 ca được lập kế hoạch. Tính 144 ÷ 160 × 100 = 90%.",
+      "image": "media/extra/pass-rate.svg",
+      "imageAlt": "160 ca đã chạy gồm 144 Pass và 16 Fail; 40 ca chưa chạy",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 19"
+    }
+  ],
   "main-10-2": [
     {
       "q": "Vì sao cần lưu sản phẩm bàn giao kiểm thử?",
@@ -689,27 +761,67 @@
   "main-12-1": [],
   "main-12-2": [
     {
-      "q": "BVA bổ sung cho phân vùng tương đương bằng cách tập trung vào đâu?",
-      "a": "Những điểm có rủi ro cao tại ranh giới của các vùng.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 12",
-      "badgeClass": "yes",
-      "source": "Slide tr. 12"
+      "q": "Ô tuổi chấp nhận từ 20 đến 50. Với BVA ba giá trị quanh mỗi biên, cần thử đúng bộ giá trị nào?",
+      "a": "19, 20, 21, 49, 50, 51.",
+      "explain": "Lấy ngay dưới, tại và ngay trên mỗi biên: quanh 20 là 19–20–21; quanh 50 là 49–50–51. Không lấy một giá trị bất kỳ ở giữa thay cho giá trị sát biên.",
+      "image": "media/extra/bva-20-50.svg",
+      "imageAlt": "Trục số đánh dấu các giá trị 19, 20, 21 và 49, 50, 51 quanh hai biên",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 12"
     }
   ],
   "main-12-3": [
     {
-      "q": "Phân vùng tương đương và BVA bổ sung cho nhau thế nào?",
-      "a": "Phân vùng tương đương xác định các miền; BVA kiểm tra các ranh giới có rủi ro cao.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 12",
-      "badgeClass": "yes",
-      "source": "Slide tr. 12"
+      "q": "Ô nhập số hợp lệ từ 30 đến 70. Với BVA hai giá trị cho mỗi biên, cần thử bộ nào?",
+      "a": "29, 30, 70, 71.",
+      "explain": "Chọn đúng tại và sát ngoài mỗi biên: dưới là 29–30, trên là 70–71. Đây là BVA hai giá trị, không cần thêm 31 hoặc 69.",
+      "image": "media/extra/bva-30-70.svg",
+      "imageAlt": "Trục số đánh dấu 29, 30, 70 và 71 quanh hai biên",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 12"
     }
   ],
   "main-13-0": [],
   "main-13-1": [],
-  "main-13-2": [],
+  "main-13-2": [
+    {
+      "q": "Bảng quy tắc đăng ký có bốn điều kiện độc lập, mỗi điều kiện chỉ Đúng hoặc Sai. Cần tối đa bao nhiêu cột để liệt kê mọi tổ hợp?",
+      "a": "16 cột quy tắc.",
+      "explain": "Mỗi điều kiện có 2 khả năng; bốn điều kiện độc lập tạo 2 × 2 × 2 × 2 = 2⁴ = 16 tổ hợp.",
+      "table": {
+        "headers": [
+          "Điều kiện",
+          "Số khả năng"
+        ],
+        "rows": [
+          [
+            "C1",
+            "2"
+          ],
+          [
+            "C2",
+            "2"
+          ],
+          [
+            "C3",
+            "2"
+          ],
+          [
+            "C4",
+            "2"
+          ]
+        ]
+      },
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 13"
+    }
+  ],
   "main-13-3": [],
   "main-14-0": [],
   "main-14-1": [
@@ -763,7 +875,36 @@
     }
   ],
   "main-15-2": [],
-  "main-15-3": [],
+  "main-15-3": [
+    {
+      "q": "Chạy tay mất 12 phút/lần. Viết script mất 90 phút, sau đó mỗi lần chạy tự động mất 3 phút. Từ lần chạy thứ mấy thì tổng thời gian tự động không còn lớn hơn chạy tay?",
+      "a": "Lần chạy thứ 10.",
+      "explain": "Gọi n là số lần chạy. Thủ công: 12n phút; tự động: 90 + 3n phút. Giải 90 + 3n ≤ 12n ⇒ n ≥ 10. Tại n = 10, hai cách cùng mất 120 phút.",
+      "table": {
+        "headers": [
+          "Cách làm",
+          "Chi phí ban đầu",
+          "Mỗi lần chạy"
+        ],
+        "rows": [
+          [
+            "Thủ công",
+            "0 phút",
+            "12 phút"
+          ],
+          [
+            "Tự động",
+            "90 phút",
+            "3 phút"
+          ]
+        ]
+      },
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 7"
+    }
+  ],
   "main-16-0": [],
   "main-16-1": [],
   "main-16-2": [
@@ -1124,63 +1265,176 @@
   ],
   "main-29-0": [
     {
-      "q": "Trong ví dụ bảng quyết định, hệ thống kiểm tra các điều kiện theo thứ tự nào?",
-      "a": "C1 → C2 → C3 → C4 và chỉ báo nguyên nhân không hợp lệ đầu tiên.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 14",
-      "badgeClass": "yes",
-      "source": "Slide tr. 14"
+      "q": "Trong bảng này, khách chưa đăng ký và đơn hàng 150 đô la khớp quy tắc nào, và có được miễn phí giao hàng không?",
+      "a": "Quy tắc R1; được miễn phí giao hàng.",
+      "explain": "Đơn 150 thỏa điều kiện ≥100. Ở R1, dấu “–” tại hàng đăng ký nghĩa là giá trị Đúng hoặc Sai đều được. Hành động R1 là miễn phí giao hàng.",
+      "table": {
+        "headers": [
+          "Điều kiện / hành động",
+          "R1",
+          "R2"
+        ],
+        "rows": [
+          [
+            "Đã đăng ký",
+            "–",
+            "–"
+          ],
+          [
+            "Đơn hàng ≥ 100",
+            "Đúng",
+            "Sai"
+          ],
+          [
+            "Miễn phí giao hàng",
+            "Có",
+            "Không"
+          ]
+        ]
+      },
+      "image": "media/media/image14.png",
+      "imageAlt": "Cách đọc dấu gạch ngang trong bảng quyết định",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 14"
     }
   ],
   "main-29-1": [
     {
-      "q": "Vì sao 16 tổ hợp điều kiện được rút gọn còn 5 quy tắc?",
-      "a": "Vì hệ thống kiểm tra C1 → C4 theo thứ tự và dừng ở nguyên nhân không hợp lệ đầu tiên.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 14",
-      "badgeClass": "yes",
-      "source": "Slide tr. 14"
+      "q": "Theo bảng quyết định, khách đã đăng ký đặt đơn 80 đô la sẽ nhận ưu đãi nào?",
+      "a": "Giảm giá 5%, không miễn phí giao hàng.",
+      "explain": "Đã đăng ký = Đúng và 80 < 100 nên điều kiện tổng đơn ≥100 = Sai. Cột R2 cho giảm 5% nhưng không đánh dấu miễn phí giao hàng.",
+      "table": {
+        "headers": [
+          "Điều kiện / hành động",
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "rows": [
+          [
+            "Đã đăng ký",
+            "Đúng",
+            "Đúng",
+            "Sai",
+            "Sai"
+          ],
+          [
+            "Tổng đơn ≥ 100",
+            "Đúng",
+            "Sai",
+            "Đúng",
+            "Sai"
+          ],
+          [
+            "Miễn phí giao hàng",
+            "Có",
+            "Không",
+            "Không",
+            "Không"
+          ],
+          [
+            "Giảm giá 5%",
+            "Có",
+            "Có",
+            "Không",
+            "Không"
+          ]
+        ]
+      },
+      "image": "media/media/image2.png",
+      "imageAlt": "Bảng quyết định miễn phí giao hàng và giảm giá",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 14"
     }
   ],
   "main-29-2": [
     {
-      "q": "Ở biên trên 25, bộ ba giá trị nào giúp phát hiện lỗi lệch một đơn vị?",
-      "a": "24, 25 và 26.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 12",
-      "badgeClass": "yes",
-      "source": "Slide tr. 12"
+      "q": "Ô nhập tín chỉ chấp nhận từ 5 đến 30. Với BVA ba giá trị, bộ ba quanh biên trên là gì?",
+      "a": "29, 30, 31.",
+      "explain": "Biên trên là 30; lấy sát dưới (29), đúng biên (30) và sát trên (31).",
+      "table": {
+        "headers": [
+          "Giá trị",
+          "Vai trò"
+        ],
+        "rows": [
+          [
+            "29",
+            "Sát dưới biên"
+          ],
+          [
+            "30",
+            "Đúng biên trên"
+          ],
+          [
+            "31",
+            "Sát trên biên"
+          ]
+        ]
+      },
+      "image": "media/extra/bva-5-30.svg",
+      "imageAlt": "Trục số với ba giá trị 29, 30, 31 quanh biên trên",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 12"
     }
   ],
   "main-29-3": [
     {
-      "q": "Ngoài các miền số hợp lệ và không hợp lệ, ô nhập tín chỉ cần thử loại dữ liệu nào?",
-      "a": "Ô trống, chữ cái, số thập phân, số âm và ký tự đặc biệt.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 10",
-      "badgeClass": "yes",
-      "source": "Slide tr. 10"
+      "q": "Ô nhập số nguyên hợp lệ từ 30 đến 70. Chọn một giá trị đại diện cho mỗi lớp tương đương thấp, hợp lệ và cao.",
+      "a": "29, 50, 71.",
+      "explain": "Ba lớp là ≤29, 30–70 và ≥71. Chọn một giá trị trong mỗi lớp; 29, 50, 71 là một bộ đại diện đúng.",
+      "image": "media/extra/ep-30-70.svg",
+      "imageAlt": "Ba lớp tương đương dưới 30, từ 30 đến 70 và trên 70",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 10"
     }
   ],
   "main-30-0": [
     {
-      "q": "Phân tích giá trị biên áp dụng cho dữ liệu nào và không phù hợp với dữ liệu nào?",
-      "a": "Áp dụng cho các vùng có thứ tự như số, ngày tháng, độ dài chuỗi; không áp dụng cho dữ liệu rời rạc như màu sắc.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 11",
-      "badgeClass": "yes",
-      "source": "Slide tr. 11"
+      "q": "Ô nhập cho phép 30 đến 70 nhưng lập trình viên dùng điều kiện x < 70. Giá trị nào phát hiện lỗi lệch ở biên trên?",
+      "a": "70.",
+      "explain": "70 nằm đúng biên trên và phải hợp lệ theo yêu cầu. Điều kiện x < 70 lại từ chối 70, nên test giá trị này phát hiện lỗi.",
+      "image": "media/extra/bva-30-70.svg",
+      "imageAlt": "Trục số có biên trên 70 và giá trị 71 sát ngoài",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 11"
     }
   ],
-  "main-30-1": [],
+  "main-30-1": [
+    {
+      "q": "Theo sơ đồ, sau hai lần nhập sai PIN rồi nhập đúng ở lần thứ ba, tài khoản chuyển sang trạng thái nào?",
+      "a": "S2 – Được truy cập (Access granted).",
+      "explain": "Hai lần sai đầu vẫn đi theo vòng lặp trở lại S1. Từ S1, mũi tên ghi “correct PIN” dẫn tới S2; chỉ lần sai thứ ba mới dẫn tới S3 bị khóa.",
+      "image": "media/media/image3.png",
+      "imageAlt": "Sơ đồ S1 chờ PIN, nhập đúng sang S2 được truy cập, sai lần ba sang S3 bị khóa",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 16"
+    }
+  ],
   "main-30-2": [
     {
-      "q": "Khi nào kỹ thuật kiểm thử chuyển trạng thái đặc biệt phù hợp?",
-      "a": "Khi hành vi phụ thuộc cả trạng thái hiện tại lẫn lịch sử sự kiện đã xảy ra.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 15",
-      "badgeClass": "yes",
-      "source": "Slide tr. 15"
+      "q": "Sơ đồ mới có ba chuyển tiếp hợp lệ S0→S1, S1→S2 và S2→S0. Bộ test mới đi qua hai chuyển tiếp đầu. Tỷ lệ bao phủ chuyển tiếp là bao nhiêu?",
+      "a": "66,7% (2/3 chuyển tiếp).",
+      "explain": "Đếm mũi tên đã đi: S0→S1 và S1→S2 là 2; tổng sơ đồ có 3 mũi tên. Còn thiếu S2→S0, nên 2 ÷ 3 × 100 ≈ 66,7%.",
+      "image": "media/extra/transitions-3.svg",
+      "imageAlt": "Sơ đồ ba trạng thái và ba chuyển tiếp, trong đó hai mũi tên đã đi",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 15"
     }
   ],
   "main-30-3": [
@@ -1195,42 +1449,78 @@
   ],
   "main-31-0": [
     {
-      "q": "Trong ví dụ kiểm tra số tín chỉ, hai quyết định D1 và D2 tạo tổng cộng bao nhiêu nhánh?",
-      "a": "Bốn nhánh: đúng và sai cho mỗi quyết định.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 22",
-      "badgeClass": "yes",
-      "source": "Slide tr. 22"
+      "q": "Một chương trình có 12 câu lệnh thực thi được; bộ test đi qua 9 câu lệnh. Statement coverage là bao nhiêu?",
+      "a": "75%.",
+      "explain": "Đếm 9 ô màu xanh đã chạy trên tổng 12 câu lệnh có thể thực thi; 9 ÷ 12 × 100 = 75%.",
+      "image": "media/extra/statement-9-12.svg",
+      "imageAlt": "12 câu lệnh, 9 ô xanh đã chạy và 3 ô xám chưa chạy",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 22"
     }
   ],
   "main-31-1": [
     {
-      "q": "Bao phủ nhánh và bao phủ câu lệnh có chứng minh chương trình hết lỗi không?",
-      "a": "Không; cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 21",
-      "badgeClass": "yes",
-      "source": "Slide tr. 21"
+      "q": "Với điều kiện if (x > 0), chạy hai test x = 5 và x = −2. Bao phủ nhánh của riêng quyết định này đạt bao nhiêu?",
+      "a": "100%.",
+      "explain": "x = 5 đi nhánh True, x = −2 đi nhánh False. Cả 2 trong 2 nhánh đã chạy, nên branch coverage = 2 ÷ 2 × 100 = 100%.",
+      "image": "media/media/image12.png",
+      "imageAlt": "Sơ đồ if có hai nhánh True và False",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 21"
     }
   ],
   "main-31-2": [
     {
-      "q": "Statement coverage đo điều gì?",
-      "a": "Tỷ lệ các câu lệnh có thể thực thi đã được tập test case chạy qua.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 21",
-      "badgeClass": "yes",
-      "source": "Slide tr. 21"
+      "q": "Bốn quyết định D1–D4 có tổng cộng tám nhánh Đúng/Sai. Bộ test đã đi qua 5 nhánh khác nhau. Branch coverage là bao nhiêu?",
+      "a": "62,5%.",
+      "explain": "Mỗi quyết định có hai nhánh nên tổng là 4 × 2 = 8. Có 5 nhánh đã chạy; 5 ÷ 8 × 100 = 62,5%.",
+      "table": {
+        "headers": [
+          "Quyết định",
+          "Nhánh đã chạy"
+        ],
+        "rows": [
+          [
+            "D1",
+            "Đúng, Sai"
+          ],
+          [
+            "D2",
+            "Đúng"
+          ],
+          [
+            "D3",
+            "Sai"
+          ],
+          [
+            "D4",
+            "Đúng"
+          ]
+        ]
+      },
+      "image": "media/extra/branch-5-8.svg",
+      "imageAlt": "Bốn quyết định có tám nhánh, năm nhánh đã đi",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 21"
     }
   ],
   "main-31-3": [
     {
-      "q": "Hai quyết định D1 và D2 trong ví dụ kiểm tra những giới hạn tín chỉ nào?",
-      "a": "D1 kiểm tra credits < 1; D2 kiểm tra credits > 25.",
-      "tag": "Cùng slide",
-      "badge": "Slide tr. 22",
-      "badgeClass": "yes",
-      "source": "Slide tr. 22"
+      "q": "Trên lưu đồ, test đi theo đường 1 → 2 → 3 → 5 → 6. Nhánh nào từ nút 2 chưa được kiểm tra?",
+      "a": "Nhánh 2 → 4.",
+      "explain": "Nút 2 tách ra hai hướng: tới 3 và tới 4. Đường test đã qua 2 → 3, nên còn thiếu 2 → 4 để bao phủ cả hai hướng tại nút này.",
+      "image": "media/media/image1.png",
+      "imageAlt": "Lưu đồ với nút 2 rẽ sang nút 3 hoặc nút 4",
+      "tag": "Bài áp dụng",
+      "badge": "Đổi dữ kiện",
+      "badgeClass": "quiz",
+      "source": "Kiến thức slide tr. 22"
     }
   ],
   "main-32-0": [

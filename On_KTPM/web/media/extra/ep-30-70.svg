@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-label="Ba lớp tương đương cho miền hợp lệ 30 đến 70">
+<rect width="720" height="220" rx="14" fill="white"/>
+<text x="25" y="37" fill="#183153" font-family="Arial" font-size="21" font-weight="700">Ba lớp tương đương cho miền 30–70</text>
+<rect x="25" y="66" width="210" height="105" rx="12" fill="#fee2e2" stroke="#c5453e"/>
+<rect x="255" y="66" width="210" height="105" rx="12" fill="#dcfce7" stroke="#16844a"/>
+<rect x="485" y="66" width="210" height="105" rx="12" fill="#fef3c7" stroke="#d97706"/>
+<g font-family="Arial" text-anchor="middle" fill="#183153"><text x="130" y="103" font-size="20">≤ 29</text><text x="360" y="103" font-size="20">30–70</text><text x="590" y="103" font-size="20">≥ 71</text><text x="130" y="139" font-size="17">Đại diện: 29</text><text x="360" y="139" font-size="17">Đại diện: 50</text><text x="590" y="139" font-size="17">Đại diện: 71</text></g></svg>

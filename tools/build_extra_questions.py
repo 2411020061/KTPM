@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'On_KTPM' / 'web'
 knowledge = json.loads((ROOT / 'knowledge.json').read_text())
 questions = {q['id']: q for name in ('questions.json', 'pdf-questions.json') for q in json.loads((ROOT / name).read_text())}
+applied = json.loads((ROOT / 'applied-questions.json').read_text())
 
 STOP = set('cau nao sau day la cua de va trong cho voi mot nhung cac theo tren slide bai giang kiem thu phan mem duoc co the hay khong khi ve den tu'.split())
 
@@ -172,13 +173,26 @@ bank_questions = {key(question_stem(q['raw'])) for q in questions.values()}
 used_questions = set()
 used_answers = set()
 for id, k in knowledge.items():
-    candidates = [OVERRIDES[id]] if id in OVERRIDES else []
+    if id in applied:
+        item = applied[id]
+        candidates = [(item['q'], item['a'])]
+    else:
+        candidates = [OVERRIDES[id]] if id in OVERRIDES else []
     result[id] = []
     for question, answer in candidates:
         qkey, akey = key(question), key(answer)
         if qkey in bank_questions or qkey in used_questions or akey in used_answers:
             continue
-        result[id] = [{'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': f"Slide tr. {questions[id]['page']}", 'badgeClass': 'yes', 'source': f"Slide tr. {questions[id]['page']}"}]
+        if id in applied:
+            result[id] = [{
+                **item,
+                'tag': 'Bài áp dụng',
+                'badge': 'Đổi dữ kiện',
+                'badgeClass': 'quiz',
+                'source': f"Kiến thức slide tr. {questions[id]['page']}",
+            }]
+        else:
+            result[id] = [{'q': question, 'a': answer, 'tag': 'Cùng slide', 'badge': f"Slide tr. {questions[id]['page']}", 'badgeClass': 'yes', 'source': f"Slide tr. {questions[id]['page']}"}]
         used_questions.add(qkey)
         used_answers.add(akey)
         break
