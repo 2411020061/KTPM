@@ -1,8 +1,8 @@
 {
   "pdf-C1-1": [
     {
-      "q": "Mục tiêu kiểm thử thay đổi thế nào giữa kiểm thử thành phần và kiểm thử chấp nhận?",
-      "a": "Kiểm thử thành phần chú trọng tìm lỗi sớm; kiểm thử chấp nhận chú trọng xây dựng niềm tin.",
+      "q": "Việc xem xét tài liệu yêu cầu và thiết kế từ sớm giúp ngăn ngừa điều gì?",
+      "a": "Ngăn ngừa khiếm khuyết phát sinh trong mã nguồn.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -252,8 +252,8 @@
   ],
   "pdf-C2-7": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “VERIFICATION & VALIDATION Mô hình chữ V (V-Model)”?",
-      "a": "Mỗi giai đoạn phát triển (nhánh trái) có một cấp độ kiểm thử tương ứng (nhánh phải). Test được thiết kế song song với hoạt động phát triển ⇒ phát hiện lỗi sớm hơn Waterfall",
+      "q": "Trong mô hình chữ V, test được thiết kế vào thời điểm nào?",
+      "a": "Song song với hoạt động phát triển để phát hiện lỗi sớm.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -282,8 +282,8 @@
   ],
   "pdf-C2-10": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “GOOD TESTING Đặc điểm của kiểm thử \"tốt\" trong mọi mô hình SDLC (”?",
-      "a": "Không có giai đoạn phát triển nào mà không đi kèm hoạt động kiểm chứng",
+      "q": "Mỗi giai đoạn phát triển cần đi kèm hoạt động nào?",
+      "a": "Một hoạt động kiểm chứng tương ứng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -312,8 +312,8 @@
   ],
   "pdf-C2-13": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB”?",
-      "a": "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+      "q": "Kiểm thử hệ thống dựa trên cơ sở nào và thường do ai thực hiện?",
+      "a": "Dựa trên đặc tả yêu cầu chức năng và phi chức năng; thường do tester độc lập thực hiện.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -362,8 +362,8 @@
   ],
   "pdf-C2-18": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “DevOps / CI-CD Tự động”?",
-      "a": "DevOps / CI-CD Tự động, liên tục sau mỗi commit Phát hành nhanh, chất lượng ổn định Sản phẩm SaaS, phát hành thường xuyên",
+      "q": "Trong DevOps/CI-CD, kiểm thử được chạy vào thời điểm nào?",
+      "a": "Tự động và liên tục sau mỗi commit.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -382,8 +382,8 @@
   ],
   "pdf-C2-20": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Ngay khi cơ sở kiểm thử (yêu cầu”?",
-      "a": "Ngay khi cơ sở kiểm thử (yêu cầu, thiết kế) sẵn sàng – nguyên tắc shift-left",
+      "q": "Theo nguyên tắc shift-left, có thể bắt đầu thiết kế kiểm thử khi nào?",
+      "a": "Ngay khi cơ sở kiểm thử như yêu cầu hoặc thiết kế sẵn sàng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -412,8 +412,8 @@
   ],
   "pdf-C3-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Công sức xây dựng script lớn hơn lợi ích thu được”?",
-      "a": "Công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn",
+      "q": "Khi nào kiểm thử thủ công có thể phù hợp hơn việc viết script?",
+      "a": "Khi công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -446,8 +446,8 @@
   "pdf-C3-9": [],
   "pdf-C3-10": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “LỢI ÍCH Sáu nhóm lợi ích của kiểm thử tự động 6 ① Tiết kiệm thời”?",
-      "a": "Chi phí đầu tư ban đầu cao nhưng khi số test case tăng lên, chi phí trên mỗi lần chạy giảm mạnh ⇒ ROI dương sau một số vòng chạy nhất định",
+      "q": "Khi số ca kiểm thử tăng lên, chi phí trên mỗi lần chạy tự động thay đổi thế nào?",
+      "a": "Giảm mạnh, giúp đạt ROI dương sau một số vòng chạy dù chi phí đầu tư ban đầu cao.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 6",
       "badgeClass": "yes",
@@ -456,8 +456,8 @@
   ],
   "pdf-C3-11": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “API Công cụ kiểm thử API”?",
-      "a": "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau",
+      "q": "Ngoài phương thức HTTP, kiểm thử API còn xác minh những thuộc tính nào?",
+      "a": "Tính chính xác, hiệu năng và độ tin cậy của giao diện trao đổi dữ liệu giữa các hệ thống.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -486,8 +486,8 @@
   ],
   "pdf-C3-14": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “API Công cụ kiểm thử API”?",
-      "a": "Kiểm thử API là quá trình kiểm tra và xác minh tính chính xác, hiệu năng và độ tin cậy của các giao diện lập trình ứng dụng – nơi các phần mềm và hệ thống khác nhau trao đổi dữ liệu với nhau",
+      "q": "Kiểm thử API xác minh những thuộc tính nào của giao diện trao đổi dữ liệu?",
+      "a": "Tính chính xác, hiệu năng và độ tin cậy.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -496,8 +496,8 @@
   ],
   "pdf-C3-15": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “MOBILE Công cụ kiểm thử ứng dụng di động”?",
-      "a": "Cho phép xây dựng kịch bản bằng kéo–thả hoặc dùng từ khoá có sẵn ⇒ không yêu cầu nhiều kiến thức lập trình",
+      "q": "Công cụ kiểm thử kéo–thả hoặc dựa trên từ khóa giúp giảm yêu cầu về kỹ năng nào?",
+      "a": "Kỹ năng lập trình khi xây dựng kịch bản kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -536,8 +536,8 @@
   ],
   "pdf-C3-19": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Hỗ trợ quản lý test case”?",
-      "a": "Hỗ trợ quản lý test case, thực thi và tạo báo cáo thuận tiện",
+      "q": "Công cụ trên slide hỗ trợ ba việc nào trong quản lý kiểm thử?",
+      "a": "Quản lý test case, thực thi và tạo báo cáo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -546,8 +546,8 @@
   ],
   "pdf-C3-20": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “MOBILE Công cụ kiểm thử ứng dụng di động”?",
-      "a": "Thường dùng trong giảng dạy và các dự án cần triển khai kiểm thử nhanh — KATALON STUDIO",
+      "q": "Appium hỗ trợ những loại ứng dụng di động nào?",
+      "a": "Native app, hybrid app và mobile web.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -596,8 +596,8 @@
   ],
   "pdf-C4-5": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Với mỗi quyết định”?",
-      "a": "Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+      "q": "Để đạt bao phủ nhánh cho một quyết định, cần thử những kết quả nào?",
+      "a": "Cả kết quả đúng (True) và sai (False).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -616,8 +616,8 @@
   ],
   "pdf-C4-7": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học ph”?",
-      "a": "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5",
+      "q": "Vì sao bảng quyết định đầy đủ 16 quy tắc trong ví dụ được rút gọn còn 5?",
+      "a": "Hệ thống kiểm tra lần lượt C1 đến C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -686,8 +686,8 @@
   ],
   "pdf-C4-14": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “HỘP ĐEN a) Phân vùng tương đương (Equivalence Par titioning – EP)”?",
-      "a": "Nếu trong cùng một vùng lại tồn tại các cách xử lý khác nhau ⇒ việc phân vùng chưa đúng, phải chia lại",
+      "q": "Khi một vùng tương đương chứa các cách xử lý khác nhau, cần làm gì?",
+      "a": "Chia lại vùng đó vì phân vùng hiện tại chưa đúng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
@@ -696,8 +696,8 @@
   ],
   "pdf-C4-15": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing)”?",
-      "a": "Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+      "q": "Khi nào nên dùng kiểm thử chuyển trạng thái?",
+      "a": "Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử các sự kiện đã xảy ra.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -726,8 +726,8 @@
   ],
   "pdf-C4-18": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing)”?",
-      "a": "Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+      "q": "Hai yếu tố nào quyết định hành vi của hệ thống trong kiểm thử chuyển trạng thái?",
+      "a": "Trạng thái hiện tại và lịch sử các sự kiện đã xảy ra.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -746,8 +746,8 @@
   ],
   "pdf-C4-20": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “STATE TABLE Bảng chuyển trạng thái – đăng ký học phần”?",
-      "a": "Đăng ký thành công Hủy đăng ký Còn trong thời hạn hủy Xóa đăng ký, cập nhật sĩ số Đã hủy Có",
+      "q": "Sau khi hủy đăng ký học phần thành công, hệ thống cần cập nhật gì?",
+      "a": "Xóa đăng ký, cập nhật sĩ số và chuyển sang trạng thái Đã hủy.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -836,8 +836,8 @@
   ],
   "main-2-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Ai làm gì? Kiểm thử thường do tester thực hiện”?",
-      "a": "Ai làm gì? Kiểm thử thường do tester thực hiện; gỡ lỗi do lập trình viên (developer) thực hiện. Trong Agile/DevOps, ranh giới này mờ đi: tester có thể tham gia gỡ lỗi, developer viết và chạy unit test",
+      "q": "Trong Agile/DevOps, ranh giới giữa tester và developer thay đổi thế nào?",
+      "a": "Tester có thể tham gia gỡ lỗi; developer cũng viết và chạy unit test.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
@@ -866,8 +866,8 @@
   ],
   "main-2-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Test Manager / QA Manager Lập chiến lược & kế hoạch kiểm thử”?",
-      "a": "Test Manager / QA Manager Lập chiến lược & kế hoạch kiểm thử, phân bổ nguồn lực, theo dõi tiến độ, báo cáo cho bên liên quan",
+      "q": "Test Manager/QA Manager chịu trách nhiệm gì ngoài lập kế hoạch?",
+      "a": "Phân bổ nguồn lực, theo dõi tiến độ và báo cáo cho các bên liên quan.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -886,8 +886,8 @@
   ],
   "main-3-1": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “triển kiểm thử”?",
-      "a": "triển kiểm thử. Hiểu ngữ cảnh tốt, thiên kiến giảm",
+      "q": "Vì sao người không trực tiếp viết sản phẩm có thể kiểm thử khách quan hơn?",
+      "a": "Họ hiểu ngữ cảnh nhưng ít bị thiên kiến xác nhận hơn người tạo ra sản phẩm.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 25",
       "badgeClass": "yes",
@@ -896,8 +896,8 @@
   ],
   "main-3-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Các sản phẩm này bảo đảm tính minh bạch”?",
-      "a": "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau",
+      "q": "Các sản phẩm bàn giao kiểm thử hỗ trợ việc bảo trì về sau như thế nào?",
+      "a": "Chúng tạo tính minh bạch và khả năng truy vết.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -926,8 +926,8 @@
   ],
   "main-4-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB”?",
-      "a": "3. Kiểm thử hệ thống (System) Toàn bộ hệ thống hoàn chỉnh Đặc tả yêu cầu (chức năng & phi chức năng) Tester độc lập",
+      "q": "Kiểm thử hệ thống thường do ai thực hiện?",
+      "a": "Tester độc lập.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -936,8 +936,8 @@
   ],
   "main-4-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB”?",
-      "a": "4. Kiểm thử chấp nhận (Acceptance) Hệ thống trong ngữ cảnh nghiệp vụ thực tế Yêu cầu nghiệp vụ, quy trình, hợp đồng Khách hàng / người dùng",
+      "q": "Kiểm thử chấp nhận đặt hệ thống trong ngữ cảnh nào?",
+      "a": "Ngữ cảnh nghiệp vụ thực tế của khách hàng hoặc người dùng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -946,8 +946,8 @@
   ],
   "main-4-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Giao tiếp giữa các module”?",
-      "a": "Giao tiếp giữa các module, giữa các hệ thống, API Thiết kế kiến trúc, đặc tả giao diện Developer / Tester",
+      "q": "Kiểm thử tích hợp tập trung vào các giao tiếp nào?",
+      "a": "Giao tiếp giữa các module, giữa các hệ thống và qua API.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1026,8 +1026,8 @@
   ],
   "main-6-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Xác định phần nào của hệ thống bị ảnh hưởng”?",
-      "a": "Xác định phần nào của hệ thống bị ảnh hưởng; dựa vào ma trận truy vết và kiến trúc",
+      "q": "Những yếu tố nào khiến phân tích tác động trong bảo trì trở nên khó khăn?",
+      "a": "Đặc tả lỗi thời hoặc thiếu, không có ma trận truy vết, người viết hệ thống đã nghỉ việc và tài liệu không được cập nhật.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 27",
       "badgeClass": "yes",
@@ -1036,8 +1036,8 @@
   ],
   "main-7-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “CI server tự build”?",
-      "a": "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay",
+      "q": "Trong CI, điều gì xảy ra nếu unit test hoặc phân tích tĩnh thất bại?",
+      "a": "Quy trình bị chặn ngay sau bước build và kiểm tra tự động.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
@@ -1106,8 +1106,8 @@
   ],
   "main-8-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Nội dung Nguyên tắc”?",
-      "a": "Nội dung Nguyên tắc, cách tiếp cận, chuẩn áp dụng, mức tự động hoá Mục tiêu, phạm vi, lịch trình, nhân sự, môi trường, rủi ro, tiêu chí vào/ra",
+      "q": "Test strategy mô tả những nội dung nào?",
+      "a": "Nguyên tắc, cách tiếp cận, chuẩn áp dụng và mức tự động hóa.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 10",
       "badgeClass": "yes",
@@ -1116,8 +1116,8 @@
   ],
   "main-9-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TRACEABILITY Ma trận truy vết yêu cầu (Requirement Traceability M”?",
-      "a": "REQ-02 Khoá tài khoản sau 5 lần nhập sai mật khẩu TC_LOGIN_005, 006 Fail BUG-118",
+      "q": "Trong ví dụ RTM, yêu cầu khóa tài khoản sau 5 lần sai được truy vết tới các test case nào?",
+      "a": "TC_LOGIN_005 và TC_LOGIN_006.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1176,8 +1176,8 @@
   ],
   "main-10-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Các sản phẩm này bảo đảm tính minh bạch”?",
-      "a": "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau",
+      "q": "Vì sao cần lưu sản phẩm bàn giao kiểm thử?",
+      "a": "Để bảo đảm minh bạch, truy vết và hỗ trợ bảo trì, nâng cấp.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1196,8 +1196,8 @@
   ],
   "main-11-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Các sản phẩm này bảo đảm tính minh bạch”?",
-      "a": "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau",
+      "q": "Sản phẩm bàn giao kiểm thử giúp ích gì sau khi kết thúc đợt test?",
+      "a": "Hỗ trợ truy vết, bảo trì và nâng cấp hệ thống về sau.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1216,8 +1216,8 @@
   ],
   "main-11-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Mục tiêu nổi bật Phản hồi nhanh Hiểu & kiểm tra nội dung”?",
-      "a": "Mục tiêu nổi bật Phản hồi nhanh Hiểu & kiểm tra nội dung, chia sẻ kiến thức Đánh giá & đạt đồng thuận kỹ thuật Phát hiện tối đa bất thường",
+      "q": "Mục tiêu nổi bật của informal review là gì?",
+      "a": "Nhận phản hồi nhanh.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1226,8 +1226,8 @@
   ],
   "main-11-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “HÌNH THỨC So sánh bốn hình thức xem xét (Review Types) 15 Tiêu ch”?",
-      "a": "Người dẫn dắt Không cố định Tác giả Người điều phối Người điều phối được đào tạo Chuẩn bị cá nhân Không bắt buộc Có thể có Thường có Bắt buộc",
+      "q": "Ở hình thức inspection, việc chuẩn bị cá nhân có bắt buộc không?",
+      "a": "Có, đây là bước bắt buộc.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1236,8 +1236,8 @@
   ],
   "main-12-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Người điều phối (Facilitator / Moderator) Tổ chức hoạt động”?",
-      "a": "Người điều phối (Facilitator / Moderator) Tổ chức hoạt động, bảo đảm đạt mục tiêu, kiểm soát thời gian và giữ trao đổi khách quan",
+      "q": "Người điều phối trong buổi review chịu trách nhiệm gì?",
+      "a": "Tổ chức hoạt động, giữ đúng mục tiêu, kiểm soát thời gian và trao đổi khách quan.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -1256,8 +1256,8 @@
   ],
   "main-12-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Phân vùng tương đương giúp nhận diện các miền”?",
-      "a": "Phân vùng tương đương giúp nhận diện các miền; BVA tập trung vào những điểm rủi ro cao nhất tại ranh giới. Hai kỹ thuật hầu như luôn được dùng cùng nhau",
+      "q": "BVA bổ sung cho phân vùng tương đương bằng cách tập trung vào đâu?",
+      "a": "Những điểm có rủi ro cao tại ranh giới của các vùng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -1266,8 +1266,8 @@
   ],
   "main-12-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Phân vùng tương đương giúp nhận diện các miền”?",
-      "a": "Phân vùng tương đương giúp nhận diện các miền; BVA tập trung vào những điểm rủi ro cao nhất tại ranh giới. Hai kỹ thuật hầu như luôn được dùng cùng nhau",
+      "q": "Phân vùng tương đương và BVA bổ sung cho nhau thế nào?",
+      "a": "Phân vùng tương đương xác định các miền; BVA kiểm tra các ranh giới có rủi ro cao.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -1326,8 +1326,8 @@
   ],
   "main-14-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “STATE TABLE Bảng chuyển trạng thái – đăng ký học phần”?",
-      "a": "Chưa đăng ký Xác nhận thành công Chưa có yêu cầu chờ xử lý Không thực hiện Chưa đăng ký Không",
+      "q": "Khi hủy đăng ký học phần còn trong thời hạn hủy, trạng thái tiếp theo là gì?",
+      "a": "Đã hủy.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1336,8 +1336,8 @@
   ],
   "main-14-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Với mỗi quyết định”?",
-      "a": "Với mỗi quyết định, phải kiểm tra cả kết quả đúng (T) và sai (F)",
+      "q": "Một quyết định cần được chạy qua những kết quả nào để đạt bao phủ nhánh?",
+      "a": "Cả nhánh đúng (True) và nhánh sai (False).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1346,8 +1346,8 @@
   ],
   "main-14-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statem”?",
-      "a": "Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+      "q": "Statement coverage đo tỷ lệ của đối tượng nào?",
+      "a": "Các câu lệnh có thể thực thi đã được tập test case chạy qua.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1366,8 +1366,8 @@
   ],
   "main-15-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “ASSERT VS VERIFY Assert và Verify – hai lệnh kiểm chứng quan trọn”?",
-      "a": "Giúp tiết kiệm thời gian chạy test và tránh hàng loạt lỗi giả — ASSERT – Khẳng định",
+      "q": "Khi kiểm tra nhiều chi tiết độc lập trên cùng trang, nên dùng Assert hay Verify?",
+      "a": "Verify, vì nó ghi nhận lỗi nhưng vẫn tiếp tục chạy các bước kiểm tra khác.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1416,8 +1416,8 @@
   ],
   "main-16-2": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Chạy trên nhiều môi trường”?",
-      "a": "Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình — ④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+      "q": "Sau khi script chạy trên nhiều môi trường, kết quả được lưu kèm bằng chứng gì?",
+      "a": "Trạng thái Pass/Fail, log và ảnh chụp màn hình.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1436,8 +1436,8 @@
   ],
   "main-17-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “// Xu ly Dropdown var select = new SelectElement(driver”?",
-      "a": "// Xu ly Dropdown var select = new SelectElement(driver.FindElement(By.Id(\"ddlCity\"))); select.SelectByText(\"Vinh Long\")",
+      "q": "Trong Selenium, lệnh nào chọn tùy chọn Vinh Long của dropdown?",
+      "a": "Tạo SelectElement cho dropdown rồi gọi SelectByText(\"Vinh Long\").",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -1466,8 +1466,8 @@
   ],
   "main-17-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Kiểm thử tương thích một website trên ba trình duyệt Chrome”?",
-      "a": "Kiểm thử tương thích một website trên ba trình duyệt Chrome, Firefox và Edge (mỗi trình duyệt 10 phút) THỰC THI TUẦN TỰ (không dùng Grid)",
+      "q": "Nếu kiểm thử tuần tự ba trình duyệt, mỗi trình duyệt 10 phút, tổng thời gian là bao lâu?",
+      "a": "30 phút.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
@@ -1476,8 +1476,8 @@
   ],
   "main-18-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Chạy trên nhiều môi trường”?",
-      "a": "Chạy trên nhiều môi trường; kết quả (Pass/Fail) được ghi nhận tự động kèm log và ảnh chụp màn hình — ④ PHÂN TÍCH KẾT QUẢ KIỂM THỬ",
+      "q": "Khi phân tích kết quả chạy tự động, cần xem những bằng chứng nào?",
+      "a": "Trạng thái Pass/Fail, log và ảnh chụp màn hình.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1526,8 +1526,8 @@
   ],
   "main-19-1": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Dù có hàng chục hay hàng trăm máy trạm”?",
-      "a": "Dù có hàng chục hay hàng trăm máy trạm, kỹ sư kiểm thử chỉ gửi yêu cầu đến một điểm điều phối duy nhất là Hub ⇒ loại bỏ việc cấu hình thủ công từng máy",
+      "q": "Dù Selenium Grid có nhiều Node, tester gửi yêu cầu kiểm thử đến đâu?",
+      "a": "Đến một điểm điều phối duy nhất là Hub.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1536,8 +1536,8 @@
   ],
   "main-19-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “KIẾN TRÚC Kiến trúc Hub – Node của Selenium Grid”?",
-      "a": "NODE 3 macOS + Safari — NODE 4 Windows + Edge",
+      "q": "Node trong Selenium Grid trực tiếp làm việc gì sau khi nhận lệnh từ Hub?",
+      "a": "Khởi động trình duyệt và thực thi các bước kiểm thử trên môi trường của Node.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 22",
       "badgeClass": "yes",
@@ -1556,8 +1556,8 @@
   ],
   "main-20-0": [
     {
-      "q": "Slide mô tả “Thứ tự ưu tiên khuyến nghị” như thế nào?",
-      "a": "`Id` → `Name` → `CssSelector` → `XPath`. Ưu tiên Id vì nhanh nhất và ổn định nhất; hạn chế XPath tuyệt đối (dạng `/html/body/div[3]/...`) vì rất dễ hỏng khi giao diện thay đổi",
+      "q": "Vì sao nên ưu tiên bộ định vị Id khi tìm phần tử?",
+      "a": "Id thường nhanh và ổn định hơn các bộ định vị khác.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 32",
       "badgeClass": "yes",
@@ -1576,8 +1576,8 @@
   ],
   "main-20-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “④ Tương tác với phần tử (WebElement)”?",
-      "a": "element.Click(); // Nhap chuot element.SendKeys(\"text\"); // Nhap du lieu element.Clear(); // Xoa du lieu trong o nhap string text = element.Text; // Lay noi dung van ban bool visible = element.Displayed; // Kiem tra co hien thi khong string val = element.GetAttribute(\"value\"); // Lay gia tri thuoc tinh",
+      "q": "Thuộc tính nào của WebElement dùng để đọc nội dung văn bản?",
+      "a": "element.Text.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 33",
       "badgeClass": "yes",
@@ -1586,8 +1586,8 @@
   ],
   "main-20-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “④ Tương tác với phần tử (WebElement)”?",
-      "a": "element.Click(); // Nhap chuot element.SendKeys(\"text\"); // Nhap du lieu element.Clear(); // Xoa du lieu trong o nhap string text = element.Text; // Lay noi dung van ban bool visible = element.Displayed; // Kiem tra co hien thi khong string val = element.GetAttribute(\"value\"); // Lay gia tri thuoc tinh",
+      "q": "Muốn xóa nội dung sẵn có trong ô nhập trước khi gõ mới, gọi phương thức nào?",
+      "a": "element.Clear().",
       "tag": "Cùng slide",
       "badge": "Slide tr. 33",
       "badgeClass": "yes",
@@ -1596,8 +1596,8 @@
   ],
   "main-21-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA”?",
-      "a": "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed)",
+      "q": "Sau một bài kiểm thử Selenium, vì sao nên gọi driver.Quit()?",
+      "a": "Để đóng toàn bộ trình duyệt và giải phóng tiến trình driver, tránh treo tài nguyên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -1606,8 +1606,8 @@
   ],
   "main-21-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “KHÁI NIỆM Năm khái niệm cần biết trong Selenium WebDriver 27 Khái”?",
-      "a": "Kỹ thuật cho phép đợi một khoảng thời gian hoặc đợi đến khi một điều kiện được thoả mãn trước khi thực hiện lệnh tiếp theo. Implicit Wait: cài đặt toàn cục, đặt thời gian tối đa WebDriver chờ cho mỗi lần tìm Element. Explicit Wait: cài đặt cục bộ, đặt thời gian tối đa và một điều kiện cụ thể cho một Element nhất định",
+      "q": "Explicit Wait khác Implicit Wait ở điểm nào?",
+      "a": "Explicit Wait đợi một điều kiện cụ thể; Implicit Wait đặt thời gian chờ tối đa chung khi tìm phần tử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 27",
       "badgeClass": "yes",
@@ -1616,8 +1616,8 @@
   ],
   "main-21-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA”?",
-      "a": "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed)",
+      "q": "Trong ví dụ trên slide, Explicit Wait đợi điều kiện gì ở phần tử result?",
+      "a": "Đợi phần tử có id result xuất hiện và hiển thị (Displayed).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -1636,8 +1636,8 @@
   ],
   "main-22-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “VÍ DỤ Ví dụ hoàn chỉnh: kịch bản kiểm thử chức năng đăng nhập 35”?",
-      "a": "driver.FindElement(By.Id(\"username\")).SendKeys(\"tomsmith\"); driver.FindElement(By.Id(\"password\")).SendKeys(\"SuperSecretPassword!\"); driver.FindElement(By.CssSelector(\"button.radius\")).Click()",
+      "q": "Trong ví dụ kiểm thử đăng nhập, script lấy thông báo kết quả bằng cách nào?",
+      "a": "Đọc thuộc tính Text của phần tử có id flash.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 35",
       "badgeClass": "yes",
@@ -1697,8 +1697,8 @@
   ],
   "main-23-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Các sản phẩm này bảo đảm tính minh bạch”?",
-      "a": "Các sản phẩm này bảo đảm tính minh bạch, khả năng truy vết và hỗ trợ bảo trì, nâng cấp hệ thống về sau",
+      "q": "Tài liệu kiểm thử giúp truy vết và bảo trì về sau nhờ điều gì?",
+      "a": "Tính minh bạch và khả năng truy vết của các sản phẩm bàn giao.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1707,8 +1707,8 @@
   ],
   "main-24-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Mã nguồn Biến chưa khởi tạo”?",
-      "a": "Mã nguồn Biến chưa khởi tạo, mã không thể tiếp cận, mã trùng lặp, độ phức tạp quá cao, vi phạm quy tắc viết mã",
+      "q": "Phân tích tĩnh mã nguồn có thể phát hiện những vấn đề nào?",
+      "a": "Biến chưa khởi tạo, mã không thể tiếp cận, mã trùng lặp, độ phức tạp cao và vi phạm quy tắc viết mã.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -1717,8 +1717,8 @@
   ],
   "main-24-1": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Phù hợp với Sản phẩm nhỏ”?",
-      "a": "Phù hợp với Sản phẩm nhỏ, rủi ro thấp Chia sẻ kiến thức trong nhóm Vấn đề kỹ thuật quan trọng Sản phẩm quan trọng, cần kiểm soát chặt",
+      "q": "Hình thức informal review phù hợp với sản phẩm có mức rủi ro nào?",
+      "a": "Sản phẩm nhỏ, rủi ro thấp.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1737,8 +1737,8 @@
   ],
   "main-24-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “CI server tự build”?",
-      "a": "CI server tự build; chạy unit test + phân tích tĩnh. Fail ⇒ chặn ngay",
+      "q": "Trong CI, bước kiểm tra nào có thể chặn quy trình ngay khi thất bại?",
+      "a": "Unit test hoặc phân tích tĩnh sau khi server tự build.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
@@ -1749,8 +1749,8 @@
   "main-25-1": [],
   "main-25-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TEST LEVELS Bốn cấp độ kiểm thử theo ISTQB”?",
-      "a": "1. Kiểm thử đơn vị (Unit / Component) Hàm, phương thức, lớp, module nhỏ nhất Thiết kế chi tiết, mã nguồn Lập trình viên",
+      "q": "Kiểm thử đơn vị chủ yếu kiểm tra những đối tượng nào?",
+      "a": "Hàm, phương thức, lớp hoặc module nhỏ nhất.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1779,8 +1779,8 @@
   ],
   "main-26-1": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Giám sát & kiểm soát diễn ra song song”?",
-      "a": "Giám sát & kiểm soát diễn ra song song, xuyên suốt tất cả các hoạt động còn lại",
+      "q": "Giám sát và kiểm soát kiểm thử diễn ra khi nào?",
+      "a": "Song song, xuyên suốt các hoạt động kiểm thử khác.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
       "badgeClass": "yes",
@@ -1799,8 +1799,8 @@
   ],
   "main-26-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “TEST PLAN Nội dung chính của một Test Plan (theo ISO/IEC/IEEE 291”?",
-      "a": "2. Mục tiêu & phạm vi Mục tiêu kiểm thử; danh sách chức năng in scope / out of scope",
+      "q": "Trong Test Plan, mục phạm vi cần chỉ rõ hai nhóm chức năng nào?",
+      "a": "Chức năng nằm trong phạm vi kiểm thử (in scope) và ngoài phạm vi (out of scope).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
@@ -1839,8 +1839,8 @@
   ],
   "main-27-3": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Bao phủ nhánh mạnh hơn bao phủ câu lệnh”?",
-      "a": "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết",
+      "q": "Vì sao 100% bao phủ nhánh vẫn chưa chứng minh phần mềm không còn lỗi?",
+      "a": "Bao phủ chỉ cho biết các nhánh đã được chạy, không chứng minh chương trình không còn khiếm khuyết.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1849,8 +1849,8 @@
   ],
   "main-28-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA”?",
-      "a": "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed)",
+      "q": "Explicit Wait trong ví dụ đợi điều kiện gì trước khi tiếp tục?",
+      "a": "Đợi phần tử có id result xuất hiện và hiển thị, tối đa 10 giây.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -1859,8 +1859,8 @@
   ],
   "main-28-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “–6.6.6 ⑤ Thao tác đặc biệt và ⑥ Đóng trình duyệt 34 using OpenQA”?",
-      "a": "// Explicit Wait - cho den khi phan tu xuat hien (toi da 10 giay) var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); wait.Until(drv => drv.FindElement(By.Id(\"result\")).Displayed)",
+      "q": "Ngoài iframe, slide hướng dẫn chọn một mục trong dropdown bằng lệnh nào?",
+      "a": "Tạo SelectElement rồi gọi SelectByText(\"Vinh Long\").",
       "tag": "Cùng slide",
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
@@ -1880,8 +1880,8 @@
   ],
   "main-29-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học ph”?",
-      "a": "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5",
+      "q": "Trong ví dụ bảng quyết định, hệ thống kiểm tra các điều kiện theo thứ tự nào?",
+      "a": "C1 → C2 → C3 → C4 và chỉ báo nguyên nhân không hợp lệ đầu tiên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -1890,8 +1890,8 @@
   ],
   "main-29-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “DECISION TABLE Bảng quyết định rút gọn – chức năng đăng ký học ph”?",
-      "a": "Giả định hệ thống kiểm tra theo thứ tự C1 → C2 → C3 → C4 và chỉ trả về nguyên nhân không hợp lệ đầu tiên ⇒ bảng đầy đủ 2⁴ = 16 quy tắc được rút gọn còn 5",
+      "q": "Vì sao 16 tổ hợp điều kiện được rút gọn còn 5 quy tắc?",
+      "a": "Vì hệ thống kiểm tra C1 → C4 theo thứ tự và dừng ở nguyên nhân không hợp lệ đầu tiên.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
@@ -1900,8 +1900,8 @@
   ],
   "main-29-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “BVA Giá trị kiểm thử tại biên của miền hợp lệ 1–25 (BVA ba giá tr”?",
-      "a": "Biên trên = 25 24 (hợp lệ) 25 (hợp lệ) 26 (không hợp lệ) Phát hiện cài đặt sai điều kiện `< 25` thay cho `<= 25` – lỗi off-by-one điển hình",
+      "q": "Ở biên trên 25, bộ ba giá trị nào giúp phát hiện lỗi lệch một đơn vị?",
+      "a": "24, 25 và 26.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
@@ -1910,8 +1910,8 @@
   ],
   "main-29-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “EP Ví dụ phân vùng tương đương – tổng số tín chỉ hợp lệ 1–25 10 V”?",
-      "a": "Bỏ trống ô nhập • Nhập chữ cái thay vì số • Nhập số thập phân (12,5 tín chỉ) • Nhập số âm • Nhập ký tự đặc biệt",
+      "q": "Ngoài các miền số hợp lệ và không hợp lệ, ô nhập tín chỉ cần thử loại dữ liệu nào?",
+      "a": "Ô trống, chữ cái, số thập phân, số âm và ký tự đặc biệt.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 10",
       "badgeClass": "yes",
@@ -1940,8 +1940,8 @@
   ],
   "main-30-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “HỘP ĐEN d) Kiểm thử chuyển trạng thái (State Transition Testing)”?",
-      "a": "Khi hành vi hệ thống phụ thuộc vào trạng thái hiện tại và lịch sử sự kiện đã xảy ra (đơn hàng, tài khoản, đăng ký học phần, máy ATM)",
+      "q": "Khi nào kỹ thuật kiểm thử chuyển trạng thái đặc biệt phù hợp?",
+      "a": "Khi hành vi phụ thuộc cả trạng thái hiện tại lẫn lịch sử sự kiện đã xảy ra.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
@@ -1950,8 +1950,8 @@
   ],
   "main-30-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “STATE TABLE Bảng chuyển trạng thái – đăng ký học phần”?",
-      "a": "Đăng ký thành công Hủy đăng ký Còn trong thời hạn hủy Xóa đăng ký, cập nhật sĩ số Đã hủy Có",
+      "q": "Nếu hủy đăng ký khi còn trong thời hạn cho phép, hệ thống phải làm gì?",
+      "a": "Xóa đăng ký, cập nhật sĩ số và chuyển trạng thái sang Đã hủy.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
@@ -1960,8 +1960,8 @@
   ],
   "main-31-0": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “VÍ DỤ Ví dụ tính độ bao phủ – đoạn mã kiểm tra số tín chỉ”?",
-      "a": "S1: result ← \"Hợp lệ\" S2: if credits < 1 then // Quyết định D1 S3: result ← \"Không hợp lệ\" S4: else if credits > 25 then // Quyết định D2 S5: result ← \"Không hợp lệ\" S6: return result",
+      "q": "Trong ví dụ kiểm tra số tín chỉ, hai quyết định D1 và D2 tạo tổng cộng bao nhiêu nhánh?",
+      "a": "Bốn nhánh: đúng và sai cho mỗi quyết định.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 22",
       "badgeClass": "yes",
@@ -1970,8 +1970,8 @@
   ],
   "main-31-1": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Bao phủ nhánh mạnh hơn bao phủ câu lệnh”?",
-      "a": "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết",
+      "q": "Bao phủ nhánh và bao phủ câu lệnh có chứng minh chương trình hết lỗi không?",
+      "a": "Không; cả hai đều không chứng minh chương trình không còn khiếm khuyết.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1980,8 +1980,8 @@
   ],
   "main-31-2": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statem”?",
-      "a": "Đo tỷ lệ câu lệnh có thể thực thi đã được chạy bởi tập test case",
+      "q": "Statement coverage đo điều gì?",
+      "a": "Tỷ lệ các câu lệnh có thể thực thi đã được tập test case chạy qua.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -1990,8 +1990,8 @@
   ],
   "main-31-3": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “VÍ DỤ Ví dụ tính độ bao phủ – đoạn mã kiểm tra số tín chỉ”?",
-      "a": "S1: result ← \"Hợp lệ\" S2: if credits < 1 then // Quyết định D1 S3: result ← \"Không hợp lệ\" S4: else if credits > 25 then // Quyết định D2 S5: result ← \"Không hợp lệ\" S6: return result",
+      "q": "Hai quyết định D1 và D2 trong ví dụ kiểm tra những giới hạn tín chỉ nào?",
+      "a": "D1 kiểm tra credits < 1; D2 kiểm tra credits > 25.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 22",
       "badgeClass": "yes",
@@ -2000,8 +2000,8 @@
   ],
   "main-32-0": [
     {
-      "q": "Theo slide, cần biết thêm điều gì về “Bao phủ nhánh mạnh hơn bao phủ câu lệnh”?",
-      "a": "Bao phủ nhánh mạnh hơn bao phủ câu lệnh. Cả hai đều không chứng minh chương trình không còn khiếm khuyết",
+      "q": "Hai độ đo bao phủ câu lệnh và nhánh có giới hạn chung nào?",
+      "a": "Không độ đo nào chứng minh chương trình không còn khiếm khuyết.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
@@ -2010,8 +2010,8 @@
   ],
   "main-32-1": [
     {
-      "q": "Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “COVERAGE Hai tiêu chí bao phủ cơ bản 21 BAO PHỦ CÂU LỆNH – Statem”?",
-      "a": "100% bao phủ nhánh ⇒ thường kéo theo 100% bao phủ câu lệnh có thể tiếp cận (điều ngược lại không đúng)",
+      "q": "Công thức tính bao phủ nhánh (Branch Coverage) là gì?",
+      "a": "BC = (Số nhánh đã thực thi / Tổng số nhánh) × 100%.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
