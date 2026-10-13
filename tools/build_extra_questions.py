@@ -1,8 +1,9 @@
-"""Build one distinct, slide-based follow-up question per original question.
+"""Build reviewed, slide-based follow-up questions.
 
-The overrides cover slides whose extracted text needs a human-written question.
-For other slides, choose a fact with little overlap with the original stem and
-correct answer. Do not add loosely related OnTap questions to this panel.
+Every entry below asks for one fact separate from the original question.  The
+extracted slide paragraphs are useful for review, but are not safe to turn into
+questions automatically: some slide matches are imperfect and generic prompts
+do not test the missing fact.
 """
 
 import json
@@ -38,38 +39,6 @@ def key(s):
 
 def question_stem(raw):
     return re.sub(r'^Câu\s*\d+\s*:\s*', '', re.split(r'\n\s*[A-D][.．)]\s*', raw, maxsplit=1)[0], flags=re.I)
-
-def score(para, original):
-    p = clean(para)
-    if len(p) < 42 or len(p) > 380: return -100
-    w, ow = words(p), words(original)
-    if len(w) < 5: return -100
-    overlap = len(w & ow) / len(w)
-    score = 8 * (1 - overlap) + min(len(p), 170) / 90
-    if any(c in p for c in (' — ', ' – ', ': ', '; ')): score += .7
-    if p.endswith(':') or p.isupper(): score -= 3
-    if re.search(r'^(ví dụ|lưu ý)', p, re.I): score -= .4
-    return score
-
-def question_for(para, title):
-    p = clean(para)
-    for delimiter in (' — ', ' – ', ': '):
-        if delimiter in p:
-            topic, answer = p.split(delimiter, 1)
-            if 4 <= len(topic) <= 95 and len(answer.strip()) >= 24:
-                topic = re.sub(r'^\d+\.\s*', '', topic)
-                if topic.lower().startswith('không phải '):
-                    return f'Vì sao {topic.lower()}?', clean(answer)
-                if topic.lower().startswith('bước '):
-                    return f'Ở {topic.lower()} của quy trình, cần làm gì?', clean(answer)
-                if topic.lower().startswith('lưu ý'):
-                    return f'Điểm cần lưu ý trên slide về {topic[6:].strip().lower()} là gì?', clean(answer)
-                return f'Slide mô tả “{topic}” như thế nào?', clean(answer)
-    lead = re.split(r'[,;.]', p, maxsplit=1)[0]
-    if 10 <= len(lead) <= 85 and len(lead.split()) <= 13 and len(lead) < len(p) - 25:
-        return f'Theo slide, cần biết thêm điều gì về “{lead}”?', p
-    topic = re.sub(r'^\d+(?:\.\d+)*\s*', '', title).strip()[:65].rstrip(' ,.;:')
-    return f'Ngoài nội dung câu hỏi gốc, slide giải thích thêm điều gì về “{topic}”?', p
 
 OVERRIDES = {
     'pdf-C1-9': ('Tư duy người kiểm thử cần chú ý đến loại luồng nào ngoài luồng thành công?', 'Luồng ngoại lệ (negative path) và các tình huống có thể xảy ra ngoài dự kiến.'),
@@ -112,12 +81,12 @@ OVERRIDES = {
     'main-20-3': ('Muốn xóa nội dung sẵn có trong ô nhập trước khi gõ mới, gọi phương thức nào?', 'element.Clear().'),
     'main-21-0': ('Sau một bài kiểm thử Selenium, vì sao nên gọi driver.Quit()?', 'Để đóng toàn bộ trình duyệt và giải phóng tiến trình driver, tránh treo tài nguyên.'),
     'main-21-1': ('Explicit Wait khác Implicit Wait ở điểm nào?', 'Explicit Wait đợi một điều kiện cụ thể; Implicit Wait đặt thời gian chờ tối đa chung khi tìm phần tử.'),
-    'main-21-2': ('Trong ví dụ trên slide, Explicit Wait đợi điều kiện gì ở phần tử result?', 'Đợi phần tử có id result xuất hiện và hiển thị (Displayed).'),
+    'main-21-2': ('Muốn chờ phần tử result sẵn sàng để đọc, Explicit Wait cần kiểm tra điều kiện gì?', 'Đợi phần tử có id result xuất hiện và hiển thị (Displayed).'),
     'main-22-0': ('Trong ví dụ kiểm thử đăng nhập, script lấy thông báo kết quả bằng cách nào?', 'Đọc thuộc tính Text của phần tử có id flash.'),
     'main-25-2': ('Kiểm thử đơn vị chủ yếu kiểm tra những đối tượng nào?', 'Hàm, phương thức, lớp hoặc module nhỏ nhất.'),
     'main-26-3': ('Trong Test Plan, mục phạm vi cần chỉ rõ hai nhóm chức năng nào?', 'Chức năng nằm trong phạm vi kiểm thử (in scope) và ngoài phạm vi (out of scope).'),
     'main-28-0': ('Explicit Wait trong ví dụ đợi điều kiện gì trước khi tiếp tục?', 'Đợi phần tử có id result xuất hiện và hiển thị, tối đa 10 giây.'),
-    'main-28-1': ('Ngoài iframe, slide hướng dẫn chọn một mục trong dropdown bằng lệnh nào?', 'Tạo SelectElement rồi gọi SelectByText("Vinh Long").'),
+    'main-28-1': ('Với dropdown HTML, muốn chọn mục Vinh Long bằng Selenium C# thì dùng lệnh nào?', 'Tạo SelectElement rồi gọi SelectByText("Vinh Long").'),
     'main-29-0': ('Trong ví dụ bảng quyết định, hệ thống kiểm tra các điều kiện theo thứ tự nào?', 'C1 → C2 → C3 → C4 và chỉ báo nguyên nhân không hợp lệ đầu tiên.'),
     'main-29-1': ('Vì sao 16 tổ hợp điều kiện được rút gọn còn 5 quy tắc?', 'Vì hệ thống kiểm tra C1 → C4 theo thứ tự và dừng ở nguyên nhân không hợp lệ đầu tiên.'),
     'main-29-2': ('Ở biên trên 25, bộ ba giá trị nào giúp phát hiện lỗi lệch một đơn vị?', '24, 25 và 26.'),
@@ -131,7 +100,7 @@ OVERRIDES = {
     'pdf-C2-18': ('Trong DevOps/CI-CD, kiểm thử được chạy vào thời điểm nào?', 'Tự động và liên tục sau mỗi commit.'),
     'pdf-C2-20': ('Theo nguyên tắc shift-left, có thể bắt đầu thiết kế kiểm thử khi nào?', 'Ngay khi cơ sở kiểm thử như yêu cầu hoặc thiết kế sẵn sàng.'),
     'pdf-C3-3': ('Khi nào kiểm thử thủ công có thể phù hợp hơn việc viết script?', 'Khi công sức xây dựng script lớn hơn lợi ích thu được; thao tác thủ công nhanh và linh hoạt hơn.'),
-    'pdf-C3-19': ('Công cụ trên slide hỗ trợ ba việc nào trong quản lý kiểm thử?', 'Quản lý test case, thực thi và tạo báo cáo.'),
+    'pdf-C3-19': ('Công cụ quản lý kiểm thử hỗ trợ ba công việc chính nào?', 'Quản lý test case, thực thi và tạo báo cáo.'),
     'pdf-C4-5': ('Để đạt bao phủ nhánh cho một quyết định, cần thử những kết quả nào?', 'Cả kết quả đúng (True) và sai (False).'),
     'main-2-0': ('Trong Agile/DevOps, ranh giới giữa tester và developer thay đổi thế nào?', 'Tester có thể tham gia gỡ lỗi; developer cũng viết và chạy unit test.'),
     'main-2-3': ('Test Manager/QA Manager chịu trách nhiệm gì ngoài lập kế hoạch?', 'Phân bổ nguồn lực, theo dõi tiến độ và báo cáo cho các bên liên quan.'),
@@ -140,7 +109,7 @@ OVERRIDES = {
     'main-4-3': ('Kiểm thử tích hợp tập trung vào các giao tiếp nào?', 'Giao tiếp giữa các module, giữa các hệ thống và qua API.'),
     'main-6-3': ('Những yếu tố nào khiến phân tích tác động trong bảo trì trở nên khó khăn?', 'Đặc tả lỗi thời hoặc thiếu, không có ma trận truy vết, người viết hệ thống đã nghỉ việc và tài liệu không được cập nhật.'),
     'main-7-0': ('Trong CI, điều gì xảy ra nếu unit test hoặc phân tích tĩnh thất bại?', 'Quy trình bị chặn ngay sau bước build và kiểm tra tự động.'),
-    'main-8-3': ('Test strategy mô tả những nội dung nào?', 'Nguyên tắc, cách tiếp cận, chuẩn áp dụng và mức tự động hóa.'),
+    'main-8-3': ('Test strategy xác định những nội dung nào?', 'Nguyên tắc, cách tiếp cận, chuẩn áp dụng và mức tự động hóa.'),
     'main-10-2': ('Vì sao cần lưu sản phẩm bàn giao kiểm thử?', 'Để bảo đảm minh bạch, truy vết và hỗ trợ bảo trì, nâng cấp.'),
     'main-11-0': ('Sản phẩm bàn giao kiểm thử giúp ích gì sau khi kết thúc đợt test?', 'Hỗ trợ truy vết, bảo trì và nâng cấp hệ thống về sau.'),
     'main-11-2': ('Mục tiêu nổi bật của informal review là gì?', 'Nhận phản hồi nhanh.'),
@@ -163,22 +132,49 @@ OVERRIDES = {
     'main-32-0': ('Hai độ đo bao phủ câu lệnh và nhánh có giới hạn chung nào?', 'Không độ đo nào chứng minh chương trình không còn khiếm khuyết.'),
 }
 
+# Questions from the supplementary Word file already appear in questions.json.
+# These additions come from other facts visible on the associated slides.
+OVERRIDES.update({
+    'pdf-C1-3': ('Một khiếm khuyết trong mã nguồn có luôn gây ra thất bại khi chạy chương trình không?', 'Không. Khiếm khuyết có thể nằm ở đoạn mã không bao giờ được thực thi.'),
+    'pdf-C1-4': ('Tài liệu yêu cầu mơ hồ là ví dụ của yếu tố nào dẫn đến sai sót?', 'Nguyên nhân gốc (root cause).'),
+    'pdf-C1-5': ('Khi chạy mãi một bộ test mà không tìm ra lỗi mới, nên làm gì?', 'Rà soát và bổ sung test case để phát hiện lỗi mới.'),
+    'pdf-C1-7': ('Khi lỗi được sửa hoặc yêu cầu đổi, quy trình kiểm thử có thể quay lại những bước nào?', 'Quay lại phân tích, thiết kế hoặc thực thi kiểm thử.'),
+    'pdf-C1-8': ('Bước lập kế hoạch kiểm thử cần xác định những tiêu chí nào để biết lúc nào dừng?', 'Tiêu chí kết thúc kiểm thử (exit criteria).'),
+    'pdf-C1-10': ('Ngoài thiệt hại tài chính, lỗi phần mềm có thể gây ra hậu quả nghiêm trọng nào?', 'Mất dữ liệu, tổn hại uy tín và thậm chí nguy hiểm tính mạng.'),
+    'pdf-C1-11': ('Một thất bại có thể xảy ra mà không bắt nguồn từ khiếm khuyết phần mềm khi nào?', 'Khi môi trường có lỗi phần cứng, nhiễu điện từ hoặc cấu hình sai.'),
+    'pdf-C1-13': ('Theo mô hình Boehm, chi phí sửa lỗi ở giai đoạn vận hành so với giai đoạn yêu cầu xấp xỉ bao nhiêu lần?', 'Khoảng 100 lần.'),
+    'pdf-C1-15': ('Thuộc tính chất lượng nào liên quan đến thời gian phản hồi và thông lượng?', 'Hiệu năng (performance efficiency).'),
+    'pdf-C1-18': ('Rà soát tài liệu yêu cầu mà không chạy chương trình thuộc loại kiểm thử nào?', 'Kiểm thử tĩnh.'),
+    'pdf-C1-19': ('Kiểm thử chấp nhận tập trung vào mục tiêu nào trong các mục tiêu kiểm thử?', 'Xây dựng niềm tin rằng sản phẩm đáp ứng nhu cầu và kỳ vọng sử dụng.'),
+    'pdf-C1-20': ('Trong một test case, kết quả mong đợi cần được xác định vào lúc nào?', 'Trước khi chạy kiểm thử.'),
+    'pdf-C2-3': ('Trong mô hình chữ V, kiểm thử đơn vị tương ứng với giai đoạn phát triển nào?', 'Thiết kế chi tiết và lập trình.'),
+    'pdf-C2-6': ('Ngoài thứ tự thực hiện, các cấp độ kiểm thử còn được phân biệt theo những tiêu chí nào?', 'Đối tượng, mục tiêu, cơ sở kiểm thử và người thực hiện.'),
+    'pdf-C2-11': ('Cơ sở để thiết kế kiểm thử đơn vị là gì?', 'Thiết kế chi tiết và mã nguồn.'),
+    'pdf-C2-12': ('Ai thường thực hiện kiểm thử đơn vị?', 'Lập trình viên.'),
+    'pdf-C2-14': ('Kiểm thử chấp nhận lấy cơ sở từ tài liệu và thông tin nào?', 'Yêu cầu nghiệp vụ, quy trình và hợp đồng.'),
+    'main-18-2': ('Kiểm thử khả năng sử dụng có thể đánh giá những đặc điểm nào?', 'Số thao tác để hoàn thành tác vụ, độ rõ của thông báo lỗi và hỗ trợ người khuyết tật.'),
+    'main-18-3': ('Selenium hỗ trợ viết kịch bản kiểm thử bằng những ngôn ngữ nào?', 'C#, Java, Python, Ruby, JavaScript và PHP.'),
+    'main-19-0': ('Selenium IDE lưu kịch bản bằng cách nào khi người dùng thao tác trên trình duyệt?', 'Ghi lại thao tác nhấp chuột, nhập văn bản và chuyển trang để phát lại.'),
+    'main-23-0': ('Kiểm thử bảo mật cần kiểm tra hai kiểu tấn công chèn dữ liệu phổ biến nào?', 'SQL injection và XSS.'),
+    'main-23-1': ('Sau bước build và unit test trong CI, bước kiểm thử tự động nào thường được chạy?', 'Kiểm thử tích hợp và API.'),
+    'main-23-2': ('Cách tiếp cận kiểm thử dựa trên kinh nghiệm thường dùng kỹ thuật nào?', 'Đoán lỗi và kiểm thử thăm dò.'),
+    'main-25-3': ('Sau khi lập trình viên báo đã sửa lỗi, nên chạy lại test case nào để kiểm tra sửa lỗi?', 'Chính test case đã phát hiện lỗi, với cùng dữ liệu và môi trường.'),
+    'main-26-0': ('Ai cùng chịu trách nhiệm về chất lượng theo cách tiếp cận whole-team trong Scrum?', 'Developer, tester và Product Owner.'),
+    'main-26-2': ('Công thức tính tỷ lệ đạt (Pass Rate) là gì?', 'Số test case Pass chia số test case đã chạy, nhân 100%.'),
+    'main-27-0': ('Loại kiểm thử nào có thể bắt đầu ngay khi mới có bản nháp tài liệu?', 'Kiểm thử tĩnh.'),
+    'main-27-1': ('Trong ví dụ phân tích mã, việc hard-code chuỗi “Locked” và số 25 được gọi là gì?', 'Magic string và magic number.'),
+    'main-27-2': ('Khi thiết kế test từ use case, tối thiểu cần bao nhiêu ca kiểm thử cho mỗi luồng thay thế hoặc ngoại lệ?', 'Ít nhất một test case cho mỗi luồng.'),
+    'main-28-3': ('Trong bảng quyết định, ký hiệu “–” ở một điều kiện có nghĩa gì?', 'Giá trị điều kiện đó không ảnh hưởng đến hành động của quy tắc.'),
+})
+
 result = {}
 bank_questions = {key(question_stem(q['raw'])) for q in questions.values()}
 used_questions = set()
 used_answers = set()
 for id, k in knowledge.items():
-    paras = k.get('paras') or []
-    original = original_text(questions[id])
-    ranked = sorted(paras, key=lambda p: score(p, original), reverse=True)
-    candidates = []
-    if id in OVERRIDES:
-        candidates.append(OVERRIDES[id])
-    candidates.extend(question_for(p, k.get('title') or 'nội dung bài giảng') for p in ranked if score(p, original) > -100)
+    candidates = [OVERRIDES[id]] if id in OVERRIDES else []
     result[id] = []
     for question, answer in candidates:
-        if question.startswith('Ngoài nội dung câu hỏi gốc') or 'cần biết thêm điều gì' in question:
-            continue
         qkey, akey = key(question), key(answer)
         if qkey in bank_questions or qkey in used_questions or akey in used_answers:
             continue
