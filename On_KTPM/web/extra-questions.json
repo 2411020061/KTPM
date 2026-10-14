@@ -4127,6 +4127,16 @@
       "badge": "Slide tr. 11",
       "badgeClass": "yes",
       "source": "Slide tr. 11"
+    },
+    {
+      "q": "Một dự án bỏ hoàn toàn hoạt động review tài liệu yêu cầu để tiết kiệm thời gian. Hệ quả nghiêm trọng nhất là:",
+      "a": "Lỗi yêu cầu bị phát hiện rất muộn, chi phí sửa tăng vọt",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C1.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C1 · câu 4",
+      "relatedFile": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+      "relatedPage": 39
     }
   ],
   "main-2-2": [
@@ -4337,6 +4347,16 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Developer từ chối một bug vì không tái hiện được. Hành động phù hợp nhất của tester là:",
+      "a": "Bổ sung môi trường, phiên bản, video tái hiện rồi trao đổi lại",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C3.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C3 · câu 4",
+      "relatedFile": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+      "relatedPage": 34
     }
   ],
   "main-3-3": [
@@ -4363,6 +4383,16 @@
       "badge": "Slide tr. 9",
       "badgeClass": "yes",
       "source": "Slide tr. 9"
+    },
+    {
+      "q": "Dự án phần mềm điều khiển thiết bị y tế phải nộp hồ sơ kiểm định với đầy đủ truy vết từ yêu cầu tới test case. Mô hình phù hợp nhất là:",
+      "a": "Mô hình chữ V",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C2.1",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C2 · câu 1",
+      "relatedFile": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+      "relatedPage": 40
     }
   ],
   "main-4-0": [
@@ -4733,6 +4763,16 @@
       "badge": "Slide tr. 24",
       "badgeClass": "yes",
       "source": "Slide tr. 24"
+    },
+    {
+      "q": "Một dự án lặp bước sang đợt phát hành thứ năm. Khối lượng kiểm thử hồi quy theo phạm vi sản phẩm tích lũy sẽ:",
+      "a": "Tăng dần vì phần cũ cần được kiểm tra lại",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C2.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C2 · câu 2",
+      "relatedFile": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+      "relatedPage": 40
     }
   ],
   "main-6-1": [
@@ -4851,6 +4891,16 @@
       "badge": "Slide tr. 27",
       "badgeClass": "yes",
       "source": "Slide tr. 27"
+    },
+    {
+      "q": "Bộ hồi quy 500 test chạy tay mất 3 ngày, nhưng ngày mai phải phát hành. Cách xử lý hợp lý nhất là:",
+      "a": "Chọn theo phân tích tác động và báo cáo rủi ro phần chưa chạy",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C2.3",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C2 · câu 3",
+      "relatedFile": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+      "relatedPage": 40
     }
   ],
   "main-7-0": [
@@ -5133,6 +5183,16 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Test case TC-02 sử dụng đơn hàng do TC-01 tạo ra. Nhược điểm nghiêm trọng nhất là:",
+      "a": "Nếu TC-01 Fail thì không đánh giá được TC-02",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C3.1",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C3 · câu 1",
+      "relatedFile": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+      "relatedPage": 34
     }
   ],
   "main-8-1": [
@@ -5675,6 +5735,16 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Nhóm báo cáo đã chạy 90% test case, tỷ lệ Pass 88%, còn 15 bug chưa đóng. Thông tin còn thiếu để quyết định phát hành là:",
+      "a": "Mức nghiêm trọng của 15 bug và chức năng của phần chưa chạy",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C3.3",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C3 · câu 3",
+      "relatedFile": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+      "relatedPage": 34
     }
   ],
   "main-10-3": [
@@ -6076,6 +6146,16 @@
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
       "source": "Slide tr. 13"
+    },
+    {
+      "q": "Nhóm review hai tiếng với năm người nhưng không ai đọc tài liệu trước. Hệ quả có khả năng xảy ra nhất là:",
+      "a": "Chỉ nhặt được lỗi chính tả và trình bày",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4A.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4A · câu 2",
+      "relatedFile": "BaiGiang_C4A_Kiem thu tinh.pdf",
+      "relatedPage": 35
     }
   ],
   "main-12-2": [
@@ -6140,6 +6220,16 @@
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
       "source": "Slide tr. 12"
+    },
+    {
+      "q": "Phí ship: đơn dưới 500.000đ chịu phí 30.000đ; đơn từ 500.000đ trở lên miễn phí. Bộ giá trị biên đúng (đồng) là:",
+      "a": "499.999 / 500.000 / 500.001",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4B.1",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4B · câu 1",
+      "relatedFile": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+      "relatedPage": 36
     }
   ],
   "main-13-0": [
@@ -6325,6 +6415,16 @@
       "badge": "Slide tr. 13",
       "badgeClass": "yes",
       "source": "Slide tr. 13"
+    },
+    {
+      "q": "Sinh viên được đăng ký nếu đã đóng học phí VÀ chưa vượt 25 tín chỉ. Sinh viên năm cuối được ưu tiên ngay cả khi chưa đóng học phí. Kỹ thuật phù hợp nhất và số tổ hợp tối đa là:",
+      "a": "Bảng quyết định – 8 tổ hợp",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4B.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4B · câu 4",
+      "relatedFile": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+      "relatedPage": 36
     }
   ],
   "main-14-0": [
@@ -6758,6 +6858,16 @@
       "badge": "Slide tr. 7",
       "badgeClass": "yes",
       "source": "Slide tr. 7"
+    },
+    {
+      "q": "Một test chạy tay mất 8 phút, viết script mất 90 phút, mỗi lần chạy script kể cả bảo trì mất 2 phút. Dự án còn 2 tháng, phát hành mỗi tuần. Kết luận đúng là:",
+      "a": "Điểm hoà vốn 15 lần, dự án chỉ chạy khoảng 8 lần nên lỗ",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C5.1",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C5 · câu 1",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 37
     }
   ],
   "main-16-0": [
@@ -6792,6 +6902,16 @@
       "badge": "Slide tr. 14",
       "badgeClass": "yes",
       "source": "Slide tr. 14"
+    },
+    {
+      "q": "Trong 300 test case, nhóm chỉ tự động hoá được 50. Thứ tự ưu tiên hợp lý nhất là:",
+      "a": "Smoke test và hồi quy chức năng lõi ổn định trước",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C5.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C5 · câu 4",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 37
     }
   ],
   "main-16-1": [
@@ -6834,6 +6954,16 @@
       "badge": "Slide tr. 15",
       "badgeClass": "yes",
       "source": "Slide tr. 15"
+    },
+    {
+      "q": "Sếp yêu cầu tự động hoá 100% test case và bỏ hẳn test thủ công. Phản hồi chuyên nghiệp nhất là:",
+      "a": "Đề xuất tự động hoá theo mức ưu tiên kèm điểm hoà vốn và nêu phần không tự động hoá được",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C5.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C5 · câu 2",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 37
     }
   ],
   "main-16-2": [
@@ -6976,6 +7106,16 @@
       "badge": "Slide tr. 34",
       "badgeClass": "yes",
       "source": "Slide tr. 34"
+    },
+    {
+      "q": "Script bấm Đăng nhập rồi kiểm tra ngay chữ Xin chào, đôi khi Fail dù hệ thống đúng. Cách khắc phục đúng nhất là:",
+      "a": "Dùng chờ tường minh đợi phần tử xuất hiện rồi mới kiểm chứng",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C6.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C6 · câu 2",
+      "relatedFile": "BaiGiang_C6_Selenium.pdf",
+      "relatedPage": 50
     }
   ],
   "main-17-1": [
@@ -7138,6 +7278,16 @@
       "badge": "Slide tr. 16",
       "badgeClass": "yes",
       "source": "Slide tr. 16"
+    },
+    {
+      "q": "Sau sáu tháng, 30% test tự động báo đỏ nhưng không ai sửa và cả nhóm bỏ chạy bộ test. Nguyên nhân gốc rễ là:",
+      "a": "Thiếu quy trình bảo trì và không chạy thường xuyên trong pipeline",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C5.3",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C5 · câu 3",
+      "relatedFile": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+      "relatedPage": 37
     }
   ],
   "main-18-2": [
@@ -7264,6 +7414,16 @@
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
       "source": "Slide tr. 12"
+    },
+    {
+      "q": "Cần kiểm thử một chức năng với 50 bộ dữ liệu đọc từ Excel, kết quả đưa vào CI. Thành phần Selenium phù hợp là:",
+      "a": "Selenium WebDriver",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C6.3",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C6 · câu 3",
+      "relatedFile": "BaiGiang_C6_Selenium.pdf",
+      "relatedPage": 50
     }
   ],
   "main-19-1": [
@@ -7704,6 +7864,16 @@
       "badge": "Slide tr. 35",
       "badgeClass": "yes",
       "source": "Slide tr. 35"
+    },
+    {
+      "q": "Khi kiểm tra tìm kiếm từ khoá áo sơ mi mà dữ liệu sản phẩm thay đổi liên tục, cách kiểm chứng phù hợp nhất là:",
+      "a": "Kiểm tra mọi sản phẩm trả về đều chứa từ khoá trong tên",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C6.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C6 · câu 4",
+      "relatedFile": "BaiGiang_C6_Selenium.pdf",
+      "relatedPage": 50
     }
   ],
   "main-22-1": [
@@ -8008,6 +8178,16 @@
       "badge": "Slide tr. 17",
       "badgeClass": "yes",
       "source": "Slide tr. 17"
+    },
+    {
+      "q": "Nhóm phát hiện 80% lỗi nằm ở hai mô-đun thanh toán và khuyến mãi. Hành động phù hợp nhất là:",
+      "a": "Dồn thêm công sức test vào hai mô-đun đó",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C1.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C1 · câu 2",
+      "relatedFile": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+      "relatedPage": 39
     }
   ],
   "main-23-3": [
@@ -8100,6 +8280,16 @@
       "badge": "Slide tr. 12",
       "badgeClass": "yes",
       "source": "Slide tr. 12"
+    },
+    {
+      "q": "Một đoạn mã chứa lỗi nằm trong nhánh chưa bao giờ được thực thi trong mọi test case. Kỹ thuật nào có thể phát hiện lỗi này?",
+      "a": "Kiểm thử tĩnh (review hoặc phân tích mã nguồn)",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4A.1",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4A · câu 1",
+      "relatedFile": "BaiGiang_C4A_Kiem thu tinh.pdf",
+      "relatedPage": 35
     }
   ],
   "main-24-1": [
@@ -8460,6 +8650,16 @@
       "badge": "Slide tr. 24",
       "badgeClass": "yes",
       "source": "Slide tr. 24"
+    },
+    {
+      "q": "Phát biểu nào về cấp độ và loại kiểm thử là đúng?",
+      "a": "Một loại kiểm thử có thể chạy ở nhiều cấp độ",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C2.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C2 · câu 4",
+      "relatedFile": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+      "relatedPage": 40
     }
   ],
   "main-26-0": [
@@ -8774,6 +8974,16 @@
       "badge": "Slide tr. 23",
       "badgeClass": "yes",
       "source": "Slide tr. 23"
+    },
+    {
+      "q": "Phát biểu nào đúng về quan hệ giữa công cụ phân tích tĩnh và review của con người?",
+      "a": "Công cụ bắt lỗi máy móc, con người bắt lỗi nghiệp vụ – bổ sung cho nhau",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4A.4",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4A · câu 4",
+      "relatedFile": "BaiGiang_C4A_Kiem thu tinh.pdf",
+      "relatedPage": 35
     }
   ],
   "main-27-2": [
@@ -9817,6 +10027,16 @@
       "badge": "Slide tr. 22",
       "badgeClass": "yes",
       "source": "Slide tr. 22"
+    },
+    {
+      "q": "Với mã if (x > 0) { y = 10 / x; } ketQua = y; chạy thêm x = 0 sẽ bộc lộ vấn đề gì?",
+      "a": "y chưa được gán giá trị",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4B.3",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4B · câu 3",
+      "relatedFile": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+      "relatedPage": 36
     }
   ],
   "main-31-1": [
@@ -9916,6 +10136,16 @@
       "badge": "Slide tr. 21",
       "badgeClass": "yes",
       "source": "Slide tr. 21"
+    },
+    {
+      "q": "Cho mã: if (x > 0) { y = 10 / x; } ketQua = y; Chạy với x = 5. Bao phủ câu lệnh và bao phủ nhánh lần lượt là:",
+      "a": "100% và 50%",
+      "tag": "Bài kiểm tra viết",
+      "badge": "Bài viết · C4B.2",
+      "badgeClass": "quiz",
+      "source": "Bài kiểm tra viết · C4B · câu 2",
+      "relatedFile": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+      "relatedPage": 36
     }
   ],
   "main-31-2": [

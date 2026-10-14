@@ -18,6 +18,7 @@ applied = json.loads((ROOT / 'applied-questions.json').read_text())
 supplemental = json.loads((ROOT / 'supplemental-questions.json').read_text())
 reviewed_slides = json.loads((ROOT / 'reviewed-slide-questions.json').read_text())
 quiz_links = json.loads((ROOT / 'reviewed-quiz-links.json').read_text())
+written_exam = json.loads((ROOT / 'written-exam-questions.json').read_text())
 quiz_bank = {q['id']: q for q in json.loads((ROOT / 'questions.json').read_text())}
 
 QUIZ_VISUALS = {
@@ -291,6 +292,26 @@ for id, k in knowledge.items():
             existing_answers.add(akey)
             if item.get('concept'):
                 existing_concepts.add(item['concept'])
+
+for item in written_exam:
+    if len(item['options']) != 4 or item['answer'] not in 'ABCD':
+        raise ValueError(f'Invalid written exam options or answer: {item["id"]}')
+    if item['anchor'] is None:
+        continue
+    anchor = item['anchor']
+    if anchor not in result:
+        raise ValueError(f'Written exam anchor is not a visible question: {item["id"]}')
+    if item['chapter'] not in questions[anchor]['file']:
+        raise ValueError(f'Written exam chapter does not match anchor: {item["id"]}')
+    answer = item['options'][ord(item['answer']) - ord('A')]
+    if key(item['q']) in {key(question_stem(questions[anchor]['raw'])), *(key(x['q']) for x in result[anchor])}:
+        raise ValueError(f'Duplicate written exam question: {item["id"]}')
+    result[anchor].append({
+        'q': item['q'], 'a': answer, 'tag': 'Bài kiểm tra viết',
+        'badge': f"Bài viết · {item['chapter']}.{item['number']}",
+        'badgeClass': 'quiz', 'source': item['source'],
+        'relatedFile': item['file'], 'relatedPage': item['page'],
+    })
 
 missing = [id for id, entries in result.items() if not entries]
 if missing:

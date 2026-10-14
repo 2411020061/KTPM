@@ -1,0 +1,478 @@
+[
+  {
+    "id": "written-C1-1",
+    "chapter": "C1",
+    "number": 1,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 39,
+    "q": "Một hàm xử lý ngày 29/2 bị viết sai nhưng năm nay không phải năm nhuận. Tình trạng hiện tại của hệ thống là:",
+    "options": [
+      "Có failure, không có defect",
+      "Có defect, chưa có failure",
+      "Không có defect",
+      "Có cả defect và failure"
+    ],
+    "answer": "B",
+    "anchor": null,
+    "source": "Bài kiểm tra viết · C1 · câu 1"
+  },
+  {
+    "id": "written-C1-2",
+    "chapter": "C1",
+    "number": 2,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 39,
+    "q": "Nhóm phát hiện 80% lỗi nằm ở hai mô-đun thanh toán và khuyến mãi. Hành động phù hợp nhất là:",
+    "options": [
+      "Chia đều thời gian test cho mọi mô-đun",
+      "Dồn thêm công sức test vào hai mô-đun đó",
+      "Ngừng test hai mô-đun đó",
+      "Viết lại toàn bộ hệ thống"
+    ],
+    "answer": "B",
+    "anchor": "main-23-2",
+    "source": "Bài kiểm tra viết · C1 · câu 2"
+  },
+  {
+    "id": "written-C1-3",
+    "chapter": "C1",
+    "number": 3,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 39,
+    "q": "Lỗi sai chính tả tên công ty ở trang chủ trước ngày ra mắt sản phẩm được xếp:",
+    "options": [
+      "Nghiêm trọng cao – ưu tiên cao",
+      "Nghiêm trọng cao – ưu tiên thấp",
+      "Nghiêm trọng thấp – ưu tiên cao",
+      "Nghiêm trọng thấp – ưu tiên thấp"
+    ],
+    "answer": "C",
+    "anchor": null,
+    "source": "Bài kiểm tra viết · C1 · câu 3"
+  },
+  {
+    "id": "written-C1-4",
+    "chapter": "C1",
+    "number": 4,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 39,
+    "q": "Một dự án bỏ hoàn toàn hoạt động review tài liệu yêu cầu để tiết kiệm thời gian. Hệ quả nghiêm trọng nhất là:",
+    "options": [
+      "Tester không có việc làm giai đoạn đầu",
+      "Lỗi yêu cầu bị phát hiện rất muộn, chi phí sửa tăng vọt",
+      "Không viết được test case",
+      "Không đo được độ bao phủ"
+    ],
+    "answer": "B",
+    "anchor": "main-2-1",
+    "source": "Bài kiểm tra viết · C1 · câu 4"
+  },
+  {
+    "id": "written-C2-1",
+    "chapter": "C2",
+    "number": 1,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 40,
+    "q": "Dự án phần mềm điều khiển thiết bị y tế phải nộp hồ sơ kiểm định với đầy đủ truy vết từ yêu cầu tới test case. Mô hình phù hợp nhất là:",
+    "options": [
+      "Scrum",
+      "DevOps",
+      "Mô hình chữ V",
+      "Kiểm thử thăm dò"
+    ],
+    "answer": "C",
+    "anchor": "main-3-3",
+    "source": "Bài kiểm tra viết · C2 · câu 1"
+  },
+  {
+    "id": "written-C2-2",
+    "chapter": "C2",
+    "number": 2,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 40,
+    "q": "Một dự án lặp bước sang đợt phát hành thứ năm. Khối lượng kiểm thử hồi quy theo phạm vi sản phẩm tích lũy sẽ:",
+    "options": [
+      "Giảm dần vì hệ thống ổn định",
+      "Không đổi",
+      "Tăng dần vì phần cũ cần được kiểm tra lại",
+      "Chỉ phụ thuộc số tester"
+    ],
+    "answer": "C",
+    "anchor": "main-6-0",
+    "source": "Bài kiểm tra viết · C2 · câu 2"
+  },
+  {
+    "id": "written-C2-3",
+    "chapter": "C2",
+    "number": 3,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 40,
+    "q": "Bộ hồi quy 500 test chạy tay mất 3 ngày, nhưng ngày mai phải phát hành. Cách xử lý hợp lý nhất là:",
+    "options": [
+      "Bỏ hoàn toàn hồi quy",
+      "Chạy ngẫu nhiên 100 test",
+      "Chọn theo phân tích tác động và báo cáo rủi ro phần chưa chạy",
+      "Lùi phát hành vô thời hạn"
+    ],
+    "answer": "C",
+    "anchor": "main-6-3",
+    "source": "Bài kiểm tra viết · C2 · câu 3"
+  },
+  {
+    "id": "written-C2-4",
+    "chapter": "C2",
+    "number": 4,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 40,
+    "q": "Phát biểu nào về cấp độ và loại kiểm thử là đúng?",
+    "options": [
+      "Mỗi cấp độ chỉ dùng được một loại",
+      "Kiểm thử bảo mật chỉ chạy ở cấp hệ thống",
+      "Một loại kiểm thử có thể chạy ở nhiều cấp độ",
+      "Hồi quy là một cấp độ kiểm thử"
+    ],
+    "answer": "C",
+    "anchor": "main-25-3",
+    "source": "Bài kiểm tra viết · C2 · câu 4"
+  },
+  {
+    "id": "written-C3-1",
+    "chapter": "C3",
+    "number": 1,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 34,
+    "q": "Test case TC-02 sử dụng đơn hàng do TC-01 tạo ra. Nhược điểm nghiêm trọng nhất là:",
+    "options": [
+      "Tốn thời gian viết",
+      "Nếu TC-01 Fail thì không đánh giá được TC-02",
+      "Khó đặt tên test case",
+      "Không xuất được báo cáo"
+    ],
+    "answer": "B",
+    "anchor": "main-8-0",
+    "source": "Bài kiểm tra viết · C3 · câu 1"
+  },
+  {
+    "id": "written-C3-2",
+    "chapter": "C3",
+    "number": 2,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 34,
+    "q": "Ma trận truy vết cho thấy REQ-03 không gắn với test case nào. Điều này có nghĩa là:",
+    "options": [
+      "REQ-03 đã được kiểm thử đủ",
+      "Có lỗ hổng bao phủ, REQ-03 chưa được kiểm thử",
+      "REQ-03 là yêu cầu thừa",
+      "Test case đã bị xoá"
+    ],
+    "answer": "B",
+    "anchor": null,
+    "source": "Bài kiểm tra viết · C3 · câu 2"
+  },
+  {
+    "id": "written-C3-3",
+    "chapter": "C3",
+    "number": 3,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 34,
+    "q": "Nhóm báo cáo đã chạy 90% test case, tỷ lệ Pass 88%, còn 15 bug chưa đóng. Thông tin còn thiếu để quyết định phát hành là:",
+    "options": [
+      "Tên người chạy test",
+      "Mức nghiêm trọng của 15 bug và chức năng của phần chưa chạy",
+      "Số giờ đã bỏ ra",
+      "Loại công cụ đã dùng"
+    ],
+    "answer": "B",
+    "anchor": "main-10-2",
+    "source": "Bài kiểm tra viết · C3 · câu 3"
+  },
+  {
+    "id": "written-C3-4",
+    "chapter": "C3",
+    "number": 4,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 34,
+    "q": "Developer từ chối một bug vì không tái hiện được. Hành động phù hợp nhất của tester là:",
+    "options": [
+      "Đóng bug và bỏ qua",
+      "Mở lại bug ngay mà không bổ sung gì",
+      "Bổ sung môi trường, phiên bản, video tái hiện rồi trao đổi lại",
+      "Báo cáo lên cấp trên"
+    ],
+    "answer": "C",
+    "anchor": "main-3-2",
+    "source": "Bài kiểm tra viết · C3 · câu 4"
+  },
+  {
+    "id": "written-C4A-1",
+    "chapter": "C4A",
+    "number": 1,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 35,
+    "q": "Một đoạn mã chứa lỗi nằm trong nhánh chưa bao giờ được thực thi trong mọi test case. Kỹ thuật nào có thể phát hiện lỗi này?",
+    "options": [
+      "Kiểm thử hộp đen",
+      "Kiểm thử tĩnh (review hoặc phân tích mã nguồn)",
+      "Kiểm thử tải",
+      "Kiểm thử chấp nhận"
+    ],
+    "answer": "B",
+    "anchor": "main-24-0",
+    "source": "Bài kiểm tra viết · C4A · câu 1"
+  },
+  {
+    "id": "written-C4A-2",
+    "chapter": "C4A",
+    "number": 2,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 35,
+    "q": "Nhóm review hai tiếng với năm người nhưng không ai đọc tài liệu trước. Hệ quả có khả năng xảy ra nhất là:",
+    "options": [
+      "Tìm ra nhiều lỗi logic sâu",
+      "Chỉ nhặt được lỗi chính tả và trình bày",
+      "Buổi họp kết thúc sớm",
+      "Không cần biên bản"
+    ],
+    "answer": "B",
+    "anchor": "main-12-1",
+    "source": "Bài kiểm tra viết · C4A · câu 2"
+  },
+  {
+    "id": "written-C4A-3",
+    "chapter": "C4A",
+    "number": 3,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 35,
+    "q": "Trước khi nộp hồ sơ kiểm định thiết bị y tế, phải rà soát đặc tả theo checklist, có biên bản và chữ ký. Hình thức review phù hợp là:",
+    "options": [
+      "Informal review",
+      "Walkthrough",
+      "Technical review",
+      "Inspection"
+    ],
+    "answer": "D",
+    "anchor": null,
+    "source": "Bài kiểm tra viết · C4A · câu 3"
+  },
+  {
+    "id": "written-C4A-4",
+    "chapter": "C4A",
+    "number": 4,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 35,
+    "q": "Phát biểu nào đúng về quan hệ giữa công cụ phân tích tĩnh và review của con người?",
+    "options": [
+      "Công cụ thay thế hoàn toàn con người",
+      "Con người thay thế hoàn toàn công cụ",
+      "Công cụ bắt lỗi máy móc, con người bắt lỗi nghiệp vụ – bổ sung cho nhau",
+      "Hai cách tìm cùng một tập lỗi"
+    ],
+    "answer": "C",
+    "anchor": "main-27-1",
+    "source": "Bài kiểm tra viết · C4A · câu 4"
+  },
+  {
+    "id": "written-C4B-1",
+    "chapter": "C4B",
+    "number": 1,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 36,
+    "q": "Phí ship: đơn dưới 500.000đ chịu phí 30.000đ; đơn từ 500.000đ trở lên miễn phí. Bộ giá trị biên đúng (đồng) là:",
+    "options": [
+      "499.000 / 500.000 / 501.000",
+      "499.999 / 500.000 / 500.001",
+      "400.000 / 500.000 / 600.000",
+      "500.000 / 500.001"
+    ],
+    "answer": "B",
+    "anchor": "main-12-3",
+    "source": "Bài kiểm tra viết · C4B · câu 1"
+  },
+  {
+    "id": "written-C4B-2",
+    "chapter": "C4B",
+    "number": 2,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 36,
+    "q": "Cho mã: if (x > 0) { y = 10 / x; } ketQua = y; Chạy với x = 5. Bao phủ câu lệnh và bao phủ nhánh lần lượt là:",
+    "options": [
+      "100% và 100%",
+      "100% và 50%",
+      "50% và 50%",
+      "50% và 100%"
+    ],
+    "answer": "B",
+    "anchor": "main-31-1",
+    "source": "Bài kiểm tra viết · C4B · câu 2"
+  },
+  {
+    "id": "written-C4B-3",
+    "chapter": "C4B",
+    "number": 3,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 36,
+    "q": "Với mã if (x > 0) { y = 10 / x; } ketQua = y; chạy thêm x = 0 sẽ bộc lộ vấn đề gì?",
+    "options": [
+      "Không có vấn đề",
+      "y chưa được gán giá trị",
+      "Chia cho 0",
+      "Tràn số"
+    ],
+    "answer": "B",
+    "anchor": "main-31-0",
+    "source": "Bài kiểm tra viết · C4B · câu 3"
+  },
+  {
+    "id": "written-C4B-4",
+    "chapter": "C4B",
+    "number": 4,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 36,
+    "q": "Sinh viên được đăng ký nếu đã đóng học phí VÀ chưa vượt 25 tín chỉ. Sinh viên năm cuối được ưu tiên ngay cả khi chưa đóng học phí. Kỹ thuật phù hợp nhất và số tổ hợp tối đa là:",
+    "options": [
+      "Giá trị biên – 6 tổ hợp",
+      "Bảng quyết định – 8 tổ hợp",
+      "Chuyển trạng thái – 4 tổ hợp",
+      "Phân vùng tương đương – 3 tổ hợp"
+    ],
+    "answer": "B",
+    "anchor": "main-13-3",
+    "source": "Bài kiểm tra viết · C4B · câu 4"
+  },
+  {
+    "id": "written-C5-1",
+    "chapter": "C5",
+    "number": 1,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 37,
+    "q": "Một test chạy tay mất 8 phút, viết script mất 90 phút, mỗi lần chạy script kể cả bảo trì mất 2 phút. Dự án còn 2 tháng, phát hành mỗi tuần. Kết luận đúng là:",
+    "options": [
+      "Nên tự động hoá vì luôn có lợi",
+      "Điểm hoà vốn 15 lần, dự án chỉ chạy khoảng 8 lần nên lỗ",
+      "Điểm hoà vốn 8 lần nên có lãi",
+      "Không đủ dữ liệu để kết luận"
+    ],
+    "answer": "B",
+    "anchor": "main-15-3",
+    "source": "Bài kiểm tra viết · C5 · câu 1"
+  },
+  {
+    "id": "written-C5-2",
+    "chapter": "C5",
+    "number": 2,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 37,
+    "q": "Sếp yêu cầu tự động hoá 100% test case và bỏ hẳn test thủ công. Phản hồi chuyên nghiệp nhất là:",
+    "options": [
+      "Đồng ý và thực hiện",
+      "Từ chối thẳng vì không khả thi",
+      "Đề xuất tự động hoá theo mức ưu tiên kèm điểm hoà vốn và nêu phần không tự động hoá được",
+      "Chuyển yêu cầu cho người khác"
+    ],
+    "answer": "C",
+    "anchor": "main-16-1",
+    "source": "Bài kiểm tra viết · C5 · câu 2"
+  },
+  {
+    "id": "written-C5-3",
+    "chapter": "C5",
+    "number": 3,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 37,
+    "q": "Sau sáu tháng, 30% test tự động báo đỏ nhưng không ai sửa và cả nhóm bỏ chạy bộ test. Nguyên nhân gốc rễ là:",
+    "options": [
+      "Công cụ kém",
+      "Thiếu quy trình bảo trì và không chạy thường xuyên trong pipeline",
+      "Tester không giỏi",
+      "Ứng dụng quá phức tạp"
+    ],
+    "answer": "B",
+    "anchor": "main-18-1",
+    "source": "Bài kiểm tra viết · C5 · câu 3"
+  },
+  {
+    "id": "written-C5-4",
+    "chapter": "C5",
+    "number": 4,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 37,
+    "q": "Trong 300 test case, nhóm chỉ tự động hoá được 50. Thứ tự ưu tiên hợp lý nhất là:",
+    "options": [
+      "Test khó nhất trước",
+      "Test mới viết gần đây nhất trước",
+      "Smoke test và hồi quy chức năng lõi ổn định trước",
+      "Test của chức năng đang phát triển trước"
+    ],
+    "answer": "C",
+    "anchor": "main-16-0",
+    "source": "Bài kiểm tra viết · C5 · câu 4"
+  },
+  {
+    "id": "written-C6-1",
+    "chapter": "C6",
+    "number": 1,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 50,
+    "q": "Cho HTML: <input type=\"text\" id=\"user\" name=\"username\" class=\"form-input\" />. Locator bền nhất là:",
+    "options": [
+      "By.ClassName(\"form-input\")",
+      "By.Id(\"user\")",
+      "By.XPath(\"/html/body/div[2]/form/input[1]\")",
+      "By.TagName(\"input\")"
+    ],
+    "answer": "B",
+    "anchor": null,
+    "source": "Bài kiểm tra viết · C6 · câu 1"
+  },
+  {
+    "id": "written-C6-2",
+    "chapter": "C6",
+    "number": 2,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 50,
+    "q": "Script bấm Đăng nhập rồi kiểm tra ngay chữ Xin chào, đôi khi Fail dù hệ thống đúng. Cách khắc phục đúng nhất là:",
+    "options": [
+      "Chạy lại script khi Fail",
+      "Thêm lệnh ngủ cố định 5 giây",
+      "Dùng chờ tường minh đợi phần tử xuất hiện rồi mới kiểm chứng",
+      "Bỏ bước kiểm chứng"
+    ],
+    "answer": "C",
+    "anchor": "main-17-0",
+    "source": "Bài kiểm tra viết · C6 · câu 2"
+  },
+  {
+    "id": "written-C6-3",
+    "chapter": "C6",
+    "number": 3,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 50,
+    "q": "Cần kiểm thử một chức năng với 50 bộ dữ liệu đọc từ Excel, kết quả đưa vào CI. Thành phần Selenium phù hợp là:",
+    "options": [
+      "Selenium IDE",
+      "Selenium WebDriver",
+      "Selenium RC",
+      "Chỉ cần Grid"
+    ],
+    "answer": "B",
+    "anchor": "main-19-0",
+    "source": "Bài kiểm tra viết · C6 · câu 3"
+  },
+  {
+    "id": "written-C6-4",
+    "chapter": "C6",
+    "number": 4,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 50,
+    "q": "Khi kiểm tra tìm kiếm từ khoá áo sơ mi mà dữ liệu sản phẩm thay đổi liên tục, cách kiểm chứng phù hợp nhất là:",
+    "options": [
+      "So sánh với danh sách 24 sản phẩm cố định",
+      "Chỉ kiểm tra trang không báo lỗi",
+      "Kiểm tra mọi sản phẩm trả về đều chứa từ khoá trong tên",
+      "Kiểm tra số lượng phải đúng bằng 24"
+    ],
+    "answer": "C",
+    "anchor": "main-22-0",
+    "source": "Bài kiểm tra viết · C6 · câu 4"
+  }
+]
