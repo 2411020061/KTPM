@@ -109,7 +109,7 @@
   let allQuestions=[],pdfQuestions=[],writtenQuestions=[],activeChapter='all',activeQuestion=null;
   let order=[],quizMap={},knowledge={},extraQuestions={};
   let quizScore={right:0,wrong:0},answeredIds=new Set(),wrongIds=new Set(),redoOnly=false;
-  const hiddenExtraAnswers=new Set();
+  const visibleExtraAnswers=new Set();
   const $=s=>document.querySelector(s);
   const list=$('#list'),slideImage=$('#slideImage'),wrap=$('#pdfWrap'),proofOverlay=$('#proofOverlay');
   let activeTarget=null;
@@ -158,7 +158,7 @@
         ? `<div class="kp-table-wrap"><table class="kp-table"><thead><tr>${x.table.headers.map(h=>`<th scope="col">${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${x.table.rows.map(row=>`<tr>${row.map(c=>`<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
       const explain = x.explain ? `<p class="kp-explain"><b>Cách ra đáp án:</b> ${escapeHtml(x.explain)}</p>` : '';
       const related = x.relatedFile && x.relatedPage ? `<button type="button" class="slide-link verified" data-file="${escapeHtml(x.relatedFile)}" data-page="${Number(x.relatedPage)}" data-title="${escapeHtml(FILES[x.relatedFile]||x.relatedFile)}" data-question="${escapeHtml(q.id)}">Xem slide liên quan · tr. ${Number(x.relatedPage)} ↗</button>` : '';
-      const answerKey=`${q.id}:${i}`, hidden=hiddenExtraAnswers.has(answerKey);
+      const answerKey=`${q.id}:${i}`, hidden=!visibleExtraAnswers.has(answerKey);
       return `<li><span class="kp-q"><span class="kp-num">${i+1}.</span> ${badge}${escapeHtml(x.q)}</span>${img}${table}<span class="kp-a"><span class="kp-check">✓</span><button type="button" class="kp-eye" data-answer-key="${escapeHtml(answerKey)}" aria-label="${hidden?'Hiện':'Ẩn'} đáp án câu mở rộng ${i+1}" aria-pressed="${!hidden}" title="${hidden?'Hiện':'Ẩn'} đáp án">${eyeIcon(hidden)}</button><span class="kp-a-text"${hidden?' hidden':''}>${escapeHtml(x.a)}</span></span>${explain}${related}</li>`;
     }).join('');
     const title = k && k.title ? escapeHtml(k.title) : 'Kiến thức từ slide liên quan';
@@ -327,7 +327,7 @@
     panelToggle.title=collapsed?'Hiện lại slide':'Ẩn slide, mở rộng danh sách câu hỏi';
   });
   document.querySelectorAll('.filter[data-chapter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter[data-chapter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeChapter=b.dataset.chapter;applyFilters()}));
-  list.addEventListener('click',e=>{const eye=e.target.closest('.kp-eye');if(eye){const key=eye.dataset.answerKey;const hidden=!hiddenExtraAnswers.has(key);if(hidden)hiddenExtraAnswers.add(key);else hiddenExtraAnswers.delete(key);eye.closest('.kp-a').querySelector('.kp-a-text').hidden=hidden;eye.innerHTML=eyeIcon(hidden);eye.setAttribute('aria-pressed',String(!hidden));const n=Number(key.split(':').pop())+1;eye.setAttribute('aria-label',`${hidden?'Hiện':'Ẩn'} đáp án câu mở rộng ${n}`);eye.title=`${hidden?'Hiện':'Ẩn'} đáp án`;return;}const b=e.target.closest('.slide-link');if(b){if(b.dataset.file)openSlide(b.dataset.file,Number(b.dataset.page),b.dataset.title,b.dataset.question);return;}const opt=e.target.closest('.answer-choice');if(opt)selectAnswer(e.target.closest('.question-card'),opt.dataset.option);});
+  list.addEventListener('click',e=>{const eye=e.target.closest('.kp-eye');if(eye){const key=eye.dataset.answerKey;const hidden=visibleExtraAnswers.has(key);if(hidden)visibleExtraAnswers.delete(key);else visibleExtraAnswers.add(key);eye.closest('.kp-a').querySelector('.kp-a-text').hidden=hidden;eye.innerHTML=eyeIcon(hidden);eye.setAttribute('aria-pressed',String(!hidden));const n=Number(key.split(':').pop())+1;eye.setAttribute('aria-label',`${hidden?'Hiện':'Ẩn'} đáp án câu mở rộng ${n}`);eye.title=`${hidden?'Hiện':'Ẩn'} đáp án`;return;}const b=e.target.closest('.slide-link');if(b){if(b.dataset.file)openSlide(b.dataset.file,Number(b.dataset.page),b.dataset.title,b.dataset.question);return;}const opt=e.target.closest('.answer-choice');if(opt)selectAnswer(e.target.closest('.question-card'),opt.dataset.option);});
   $('#goPage').addEventListener('click',()=>{if(!activeQuestion)return;const n=Math.max(1,Number($('#pageInput').value)||1);const q=findQ(activeQuestion);if(!q||!q.file)return;activeTarget=Number(q.page)===n?q.target:null;const path=encodeURIComponent(q.file.replace(/\.pdf$/,''));slideImage.src=`slides/${path}/${String(n).padStart(3,'0')}.jpg`;$('#pageInput').value=n;$('#slideSubtitle').textContent=`Trang ${n}`;requestAnimationFrame(drawProof);});
   $('#pageInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('#goPage').click()});
   $('#openFile').addEventListener('click',()=>{const q=findQ(activeQuestion);if(q&&q.file)window.open(`${encodeURI(q.file)}#page=${$('#pageInput').value}&view=FitH`,'_blank','noopener')});
