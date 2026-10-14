@@ -60,11 +60,10 @@
     .kp-table th,.kp-table td{border:1px solid #d6dfed;padding:5px 6px;text-align:left;white-space:nowrap}
     .kp-table th{background:#eaf0fb;color:#284170}
     .kp-explain{margin:5px 0 0;padding:6px 7px;border-left:2px solid #83a6d9;background:#eef4ff;color:#334767;font-size:10px;line-height:1.5}
-    .question-note{min-width:0;min-height:100px;padding:9px;border:1px solid #e5e8ee;border-radius:8px;background:#fafbfc;cursor:text;display:flex;flex-direction:column}.note-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.note-label{font-size:10px;font-weight:750;color:#667184}.note-saved{font-size:9px;color:#7d8796}.note-input{display:block;flex:1;width:100%;min-height:70px;max-height:180px;resize:vertical;border:0;border-radius:5px;padding:8px;background:#fff;color:#293347;font:11px/1.5 inherit;outline:none}.note-input:focus{box-shadow:0 0 0 2px #3659d91a}.note-input::placeholder{color:#9aa3b1}
     .slide-panel{display:flex;flex-direction:column}.slide-head{height:54px;display:flex;align-items:center;gap:12px;padding:0 14px;border-bottom:1px solid var(--line);flex:none}.slide-info{min-width:0;flex:1}.slide-info h2{font-size:13px;margin:0;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.slide-info p{font-size:10px;margin:3px 0 0;color:var(--muted)}.page-control{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted)}.page-control input{width:55px;height:29px;border:1px solid var(--line);border-radius:7px;padding:0 7px;font-size:12px;text-align:center;color:var(--ink)}.page-control button,.open-file{height:29px;border:1px solid var(--line);background:#fff;border-radius:7px;padding:0 9px;color:#465168;font-size:10px;cursor:pointer}.page-control button:hover,.open-file:hover{background:#f5f7fb}.pdf-wrap{position:relative;flex:1;min-height:0;background:#697386;overflow:auto;display:flex;justify-content:center;align-items:flex-start;padding:14px}.slide-stage{position:relative;display:inline-block;max-width:100%;height:max-content;line-height:0}.slide-image{display:none;max-width:100%;height:auto;background:#fff;box-shadow:0 3px 18px #15223a45}.pdf-wrap.loaded .slide-image{display:block}.proof-overlay{position:absolute;inset:0;width:100%;height:100%;overflow:visible;opacity:0;pointer-events:none;transition:opacity .18s}.pdf-wrap.loaded .proof-overlay.has-proof{opacity:1}.proof-box{fill:#ff51451c;stroke:#ef4037;stroke-width:3;stroke-dasharray:8 5;vector-effect:non-scaling-stroke}.welcome{position:absolute;inset:0;display:grid;place-items:center;color:#fff;text-align:center;padding:24px;pointer-events:none}.welcome div{max-width:430px;background:#192337c9;border:1px solid #ffffff32;border-radius:15px;padding:22px 26px;backdrop-filter:blur(5px)}.welcome b{font-size:15px}.welcome p{font-size:12px;line-height:1.6;color:#e2e7ef;margin:8px 0 0}.pdf-wrap.loaded .welcome{display:none}.statusbar{height:27px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;background:#fafbfc;border-top:1px solid var(--line);font-size:9px;color:var(--muted);flex:none}.legend{display:flex;gap:12px}.legend span{display:flex;align-items:center;gap:5px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green)}.dot.tentative{background:var(--red)}
     @media(max-width:900px){.app{padding:8px;gap:8px;grid-template-rows:auto minmax(0,1fr)}.topbar{flex-wrap:wrap;gap:8px;padding:10px}.brand{min-width:190px}.filters{order:3;width:100%;overflow:auto}.workspace{grid-template-columns:minmax(300px,43%) minmax(0,57%);gap:8px}.count{margin-left:0}.panel-toggle{right:-11px}}
-    @media(max-width:1100px){.q-content{grid-template-columns:minmax(0,1fr) minmax(190px,36%);gap:8px}.question-note{min-height:90px}}
-    @media(max-width:700px){html,body{height:auto;min-height:100%;overflow:auto}.app{height:auto;min-height:100dvh;grid-template-rows:auto auto}.workspace{grid-template-columns:1fr}.panel{min-height:55vh}.q-content{grid-template-columns:1fr}.question-note{min-height:105px}.note-input{min-height:70px}.knowledge-panel ul{max-height:none}}
+    @media(max-width:1100px){.q-content{grid-template-columns:minmax(0,1fr) minmax(190px,36%);gap:8px}}
+    @media(max-width:700px){html,body{height:auto;min-height:100%;overflow:auto}.app{height:auto;min-height:100dvh;grid-template-rows:auto auto}.workspace{grid-template-columns:1fr}.panel{min-height:55vh}.q-content{grid-template-columns:1fr}.knowledge-panel ul{max-height:none}}
   </style>
 </head>
 <body>
@@ -80,7 +79,7 @@
     <section class="workspace" id="workspace">
       <button class="panel-toggle" id="panelToggle" type="button" aria-expanded="true" aria-controls="slidePanel" title="Ẩn slide, mở rộng danh sách câu hỏi">›</button>
       <section class="panel questions-panel" aria-label="Ngân hàng câu hỏi">
-        <div class="panel-head"><span class="panel-title">Câu hỏi</span><span class="head-note">Ghi chú nằm cạnh câu · bấm câu để gạch đen đáp án đúng</span></div>
+        <div class="panel-head"><span class="panel-title">Câu hỏi</span><span class="head-note">Bấm câu để gạch đen đáp án đúng</span></div>
         <div id="list" class="list"><div class="empty">Đang nạp 210 câu hỏi…</div></div>
       </section>
       <section class="panel slide-panel" id="slidePanel" aria-label="Slide bài giảng">
@@ -112,9 +111,6 @@
   let quizScore={right:0,wrong:0},answeredIds=new Set(),wrongIds=new Set(),redoOnly=false;
   const $=s=>document.querySelector(s);
   const list=$('#list'),slideImage=$('#slideImage'),wrap=$('#pdfWrap'),proofOverlay=$('#proofOverlay');
-  const NOTES_KEY='quizQuestionNotesV1';
-  let questionNotes={};
-  try{questionNotes=JSON.parse(localStorage.getItem(NOTES_KEY)||'{}')||{}}catch{questionNotes={}}
   let activeTarget=null;
   const chapterName=n=>n>=1&&n<=6?`C${n}`:(n==='C4A'||n==='C4B'?n:`C${n}`);
   function dataset(){
@@ -184,7 +180,6 @@
     const images=(q.images||[]).map((src,i)=>`<img src="${escapeHtml(src)}" alt="Hình minh họa câu ${q.number} (${i+1})" loading="lazy">`).join('');
     const supplement=(q.supplementHtml||'').replace(/<p class="answer-choice[^"]*" data-option="([A-D])">([\s\S]*?)<\/p>/gi,(_,opt,inner)=>`<button type="button" class="answer-choice" data-option="${opt}">${inner}</button>`);
     const explanation=q.explanation?`<div class="answer-explanation">${escapeHtml(q.explanation).replace(/\n/g,'<br>')}</div>`:'';
-    const note=questionNotes[q.id]||'';
     const ch=(q.file&&/BaiGiang_(C[0-9]+[AB]?)/.exec(q.file)||[])[1]||chapterName(q.chapter), file=escapeHtml(q.file||'');
     const label=q.page?`${q.matchType==='Khớp chủ đề câu hỏi'?'Liên quan · ':''}${ch} · tr. ${q.page}`:'Không có slide';
     const pageClass=q.matchType==='Khớp chủ đề câu hỏi'?'reference':'verified';
@@ -196,7 +191,7 @@
     return `<article class="${cardClass} quiz-mode" aria-label="Bấm chọn một đáp án để kiểm tra câu ${q.number}" data-id="${escapeHtml(q.id)}" data-search="${escapeHtml(q.raw.toLocaleLowerCase('vi'))}">
       <div class="q-top"><span class="q-label">${escapeHtml(labelText)}${pdfBadge(q)}${quizBadge(q)}</span>${pageControl}</div>
       <div class="q-content"><div class="q-body">${body}${supplemental}</div>
-      <div class="q-side"><section class="question-note" aria-label="Ghi chú câu ${q.number}"><div class="note-head"><label class="note-label" for="note-${escapeHtml(q.id)}">Ghi chú của bạn</label><span class="note-saved" aria-live="polite">${note?'Đã lưu':'Tự lưu'}</span></div><textarea id="note-${escapeHtml(q.id)}" class="note-input" data-note-id="${escapeHtml(q.id)}" placeholder="Ghi lại nội dung cần nhớ…">${escapeHtml(note)}</textarea></section>${knowledgePanel(q)}</div></div>
+      <div class="q-side">${knowledgePanel(q)}</div></div>
       <div class="answer-status"></div>${explanation}</article>`
   }
   function selectAnswer(card,option){
@@ -321,8 +316,7 @@
     panelToggle.title=collapsed?'Hiện lại slide':'Ẩn slide, mở rộng danh sách câu hỏi';
   });
   document.querySelectorAll('.filter[data-chapter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter[data-chapter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeChapter=b.dataset.chapter;applyFilters()}));
-  list.addEventListener('click',e=>{if(e.target.closest('.question-note'))return;const b=e.target.closest('.slide-link');if(b){if(b.dataset.file)openSlide(b.dataset.file,Number(b.dataset.page),b.dataset.title,b.dataset.question);return;}const opt=e.target.closest('.answer-choice');if(opt)selectAnswer(e.target.closest('.question-card'),opt.dataset.option);});
-  list.addEventListener('input',e=>{const field=e.target.closest('.note-input');if(!field)return;questionNotes[field.dataset.noteId]=field.value;const label=field.closest('.question-note').querySelector('.note-saved');label.textContent='Đang lưu…';try{localStorage.setItem(NOTES_KEY,JSON.stringify(questionNotes));label.textContent='Đã lưu'}catch{label.textContent='Chưa lưu được'}});
+  list.addEventListener('click',e=>{const b=e.target.closest('.slide-link');if(b){if(b.dataset.file)openSlide(b.dataset.file,Number(b.dataset.page),b.dataset.title,b.dataset.question);return;}const opt=e.target.closest('.answer-choice');if(opt)selectAnswer(e.target.closest('.question-card'),opt.dataset.option);});
   $('#goPage').addEventListener('click',()=>{if(!activeQuestion)return;const n=Math.max(1,Number($('#pageInput').value)||1);const q=findQ(activeQuestion);if(!q||!q.file)return;activeTarget=Number(q.page)===n?q.target:null;const path=encodeURIComponent(q.file.replace(/\.pdf$/,''));slideImage.src=`slides/${path}/${String(n).padStart(3,'0')}.jpg`;$('#pageInput').value=n;$('#slideSubtitle').textContent=`Trang ${n}`;requestAnimationFrame(drawProof);});
   $('#pageInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('#goPage').click()});
   $('#openFile').addEventListener('click',()=>{const q=findQ(activeQuestion);if(q&&q.file)window.open(`${encodeURI(q.file)}#page=${$('#pageInput').value}&view=FitH`,'_blank','noopener')});
