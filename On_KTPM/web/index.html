@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ôn tập Kiểm thử phần mềm K24 · 215 câu (80 PDF + 130 OnTap + 5 bài viết)</title>
+  <title>Ôn tập Kiểm thử phần mềm K24 · 263 câu (80 PDF + 130 OnTap + 5 bài viết + 48 theo slide)</title>
   <style>
     :root{--ink:#172033;--muted:#687386;--line:#dce2eb;--blue:#3659d9;--blue-soft:#edf1ff;--paper:#fff;--canvas:#f2f4f8;--red:#cf473d;--green:#26845f}
     *{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--canvas)}
@@ -69,9 +69,9 @@
 <body>
   <main class="app">
     <header class="topbar">
-      <div class="brand"><h1>Ôn tập Kiểm thử phần mềm · K24</h1><p><b>215 câu: 80 câu đề PDF → 130 câu OnTap + 5 câu bài viết</b> · trả lời xong hiện kiến thức slide</p></div>
+      <div class="brand"><h1>Ôn tập Kiểm thử phần mềm · K24</h1><p><b>263 câu: 80 câu đề PDF → 130 câu OnTap + 5 câu bài viết + 48 câu theo slide</b> · trả lời xong hiện kiến thức slide</p></div>
       <label class="search-wrap"><span>⌕</span><input id="search" class="search" type="search" placeholder="Tìm câu hỏi, từ khóa…" autocomplete="off" aria-label="Tìm câu hỏi"></label>
-      <nav class="filters" aria-label="Lọc theo nhóm câu hỏi"><button class="filter active" data-chapter="all">Tất cả (215)</button><button class="filter" data-chapter="1">C1</button><button class="filter" data-chapter="2">C2</button><button class="filter" data-chapter="3">C3</button><button class="filter" data-chapter="4">C4</button><button class="filter" data-chapter="5">C5</button><button class="filter" data-chapter="6">C6</button><button class="filter" data-chapter="main">OnTap (130)</button><button class="filter" data-chapter="pdf">Đề PDF (80)</button><button class="filter" data-chapter="quiz">QUIZ C1–C6 (90)</button><button class="filter" data-chapter="written">Bài viết (5)</button></nav>
+      <nav class="filters" aria-label="Lọc theo nhóm câu hỏi"><button class="filter active" data-chapter="all">Tất cả (263)</button><button class="filter" data-chapter="1">C1</button><button class="filter" data-chapter="2">C2</button><button class="filter" data-chapter="3">C3</button><button class="filter" data-chapter="4">C4</button><button class="filter" data-chapter="5">C5</button><button class="filter" data-chapter="6">C6</button><button class="filter" data-chapter="main">OnTap (130)</button><button class="filter" data-chapter="pdf">Đề PDF (80)</button><button class="filter" data-chapter="quiz">QUIZ C1–C6 (90)</button><button class="filter" data-chapter="written">Bài viết (5)</button><button class="filter" data-chapter="slide">Theo slide (48)</button></nav>
       <div class="count"><b id="visibleCount">0</b> <span id="countUnit">câu</span></div>
       <div class="score" id="scoreBox"><b id="scoreText">0/0</b><span id="scorePct">0%</span><span class="wrong" id="scoreWrong">Sai 0</span><button id="scoreReset" type="button" title="Xoá điểm, làm lại từ đầu">↺</button></div>
       <button class="redo" id="redoWrong" type="button" title="Chỉ hiện lại những câu đã làm sai">↻ Làm lại câu sai (<span id="wrongCount">0</span>)</button>
@@ -80,7 +80,7 @@
       <button class="panel-toggle" id="panelToggle" type="button" aria-expanded="true" aria-controls="slidePanel" title="Ẩn slide, mở rộng danh sách câu hỏi">›</button>
       <section class="panel questions-panel" aria-label="Ngân hàng câu hỏi">
         <div class="panel-head"><span class="panel-title">Câu hỏi</span><span class="head-note">Bấm câu để gạch đen đáp án đúng</span></div>
-        <div id="list" class="list"><div class="empty">Đang nạp 215 câu hỏi…</div></div>
+        <div id="list" class="list"><div class="empty">Đang nạp 263 câu hỏi…</div></div>
       </section>
       <section class="panel slide-panel" id="slidePanel" aria-label="Slide bài giảng">
         <div class="slide-head">
@@ -139,7 +139,7 @@
 
     if(!extra.length){
       const why=(!k||!k.paras||!k.paras.length)
-        ? (q.kind==='written' ? 'Đây là câu trắc nghiệm trong bài kiểm tra viết của chương. Xem trang nguồn bên dưới.' : 'Câu này không có slide tương ứng trong bài giảng C0–C6.')
+        ? (q.kind==='written' ? 'Đây là câu trắc nghiệm trong bài kiểm tra viết của chương. Xem trang nguồn bên dưới.' : 'Câu này không có slide tương ứng trong bài giảng C1–C6.')
         : 'Chưa tìm được kiến thức khác phù hợp để hỏi từ slide này.';
       return `<div class="knowledge-panel"><h4>📖 Kiến thức mở rộng</h4><p class="kp-none">${why}</p>${foot}</div>`;
     }
@@ -190,7 +190,7 @@
     const pageControl=q.page?`<button class="slide-link ${pageClass}" data-file="${file}" data-page="${q.page}" data-title="${escapeHtml(FILES[q.file]||q.file)}" data-question="${escapeHtml(q.id)}" title="${escapeHtml(basisText)}"><span class="ref-main">${label}</span><small class="basis">${q.matchType==='Khớp chủ đề câu hỏi'?'Tham khảo chủ đề':'Khoanh vùng minh chứng'} · ${escapeHtml(basisText)}</small></button>`:`<span class="slide-link unavailable" aria-disabled="true" title="${escapeHtml(q.basis||'Không có slide')}"><span class="ref-main">Không có slide</span><small class="basis">${escapeHtml(q.basis||'Không thuộc slide bài giảng C1–C6')}</small></span>`;
     const supplemental=images+supplement;
     const cardClass=q.kind==='pdf'?'question-card pdf-card':(q.kind==='main'?'question-card main-card':'question-card');
-    const labelText=q.kind==='pdf'?`PDF · Câu ${q.number}`:(q.kind==='written'?`Bài viết · ${q.section}.${q.number}`:(q.kind==='standalone'?'Câu minh họa':`${q.section==='Ngân hàng tổng hợp'?'Tổng hợp · ':''}Câu ${q.number}`));
+    const labelText=q.kind==='pdf'?`PDF · Câu ${q.number}`:(q.kind==='written'?`Bài viết · ${q.section}.${q.number}`:(q.kind==='slide'?`Slide · ${q.section} tr. ${q.page}`:(q.kind==='standalone'?'Câu minh họa':`${q.section==='Ngân hàng tổng hợp'?'Tổng hợp · ':''}Câu ${q.number}`)));
     return `<article class="${cardClass} quiz-mode" aria-label="Bấm chọn một đáp án để kiểm tra câu ${q.number}" data-id="${escapeHtml(q.id)}" data-search="${escapeHtml(q.raw.toLocaleLowerCase('vi'))}">
       <div class="q-top"><span class="q-label">${escapeHtml(labelText)}${pdfBadge(q)}${quizBadge(q)}</span>${pageControl}</div>
       <div class="q-content"><div class="q-body">${body}${supplemental}</div>
@@ -255,8 +255,9 @@
       if(activeChapter==='pdf'){if(q.kind!=='pdf')return false}
       else if(activeChapter==='quiz'){if(!quizMap[q.id])return false}
       else if(activeChapter==='written'){if(q.kind!=='written')return false}
+      else if(activeChapter==='slide'){if(q.kind!=='slide')return false}
       else if(activeChapter==='main'){if(q.kind!=='main')return false}
-      else if(activeChapter!=='all'){if(q.kind!=='main'&&q.kind!=='supplemental'&&q.kind!=='written')return false;if(String(q.chapter)!==activeChapter)return false}
+      else if(activeChapter!=='all'){if(q.kind!=='main'&&q.kind!=='supplemental'&&q.kind!=='written'&&q.kind!=='slide')return false;if(String(q.chapter)!==activeChapter)return false}
       return !term||q.raw.toLocaleLowerCase('vi').includes(term);
     });
     if(redoOnly)qs=qs.filter(q=>wrongIds.has(q.id));
@@ -293,10 +294,12 @@
       const r=await fetch('questions.json'); if(!r.ok)throw new Error('index'); allQuestions=await r.json();
       try{const p=await fetch('pdf-questions.json'); if(p.ok)pdfQuestions=await p.json();}catch{}
       try{const w=await fetch('written-exam-questions.json'); if(w.ok)writtenQuestions=(await w.json()).filter(x=>!x.anchor).map(x=>({...x,kind:'written',section:x.chapter,chapter:Number(x.chapter.match(/C(\d)/)[1]),raw:`Câu ${x.number}: ${x.q}\n${x.options.map((option,i)=>`${'ABCD'[i]}. ${option}`).join('\n')}`,matchType:'Đối chiếu nội dung câu',basis:'Bài kiểm tra viết • Phần trắc nghiệm'}));}catch{}
+      try{const sc=await fetch('slide-coverage-questions.json'); if(sc.ok)writtenQuestions.push(...(await sc.json()).map(x=>({...x,kind:'slide',section:x.chapter,chapter:Number(x.chapter.match(/C(\d)/)[1]),raw:`Câu slide ${x.chapter}.${x.page}: ${x.q}\n${x.options.map((option,i)=>`${'ABCD'[i]}. ${option}`).join('\n')}`,matchType:'Đối chiếu nội dung câu',basis:`Kiến thức trực tiếp trên slide ${x.chapter} trang ${x.page}`})));}catch{}
       try{const o=await fetch('order.json'); if(o.ok)order=await o.json();}catch{}
       try{const qm=await fetch('quiz-map.json'); if(qm.ok)quizMap=await qm.json();}catch{}
       try{const kb=await fetch('knowledge.json'); if(kb.ok)knowledge=await kb.json();}catch{}
       try{const ex=await fetch('extra-questions.json'); if(ex.ok)extraQuestions=await ex.json();}catch{}
+      writtenQuestions.filter(x=>x.followup).forEach(x=>{extraQuestions[x.id]=[{...x.followup,tag:'Cùng slide',badge:`Slide ${x.section} · tr. ${x.page}`,badgeClass:'yes',source:x.source}];});
       updateScore();
       applyFilters();
     }catch(e){list.innerHTML='<div class="empty">Không đọc được danh sách câu. Mở trang qua tệp web/index.html trong thư mục web.</div>'}

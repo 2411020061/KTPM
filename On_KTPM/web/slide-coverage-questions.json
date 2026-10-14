@@ -1,0 +1,962 @@
+[
+  {
+    "id": "slide-C1-16",
+    "chapter": "C1",
+    "number": 16,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 16,
+    "q": "Một nhóm chạy mãi cùng bộ hồi quy và lâu rồi không tìm ra lỗi mới. Hành động nào phù hợp nhất?",
+    "options": [
+      "Chia đều test cho mọi module",
+      "Bổ sung ca mới và kiểm thử thăm dò",
+      "Ngừng toàn bộ hoạt động kiểm thử",
+      "Chỉ tăng số lần chạy lại bộ cũ"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nếu lịch sử lỗi cho thấy defect tập trung ở module thanh toán, nên phân bổ công sức kiểm thử ra sao?",
+      "a": "Tăng độ sâu kiểm thử module thanh toán theo nguyên tắc lỗi tập trung."
+    },
+    "source": "Slide C1 · tr. 16"
+  },
+  {
+    "id": "slide-C1-21",
+    "chapter": "C1",
+    "number": 21,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 21,
+    "q": "Yêu cầu khóa tài khoản vừa thay đổi. Nhóm muốn biết các test case và lỗi nào liên quan. Công cụ quản lý mối liên hệ nào hữu ích nhất?",
+    "options": [
+      "Báo cáo tiến độ",
+      "Truy vết hai chiều",
+      "Lịch trình nhân sự",
+      "Danh sách trình duyệt"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Khi cần chứng minh mọi yêu cầu đã được thử, truy vết hai chiều giúp đánh giá điều gì?",
+      "a": "Độ bao phủ yêu cầu bởi các điều kiện và test case."
+    },
+    "source": "Slide C1 · tr. 21"
+  },
+  {
+    "id": "slide-C1-26",
+    "chapter": "C1",
+    "number": 26,
+    "file": "BaiGiang_C1_Tong quan ve kiem thu phan mem.pdf",
+    "page": 26,
+    "q": "Developer nói không tái hiện được bug. Báo cáo lỗi thiếu thông tin nào sẽ gây trở ngại trực tiếp nhất?",
+    "options": [
+      "Sở thích của tester",
+      "Bước tái hiện và môi trường",
+      "Tên công ty của tester",
+      "Ngày nghỉ của nhóm"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Tester cần kỹ năng nào để nhận ra quy tắc học phí được cài đặt sai dù giao diện vẫn chạy?",
+      "a": "Kiến thức nghiệp vụ về lĩnh vực đang kiểm thử."
+    },
+    "source": "Slide C1 · tr. 26"
+  },
+  {
+    "id": "slide-C2-8",
+    "chapter": "C2",
+    "number": 8,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 8,
+    "q": "Khách hàng đổi yêu cầu lớn sau khi dự án Waterfall đã vào giai đoạn kiểm thử. Khó khăn chính của mô hình là gì?",
+    "options": [
+      "Các bước dễ quay lại",
+      "Khó thích nghi vì giai đoạn thực hiện tuần tự",
+      "Không cần tài liệu",
+      "Khách hàng đã thấy sản phẩm ở mọi bước"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nếu muốn phát hiện lỗi yêu cầu sớm hơn trong Waterfall, nhóm nên bổ sung hoạt động nào trước khi lập trình xong?",
+      "a": "Rà soát tài liệu yêu cầu bằng kiểm thử tĩnh."
+    },
+    "source": "Slide C2 · tr. 8"
+  },
+  {
+    "id": "slide-C2-10",
+    "chapter": "C2",
+    "number": 10,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 10,
+    "q": "Hệ thống được chia thành các chức năng nhỏ và bàn giao từng phần cho khách hàng. Đây là mô hình nào?",
+    "options": [
+      "Waterfall",
+      "Mô hình gia tăng",
+      "Big Bang",
+      "Mô hình chữ V"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Mỗi vòng lặp bổ sung chức năng mới làm rủi ro nào tăng, cần chuẩn bị bộ test chạy lại?",
+      "a": "Rủi ro hồi quy ở chức năng cũ tăng qua từng vòng lặp."
+    },
+    "source": "Slide C2 · tr. 10"
+  },
+  {
+    "id": "slide-C2-12",
+    "chapter": "C2",
+    "number": 12,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 12,
+    "q": "Một dự án quốc phòng có yêu cầu chưa rõ, rủi ro kỹ thuật cao. Mô hình nào đặt đánh giá rủi ro ở trung tâm từng vòng?",
+    "options": [
+      "Waterfall",
+      "Spiral",
+      "Big Bang",
+      "Chỉ kiểm thử thăm dò"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Trong một vòng Spiral, nhóm dùng prototype trước khi phát triển chính để đạt mục đích gì?",
+      "a": "Giảm rủi ro kỹ thuật hoặc nghiệp vụ trước khi phát triển tiếp."
+    },
+    "source": "Slide C2 · tr. 12"
+  },
+  {
+    "id": "slide-C2-22",
+    "chapter": "C2",
+    "number": 22,
+    "file": "BaiGiang_C2_Kiem thu trong vong doi phat trien phan mem.pdf",
+    "page": 22,
+    "q": "Nhóm kiểm tra thời gian phản hồi của API. Đây là loại kiểm thử nào theo đối tượng đánh giá?",
+    "options": [
+      "Chức năng",
+      "Phi chức năng",
+      "Cấu trúc",
+      "Xác nhận lỗi sửa"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Sau khi sửa một defect, nhóm chạy lại đúng ca đã phát hiện lỗi. Đây là loại kiểm thử liên quan thay đổi nào?",
+      "a": "Kiểm thử xác nhận (confirmation testing)."
+    },
+    "source": "Slide C2 · tr. 22"
+  },
+  {
+    "id": "slide-C3-12",
+    "chapter": "C3",
+    "number": 12,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 12,
+    "q": "Test Plan ghi Login trong phạm vi nhưng đăng nhập Google ngoài phạm vi. Mục nào của kế hoạch thể hiện quyết định này?",
+    "options": [
+      "Phạm vi kiểm thử",
+      "Nhân sự",
+      "Môi trường",
+      "Lịch trình"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Nếu mục tiêu kết thúc là không còn lỗi Critical/High mở, test plan cần ghi mục này ở đâu?",
+      "a": "Tiêu chí kết thúc kiểm thử (exit criteria)."
+    },
+    "source": "Slide C3 · tr. 12"
+  },
+  {
+    "id": "slide-C3-14",
+    "chapter": "C3",
+    "number": 14,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 14,
+    "q": "Yêu cầu giới hạn 25 tín chỉ đã được phân tích. Tester chọn kiểm tra riêng trường hợp đúng 25; giá trị 25 là gì trong chuỗi thiết kế test?",
+    "options": [
+      "Test basis",
+      "Test data",
+      "Defect report",
+      "Test summary"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Từ yêu cầu giới hạn tín chỉ, việc xác định “giới hạn 25 tín chỉ” là khía cạnh cần kiểm tra tạo ra gì?",
+      "a": "Điều kiện kiểm thử (test condition)."
+    },
+    "source": "Slide C3 · tr. 14"
+  },
+  {
+    "id": "slide-C3-20",
+    "chapter": "C3",
+    "number": 20,
+    "file": "BaiGiang_C3_Quan ly va tai lieu kiem thu phan mem.pdf",
+    "page": 20,
+    "q": "Dashboard báo còn hai lỗi Critical mở, dù 89% test đã Pass. Quyết định phát hành phù hợp với thông tin trên bảng là gì?",
+    "options": [
+      "Phát hành ngay",
+      "Chưa phát hành; sửa lỗi Critical và kiểm thử lại",
+      "Bỏ hai lỗi vì Pass cao",
+      "Chỉ chạy thêm test Low"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Dashboard có 231/248 ca đã chạy. Tỷ lệ thực thi xấp xỉ bao nhiêu?",
+      "a": "93% (231 ÷ 248 × 100%)."
+    },
+    "source": "Slide C3 · tr. 20"
+  },
+  {
+    "id": "slide-C4A-5",
+    "chapter": "C4A",
+    "number": 5,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 5,
+    "q": "Nhóm chỉ còn ít thời gian nhưng phải chọn ca thử có tổ chức, tránh lặp nhiều ca cùng ý. Nên áp dụng gì khi thiết kế?",
+    "options": [
+      "Thử ngẫu nhiên",
+      "Kỹ thuật kiểm thử có hệ thống",
+      "Chỉ chạy lại test cũ",
+      "Không cần xác định điều kiện"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Một kỹ thuật kiểm thử giúp nhóm giải thích được điều gì về phạm vi đã kiểm tra?",
+      "a": "Đã kiểm tra điều kiện nào và còn thiếu điều kiện nào."
+    },
+    "source": "Slide C4A · tr. 5"
+  },
+  {
+    "id": "slide-C4A-6",
+    "chapter": "C4A",
+    "number": 6,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 6,
+    "q": "Nhóm có yêu cầu và đã xác định điều kiện kiểm thử. Trước khi chọn dữ liệu đầu vào, cần chọn đối tượng cụ thể phải phủ là gì?",
+    "options": [
+      "Phần tử bao phủ",
+      "Báo cáo lỗi",
+      "Kết quả thực tế",
+      "Lịch trình"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Khi chạy test và có kết quả thực tế, dựa vào đâu để kết luận Pass hay Fail?",
+      "a": "So sánh kết quả thực tế với kết quả mong đợi trong test case."
+    },
+    "source": "Slide C4A · tr. 6"
+  },
+  {
+    "id": "slide-C4A-8",
+    "chapter": "C4A",
+    "number": 8,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 8,
+    "q": "Đặc tả rất thiếu nhưng nhóm có lịch sử lỗi của sản phẩm. Nên bổ sung kỹ thuật nào khi thiết kế test?",
+    "options": [
+      "Chỉ dùng hộp đen từ đặc tả",
+      "Dựa trên kinh nghiệm và lịch sử lỗi",
+      "Chỉ tính statement coverage",
+      "Không thiết kế test"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Hệ thống thuộc lĩnh vực bắt buộc truy vết và bằng chứng review chặt chẽ. Yếu tố nào chi phối việc chọn kỹ thuật?",
+      "a": "Yêu cầu tuân thủ."
+    },
+    "source": "Slide C4A · tr. 8"
+  },
+  {
+    "id": "slide-C4A-9",
+    "chapter": "C4A",
+    "number": 9,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 9,
+    "q": "Hệ thống đăng ký phụ thuộc đồng thời tài khoản, tiên quyết, chỗ trống và giới hạn tín chỉ. Kỹ thuật nào giúp xét tổ hợp các điều kiện?",
+    "options": [
+      "Giá trị biên đơn thuần",
+      "Bảng quyết định",
+      "Chỉ bao phủ câu lệnh",
+      "Chỉ thử luồng thành công"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Hai sinh viên cùng tranh chỗ cuối. Dựa vào slide phối hợp kỹ thuật, nên dùng cách nào để nghĩ ra thử nghiệm này?",
+      "a": "Đoán lỗi hoặc kiểm thử thăm dò."
+    },
+    "source": "Slide C4A · tr. 9"
+  },
+  {
+    "id": "slide-C4A-16",
+    "chapter": "C4A",
+    "number": 16,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 16,
+    "q": "Yêu cầu ghi “hệ thống phải xử lý nhanh”. Vì sao chưa thể thiết kế kiểm thử hiệu năng có kết luận rõ?",
+    "options": [
+      "Thiếu số lượng tester",
+      "Chưa xác định giới hạn thời gian phản hồi và tải",
+      "Chưa có màu giao diện",
+      "Chưa ghi tên module"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nếu giới hạn đăng ký là không vượt quá 25 tín chỉ, giá trị đúng 25 cần được xử lý thế nào?",
+      "a": "Được chấp nhận; quy tắc là tổng tín chỉ ≤ 25."
+    },
+    "source": "Slide C4A · tr. 16"
+  },
+  {
+    "id": "slide-C4A-18",
+    "chapter": "C4A",
+    "number": 18,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 18,
+    "q": "Cần xác định mã sai quy tắc nghiệp vụ dù cú pháp vẫn hợp lệ. Cách nào thường hiệu quả hơn?",
+    "options": [
+      "Review mã bởi người hiểu nghiệp vụ",
+      "Chỉ đếm cảnh báo công cụ",
+      "Chỉ kiểm tra định dạng",
+      "Không đọc mã"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "SAST tập trung phát hiện nhóm vấn đề nào trong mã?",
+      "a": "Điểm yếu bảo mật."
+    },
+    "source": "Slide C4A · tr. 18"
+  },
+  {
+    "id": "slide-C4A-19",
+    "chapter": "C4A",
+    "number": 19,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 19,
+    "q": "Một câu lệnh nằm sau return vô điều kiện. Phân tích tĩnh có thể phân loại là gì?",
+    "options": [
+      "Mã không thể tiếp cận",
+      "Kiểm thử tải",
+      "Sai giao diện",
+      "Failure đang chạy"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Một hàm chứa quá nhiều nhánh quyết định làm tăng chỉ số nào cần xem xét?",
+      "a": "Độ phức tạp chu trình (cyclomatic complexity)."
+    },
+    "source": "Slide C4A · tr. 19"
+  },
+  {
+    "id": "slide-C4A-20",
+    "chapter": "C4A",
+    "number": 20,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 20,
+    "q": "Công cụ phân tích tĩnh báo hàng trăm cảnh báo. Trước khi sửa, nhóm cần làm gì để tránh tốn công vào báo sai?",
+    "options": [
+      "Chấp nhận mọi cảnh báo",
+      "Phân loại, ưu tiên và xác minh trong ngữ cảnh mã",
+      "Bỏ toàn bộ cảnh báo",
+      "Chỉ đếm số cảnh báo"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Sau khi sửa mã theo cảnh báo, bước nào xác nhận vấn đề đã được xử lý?",
+      "a": "Chạy phân tích lại và kiểm tra kết quả sửa."
+    },
+    "source": "Slide C4A · tr. 20"
+  },
+  {
+    "id": "slide-C4A-21",
+    "chapter": "C4A",
+    "number": 21,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 21,
+    "q": "Công cụ báo có nguy cơ lỗi nhưng nhóm xác minh mã an toàn trong ngữ cảnh thực. Đây là loại kết quả nào?",
+    "options": [
+      "True positive",
+      "False positive",
+      "False negative",
+      "Failure"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nếu mã có vấn đề nhưng công cụ không báo, đó là loại kết quả nào?",
+      "a": "False negative (vấn đề bị bỏ sót)."
+    },
+    "source": "Slide C4A · tr. 21"
+  },
+  {
+    "id": "slide-C4A-22",
+    "chapter": "C4A",
+    "number": 22,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 22,
+    "q": "Trong hàm CanRegister, điều kiện AvailableSeats < 0 cho phép đăng ký khi còn đúng 0 chỗ. Cần sửa thành gì?",
+    "options": [
+      "AvailableSeats <= 0",
+      "AvailableSeats > 0",
+      "AvailableSeats == 1",
+      "AvailableSeats < -1"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Biến isValid được khai báo nhưng không bao giờ sử dụng. Đây là loại bất thường nào?",
+      "a": "Biến/mã không sử dụng."
+    },
+    "source": "Slide C4A · tr. 22"
+  },
+  {
+    "id": "slide-C4A-24",
+    "chapter": "C4A",
+    "number": 24,
+    "file": "BaiGiang_C4A_Kiem thu tinh.pdf",
+    "page": 24,
+    "q": "Một nhóm thấy công cụ phân tích tĩnh không báo gì và kết luận mã không thể còn lỗi. Kết luận này sai vì sao?",
+    "options": [
+      "Công cụ luôn chạy chậm",
+      "Công cụ có thể bỏ sót lỗi và không hiểu đầy đủ nghiệp vụ",
+      "Review thủ công luôn tìm mọi lỗi",
+      "Không cần kiểm thử động"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Sau khi sửa một cảnh báo, vì sao cần phân tích lại thay vì chỉ đóng cảnh báo?",
+      "a": "Để kiểm tra mã đã sửa đúng và không còn cảnh báo liên quan."
+    },
+    "source": "Slide C4A · tr. 24"
+  },
+  {
+    "id": "slide-C4B-4",
+    "chapter": "C4B",
+    "number": 4,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 4,
+    "q": "Nhóm đọc mã và yêu cầu để phát hiện defect khi chưa có bản chạy. Hoạt động đó thuộc phương thức nào?",
+    "options": [
+      "Kiểm thử tĩnh",
+      "Kiểm thử động",
+      "Kiểm thử tải",
+      "Chạy hồi quy"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Khi cần xác nhận hành vi thực tế của phần mềm sau khi nhập dữ liệu, phải dùng phương thức nào?",
+      "a": "Kiểm thử động có thực thi phần mềm."
+    },
+    "source": "Slide C4B · tr. 4"
+  },
+  {
+    "id": "slide-C4B-6",
+    "chapter": "C4B",
+    "number": 6,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 6,
+    "q": "Một test chạy được nhưng không có kết quả mong đợi để đối chiếu. Nhóm thiếu thành phần nào để kết luận Pass/Fail?",
+    "options": [
+      "Test oracle",
+      "Trình duyệt thứ hai",
+      "Báo cáo tổng kết",
+      "Số lượng lập trình viên"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Ngoài cơ sở xác định expected result, kiểm thử động còn cần điều kiện kỹ thuật gì trước khi chạy?",
+      "a": "Đối tượng thực thi được cùng môi trường, dữ liệu, cấu hình và trạng thái ban đầu phù hợp."
+    },
+    "source": "Slide C4B · tr. 6"
+  },
+  {
+    "id": "slide-C4B-19",
+    "chapter": "C4B",
+    "number": 19,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 19,
+    "q": "Một quy tắc xét nhiều điều kiện kết hợp; chỉ thử từng điều kiện riêng lẻ có thể bỏ sót kết quả. Kỹ thuật phù hợp nhất là gì?",
+    "options": [
+      "BVA",
+      "Bảng quyết định",
+      "Chỉ đo statement coverage",
+      "Đoán lỗi không ghi chép"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nếu đặc tả thiếu và cần phản hồi nhanh qua một phiên khám phá có mục tiêu, nên chọn kỹ thuật nào?",
+      "a": "Kiểm thử thăm dò (exploratory testing)."
+    },
+    "source": "Slide C4B · tr. 19"
+  },
+  {
+    "id": "slide-C4B-23",
+    "chapter": "C4B",
+    "number": 23,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 23,
+    "q": "Bộ T1 chạy 4/6 câu lệnh của đoạn mã. Statement coverage là bao nhiêu?",
+    "options": [
+      "50%",
+      "66,7%",
+      "75%",
+      "100%"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Bộ T1+T2 đi qua 3/4 nhánh. Branch coverage là bao nhiêu?",
+      "a": "75% (3 ÷ 4 × 100%)."
+    },
+    "source": "Slide C4B · tr. 23"
+  },
+  {
+    "id": "slide-C4B-24",
+    "chapter": "C4B",
+    "number": 24,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 24,
+    "q": "Tester thử nhấn nút đăng ký nhiều lần vì từng gặp lỗi tạo bản ghi trùng. Đây là kỹ thuật nào?",
+    "options": [
+      "Đoán lỗi",
+      "Giá trị biên",
+      "Bảng quyết định",
+      "Bao phủ nhánh"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Một phiên kiểm thử thăm dò cần có mục tiêu phiên, giới hạn thời gian và thành phần nào để tái hiện kết quả?",
+      "a": "Ghi chép bằng chứng trong phiên kiểm thử."
+    },
+    "source": "Slide C4B · tr. 24"
+  },
+  {
+    "id": "slide-C4B-25",
+    "chapter": "C4B",
+    "number": 25,
+    "file": "BaiGiang_C4B_Ky thuat kiem thu dong.pdf",
+    "page": 25,
+    "q": "Nhóm chọn năm giá trị trong cùng một lớp tương đương nhưng bỏ sót lớp không hợp lệ. Lỗi thiết kế test là gì?",
+    "options": [
+      "Thử quá ít trong lớp cũ",
+      "Không bao phủ tất cả các lớp tương đương",
+      "Thiếu công cụ tự động",
+      "Dùng BVA ba giá trị"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Đạt bao phủ nhánh cao nhưng không có expected result rõ. Vì sao chưa đủ đánh giá chất lượng test?",
+      "a": "Bao phủ chỉ đo phần cấu trúc đã chạy; cần dữ liệu và kết quả mong đợi đúng để phát hiện lỗi."
+    },
+    "source": "Slide C4B · tr. 25"
+  },
+  {
+    "id": "slide-C5-5",
+    "chapter": "C5",
+    "number": 5,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 5,
+    "q": "Nhóm muốn máy chạy lại test case theo script sau mỗi build và so kết quả với expected result. Hình thức này gọi là gì?",
+    "options": [
+      "Kiểm thử tự động",
+      "Review thủ công",
+      "Kiểm thử tĩnh",
+      "Phân tích yêu cầu"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Vì sao vẫn cần tester dù đã chạy script tự động?",
+      "a": "Con người vẫn phải thiết kế ca, phân tích kết quả và bảo trì script."
+    },
+    "source": "Slide C5 · tr. 5"
+  },
+  {
+    "id": "slide-C5-9",
+    "chapter": "C5",
+    "number": 9,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 9,
+    "q": "Một bộ hồi quy chạy mỗi ngày với dữ liệu từ CSV, tự so kết quả và xuất báo cáo. Cách thực thi phù hợp nhất là gì?",
+    "options": [
+      "Chỉ thao tác tay",
+      "Tự động hoá bằng script",
+      "Chỉ review tài liệu",
+      "Không kiểm thử"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Khi muốn tìm điểm bất thường ngoài kịch bản định nghĩa trước, điểm mạnh của cách kiểm thử nào?",
+      "a": "Kiểm thử thủ công nhờ phán đoán và quan sát của tester."
+    },
+    "source": "Slide C5 · tr. 9"
+  },
+  {
+    "id": "slide-C5-11",
+    "chapter": "C5",
+    "number": 11,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 11,
+    "q": "Chức năng mới đổi giao diện từng ngày và cần đánh giá người dùng có hiểu bố cục không. Cách kiểm thử nào phù hợp?",
+    "options": [
+      "Thủ công",
+      "Chỉ chạy script UI cũ",
+      "Chỉ dùng load test",
+      "Bỏ kiểm thử"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Nếu cần mô phỏng hàng nghìn người dùng cùng lúc, kiểm thử thủ công gặp hạn chế gì?",
+      "a": "Không khả thi để tạo tải đồng thời lớn bằng thao tác tay."
+    },
+    "source": "Slide C5 · tr. 11"
+  },
+  {
+    "id": "slide-C5-12",
+    "chapter": "C5",
+    "number": 12,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 12,
+    "q": "Script UI hỏng hàng loạt sau một lần đổi giao diện. Đây là chi phí nào của tự động hoá?",
+    "options": [
+      "Chi phí bảo trì",
+      "Chi phí kiểm thử tĩnh",
+      "Không phát sinh chi phí",
+      "Chi phí mua PDF"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Dù script chạy nhanh, việc đánh giá màu sắc và độ tương phản của giao diện vẫn cần gì?",
+      "a": "Đánh giá trực quan của con người hoặc công cụ chuyên biệt."
+    },
+    "source": "Slide C5 · tr. 12"
+  },
+  {
+    "id": "slide-C5-22",
+    "chapter": "C5",
+    "number": 22,
+    "file": "BaiGiang_C5_Kiem thu tu dong (Automation Testing).pdf",
+    "page": 22,
+    "q": "Nhóm cần chạy kiểm thử tải với hàng nghìn người dùng qua HTTP. Công cụ trên bảng lựa chọn phù hợp là gì?",
+    "options": [
+      "Postman",
+      "JMeter",
+      "Selenium IDE",
+      "Appium"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Nhóm frontend JavaScript cần debug trực quan và cài đặt nhanh cho kiểm thử web. Công cụ nào trên bảng phù hợp?",
+      "a": "Cypress."
+    },
+    "source": "Slide C5 · tr. 22"
+  },
+  {
+    "id": "slide-C6-6",
+    "chapter": "C6",
+    "number": 6,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 6,
+    "q": "Một nhóm sinh viên cần chạy lại test website bán hàng trên nhiều trình duyệt mà không mua bản quyền công cụ. Nên chọn gì?",
+    "options": [
+      "Selenium",
+      "Chỉ Excel",
+      "Công cụ desktop",
+      "Không thể tự động hoá"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Case study nêu thao tác nào với hệ điều hành nhóm gặp khó và cần công cụ hỗ trợ bên ngoài?",
+      "a": "Xử lý cửa sổ upload file."
+    },
+    "source": "Slide C6 · tr. 6"
+  },
+  {
+    "id": "slide-C6-7",
+    "chapter": "C6",
+    "number": 7,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 7,
+    "q": "Nhóm muốn dùng chung kịch bản browser trên Windows, macOS và Linux. Đặc điểm nào của Selenium đáp ứng?",
+    "options": [
+      "Đa nền tảng",
+      "Chỉ chạy Windows",
+      "Hỗ trợ desktop native",
+      "Không cần trình duyệt"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Với thao tác liên quan hệ điều hành như upload file, slide gợi ý kết hợp loại công cụ nào?",
+      "a": "Công cụ hỗ trợ bên ngoài như AutoIT hoặc Robot class."
+    },
+    "source": "Slide C6 · tr. 7"
+  },
+  {
+    "id": "slide-C6-8",
+    "chapter": "C6",
+    "number": 8,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 8,
+    "q": "Bộ Selenium chạy test xong nhưng dự án cần báo cáo HTML tổng hợp. Nhóm thường phải làm gì?",
+    "options": [
+      "Tích hợp framework báo cáo như NUnit/TestNG/Allure",
+      "Selenium có sẵn mọi báo cáo",
+      "Bỏ báo cáo",
+      "Chỉ thêm sleep"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Khi phiên bản trình duyệt cập nhật và script ngừng tương thích, nhóm cần kiểm tra gì?",
+      "a": "Phiên bản browser driver hoặc thư viện Selenium tương ứng."
+    },
+    "source": "Slide C6 · tr. 8"
+  },
+  {
+    "id": "slide-C6-10",
+    "chapter": "C6",
+    "number": 10,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 10,
+    "q": "Nhóm cần chạy cùng bộ test song song trên nhiều máy và trình duyệt. Thành phần Selenium Suite nào phù hợp?",
+    "options": [
+      "Selenium IDE",
+      "Selenium Grid",
+      "Selenium RC",
+      "Chỉ ChromeDriver"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Thành phần nào của Selenium Suite đã lỗi thời và không còn được khuyến nghị?",
+      "a": "Selenium RC (Remote Control)."
+    },
+    "source": "Slide C6 · tr. 10"
+  },
+  {
+    "id": "slide-C6-13",
+    "chapter": "C6",
+    "number": 13,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 13,
+    "q": "Người học dùng Firefox muốn cài Selenium IDE theo slide. Nên tìm tiện ích ở đâu?",
+    "options": [
+      "Kho Firefox Add-ons",
+      "Windows Update",
+      "npm registry",
+      "Cửa hàng Android"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Sau khi cài tiện ích Selenium IDE, thao tác nào bắt đầu một dự án ghi test mới?",
+      "a": "Mở biểu tượng IDE, chọn Create a new project và đặt tên."
+    },
+    "source": "Slide C6 · tr. 13"
+  },
+  {
+    "id": "slide-C6-14",
+    "chapter": "C6",
+    "number": 14,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 14,
+    "q": "Trong Selenium IDE, nơi hiển thị Command, Target và Value của từng bước là khu vực nào?",
+    "options": [
+      "Command Table",
+      "Toolbar",
+      "Console",
+      "Thanh tiêu đề"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Nếu lệnh assertText thất bại, khu vực nào hiển thị thông tin lỗi để debug?",
+      "a": "Log & Debug (Console)."
+    },
+    "source": "Slide C6 · tr. 14"
+  },
+  {
+    "id": "slide-C6-15",
+    "chapter": "C6",
+    "number": 15,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 15,
+    "q": "Tester đã ghi thao tác đăng nhập bằng Selenium IDE. Muốn biết bước nào Pass/Fail, phải làm gì tiếp theo?",
+    "options": [
+      "Nhấn Play để phát lại và xem kết quả",
+      "Chỉ lưu project",
+      "Đóng trình duyệt",
+      "Xóa mọi lệnh"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Trước khi bấm Record, nhóm cần xác định URL nào cho kịch bản?",
+      "a": "URL cơ sở nơi bài kiểm thử bắt đầu."
+    },
+    "source": "Slide C6 · tr. 15"
+  },
+  {
+    "id": "slide-C6-16",
+    "chapter": "C6",
+    "number": 16,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 16,
+    "q": "Trong Selenium IDE, lệnh nào kiểm tra văn bản và dừng test khi sai?",
+    "options": [
+      "click",
+      "type",
+      "assertText",
+      "open"
+    ],
+    "answer": "C",
+    "followup": {
+      "q": "Nếu chỉ cần ghi nhận sai lệch văn bản rồi tiếp tục các bước sau, dùng lệnh nào?",
+      "a": "verifyText."
+    },
+    "source": "Slide C6 · tr. 16"
+  },
+  {
+    "id": "slide-C6-18",
+    "chapter": "C6",
+    "number": 18,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 18,
+    "q": "Tester mới ít kinh nghiệm lập trình muốn tạo bản mẫu test web. Lợi thế nào của Selenium IDE giúp việc này?",
+    "options": [
+      "Ghi và phát lại dễ tiếp cận",
+      "Bắt buộc viết framework phức tạp",
+      "Kiểm thử API sẵn",
+      "Kiểm thử desktop native"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Khi muốn chuyển bản mẫu Selenium IDE sang WebDriver, có thể dùng tính năng nào?",
+      "a": "Export test script sang ngôn ngữ như Java, C# hoặc Python."
+    },
+    "source": "Slide C6 · tr. 18"
+  },
+  {
+    "id": "slide-C6-19",
+    "chapter": "C6",
+    "number": 19,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 19,
+    "q": "Dự án cần kiểm thử API REST. Vì sao không chọn Selenium IDE làm công cụ chính?",
+    "options": [
+      "IDE không hỗ trợ kiểm thử dịch vụ web/API",
+      "IDE chỉ dùng Windows",
+      "IDE không ghi thao tác browser",
+      "IDE bắt buộc dùng Java"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Khi giao diện đổi nhiều, kịch bản record/playback của IDE gặp khó khăn chính nào?",
+      "a": "Phải sửa nhiều bước đã ghi; khả năng mở rộng và bảo trì hạn chế."
+    },
+    "source": "Slide C6 · tr. 19"
+  },
+  {
+    "id": "slide-C6-25",
+    "chapter": "C6",
+    "number": 25,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 25,
+    "q": "Một script C# gửi lệnh Selenium để điều khiển Chrome. Thành phần trung gian giao tiếp trực tiếp với trình duyệt là gì?",
+    "options": [
+      "ChromeDriver",
+      "Selenium RC",
+      "Excel",
+      "Test Plan"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "So với RC, WebDriver giao tiếp với trình duyệt theo cách nào?",
+      "a": "Trực tiếp qua browser driver tương ứng, không dựa vào JavaScript của RC."
+    },
+    "source": "Slide C6 · tr. 25"
+  },
+  {
+    "id": "slide-C6-26",
+    "chapter": "C6",
+    "number": 26,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 26,
+    "q": "Một dự án chỉ kiểm thử API thuần túy, không có giao diện web. Có nên chọn Selenium WebDriver làm công cụ chính?",
+    "options": [
+      "Có, vì WebDriver chuyên API",
+      "Không; dùng Postman hoặc thư viện HTTP",
+      "Chỉ cần Grid",
+      "Chỉ cần Selenium IDE"
+    ],
+    "answer": "B",
+    "followup": {
+      "q": "Dự án UI thay đổi liên tục làm locator hỏng thường xuyên. Chi phí nào khiến WebDriver kém phù hợp lúc này?",
+      "a": "Chi phí bảo trì script và locator cao."
+    },
+    "source": "Slide C6 · tr. 26"
+  },
+  {
+    "id": "slide-C6-28",
+    "chapter": "C6",
+    "number": 28,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 28,
+    "q": "Tester chỉ biết kiểm thử thủ công, dự án cần dùng WebDriver. Điều kiện kỹ năng nào cần bổ sung?",
+    "options": [
+      "Kỹ năng lập trình để viết và bảo trì script",
+      "Chỉ biết mở trình duyệt",
+      "Không cần kỹ năng mới",
+      "Chỉ học Excel"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Nếu muốn đưa kết quả WebDriver vào báo cáo tổng hợp, cần tích hợp thêm gì?",
+      "a": "Framework kiểm thử hoặc báo cáo như NUnit, TestNG hay JUnit."
+    },
+    "source": "Slide C6 · tr. 28"
+  },
+  {
+    "id": "slide-C6-30",
+    "chapter": "C6",
+    "number": 30,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 30,
+    "q": "Trong Selenium C#, lệnh nào tạo phiên điều khiển Chrome?",
+    "options": [
+      "new ChromeDriver()",
+      "driver.Quit()",
+      "driver.Navigate().Back()",
+      "SelectByText()"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Muốn phóng to cửa sổ ngay sau khi tạo driver, gọi lệnh nào?",
+      "a": "driver.Manage().Window.Maximize()."
+    },
+    "source": "Slide C6 · tr. 30"
+  },
+  {
+    "id": "slide-C6-31",
+    "chapter": "C6",
+    "number": 31,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 31,
+    "q": "Script vừa đi sang trang mới nhưng cần quay lại trang trước. Dùng lệnh WebDriver nào?",
+    "options": [
+      "driver.Navigate().Back()",
+      "driver.Navigate().Forward()",
+      "driver.Navigate().Refresh()",
+      "driver.Quit()"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Nếu cần tải lại chính trang đang mở, dùng lệnh nào?",
+      "a": "driver.Navigate().Refresh()."
+    },
+    "source": "Slide C6 · tr. 31"
+  },
+  {
+    "id": "slide-C6-36",
+    "chapter": "C6",
+    "number": 36,
+    "file": "BaiGiang_C6_Selenium.pdf",
+    "page": 36,
+    "q": "Bộ test đăng nhập đã chạy nhưng lỗi sau khi đổi giao diện. Giai đoạn nào của quy trình Selenium cần cập nhật script?",
+    "options": [
+      "Bảo trì và cập nhật script",
+      "Xác định phạm vi ban đầu",
+      "Bỏ phân tích kết quả",
+      "Chỉ thêm test data"
+    ],
+    "answer": "A",
+    "followup": {
+      "q": "Sau khi thực thi kịch bản, nhóm cần làm gì trước khi kết luận Pass/Fail?",
+      "a": "So sánh kết quả thực tế với kết quả mong đợi và tìm nguyên nhân nếu sai."
+    },
+    "source": "Slide C6 · tr. 36"
+  }
+]
