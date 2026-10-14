@@ -309,7 +309,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Trước khi chạy test, nhóm xác định mục tiêu, phạm vi, nguồn lực và lịch trình. Đó là bước nào?",
+      "q": "Dự án có ba tuần trước ngày phát hành và chỉ hai tester. Trưởng nhóm cần thống nhất phạm vi, ưu tiên và nguồn lực trước khi giao việc. Đây là giai đoạn nào của quy trình kiểm thử?",
       "a": "Lập kế hoạch kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -317,7 +317,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Tester đọc yêu cầu để xác định điều kiện kiểm thử, dữ liệu và test case. Đó là bước nào?",
+      "q": "Nhóm được giao một yêu cầu mới nhưng chưa có test case. Họ cần quyết định điều kiện nào phải được thử và cách kiểm tra từng điều kiện. Đây là giai đoạn nào?",
       "a": "Phân tích và thiết kế kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -325,7 +325,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Tester chuẩn bị môi trường, chạy test, ghi Pass/Fail và báo lỗi. Đó là bước nào?",
+      "q": "Test case đã được duyệt nhưng bản build mới chưa thể chạy vì môi trường chưa cấu hình. Nhóm cấu hình môi trường rồi thực hiện các ca thử. Đây là giai đoạn nào?",
       "a": "Triển khai và thực thi kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -333,7 +333,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Nhóm so với exit criteria, tổng hợp báo cáo và lưu testware. Đó là bước nào?",
+      "q": "Đã đến hạn chốt đợt kiểm thử. Nhóm cần đối chiếu kết quả với tiêu chí kết thúc trước khi đề xuất phát hành. Đây là giai đoạn nào?",
       "a": "Đánh giá và kết thúc kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -351,7 +351,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Trước khi chạy test, nhóm xác định mục tiêu, phạm vi, nguồn lực và lịch trình. Đó là bước nào?",
+      "q": "Dự án có ba tuần trước ngày phát hành và chỉ hai tester. Trưởng nhóm cần thống nhất phạm vi, ưu tiên và nguồn lực trước khi giao việc. Đây là giai đoạn nào của quy trình kiểm thử?",
       "a": "Lập kế hoạch kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -359,7 +359,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Tester đọc yêu cầu để xác định điều kiện kiểm thử, dữ liệu và test case. Đó là bước nào?",
+      "q": "Nhóm được giao một yêu cầu mới nhưng chưa có test case. Họ cần quyết định điều kiện nào phải được thử và cách kiểm tra từng điều kiện. Đây là giai đoạn nào?",
       "a": "Phân tích và thiết kế kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -367,7 +367,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Tester chuẩn bị môi trường, chạy test, ghi Pass/Fail và báo lỗi. Đó là bước nào?",
+      "q": "Test case đã được duyệt nhưng bản build mới chưa thể chạy vì môi trường chưa cấu hình. Nhóm cấu hình môi trường rồi thực hiện các ca thử. Đây là giai đoạn nào?",
       "a": "Triển khai và thực thi kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -375,7 +375,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Nhóm so với exit criteria, tổng hợp báo cáo và lưu testware. Đó là bước nào?",
+      "q": "Đã đến hạn chốt đợt kiểm thử. Nhóm cần đối chiếu kết quả với tiêu chí kết thúc trước khi đề xuất phát hành. Đây là giai đoạn nào?",
       "a": "Đánh giá và kết thúc kiểm thử.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 19",
@@ -545,7 +545,7 @@
       "source": "QUIZ C1–C6 · câu 335"
     },
     {
-      "q": "Theo mô hình chi phí trên slide, sửa lỗi lúc lập trình tốn gấp khoảng bao nhiêu lần lúc yêu cầu?",
+      "q": "Một lỗi có thể được phát hiện lúc viết yêu cầu hoặc đợi đến lúc lập trình. Nếu chi phí sửa ở giai đoạn yêu cầu là 1 đơn vị, theo mô hình chi phí trong bài, sửa ở giai đoạn lập trình tốn khoảng bao nhiêu?",
       "a": "Khoảng 10 lần.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -553,7 +553,7 @@
       "source": "Slide tr. 11"
     },
     {
-      "q": "Một lỗi được phát hiện khi hệ thống đã vận hành. Theo biểu đồ, chi phí sửa gấp bao nhiêu lần phát hiện ở kiểm thử?",
+      "q": "Chi phí sửa một lỗi ở giai đoạn kiểm thử là 25 đơn vị, còn khi hệ thống đã vận hành là 100 đơn vị. Phát hiện muộn làm chi phí tăng bao nhiêu lần?",
       "a": "Khoảng 4 lần (100 ÷ 25).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -563,7 +563,7 @@
   ],
   "pdf-C1-14": [
     {
-      "q": "Theo mô hình chi phí trên slide, sửa lỗi phát hiện ở giai đoạn kiểm thử tốn khoảng bao nhiêu lần so với giai đoạn yêu cầu?",
+      "q": "Nếu sửa lỗi ở giai đoạn yêu cầu tốn 1 đơn vị còn ở giai đoạn kiểm thử tốn 25 đơn vị, chi phí tăng bao nhiêu lần?",
       "a": "Khoảng 25 lần.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -579,7 +579,15 @@
       "source": "QUIZ C1–C6 · câu 335"
     },
     {
-      "q": "Một lỗi được phát hiện khi hệ thống đã vận hành. Theo biểu đồ, chi phí sửa gấp bao nhiêu lần phát hiện ở kiểm thử?",
+      "q": "Một lỗi có thể được phát hiện lúc viết yêu cầu hoặc đợi đến lúc lập trình. Nếu chi phí sửa ở giai đoạn yêu cầu là 1 đơn vị, theo mô hình chi phí trong bài, sửa ở giai đoạn lập trình tốn khoảng bao nhiêu?",
+      "a": "Khoảng 10 lần.",
+      "tag": "Cùng slide",
+      "badge": "Slide tr. 11",
+      "badgeClass": "yes",
+      "source": "Slide tr. 11"
+    },
+    {
+      "q": "Chi phí sửa một lỗi ở giai đoạn kiểm thử là 25 đơn vị, còn khi hệ thống đã vận hành là 100 đơn vị. Phát hiện muộn làm chi phí tăng bao nhiêu lần?",
       "a": "Khoảng 4 lần (100 ÷ 25).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -979,7 +987,7 @@
       "source": "Slide tr. 7"
     },
     {
-      "q": "Nhóm phát triển lặp nhiều vòng ngắn, mỗi vòng tạo một phiên bản và kiểm thử. Trong danh sách trên slide, đó là mô hình nào?",
+      "q": "Nhóm giao phần mềm theo các vòng ngắn. Sau mỗi vòng, họ nhận phản hồi rồi điều chỉnh chức năng cho vòng sau. Mô hình phát triển nào phù hợp với cách làm này?",
       "a": "Mô hình Iterative.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 7",
@@ -1855,7 +1863,7 @@
       "source": "Slide liên quan C5 · tr. 18"
     },
     {
-      "q": "Cần tự động hoá thao tác trình duyệt web. Nhóm công cụ nào trên slide phù hợp?",
+      "q": "Dự án muốn tự động thao tác đăng nhập và đặt hàng trong trình duyệt. Nên chọn nhóm công cụ kiểm thử nào?",
       "a": "Công cụ kiểm thử Web.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 18",
@@ -2047,7 +2055,7 @@
       "source": "Slide liên quan C5 · tr. 18"
     },
     {
-      "q": "Cần tự động hoá thao tác trình duyệt web. Nhóm công cụ nào trên slide phù hợp?",
+      "q": "Dự án muốn tự động thao tác đăng nhập và đặt hàng trong trình duyệt. Nên chọn nhóm công cụ kiểm thử nào?",
       "a": "Công cụ kiểm thử Web.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 18",
@@ -2081,7 +2089,7 @@
       "source": "Slide liên quan C5 · tr. 18"
     },
     {
-      "q": "Cần tự động hoá thao tác trình duyệt web. Nhóm công cụ nào trên slide phù hợp?",
+      "q": "Dự án muốn tự động thao tác đăng nhập và đặt hàng trong trình duyệt. Nên chọn nhóm công cụ kiểm thử nào?",
       "a": "Công cụ kiểm thử Web.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 18",
@@ -2417,7 +2425,7 @@
       "source": "Slide liên quan C5 · tr. 19"
     },
     {
-      "q": "Dự án cần chạy E2E trên Chromium, Firefox và WebKit. Công cụ nào trên slide hỗ trợ cả ba?",
+      "q": "Một bộ E2E phải chạy cùng hành vi trên Chromium, Firefox và WebKit. Công cụ nào đáp ứng yêu cầu?",
       "a": "Playwright.",
       "tag": "Cùng slide",
       "badge": "Slide liên quan C5 · tr. 19",
@@ -4105,7 +4113,7 @@
       "source": "QUIZ C1–C6 · câu 335"
     },
     {
-      "q": "Theo mô hình chi phí trên slide, sửa lỗi lúc lập trình tốn gấp khoảng bao nhiêu lần lúc yêu cầu?",
+      "q": "Một lỗi có thể được phát hiện lúc viết yêu cầu hoặc đợi đến lúc lập trình. Nếu chi phí sửa ở giai đoạn yêu cầu là 1 đơn vị, theo mô hình chi phí trong bài, sửa ở giai đoạn lập trình tốn khoảng bao nhiêu?",
       "a": "Khoảng 10 lần.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -4113,7 +4121,7 @@
       "source": "Slide tr. 11"
     },
     {
-      "q": "Một lỗi được phát hiện khi hệ thống đã vận hành. Theo biểu đồ, chi phí sửa gấp bao nhiêu lần phát hiện ở kiểm thử?",
+      "q": "Chi phí sửa một lỗi ở giai đoạn kiểm thử là 25 đơn vị, còn khi hệ thống đã vận hành là 100 đơn vị. Phát hiện muộn làm chi phí tăng bao nhiêu lần?",
       "a": "Khoảng 4 lần (100 ÷ 25).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 11",
@@ -5610,7 +5618,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Dùng số bug mỗi tester báo được để xếp hạng cá nhân có phù hợp với cảnh báo trên slide không?",
+      "q": "Một tester báo nhiều lỗi hơn đồng nghiệp. Có đủ căn cứ từ chỉ số này để kết luận tester đó làm việc tốt hơn không?",
       "a": "Không; cách đó dễ tạo hành vi lệch lạc và hại tinh thần hợp tác.",
       "concept": "metrics-misuse",
       "tag": "Cùng slide",
@@ -5738,7 +5746,7 @@
       "source": "Slide tr. 13"
     },
     {
-      "q": "Theo khoảng tham khảo trên slide, công sức kiểm thử thường chiếm xấp xỉ bao nhiêu phần trăm công sức phát triển?",
+      "q": "Một dự án dự kiến 1.000 giờ phát triển. Nếu dùng tỷ lệ tham khảo trong bài để lập kế hoạch, nên dự trù kiểm thử khoảng bao nhiêu giờ?",
       "a": "Khoảng 25–40%, tùy rủi ro và yêu cầu chất lượng.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 13",
@@ -6046,7 +6054,7 @@
       "source": "QUIZ C1–C6 · câu 262"
     },
     {
-      "q": "Trong review chính thức, thành viên tự đọc tài liệu và ghi bất thường trước buổi họp. Đó là bước nào?",
+      "q": "Tài liệu sắp được review chính thức. Trước cuộc họp, từng reviewer đọc riêng và ghi các điểm nghi ngờ. Hoạt động đó thuộc bước nào?",
       "a": "Xem xét cá nhân (individual review).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 13",
@@ -6862,7 +6870,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "q": "Nhóm cần chọn công cụ cho ứng dụng chạy trên Android và iOS, đồng thời dùng ngôn ngữ lập trình nhóm đã biết. Cần xét hai yếu tố kỹ thuật nào?",
       "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7022,7 +7030,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "q": "Nhóm cần chọn công cụ cho ứng dụng chạy trên Android và iOS, đồng thời dùng ngôn ngữ lập trình nhóm đã biết. Cần xét hai yếu tố kỹ thuật nào?",
       "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7082,7 +7090,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Nhóm chọn công cụ test cho dự án mobile. Hai yếu tố kỹ thuật nào trên slide cần xét?",
+      "q": "Nhóm cần chọn công cụ cho ứng dụng chạy trên Android và iOS, đồng thời dùng ngôn ngữ lập trình nhóm đã biết. Cần xét hai yếu tố kỹ thuật nào?",
       "a": "Loại ứng dụng và ngôn ngữ mà nhóm thành thạo.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7970,7 +7978,7 @@
       "source": "QUIZ C1–C6 · câu 344"
     },
     {
-      "q": "Tester thiết kế ca kiểm thử từ sơ đồ trạng thái đơn hàng. Đây là cách tiếp cận nào?",
+      "q": "Nhóm có sơ đồ trạng thái đơn hàng nhưng chưa có mã nguồn. Họ tạo test case cho từng chuyển trạng thái. Chiến lược thiết kế test này dựa vào gì?",
       "a": "Kiểm thử dựa trên mô hình (model-based).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7978,7 +7986,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Tester dùng lịch sử lỗi và trực giác để nghĩ ra đầu vào bất thường. Đây là cách tiếp cận nào?",
+      "q": "Một lỗi thanh toán hiếm từng xảy ra ở bản cũ. Tester chủ động thử lại các biến thể bất thường dựa trên kinh nghiệm đó. Đây là chiến lược kiểm thử nào?",
       "a": "Kiểm thử dựa trên kinh nghiệm.",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7986,7 +7994,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Nhóm điều chỉnh test sau khi vừa quan sát một lỗi mới trong phiên thăm dò. Đây là cách tiếp cận nào?",
+      "q": "Trong phiên thăm dò, một lỗi mới cho thấy giỏ hàng xử lý sai khi mạng ngắt. Tester đổi ngay hướng thử sang các tình huống mất kết nối. Chiến lược này là gì?",
       "a": "Kiểm thử phản ứng (reactive).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -7994,7 +8002,7 @@
       "source": "Slide tr. 17"
     },
     {
-      "q": "Nhóm dùng checklist và phân tích giá trị biên để thiết kế test. Đây là cách tiếp cận nào?",
+      "q": "Nhóm muốn chọn test case theo checklist và các giá trị sát ngưỡng được phép. Đây là chiến lược nào?",
       "a": "Kiểm thử có hệ thống theo kỹ thuật (methodical).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 17",
@@ -8506,7 +8514,7 @@
       "source": "QUIZ C1–C6 · câu 124"
     },
     {
-      "q": "Khi xác định “kiểm thử cái gì?” từ tài liệu cơ sở, đó là hoạt động ISTQB nào?",
+      "q": "Yêu cầu viết “tài khoản bị khóa sau nhiều lần sai mật khẩu”. Tester đang tìm các điều kiện cần kiểm tra trước khi viết bước chạy. Đây là hoạt động nào?",
       "a": "Phân tích kiểm thử (test analysis).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
@@ -8514,7 +8522,7 @@
       "source": "Slide tr. 20"
     },
     {
-      "q": "Khi xác định “kiểm thử như thế nào?” và dữ liệu cần thiết, đó là hoạt động nào?",
+      "q": "Đã xác định cần kiểm tra khóa tài khoản. Tester chọn dữ liệu đầu vào và kết quả mong đợi cho từng ca. Đây là hoạt động nào?",
       "a": "Thiết kế kiểm thử (test design).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
@@ -8522,7 +8530,7 @@
       "source": "Slide tr. 20"
     },
     {
-      "q": "Sắp thứ tự chạy test, chuẩn bị script và môi trường thuộc hoạt động nào?",
+      "q": "Các test case đã được thiết kế. Nhóm xếp thứ tự chạy và chuẩn bị script cùng môi trường. Đây là hoạt động nào?",
       "a": "Triển khai kiểm thử (test implementation).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
@@ -8530,7 +8538,7 @@
       "source": "Slide tr. 20"
     },
     {
-      "q": "Sau đợt test, nhóm bàn giao testware và tổng kết bài học. Đó là hoạt động nào?",
+      "q": "Đợt kiểm thử đã đạt tiêu chí kết thúc. Nhóm lưu bộ test để tái sử dụng và ghi bài học cho dự án sau. Đây là hoạt động nào?",
       "a": "Kết thúc kiểm thử (test completion).",
       "tag": "Cùng slide",
       "badge": "Slide tr. 20",
@@ -8601,7 +8609,7 @@
       "source": "Slide tr. 19"
     },
     {
-      "q": "Dùng số bug mỗi tester báo được để xếp hạng cá nhân có phù hợp với cảnh báo trên slide không?",
+      "q": "Một tester báo nhiều lỗi hơn đồng nghiệp. Có đủ căn cứ từ chỉ số này để kết luận tester đó làm việc tốt hơn không?",
       "a": "Không; cách đó dễ tạo hành vi lệch lạc và hại tinh thần hợp tác.",
       "concept": "metrics-misuse",
       "tag": "Cùng slide",
